@@ -1,5 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
+import type { Animal } from "@/features/animals/domain/animal";
 import type { Construct } from "@/features/constructs/domain/construct";
 import type { Item } from "@/features/items/domain/item";
 import type { ItemSource } from "@/features/items/domain/item-source";
@@ -28,6 +29,33 @@ const itemSource = (sourceId: string, itemId: string): ItemSource => ({
   minAmount: 1,
   maxAmount: 1,
   chance: 100,
+  price: null,
+});
+
+const incubator = {
+  lensChances: { smaller: 25, larger: 25, double: 10, rare: 10 },
+  rareEggIncubationDays: 5,
+};
+
+const animal = (id: string, itemId = "Ore"): Animal => ({
+  id,
+  name: { en: id, "pt-BR": id },
+  icon: null,
+  diet: "Potassic",
+  fodderItemId: itemId,
+  loot: {
+    product: { itemId, amount: 1 },
+    droppings: { itemId, amount: 1 },
+    egg: { itemId },
+  },
+  wildFeeding: { resourceItemId: itemId, eggChance: 5 },
+  needs: { dailyThirst: 100, dailyHunger: 1, minSquareMeters: 50, minNearbyAnimals: 1 },
+  lifecycle: {
+    incubationDays: 1,
+    growthDays: 1,
+    daysSadBeforeRunAway: 3,
+    daysRunAwayBeforeDespawn: 7,
+  },
 });
 
 const station = (id: string, family = id): Station => ({
@@ -64,6 +92,8 @@ describe("checkIntegrity", () => {
       recipes: [recipe("Bar1", "Bar", ["Ore"], ["Furnace"])],
       stations: [station("Furnace")],
       itemSources: [itemSource("Rock", "Ore")],
+      animals: [],
+      incubator,
       constructs: [construct("Box", "Ore")],
     });
     expect(issues).toEqual([]);
@@ -75,6 +105,8 @@ describe("checkIntegrity", () => {
       recipes: [recipe("Bar1", "Bar", ["Ghost"], ["Nowhere"])],
       stations: [],
       itemSources: [itemSource("Rock", "Missing")],
+      animals: [],
+      incubator,
       constructs: [construct("Box", "Nothing")],
     });
     expect(issues).toEqual([
@@ -92,6 +124,8 @@ describe("checkIntegrity", () => {
       recipes: [recipe("R", "Ore", []), recipe("R", "Ore", [])],
       stations: [station("S"), station("S")],
       itemSources: [itemSource("Rock", "Ore"), itemSource("Rock", "Ore")],
+      animals: [],
+      incubator,
       constructs: [construct("Box", "Ore"), construct("Box", "Ore")],
     });
     expect(issues).toContain('Duplicate item id "Ore"');
@@ -107,8 +141,40 @@ describe("checkIntegrity", () => {
       recipes: [],
       stations: [station("Furnace3", "Furnace")],
       itemSources: [],
+      animals: [],
+      incubator,
       constructs: [],
     });
     expect(issues).toEqual(['Station "Furnace3" belongs to unknown family "Furnace"']);
+  });
+
+  it("reports a mutation whose seeds do not exist", () => {
+    const mutation = { ...itemSource("Seeds", "Ore"), kind: "mutation" as const };
+    const issues = checkIntegrity({
+      items: [item("Ore")],
+      recipes: [],
+      stations: [],
+      itemSources: [mutation],
+      animals: [],
+      incubator,
+      constructs: [],
+    });
+    expect(issues).toEqual(['Item source "node:Seeds:Ore" grows from unknown seed "Seeds"']);
+  });
+
+  it("reports an animal that points at items which do not exist, and duplicate animals", () => {
+    const issues = checkIntegrity({
+      items: [item("Ore")],
+      recipes: [],
+      stations: [],
+      itemSources: [],
+      constructs: [],
+      animals: [animal("Tookan", "Ghost"), animal("Tookan", "Ore")],
+      incubator,
+    });
+
+    expect(issues).toContain('Duplicate animal id "Tookan"');
+    expect(issues).toContain('Animal "Tookan" has unknown fodder item "Ghost"');
+    expect(issues).toContain('Animal "Tookan" has unknown egg item "Ghost"');
   });
 });

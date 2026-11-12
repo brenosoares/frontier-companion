@@ -198,13 +198,15 @@ test.describe("materials calculator", () => {
     const variant = page.getByLabel("Receita");
     await expect(variant.locator("option")).toHaveCount(3);
     const materials = page.getByRole("region", { name: "Materiais para obter" });
-    // The default avoids the rare plant, which has no known source.
+    // The default avoids the mutated plant, which needs modified seeds.
     await expect(materials.getByText("Trigo", { exact: true })).toBeVisible();
     await expect(materials.getByText("Origem desconhecida")).toHaveCount(0);
 
     await variant.selectOption({ label: "1× Trigo (Mutante) → 3× Sementes de Trigo" });
     await expect(page).toHaveURL(/v=WheatSeeds%3AWheatSeeds3/);
-    await expect(materials.getByText("Origem desconhecida")).toBeVisible();
+    // Mutated wheat has a known origin (modified seeds), so it is not "unknown".
+    await expect(materials.getByText("Trigo (Mutante)")).toBeVisible();
+    await expect(materials.getByText("Origem desconhecida")).toHaveCount(0);
   });
 
   test("starts from an item page link", async ({ page }) => {

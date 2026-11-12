@@ -55,10 +55,11 @@ const recipes: Recipe[] = [
   recipe("Seeds3", ["Seeds", 3], { Plant_Rare: 1 }),
 ];
 
-const item = (name: string, hasSource = true): CalculatorItem => ({
+const item = (name: string, hasSource = true, directlyObtainable = hasSource): CalculatorItem => ({
   name,
   icon: `${name.replace(/\W/g, "")}Icon`,
   hasSource,
+  directlyObtainable,
 });
 const items = {
   Bar: item("Bronze Bar"),
@@ -254,5 +255,25 @@ describe("MaterialsCalculator", () => {
 
     expect(icons).toContain("/icons/items/CopperOreIcon.png");
     expect(icons).toContain("/icons/items/WoodIcon.png");
+  });
+
+  it("avoids a mutated ingredient by default but does not call its origin unknown", async () => {
+    render(
+      <MaterialsCalculator
+        recipes={recipes}
+        // The rare plant has a known source (mutation) but cannot be obtained directly.
+        items={{ ...items, Plant_Rare: item("Rare Plant", true, false) }}
+        stations={{ Furnace: "Furnace" }}
+        locale="en"
+        labels={labels}
+      />,
+    );
+    await userEvent.selectOptions(screen.getByLabelText("Item to craft"), "Seeds");
+    expect(materials().map((li) => li.textContent)).toEqual([expect.stringContaining("Plant")]);
+    expect(materials()[0]).not.toHaveTextContent("Rare");
+
+    await userEvent.selectOptions(screen.getByLabelText("Recipe"), "Seeds3");
+    expect(materials()[0]).toHaveTextContent("Rare Plant");
+    expect(screen.queryByText("Unknown source")).not.toBeInTheDocument();
   });
 });

@@ -5,11 +5,16 @@
  * The files are bundled at build time (no runtime I/O), which suits static rendering with
  * `cacheComponents`. They are still validated by Zod when first read.
  */
+import animalsJson from "@data/processed/animals.json";
+import incubatorJson from "@data/processed/incubator.json";
 import constructsJson from "@data/processed/constructs.json";
 import itemSourcesJson from "@data/processed/item-sources.json";
 import itemsJson from "@data/processed/items.json";
 import recipesJson from "@data/processed/recipes.json";
 import stationsJson from "@data/processed/stations.json";
+import { IncubatorSchema } from "@/features/animals/domain/animal";
+import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
+import type { AnimalRepository } from "@/features/animals/domain/animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
 import type { ConstructRepository } from "@/features/constructs/domain/construct-repository";
 import { JsonItemRepository } from "@/features/items/data/json-item-repository";
@@ -32,3 +37,7 @@ export const itemSourceRepository: ItemSourceRepository = new JsonItemSourceRepo
 export const constructRepository: ConstructRepository = new JsonConstructRepository(
   async () => constructsJson,
 );
+/** Egg Incubator defaults: one record, so no repository. */
+export const incubator = IncubatorSchema.parse(incubatorJson);
+
+export const animalRepository: AnimalRepository = new JsonAnimalRepository(async () => animalsJson);

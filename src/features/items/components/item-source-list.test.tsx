@@ -13,6 +13,7 @@ const source = (overrides: Partial<ItemSource> = {}): ItemSource => ({
   minAmount: 3,
   maxAmount: 5,
   chance: 100,
+  price: null,
   ...overrides,
 });
 
@@ -50,7 +51,20 @@ describe("ItemSourceList", () => {
   });
 
   it("describes every kind of source", () => {
-    const kinds = ["node", "plant", "animal-product", "animal-droppings", "animal-egg"] as const;
+    const kinds = [
+      "node",
+      "plant",
+      "plant-fruit",
+      "animal-product",
+      "animal-droppings",
+      "critter-feed",
+      "large-item",
+      "hazard",
+      "loot-goblin",
+      "mutation",
+      "merchant",
+      "care-package",
+    ] as const;
     render(
       <ItemSourceList
         sources={kinds.map((kind) => source({ id: kind, kind, sourceId: kind }))}
@@ -62,5 +76,59 @@ describe("ItemSourceList", () => {
     for (const kind of kinds) {
       expect(screen.getByText(labels("en").kinds[kind])).toBeInTheDocument();
     }
+  });
+
+  it("shows a merchant by its kind, with the price and without invented amount or chance", () => {
+    render(
+      <ItemSourceList
+        sources={[
+          source({
+            kind: "merchant",
+            sourceName: null,
+            minAmount: null,
+            maxAmount: null,
+            chance: null,
+            price: 1234,
+          }),
+        ]}
+        locale="pt-BR"
+        labels={labels("pt-BR")}
+      />,
+    );
+
+    expect(screen.getByText("Vendido por mercadores")).toBeInTheDocument();
+    expect(screen.getByText("1.234")).toBeInTheDocument();
+    expect(screen.queryByText("Quantidade:")).not.toBeInTheDocument();
+    expect(screen.queryByText("Chance:")).not.toBeInTheDocument();
+  });
+
+  it("links a mutation to the item page of the seeds it grows from", () => {
+    render(
+      <ItemSourceList
+        sources={[
+          source({
+            kind: "mutation",
+            sourceId: "WheatSeeds_Refined",
+            sourceName: { en: "Spliced Wheat Seeds", "pt-BR": "Sementes de Trigo Modificadas" },
+            minAmount: null,
+            maxAmount: null,
+            chance: null,
+          }),
+        ]}
+        locale="pt-BR"
+        labels={labels("pt-BR")}
+      />,
+    );
+
+    expect(screen.getByRole("link", { name: "Sementes de Trigo Modificadas" })).toHaveAttribute(
+      "href",
+      "/pt-BR/items/WheatSeeds_Refined",
+    );
+    expect(screen.getByText("Cresce de sementes modificadas")).toBeInTheDocument();
+  });
+
+  it("does not make a plain source a link", () => {
+    render(<ItemSourceList sources={[source()]} locale="en" labels={labels("en")} />);
+    expect(screen.queryByRole("link")).not.toBeInTheDocument();
   });
 });

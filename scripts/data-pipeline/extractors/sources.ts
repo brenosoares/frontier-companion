@@ -18,18 +18,37 @@ const RawPlantSchema = z.object({
   DisplayName: RawTextSchema,
   IsNode: z.boolean().optional(),
   PlantDrops: RawDropsSchema,
+  /** Fruit the standing plant grows (colorflowers, glo fruit…), separate from its harvest. */
+  FruitDrops: RawDropsSchema.optional(),
 });
 const RawAnimalSchema = z.object({
   ItemDrop: z.object({ ItemName: z.string(), Count: z.number() }),
   Dropping: z.object({ ItemName: z.string(), Count: z.number() }),
-  EggItem: z.string(),
 });
 const RawCritterSchema = z.object({ DisplayName: RawTextSchema });
+const RawMerchantEntrySchema = z.object({
+  Bundle: z.string(),
+  Type: z.string(),
+  EntryId: z.string(),
+  Cost: z.number(),
+});
+const RawCarePackageSchema = z.object({
+  Kind: z.string(),
+  Pool: z.array(z.string()).optional(),
+});
 
 interface SourceRef {
   kind: ItemSourceKind;
   sourceId: string;
-  sourceName: LocalizedText;
+  sourceName: LocalizedText | null;
+}
+
+/** What a source says about an item; every field is optional because the data may not say. */
+interface SourceDetails {
+  minAmount?: number;
+  maxAmount?: number;
+  chance?: number;
+  price?: number;
 }
 
 function parseRow<T>(schema: z.ZodType<T>, row: unknown, label: string): T {
@@ -46,22 +65,17 @@ function requireName(raw: z.infer<typeof RawTextSchema>, label: string): Localiz
   return name;
 }
 
-function buildSource(
-  ref: SourceRef,
-  itemId: string,
-  minAmount: number,
-  maxAmount: number,
-  chance: number,
-): ItemSource {
+function buildSource(ref: SourceRef, itemId: string, details: SourceDetails = {}): ItemSource {
   return ItemSourceSchema.parse({
     id: `${ref.kind}:${ref.sourceId}:${itemId}`,
     itemId,
     kind: ref.kind,
     sourceId: ref.sourceId,
     sourceName: ref.sourceName,
-    minAmount,
-    maxAmount,
-    chance,
+    minAmount: details.minAmount ?? null,
+    maxAmount: details.maxAmount ?? null,
+    chance: details.chance ?? null,
+    price: details.price ?? null,
   });
 }
 
@@ -78,7 +92,13 @@ function dropsToSources(ref: SourceRef, drops: z.infer<typeof RawDropsSchema>): 
     const hit = positive.reduce((sum, { weight }) => sum + weight, 0);
     const amounts = positive.map(({ amount }) => amount);
     const chance = Math.round((hit / total) * 10_000) / 100;
-    return [buildSource(ref, ItemName, Math.min(...amounts), Math.max(...amounts), chance)];
+    return [
+      buildSource(ref, ItemName, {
+        minAmount: Math.min(...amounts),
+        maxAmount: Math.max(...amounts),
+        chance,
+      }),
+    ];
   });
 }
 
@@ -107,17 +127,16 @@ export function extractPlantSources(
     Object.entries(rows).flatMap(([sourceId, row]) => {
       const plant = parseRow(RawPlantSchema, row, `Plant "${sourceId}"`);
       if (plant.IsNode && nodeIds.has(sourceId)) return [];
-      const ref = {
-        kind: "plant",
-        sourceId,
-        sourceName: requireName(plant.DisplayName, sourceId),
-      } as const;
-      return dropsToSources(ref, plant.PlantDrops);
+      const sourceName = requireName(plant.DisplayName, sourceId);
+      return [
+        ...dropsToSources({ kind: "plant", sourceId, sourceName }, plant.PlantDrops),
+        ...dropsToSources({ kind: "plant-fruit", sourceId, sourceName }, plant.FruitDrops ?? []),
+      ];
     }),
   );
 }
 
-/** What a ranch animal yields: a product, droppings and an egg (names come from `DT_Critters`). */
+/** What a ranch animal yields: a product and droppings (names come from `DT_Critters`). */
 export function extractAnimalSources(
   animalRows: Record<string, unknown>,
   critterRows: Record<string, unknown>,
@@ -133,11 +152,69 @@ export function extractAnimalSources(
     const yields = [
       ["animal-product", animal.ItemDrop.ItemName, animal.ItemDrop.Count],
       ["animal-droppings", animal.Dropping.ItemName, animal.Dropping.Count],
-      ["animal-egg", animal.EggItem, 1],
     ] as const;
     return yields.map(([kind, itemId, count]) =>
-      buildSource({ kind, sourceId, sourceName }, itemId, count, count, 100),
+      buildSource({ kind, sourceId, sourceName }, itemId, {
+        minAmount: count,
+        maxAmount: count,
+        chance: 100,
+      }),
     );
+  });
+}
+
+/**
+ * Items merchants sell (`Type = Item`), with their price. Blueprints, mech parts and the like are
+ * not items. An item sold in several bundles keeps its cheapest offer.
+ */
+export function extractMerchantSources(entryRows: Record<string, unknown>): ItemSource[] {
+  const cheapest = new Map<string, { bundle: string; cost: number }>();
+  for (const [key, row] of Object.entries(entryRows)) {
+    const entry = parseRow(RawMerchantEntrySchema, row, `Merchant entry "${key}"`);
+    if (!entry.Type.endsWith("::Item")) continue;
+    const best = cheapest.get(entry.EntryId);
+    if (!best || entry.Cost < best.cost) {
+      cheapest.set(entry.EntryId, { bundle: entry.Bundle, cost: entry.Cost });
+    }
+  }
+  return [...cheapest].map(([itemId, { bundle, cost }]) =>
+    buildSource({ kind: "merchant", sourceId: bundle, sourceName: null }, itemId, { price: cost }),
+  );
+}
+
+/**
+ * Items that can arrive in a care package. The data lists the pool but not the quantity or the
+ * chance of each item, so those stay unknown.
+ */
+export function extractCarePackageSources(rewardRows: Record<string, unknown>): ItemSource[] {
+  return Object.entries(rewardRows).flatMap(([rewardId, row]) => {
+    const reward = parseRow(RawCarePackageSchema, row, `Care package "${rewardId}"`);
+    const isItemPool =
+      reward.Kind.endsWith("::Resources") || reward.Kind.endsWith("::FrameResource");
+    if (!isItemPool) return [];
+    return (reward.Pool ?? []).map((itemId) =>
+      buildSource({ kind: "care-package", sourceId: rewardId, sourceName: null }, itemId),
+    );
+  });
+}
+
+/** A mutated crop `X_Rare` grows from the modified seeds `XSeeds_Refined`. */
+const MUTATED_SUFFIX = "_Rare";
+
+/**
+ * The data never links a mutated crop to its seeds: it is code-driven. The link is inferred from
+ * the naming pattern (`Wheat_Rare` <- `WheatSeeds_Refined`), which the game's own seed text
+ * confirms ("Grows into a Mutated Wheat") and which holds for every mutated crop.
+ */
+export function extractMutationSources(
+  items: readonly { id: string; name: LocalizedText }[],
+): ItemSource[] {
+  const byId = new Map(items.map((item) => [item.id, item]));
+  return items.flatMap(({ id }) => {
+    if (!id.endsWith(MUTATED_SUFFIX)) return [];
+    const seed = byId.get(`${id.slice(0, -MUTATED_SUFFIX.length)}Seeds_Refined`);
+    if (!seed) return [];
+    return [buildSource({ kind: "mutation", sourceId: seed.id, sourceName: seed.name }, id)];
   });
 }
 
@@ -160,11 +237,29 @@ export function filterUsableSources(
   for (const source of sources) {
     if (!itemIds.has(source.itemId)) {
       warnings.push(`Dropped item source "${source.id}": the game data references an unknown item`);
-    } else if (isUnfinished(source.sourceName.en)) {
+    } else if (source.sourceName !== null && isUnfinished(source.sourceName.en)) {
       warnings.push(`Dropped item source "${source.id}": unfinished or obsolete content`);
     } else {
       kept.push(source);
     }
   }
   return { kept, warnings };
+}
+
+/**
+ * Some ids differ from the item's only by letter case (`SoftwoodLog` vs `SoftWoodLog`). When the
+ * only difference is case, the source is re-pointed at the real item instead of being dropped.
+ */
+export function reconcileItemIdCase(
+  sources: readonly ItemSource[],
+  itemIds: ReadonlySet<string>,
+): ItemSource[] {
+  const byLowercase = new Map([...itemIds].map((id) => [id.toLowerCase(), id]));
+  return sources.map((source) => {
+    if (itemIds.has(source.itemId)) return source;
+    const real = byLowercase.get(source.itemId.toLowerCase());
+    if (!real) return source;
+    const prefix = `${source.kind}:${source.sourceId}:`;
+    return { ...source, itemId: real, id: `${prefix}${real}` };
+  });
 }

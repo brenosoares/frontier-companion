@@ -1,11 +1,13 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { buildDataset, type RawTableSource } from "./build-dataset";
 import {
+  BLUEPRINTS_DIR,
   DATA_TABLES_DIR,
   GAME_VERSION,
   OUTPUT_DIR,
   PIXEL_ICONS_DIR,
+  PUBLIC_ANIMAL_ICONS_DIR,
   PUBLIC_CONSTRUCT_ICONS_DIR,
   PUBLIC_ITEM_ICONS_DIR,
 } from "./config";
@@ -16,6 +18,13 @@ const fileSource: RawTableSource = {
   async readTable(tableName) {
     const file = path.join(DATA_TABLES_DIR, `${tableName}.json`);
     return JSON.parse(await readFile(file, "utf-8"));
+  },
+  async readBlueprint(relativePath) {
+    return JSON.parse(await readFile(path.join(BLUEPRINTS_DIR, relativePath), "utf-8"));
+  },
+  async listBlueprints(relativeDirectory) {
+    const entries = await readdir(path.join(BLUEPRINTS_DIR, relativeDirectory));
+    return entries.filter((file) => file.startsWith("BP_") && file.endsWith(".json")).sort();
   },
 };
 
@@ -68,6 +77,11 @@ async function main(): Promise<void> {
     PIXEL_ICONS_DIR,
     PUBLIC_CONSTRUCT_ICONS_DIR,
   );
+  const animalIcons = await copyIcons(
+    dataset.animals.map((animal) => animal.icon),
+    PIXEL_ICONS_DIR,
+    PUBLIC_ANIMAL_ICONS_DIR,
+  );
   const itemsWithoutIcon = dataset.items.filter((item) => item.icon === null).map((i) => i.id);
   const constructsWithoutIcon = dataset.constructs
     .filter((construct) => construct.icon === null)
@@ -78,9 +92,11 @@ async function main(): Promise<void> {
   console.warn(`✔ Emitted to ${OUTPUT_DIR}`);
   console.warn(`  game ${manifest.gameVersion} · data ${manifest.dataVersion}`);
   console.warn(
-    `  ${counts.items} items · ${counts.recipes} recipes · ${counts.stations} stations · ${counts.itemSources} item sources · ${counts.constructs} constructs`,
+    `  ${counts.items} items · ${counts.recipes} recipes · ${counts.stations} stations · ${counts.itemSources} item sources · ${counts.constructs} constructs · ${counts.animals} animals`,
   );
-  console.warn(`  ${itemIcons} item icons · ${constructIcons} construct icons published`);
+  console.warn(
+    `  ${itemIcons} item icons · ${constructIcons} construct icons · ${animalIcons} animal icons published`,
+  );
   reportMissing("items", itemsWithoutIcon);
   reportMissing("constructs", constructsWithoutIcon);
   for (const [flag, count] of gating) {
