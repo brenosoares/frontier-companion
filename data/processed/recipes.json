@@ -1,0 +1,7126 @@
+[
+  {
+    "id": "AdvancedFuel1",
+    "output": {
+      "itemId": "AdvancedFuel1",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageOil",
+        "amount": 1
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker"
+    ]
+  },
+  {
+    "id": "AdvancedFuel125",
+    "output": {
+      "itemId": "AdvancedFuel1",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageOil",
+        "amount": 25
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker3"
+    ]
+  },
+  {
+    "id": "AdvancedFuel15",
+    "output": {
+      "itemId": "AdvancedFuel1",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageOil",
+        "amount": 5
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker2"
+    ]
+  },
+  {
+    "id": "AdvancedFuel2",
+    "output": {
+      "itemId": "AdvancedFuel2",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CarootJuice",
+        "amount": 1
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 1
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker"
+    ]
+  },
+  {
+    "id": "AdvancedFuel225",
+    "output": {
+      "itemId": "AdvancedFuel2",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CarootJuice",
+        "amount": 25
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 25
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker3"
+    ]
+  },
+  {
+    "id": "AdvancedFuel25",
+    "output": {
+      "itemId": "AdvancedFuel2",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CarootJuice",
+        "amount": 5
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 5
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker2"
+    ]
+  },
+  {
+    "id": "AdvancedFuel3",
+    "output": {
+      "itemId": "AdvancedFuel3",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 1
+      },
+      {
+        "itemId": "BloomsOil",
+        "amount": 1
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker"
+    ]
+  },
+  {
+    "id": "AdvancedFuel325",
+    "output": {
+      "itemId": "AdvancedFuel3",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 25
+      },
+      {
+        "itemId": "BloomsOil",
+        "amount": 25
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker3"
+    ]
+  },
+  {
+    "id": "AdvancedFuel35",
+    "output": {
+      "itemId": "AdvancedFuel3",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 5
+      },
+      {
+        "itemId": "BloomsOil",
+        "amount": 5
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker2"
+    ]
+  },
+  {
+    "id": "AdvancedFuel4",
+    "output": {
+      "itemId": "AdvancedFuel4",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "FuelPlantOil",
+        "amount": 1
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 1
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker"
+    ]
+  },
+  {
+    "id": "AdvancedFuel425",
+    "output": {
+      "itemId": "AdvancedFuel4",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "FuelPlantOil",
+        "amount": 25
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 25
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 75
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker3"
+    ]
+  },
+  {
+    "id": "AdvancedFuel45",
+    "output": {
+      "itemId": "AdvancedFuel4",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "FuelPlantOil",
+        "amount": 5
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 5
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 15
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker2"
+    ]
+  },
+  {
+    "id": "AdvancedFuel5",
+    "output": {
+      "itemId": "AdvancedFuel5",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipOil",
+        "amount": 1
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 1
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker"
+    ]
+  },
+  {
+    "id": "AdvancedFuel525",
+    "output": {
+      "itemId": "AdvancedFuel5",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipOil",
+        "amount": 25
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 25
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker3"
+    ]
+  },
+  {
+    "id": "AdvancedFuel55",
+    "output": {
+      "itemId": "AdvancedFuel5",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipOil",
+        "amount": 5
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 5
+      },
+      {
+        "itemId": "FuelRock",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FuelMaker2"
+    ]
+  },
+  {
+    "id": "AdvancedRepairKit",
+    "output": {
+      "itemId": "AdvancedRepairKit",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "SteelBar",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "AluminiumWire",
+    "output": {
+      "itemId": "AluminiumWire",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "AluminiumRod",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "Amber",
+    "output": {
+      "itemId": "Amber",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "AmberFragments",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BabyBlueDye",
+    "output": {
+      "itemId": "BabyBlueDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "BlueDye",
+        "amount": 1
+      },
+      {
+        "itemId": "WhiteDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "BasicRepairKit",
+    "output": {
+      "itemId": "BasicRepairKit",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "Battery",
+    "output": {
+      "itemId": "Battery",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SilverWire",
+        "amount": 2
+      },
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 30
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BeretHat",
+    "output": {
+      "itemId": "BeretHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Fur",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "BlackDye",
+    "output": {
+      "itemId": "BlackDye",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "BlackColorflower",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "ColorRefiner"
+    ]
+  },
+  {
+    "id": "BloomsOil1",
+    "output": {
+      "itemId": "BloomsOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "BloomsOil25",
+    "output": {
+      "itemId": "BloomsOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "BloomsOil5",
+    "output": {
+      "itemId": "BloomsOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "BloomsSeeds_Refined1",
+    "output": {
+      "itemId": "BloomsSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BloomsSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "BloomsSeeds_Refined25",
+    "output": {
+      "itemId": "BloomsSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "BloomsSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "BloomsSeeds_Refined5",
+    "output": {
+      "itemId": "BloomsSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "BloomsSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "BloomsSeeds10",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "BloomsSeeds15",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "BloomsSeeds2",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "BloomsSeeds250",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "BloomsSeeds3",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "BloomsSeeds375",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "BloomsSeeds50",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "BloomsSeeds75",
+    "output": {
+      "itemId": "BloomsSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "BlueCrystal",
+    "output": {
+      "itemId": "BlueCrystal",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CrystalShards",
+        "amount": 3
+      },
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 30
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BlueCrystalDust10",
+    "output": {
+      "itemId": "BlueCrystalDust",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystal",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder2"
+    ]
+  },
+  {
+    "id": "BlueCrystalDust2",
+    "output": {
+      "itemId": "BlueCrystalDust",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder"
+    ]
+  },
+  {
+    "id": "BlueCrystalDust50",
+    "output": {
+      "itemId": "BlueCrystalDust",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystal",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder3"
+    ]
+  },
+  {
+    "id": "BlueDye",
+    "output": {
+      "itemId": "BlueDye",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "BlueColorflower",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "ColorRefiner"
+    ]
+  },
+  {
+    "id": "BlueLens1",
+    "output": {
+      "itemId": "BlueLens",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystalDust",
+        "amount": 1
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "BlueLens25",
+    "output": {
+      "itemId": "BlueLens",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystalDust",
+        "amount": 25
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "BlueLens5",
+    "output": {
+      "itemId": "BlueLens",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "BlueCrystalDust",
+        "amount": 5
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "BowAccessory",
+    "output": {
+      "itemId": "BowAccessory",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "BronzeBar1",
+    "output": {
+      "itemId": "BronzeBar",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "TinOre",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "BronzeBar25",
+    "output": {
+      "itemId": "BronzeBar",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 25
+      },
+      {
+        "itemId": "TinOre",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "BronzeBar5",
+    "output": {
+      "itemId": "BronzeBar",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 5
+      },
+      {
+        "itemId": "TinOre",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "BronzeElectronics",
+    "output": {
+      "itemId": "BronzeElectronics",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BronzeBar",
+        "amount": 2
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BronzeFrame",
+    "output": {
+      "itemId": "BronzeFrame",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BronzeBar",
+        "amount": 4
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BronzeParts",
+    "output": {
+      "itemId": "BronzeParts",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BronzeBar",
+        "amount": 3
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "BrownDye",
+    "output": {
+      "itemId": "BrownDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      },
+      {
+        "itemId": "GreenDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "BumbleBeeYellowDye",
+    "output": {
+      "itemId": "BumbleBeeYellowDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "OrangeDye",
+        "amount": 1
+      },
+      {
+        "itemId": "YellowDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "CamoGreenDye",
+    "output": {
+      "itemId": "CamoGreenDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "GreenDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlackDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "CarootJuice1",
+    "output": {
+      "itemId": "CarootJuice",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "CarootJuice25",
+    "output": {
+      "itemId": "CarootJuice",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "CarootJuice5",
+    "output": {
+      "itemId": "CarootJuice",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "CarootSeeds_Refined1",
+    "output": {
+      "itemId": "CarootSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CarootSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "CarootSeeds_Refined25",
+    "output": {
+      "itemId": "CarootSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CarootSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "CarootSeeds_Refined5",
+    "output": {
+      "itemId": "CarootSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CarootSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "CarootSeeds10",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CarootSeeds15",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CarootSeeds2",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CarootSeeds250",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CarootSeeds3",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CarootSeeds375",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CarootSeeds50",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "CarootSeeds75",
+    "output": {
+      "itemId": "CarootSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Caroot_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "ChromaizeOil1",
+    "output": {
+      "itemId": "ChromaizeOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "ChromaizeOil25",
+    "output": {
+      "itemId": "ChromaizeOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "ChromaizeOil5",
+    "output": {
+      "itemId": "ChromaizeOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds_Refined1",
+    "output": {
+      "itemId": "ChromaizeSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ChromaizeSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds_Refined25",
+    "output": {
+      "itemId": "ChromaizeSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "ChromaizeSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds_Refined5",
+    "output": {
+      "itemId": "ChromaizeSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "ChromaizeSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds10",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds15",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds2",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds250",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds3",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds375",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds50",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "ChromaizeSeeds75",
+    "output": {
+      "itemId": "ChromaizeSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Chromaize_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "Clay",
+    "output": {
+      "itemId": "Clay",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Sand",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "ClearGlass1",
+    "output": {
+      "itemId": "ClearGlass",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Sand",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "ClearGlass25",
+    "output": {
+      "itemId": "ClearGlass",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Sand",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 180,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "ClearGlass5",
+    "output": {
+      "itemId": "ClearGlass",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Sand",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 180,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "ClearLens1",
+    "output": {
+      "itemId": "ClearLens",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ClearGlass",
+        "amount": 2
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "ClearLens25",
+    "output": {
+      "itemId": "ClearLens",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "ClearGlass",
+        "amount": 50
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "ClearLens5",
+    "output": {
+      "itemId": "ClearLens",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "ClearGlass",
+        "amount": 10
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "Cloth",
+    "output": {
+      "itemId": "Cloth",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Fur",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "Loom"
+    ]
+  },
+  {
+    "id": "CoilPlantOil1",
+    "output": {
+      "itemId": "CoilPlantOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "CoilPlantOil25",
+    "output": {
+      "itemId": "CoilPlantOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "CoilPlantOil5",
+    "output": {
+      "itemId": "CoilPlantOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds_Refined1",
+    "output": {
+      "itemId": "CoilPlantSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlantSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds_Refined25",
+    "output": {
+      "itemId": "CoilPlantSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlantSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds_Refined5",
+    "output": {
+      "itemId": "CoilPlantSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlantSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds10",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds15",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds2",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds250",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds3",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds375",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds50",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "CoilPlantSeeds75",
+    "output": {
+      "itemId": "CoilPlantSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "Concrete",
+    "output": {
+      "itemId": "Concrete",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Sand",
+        "amount": 2
+      },
+      {
+        "itemId": "CarootJuice",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CopperWire",
+    "output": {
+      "itemId": "CopperWire",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CottonCropOil1",
+    "output": {
+      "itemId": "CottonCropOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "CottonCropOil25",
+    "output": {
+      "itemId": "CottonCropOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "CottonCropOil5",
+    "output": {
+      "itemId": "CottonCropOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds_Refined1",
+    "output": {
+      "itemId": "CottonCropSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCropSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds_Refined25",
+    "output": {
+      "itemId": "CottonCropSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCropSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds_Refined5",
+    "output": {
+      "itemId": "CottonCropSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCropSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds10",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds15",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds2",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds250",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds3",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds375",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds50",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "CottonCropSeeds75",
+    "output": {
+      "itemId": "CottonCropSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "CottonCrop_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "CowboyHat",
+    "output": {
+      "itemId": "CowboyHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "CrimsonRedDye",
+    "output": {
+      "itemId": "CrimsonRedDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlackDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "CritterFood11",
+    "output": {
+      "itemId": "CritterFood1",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "CritterFood125",
+    "output": {
+      "itemId": "CritterFood1",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CritterFood15",
+    "output": {
+      "itemId": "CritterFood1",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CritterFood21",
+    "output": {
+      "itemId": "CritterFood2",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "CritterFood225",
+    "output": {
+      "itemId": "CritterFood2",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CritterFood25",
+    "output": {
+      "itemId": "CritterFood2",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CritterFood31",
+    "output": {
+      "itemId": "CritterFood3",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "CritterFood325",
+    "output": {
+      "itemId": "CritterFood3",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CritterFood35",
+    "output": {
+      "itemId": "CritterFood3",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "CrystalMatrix",
+    "output": {
+      "itemId": "CrystalMatrix",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "RedLens",
+        "amount": 1
+      },
+      {
+        "itemId": "YellowLens",
+        "amount": 1
+      },
+      {
+        "itemId": "BlueLens",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CubeMetalElectronics",
+    "output": {
+      "itemId": "CubeMetalElectronics",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 1
+      },
+      {
+        "itemId": "GloFruitDried",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CubeMetalFrame",
+    "output": {
+      "itemId": "CubeMetalFrame",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 4
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CubeMetalParts",
+    "output": {
+      "itemId": "CubeMetalParts",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 3
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 50
+      },
+      {
+        "itemId": "Spring",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "CubeMetalRefined1",
+    "output": {
+      "itemId": "CubeMetalRefined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalOre",
+        "amount": 1
+      },
+      {
+        "itemId": "Coal",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "CubeMetalRefined25",
+    "output": {
+      "itemId": "CubeMetalRefined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalOre",
+        "amount": 25
+      },
+      {
+        "itemId": "Coal",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "CubeMetalRefined5",
+    "output": {
+      "itemId": "CubeMetalRefined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "CubeMetalOre",
+        "amount": 5
+      },
+      {
+        "itemId": "Coal",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "DarkBlueDye",
+    "output": {
+      "itemId": "DarkBlueDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "BlueDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlackDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "DeepPurpleDye",
+    "output": {
+      "itemId": "DeepPurpleDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "PurpleDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlackDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "ElectricPlantOil1",
+    "output": {
+      "itemId": "ElectricPlantOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "ElectricPlantOil25",
+    "output": {
+      "itemId": "ElectricPlantOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "ElectricPlantOil5",
+    "output": {
+      "itemId": "ElectricPlantOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds_Refined1",
+    "output": {
+      "itemId": "ElectricPlantSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds_Refined25",
+    "output": {
+      "itemId": "ElectricPlantSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds_Refined5",
+    "output": {
+      "itemId": "ElectricPlantSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlantSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds10",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds15",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds2",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds250",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds3",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds375",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds50",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "ElectricPlantSeeds75",
+    "output": {
+      "itemId": "ElectricPlantSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "ElectricPlant_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "FertilizerX2",
+    "output": {
+      "itemId": "FertilizerX2",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "PotassicPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost"
+    ]
+  },
+  {
+    "id": "FertilizerX2125",
+    "output": {
+      "itemId": "FertilizerX2",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "PotassicPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost2"
+    ]
+  },
+  {
+    "id": "FertilizerX4",
+    "output": {
+      "itemId": "FertilizerX4",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 3
+      },
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 3
+      },
+      {
+        "itemId": "PotassicPowder",
+        "amount": 3
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost"
+    ]
+  },
+  {
+    "id": "FertilizerX4125",
+    "output": {
+      "itemId": "FertilizerX4",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 15
+      },
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 15
+      },
+      {
+        "itemId": "PotassicPowder",
+        "amount": 15
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 15
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost2"
+    ]
+  },
+  {
+    "id": "FlowerCrown",
+    "output": {
+      "itemId": "FlowerCrown",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "FuelPlantOil1",
+    "output": {
+      "itemId": "FuelPlantOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "FuelPlantOil25",
+    "output": {
+      "itemId": "FuelPlantOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "FuelPlantOil5",
+    "output": {
+      "itemId": "FuelPlantOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds_Refined1",
+    "output": {
+      "itemId": "FuelWildSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWildSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds_Refined25",
+    "output": {
+      "itemId": "FuelWildSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWildSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds_Refined5",
+    "output": {
+      "itemId": "FuelWildSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWildSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds10",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds15",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds2",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds250",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds3",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds375",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds50",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "FuelWildSeeds75",
+    "output": {
+      "itemId": "FuelWildSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "FuelWild_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "GloFruitDried1",
+    "output": {
+      "itemId": "GloFruitDried",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "GloFruit",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "GloFruitDried25",
+    "output": {
+      "itemId": "GloFruitDried",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "GloFruit",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "GloFruitDried5",
+    "output": {
+      "itemId": "GloFruitDried",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "GloFruit",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "GoldBar1",
+    "output": {
+      "itemId": "GoldBar",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "GoldOre",
+        "amount": 1
+      },
+      {
+        "itemId": "Coal",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "GoldBar25",
+    "output": {
+      "itemId": "GoldBar",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "GoldOre",
+        "amount": 25
+      },
+      {
+        "itemId": "Coal",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "GoldBar5",
+    "output": {
+      "itemId": "GoldBar",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "GoldOre",
+        "amount": 5
+      },
+      {
+        "itemId": "Coal",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "GoldWire",
+    "output": {
+      "itemId": "GoldWire",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "GoldBar",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "GrayDye",
+    "output": {
+      "itemId": "GrayDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "WhiteDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlackDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "GreenDye",
+    "output": {
+      "itemId": "GreenDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "BlueDye",
+        "amount": 1
+      },
+      {
+        "itemId": "YellowDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "HardwoodGigaSprout1",
+    "output": {
+      "itemId": "HardwoodGigaSprout",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "BulbTreeSeed",
+        "amount": 10
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "HardwoodGigaSprout25",
+    "output": {
+      "itemId": "HardwoodGigaSprout",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "BulbTreeSeed",
+        "amount": 250
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "HardwoodGigaSprout5",
+    "output": {
+      "itemId": "HardwoodGigaSprout",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "BulbTreeSeed",
+        "amount": 50
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "Helmet",
+    "output": {
+      "itemId": "Helmet",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Rope",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "IronBar1",
+    "output": {
+      "itemId": "IronBar",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronOre",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "IronBar25",
+    "output": {
+      "itemId": "IronBar",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "IronOre",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "IronBar5",
+    "output": {
+      "itemId": "IronBar",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "IronOre",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "IronElectronics",
+    "output": {
+      "itemId": "IronElectronics",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 2,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "IronFrame",
+    "output": {
+      "itemId": "IronFrame",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 4
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 2,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "IronMechanicalParts",
+    "output": {
+      "itemId": "IronMechanicalParts",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 3
+      },
+      {
+        "itemId": "FuelPlantOil",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 2,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "LargeItemTrailer",
+    "output": {
+      "itemId": "LargeItemTrailer",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 40
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "LargeItemTrailer3",
+    "output": {
+      "itemId": "LargeItemTrailer3",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 150
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "LargeItemTrailerMini",
+    "output": {
+      "itemId": "LargeItemTrailerMini",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 15
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "LightBulb1",
+    "output": {
+      "itemId": "LightBulb",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "LightBulb25",
+    "output": {
+      "itemId": "LightBulb",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "LightBulb5",
+    "output": {
+      "itemId": "LightBulb",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Blooms",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "MagentaDye",
+    "output": {
+      "itemId": "MagentaDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "PinkDye",
+        "amount": 1
+      },
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "NitrogenicFertilizer",
+    "output": {
+      "itemId": "NitrogenicFertilizer",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost"
+    ]
+  },
+  {
+    "id": "NitrogenicFertilizer125",
+    "output": {
+      "itemId": "NitrogenicFertilizer",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost2"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder10",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicDropping",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder125",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "Wood",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder25",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Wood",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder250",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicDropping",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder5",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Wood",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "NitrogenicPowder50",
+    "output": {
+      "itemId": "NitrogenicPowder",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "NitrogenicDropping",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "NoxiousSpore100",
+    "output": {
+      "itemId": "NoxiousSpore",
+      "amount": 100
+    },
+    "inputs": [
+      {
+        "itemId": "TallTech",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder2"
+    ]
+  },
+  {
+    "id": "NoxiousSpore20",
+    "output": {
+      "itemId": "NoxiousSpore",
+      "amount": 20
+    },
+    "inputs": [
+      {
+        "itemId": "TallTech",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder"
+    ]
+  },
+  {
+    "id": "NoxiousSpore500",
+    "output": {
+      "itemId": "NoxiousSpore",
+      "amount": 500
+    },
+    "inputs": [
+      {
+        "itemId": "TallTech",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder3"
+    ]
+  },
+  {
+    "id": "OrangeDye",
+    "output": {
+      "itemId": "OrangeDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      },
+      {
+        "itemId": "YellowDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "PapristalkOil1",
+    "output": {
+      "itemId": "PapristalkOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "PapristalkOil25",
+    "output": {
+      "itemId": "PapristalkOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "PapristalkOil5",
+    "output": {
+      "itemId": "PapristalkOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds_Refined1",
+    "output": {
+      "itemId": "PapristalkSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PapristalkSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds_Refined25",
+    "output": {
+      "itemId": "PapristalkSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PapristalkSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds_Refined5",
+    "output": {
+      "itemId": "PapristalkSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "PapristalkSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds10",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds15",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds2",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds250",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds3",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds375",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds50",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "PapristalkSeeds75",
+    "output": {
+      "itemId": "PapristalkSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Papristalk_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "PhosphoricFertilizer",
+    "output": {
+      "itemId": "PhosphoricFertilizer",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost"
+    ]
+  },
+  {
+    "id": "PhosphoricFertilizer125",
+    "output": {
+      "itemId": "PhosphoricFertilizer",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "PhosphoricPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost2"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder10",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "PhosphoricDropping",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder125",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "Softwood",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder25",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Softwood",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder250",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "PhosphoricDropping",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder5",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Softwood",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "PhosphoricPowder50",
+    "output": {
+      "itemId": "PhosphoricPowder",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "PhosphoricDropping",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "Pillow",
+    "output": {
+      "itemId": "Pillow",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 1
+      },
+      {
+        "itemId": "Feather",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "Loom"
+    ]
+  },
+  {
+    "id": "PinkDye",
+    "output": {
+      "itemId": "PinkDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      },
+      {
+        "itemId": "WhiteDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "PlantOil1",
+    "output": {
+      "itemId": "PlantOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "PlantOil25",
+    "output": {
+      "itemId": "PlantOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "PlantOil5",
+    "output": {
+      "itemId": "PlantOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "PolyberryOil1",
+    "output": {
+      "itemId": "PolyberryOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "PolyberryOil25",
+    "output": {
+      "itemId": "PolyberryOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "PolyberryOil5",
+    "output": {
+      "itemId": "PolyberryOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds_Refined1",
+    "output": {
+      "itemId": "PolyberrySeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PolyberrySeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds_Refined25",
+    "output": {
+      "itemId": "PolyberrySeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PolyberrySeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds_Refined5",
+    "output": {
+      "itemId": "PolyberrySeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "PolyberrySeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds10",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds15",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds2",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds250",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds3",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds375",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds50",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "PolyberrySeeds75",
+    "output": {
+      "itemId": "PolyberrySeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "Polymer",
+    "output": {
+      "itemId": "Polymer",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Polyberry",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "PotassicFertilizer",
+    "output": {
+      "itemId": "PotassicFertilizer",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PotassicPowder",
+        "amount": 1
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost"
+    ]
+  },
+  {
+    "id": "PotassicFertilizer125",
+    "output": {
+      "itemId": "PotassicFertilizer",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "PotassicPowder",
+        "amount": 5
+      },
+      {
+        "itemId": "PlantFiber",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 90,
+    "bookLevel": 0,
+    "stations": [
+      "Compost2"
+    ]
+  },
+  {
+    "id": "PotassicPowder10",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "PotassicDropping",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "PotassicPowder125",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "HardWood",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PotassicPowder25",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "HardWood",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PotassicPowder250",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "PotassicDropping",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PotassicPowder5",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "HardWood",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "PotassicPowder50",
+    "output": {
+      "itemId": "PotassicPowder",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "PotassicDropping",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "PropellerHat",
+    "output": {
+      "itemId": "PropellerHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 1
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "PurpleDye",
+    "output": {
+      "itemId": "PurpleDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "BlueDye",
+        "amount": 1
+      },
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "QuartznipOil1",
+    "output": {
+      "itemId": "QuartznipOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "QuartznipOil25",
+    "output": {
+      "itemId": "QuartznipOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "QuartznipOil5",
+    "output": {
+      "itemId": "QuartznipOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds_Refined1",
+    "output": {
+      "itemId": "QuartznipSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds_Refined25",
+    "output": {
+      "itemId": "QuartznipSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds_Refined5",
+    "output": {
+      "itemId": "QuartznipSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "QuartznipSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds10",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds15",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds2",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds250",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds3",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds375",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds50",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "QuartznipSeeds75",
+    "output": {
+      "itemId": "QuartznipSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Quartznip_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "RabbageOil1",
+    "output": {
+      "itemId": "RabbageOil",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser"
+    ]
+  },
+  {
+    "id": "RabbageOil25",
+    "output": {
+      "itemId": "RabbageOil",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser3"
+    ]
+  },
+  {
+    "id": "RabbageOil5",
+    "output": {
+      "itemId": "RabbageOil",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "OilPresser2"
+    ]
+  },
+  {
+    "id": "RabbageSeeds_Refined1",
+    "output": {
+      "itemId": "RabbageSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "RabbageSeeds_Refined25",
+    "output": {
+      "itemId": "RabbageSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "RabbageSeeds_Refined5",
+    "output": {
+      "itemId": "RabbageSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "RabbageSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "RabbageSeeds10",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "RabbageSeeds15",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "RabbageSeeds2",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "RabbageSeeds250",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "RabbageSeeds3",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "RabbageSeeds375",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "RabbageSeeds50",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "RabbageSeeds75",
+    "output": {
+      "itemId": "RabbageSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Rabbage_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "RedCrystal",
+    "output": {
+      "itemId": "RedCrystal",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CrystalShards",
+        "amount": 3
+      },
+      {
+        "itemId": "RabbageOil",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "RedCrystalDust10",
+    "output": {
+      "itemId": "RedCrystalDust",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystal",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder2"
+    ]
+  },
+  {
+    "id": "RedCrystalDust2",
+    "output": {
+      "itemId": "RedCrystalDust",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder"
+    ]
+  },
+  {
+    "id": "RedCrystalDust50",
+    "output": {
+      "itemId": "RedCrystalDust",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystal",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder3"
+    ]
+  },
+  {
+    "id": "RedDye",
+    "output": {
+      "itemId": "RedDye",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "RedColorflower",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "ColorRefiner"
+    ]
+  },
+  {
+    "id": "RedLens1",
+    "output": {
+      "itemId": "RedLens",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystalDust",
+        "amount": 1
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "RedLens25",
+    "output": {
+      "itemId": "RedLens",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystalDust",
+        "amount": 25
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "RedLens5",
+    "output": {
+      "itemId": "RedLens",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "RedCrystalDust",
+        "amount": 5
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "ReindeerAntlers",
+    "output": {
+      "itemId": "ReindeerAntlers",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Softwood",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "ReinforcedTallTech",
+    "output": {
+      "itemId": "ReinforcedTallTech",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "TallTechPure",
+        "amount": 1
+      },
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "Rope",
+    "output": {
+      "itemId": "Rope",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Fur",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "Loom"
+    ]
+  },
+  {
+    "id": "SafetyOrangeDye",
+    "output": {
+      "itemId": "SafetyOrangeDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "OrangeDye",
+        "amount": 1
+      },
+      {
+        "itemId": "RedDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "Sand10",
+    "output": {
+      "itemId": "Sand",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Stone",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder2"
+    ]
+  },
+  {
+    "id": "Sand2",
+    "output": {
+      "itemId": "Sand",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Stone",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder"
+    ]
+  },
+  {
+    "id": "Sand50",
+    "output": {
+      "itemId": "Sand",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Stone",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder3"
+    ]
+  },
+  {
+    "id": "SantaHat",
+    "output": {
+      "itemId": "SantaHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 1
+      },
+      {
+        "itemId": "Fur",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "SilverBar1",
+    "output": {
+      "itemId": "SilverBar",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SilverOre",
+        "amount": 1
+      },
+      {
+        "itemId": "Coal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "SilverBar25",
+    "output": {
+      "itemId": "SilverBar",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "SilverOre",
+        "amount": 25
+      },
+      {
+        "itemId": "Coal",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "SilverBar5",
+    "output": {
+      "itemId": "SilverBar",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "SilverOre",
+        "amount": 5
+      },
+      {
+        "itemId": "Coal",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "SilverWire",
+    "output": {
+      "itemId": "SilverWire",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "SilverBar",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "SoftwoodGigaSprout1",
+    "output": {
+      "itemId": "SoftwoodGigaSprout",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PineSeed",
+        "amount": 10
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "SoftwoodGigaSprout25",
+    "output": {
+      "itemId": "SoftwoodGigaSprout",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PineSeed",
+        "amount": 250
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "SoftwoodGigaSprout5",
+    "output": {
+      "itemId": "SoftwoodGigaSprout",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "PineSeed",
+        "amount": 50
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "Spring15",
+    "output": {
+      "itemId": "Spring",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "Spring3",
+    "output": {
+      "itemId": "Spring",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "FoodProcessor"
+    ]
+  },
+  {
+    "id": "Spring75",
+    "output": {
+      "itemId": "Spring",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "CoilPlant",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SolarDehydrator"
+    ]
+  },
+  {
+    "id": "StandardRepairKit",
+    "output": {
+      "itemId": "StandardRepairKit",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "SteelBar1",
+    "output": {
+      "itemId": "SteelBar",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 2
+      },
+      {
+        "itemId": "Coal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "SteelBar25",
+    "output": {
+      "itemId": "SteelBar",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 50
+      },
+      {
+        "itemId": "Coal",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "SteelBar5",
+    "output": {
+      "itemId": "SteelBar",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 10
+      },
+      {
+        "itemId": "Coal",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  },
+  {
+    "id": "SteelElectronics",
+    "output": {
+      "itemId": "SteelElectronics",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SteelBar",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 3,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "SteelFrame",
+    "output": {
+      "itemId": "SteelFrame",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SteelBar",
+        "amount": 4
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 3,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "SteelMechanicalParts",
+    "output": {
+      "itemId": "SteelMechanicalParts",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SteelBar",
+        "amount": 3
+      },
+      {
+        "itemId": "BloomsOil",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 3,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "StorageTrailer",
+    "output": {
+      "itemId": "StorageTrailer",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 40
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "StorageTrailer3",
+    "output": {
+      "itemId": "StorageTrailer3",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 150
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "StorageTrailerMini",
+    "output": {
+      "itemId": "StorageTrailerMini",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 15
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "HeavyUtilityCrafter"
+    ]
+  },
+  {
+    "id": "StrawHat",
+    "output": {
+      "itemId": "StrawHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "Sunglasses",
+    "output": {
+      "itemId": "Sunglasses",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "ClearGlass",
+        "amount": 2
+      },
+      {
+        "itemId": "Coal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "TallTechPure",
+    "output": {
+      "itemId": "TallTechPure",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "TallTech",
+        "amount": 3
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "TopHat",
+    "output": {
+      "itemId": "TopHat",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "Cloth",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "TurquoiseDye",
+    "output": {
+      "itemId": "TurquoiseDye",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "GreenDye",
+        "amount": 1
+      },
+      {
+        "itemId": "BlueDye",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "ColorMixer"
+    ]
+  },
+  {
+    "id": "VikingHelmet",
+    "output": {
+      "itemId": "VikingHelmet",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "IronBar",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Dresser"
+    ]
+  },
+  {
+    "id": "WheatSeeds_Refined1",
+    "output": {
+      "itemId": "WheatSeeds_Refined",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "WheatSeeds",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 30,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "WheatSeeds_Refined25",
+    "output": {
+      "itemId": "WheatSeeds_Refined",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "WheatSeeds",
+        "amount": 50
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "WheatSeeds_Refined5",
+    "output": {
+      "itemId": "WheatSeeds_Refined",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "WheatSeeds",
+        "amount": 10
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "WheatSeeds1",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 20
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "WheatSeeds10",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "WheatSeeds125",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 125
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 2500
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "WheatSeeds15",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 15
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat_Rare",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "WheatSeeds2",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "WheatSeeds25",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 500
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "WheatSeeds250",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 250
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "WheatSeeds3",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat_Rare",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker"
+    ]
+  },
+  {
+    "id": "WheatSeeds375",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 375
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat_Rare",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker4"
+    ]
+  },
+  {
+    "id": "WheatSeeds5",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "PlantFiber",
+        "amount": 100
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker2"
+    ]
+  },
+  {
+    "id": "WheatSeeds50",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "WheatSeeds75",
+    "output": {
+      "itemId": "WheatSeeds",
+      "amount": 75
+    },
+    "inputs": [
+      {
+        "itemId": "Wheat_Rare",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "SeedMaker3"
+    ]
+  },
+  {
+    "id": "WhiteDye",
+    "output": {
+      "itemId": "WhiteDye",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "WhiteColorflower",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "ColorRefiner"
+    ]
+  },
+  {
+    "id": "WiredTallTech",
+    "output": {
+      "itemId": "WiredTallTech",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "TallTechPure",
+        "amount": 1
+      },
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "WoodGigaSprout1",
+    "output": {
+      "itemId": "WoodGigaSprout",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "MeadowTreeLarge_GreenSeed",
+        "amount": 10
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement"
+    ]
+  },
+  {
+    "id": "WoodGigaSprout25",
+    "output": {
+      "itemId": "WoodGigaSprout",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "MeadowTreeLarge_GreenSeed",
+        "amount": 250
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 125
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement3"
+    ]
+  },
+  {
+    "id": "WoodGigaSprout5",
+    "output": {
+      "itemId": "WoodGigaSprout",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "MeadowTreeLarge_GreenSeed",
+        "amount": 50
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "SeedRefinement2"
+    ]
+  },
+  {
+    "id": "YellowCrystal",
+    "output": {
+      "itemId": "YellowCrystal",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "CrystalShards",
+        "amount": 3
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 20
+      }
+    ],
+    "timeSeconds": 0,
+    "bookLevel": 0,
+    "stations": [
+      "Assembler"
+    ]
+  },
+  {
+    "id": "YellowCrystalDust10",
+    "output": {
+      "itemId": "YellowCrystalDust",
+      "amount": 10
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder2"
+    ]
+  },
+  {
+    "id": "YellowCrystalDust2",
+    "output": {
+      "itemId": "YellowCrystalDust",
+      "amount": 2
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder"
+    ]
+  },
+  {
+    "id": "YellowCrystalDust50",
+    "output": {
+      "itemId": "YellowCrystalDust",
+      "amount": 50
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystal",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Grinder3"
+    ]
+  },
+  {
+    "id": "YellowDye",
+    "output": {
+      "itemId": "YellowDye",
+      "amount": 3
+    },
+    "inputs": [
+      {
+        "itemId": "YellowColorflower",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 60,
+    "bookLevel": 0,
+    "stations": [
+      "ColorRefiner"
+    ]
+  },
+  {
+    "id": "YellowLens1",
+    "output": {
+      "itemId": "YellowLens",
+      "amount": 1
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystalDust",
+        "amount": 1
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 1
+      },
+      {
+        "itemId": "Wood",
+        "amount": 1
+      }
+    ],
+    "timeSeconds": 120,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace"
+    ]
+  },
+  {
+    "id": "YellowLens25",
+    "output": {
+      "itemId": "YellowLens",
+      "amount": 25
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystalDust",
+        "amount": 25
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 25
+      },
+      {
+        "itemId": "Wood",
+        "amount": 25
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "Furnace3"
+    ]
+  },
+  {
+    "id": "YellowLens5",
+    "output": {
+      "itemId": "YellowLens",
+      "amount": 5
+    },
+    "inputs": [
+      {
+        "itemId": "YellowCrystalDust",
+        "amount": 5
+      },
+      {
+        "itemId": "ClearGlass",
+        "amount": 5
+      },
+      {
+        "itemId": "Wood",
+        "amount": 5
+      }
+    ],
+    "timeSeconds": 240,
+    "bookLevel": 0,
+    "stations": [
+      "FurnaceTwo"
+    ]
+  }
+]

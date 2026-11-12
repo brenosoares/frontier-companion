@@ -15,7 +15,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "check": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "data:build": "tsx scripts/data-pipeline/run.ts"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -46,6 +47,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.1.0"
   },
