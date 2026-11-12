@@ -9,6 +9,7 @@ import { localizedPath } from "@/shared/i18n/config";
 import { formatDuration, formatNumber, formatTemplate } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
 import { GameIcon } from "@/shared/ui/game-icon";
+import { ItemLine } from "@/shared/ui/item-line";
 import { Select } from "@/shared/ui/select";
 import {
   type CalculatorState,
@@ -177,14 +178,15 @@ export function MaterialsCalculator({
           )}
         </div>
 
-        <p className="text-sm">
-          {step.inputs.map((input, index) => (
-            <span key={input.itemId}>
-              {index > 0 && ", "}
-              {formatNumber(input.amount, locale)}× {nameOf(input.itemId)}
-            </span>
+        <ul className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          {step.inputs.map((input) => (
+            <li key={input.itemId}>
+              <ItemLine icon={items[input.itemId]?.icon ?? null} size={24}>
+                {formatNumber(input.amount, locale)}× {nameOf(input.itemId)}
+              </ItemLine>
+            </li>
           ))}
-        </p>
+        </ul>
 
         {options.length > 1 && (
           <Select

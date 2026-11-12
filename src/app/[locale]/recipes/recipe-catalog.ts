@@ -64,7 +64,11 @@ async function buildCatalog(locale: Locale): Promise<RecipeCatalog> {
   const stationById = new Map(stations.map((station) => [station.id, station]));
   const itemName = (id: string, l: Locale = locale) => itemById.get(id)?.name[l] ?? id;
   const costLines = (costs: readonly { itemId: string; amount: number }[]) =>
-    costs.map(({ itemId, amount }) => ({ name: itemName(itemId), amount }));
+    costs.map(({ itemId, amount }) => ({
+      name: itemName(itemId),
+      amount,
+      icon: itemById.get(itemId)?.icon ?? null,
+    }));
   const searchText = (
     names: readonly { en: string; "pt-BR": string }[],
     itemIds: readonly string[],

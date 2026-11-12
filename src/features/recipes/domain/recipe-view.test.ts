@@ -18,15 +18,16 @@ describe("toRecipeView", () => {
   it("resolves item and station ids to names, keeping quantities and order", () => {
     const view = toRecipeView(recipe, {
       itemName: (id) => `item:${id}`,
+      itemIcon: (id) => (id === "Wood" ? null : `${id}Icon`),
       stationName: (id) => `station:${id}`,
     });
 
     expect(view).toEqual({
       id: "Bar1",
-      output: { itemId: "Bar", name: "item:Bar", amount: 2 },
+      output: { itemId: "Bar", name: "item:Bar", icon: "BarIcon", amount: 2 },
       inputs: [
-        { itemId: "Ore", name: "item:Ore", amount: 3 },
-        { itemId: "Wood", name: "item:Wood", amount: 1 },
+        { itemId: "Ore", name: "item:Ore", icon: "OreIcon", amount: 3 },
+        { itemId: "Wood", name: "item:Wood", icon: null, amount: 1 },
       ],
       timeSeconds: 120,
       bookLevel: 2,

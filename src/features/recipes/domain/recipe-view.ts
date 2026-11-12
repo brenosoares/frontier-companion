@@ -4,6 +4,8 @@ export interface RecipeLine {
   itemId: string;
   /** Localized item name. */
   name: string;
+  /** Icon file name (see `Item.icon`). */
+  icon: string | null;
   amount: number;
 }
 
@@ -21,6 +23,7 @@ export interface RecipeView {
 /** Resolves ids to names. Injected so the mapping stays pure and locale-agnostic. */
 export interface RecipeNameResolver {
   itemName(itemId: string): string;
+  itemIcon(itemId: string): string | null;
   stationName(stationId: string): string;
 }
 
@@ -29,6 +32,7 @@ export function toRecipeView(recipe: Recipe, names: RecipeNameResolver): RecipeV
     itemId,
     amount,
     name: names.itemName(itemId),
+    icon: names.itemIcon(itemId),
   });
 
   return {

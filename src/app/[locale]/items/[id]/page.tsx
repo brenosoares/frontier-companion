@@ -64,9 +64,11 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
   ]);
 
   const itemNames = new Map(items.map((entry) => [entry.id, entry.name[locale]]));
+  const itemIcons = new Map(items.map((entry) => [entry.id, entry.icon]));
   const stationNames = new Map(stations.map((station) => [station.id, station.name[locale]]));
   const names = {
     itemName: (itemId: string) => itemNames.get(itemId) ?? itemId,
+    itemIcon: (itemId: string) => itemIcons.get(itemId) ?? null,
     stationName: (stationId: string) => stationNames.get(stationId) ?? stationId,
   };
   const toViews = (recipes: readonly Recipe[]) =>
