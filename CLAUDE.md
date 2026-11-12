@@ -37,8 +37,9 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 
 ## 4. Limites legais e de privacidade (INEGOCIÁVEIS)
 
-- **Nunca** commitar: dumps do jogo (`FarMech/`, `data/raw`), PNGs/ícones oficiais, áudio, textos de EULA (`DT_Agreements`), falas (`ST_VOText`, `DT_AdditionalSpeechLineData`), segredos ou `.env*`. Os dados brutos ficam **fora do repo** (`RAW_DATA_DIR`).
-- Assets e dados processados do jogo só entram no repositório após o **gate legal** (PLANO.md §7). Até lá, use placeholders.
+- **Nunca** commitar: dumps brutos do jogo (`FarMech/`, `data/raw`), PNGs/ícones oficiais, áudio, textos de EULA (`DT_Agreements`), falas (`ST_VOText`, `DT_AdditionalSpeechLineData`), segredos ou `.env*`. Os dados brutos ficam **fora do repo** (`RAW_DATA_DIR`).
+- **Nosso JSON curado (`data/processed/`) é versionado** e é a única forma de dado do jogo que o app consome. Ele é gerado **somente** por `pnpm data:build` (nunca editar à mão) e contém só o que a UI usa, em schemas nossos (ADR 0004). Não inclua nele lore/falas/EULA, caminhos de asset do engine, nem campos "por garantia".
+- Ícones/PNGs e qualquer asset gráfico oficial continuam fora do repo até o **gate legal** (PLANO.md §7). Até lá, use placeholders. O gate também vale para tornar o repositório público (o JSON curado tem nomes e descrições do jogo).
 - Não usar logo/arte oficial como identidade do site; sempre exibir o disclaimer de projeto não oficial.
 - Coletar o mínimo de dados pessoais (meta: zero). Sem fontes/CDNs/embeds de terceiros que vazem IP; fontes via `next/font`.
 - Logs e erros sem PII. Mensagens de erro ao cliente são genéricas.

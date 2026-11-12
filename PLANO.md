@@ -104,16 +104,20 @@ Objetivo: saber **o que** podemos publicar e **o que** o produto faz.
 
 Objetivo: transformar JSON bruto em dados **confiáveis e tipados**.
 
-- [ ] Definir schemas Zod por entidade (`Item`, `Recipe`, `Mech`, …) em `features/*/domain`.
-- [ ] Script `ingest`: lê `data/raw`, **valida** (falha com relatório claro de erros), **sanitiza** (remove campos internos/paths/PII), **normaliza** (IDs estáveis, slugs, enums, referências cruzadas resolvidas).
-- [ ] Verificação de **integridade referencial** (receita aponta para item que existe?).
-- [ ] Emite `data/processed/*.json` (ou módulos TS) já enxutos — só o que a UI usa.
-- [ ] Versionamento dos dados: campo `gameVersion` + `dataVersion`; changelog automático entre versões (diff de datamining → "o que mudou no patch").
-- [ ] Interfaces `XRepository` + implementação `JsonXRepository` (DIP: trocar por DB depois sem tocar na UI).
-- [ ] Testes: schema (casos válidos/inválidos), pipeline (snapshot), repositórios.
-- [ ] Passo de CI: `pnpm data:validate` obrigatório.
+> **Estado:** infraestrutura completa + **primeira fatia (itens e receitas)**. As demais entidades entram **sob demanda**, uma por feature da Fase 4, repetindo o mesmo molde (schema → extractor → testes → integridade → repositório). Ver [ADR 0004](docs/adr/0004-data-pipeline.md).
 
-**Entrega:** `pnpm data:build` gera dados validados; erros de dado quebram o CI.
+- [x] Schemas Zod em `features/*/domain` — feitos: `Item`, `Recipe`. Demais entidades: sob demanda (Fase 4).
+- [x] `pnpm data:build`: lê `RAW_DATA_DIR`, **valida** (erro nomeia a linha), **sanitiza** (scanner de paths/e-mails/URLs que quebra o build), **normaliza** (sufixos GUID, enums, FText → `{en, pt-BR}`, ícone/feature flag).
+- [x] **Integridade referencial** (receita → item existente, ids duplicados, estação → receita).
+- [x] Emite `data/processed/{items,recipes,manifest}.json` — **nosso JSON curado, versionado no repo** (o dump bruto nunca entra).
+- [x] `gameVersion` (1.0.2571) + `dataVersion` (hash de conteúdo, determinístico).
+- [ ] Changelog automático entre versões (diff de datamining) — adiado: só faz sentido quando houver um 2º dump para comparar.
+- [x] `ItemRepository`/`RecipeRepository` + `JsonItemRepository`/`JsonRecipeRepository` (sobre `JsonCollection` genérico: DRY).
+- [x] Testes: 62 no total (unit com fixtures **sintéticas**, integração do pipeline em memória, contrato contra a saída real quando existir).
+- [x] Passo de CI de dados: teste de contrato sobre o JSON **commitado** (schemas, integridade, strings sensíveis, versão) roda no CI; o pipeline é validado com fixtures sintéticas. O dump real só existe localmente (`pnpm data:build`).
+- [ ] Ícones: processamento (PNG → WebP/AVIF) **adiado** — depende do gate legal. A saída só referencia o nome do ícone.
+
+**Entrega:** `pnpm data:build` gera dados validados; erros de dado quebram o build do pipeline.
 
 ---
 

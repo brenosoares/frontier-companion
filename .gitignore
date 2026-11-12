@@ -44,7 +44,7 @@ next-env.d.ts
 /playwright-report/
 /test-results/
 
-# game data & assets: NEVER commit raw dumps or game art until the legal gate (see PLANO.md §7) is cleared
+# RAW game dumps & game art: NEVER commit (our curated JSON in data/processed IS versioned; see ADR 0004)
 /data/raw/
 /data-raw/
 /FarMech/
