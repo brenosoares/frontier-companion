@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async redirects() {
+    // Locale detection via Accept-Language (proxy) is intentionally deferred; see ADR 0005.
+    return [{ source: "/", destination: "/pt-BR", permanent: false }];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

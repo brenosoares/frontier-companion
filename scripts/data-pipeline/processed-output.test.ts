@@ -2,10 +2,10 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { DatasetManifestSchema } from "@/shared/domain/dataset-manifest";
 import { JsonItemRepository } from "@/features/items/data/json-item-repository";
 import { JsonRecipeRepository } from "@/features/recipes/data/json-recipe-repository";
 import { GAME_VERSION, OUTPUT_DIR } from "./config";
-import type { Manifest } from "./emit";
 import { checkIntegrity } from "./quality/integrity";
 import { findSensitiveStrings } from "./quality/sanitize";
 
@@ -29,7 +29,7 @@ describe("committed dataset (data/processed)", () => {
   });
 
   it("has a manifest matching the configured game version and the data", async () => {
-    const manifest = (await read("manifest.json")) as Manifest;
+    const manifest = DatasetManifestSchema.parse(await read("manifest.json"));
     const items = (await read("items.json")) as unknown[];
     const recipes = (await read("recipes.json")) as unknown[];
 

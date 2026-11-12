@@ -1,19 +1,12 @@
 import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import type { DatasetManifest } from "@/shared/domain/dataset-manifest";
 import type { Dataset } from "./quality/integrity";
-
-export interface Manifest {
-  schemaVersion: 1;
-  gameVersion: string;
-  /** Content hash: changes only when the emitted data changes (deterministic builds). */
-  dataVersion: string;
-  counts: { items: number; recipes: number };
-}
 
 const toJson = (value: unknown): string => `${JSON.stringify(value, null, 2)}\n`;
 
-export function buildManifest(dataset: Dataset, gameVersion: string): Manifest {
+export function buildManifest(dataset: Dataset, gameVersion: string): DatasetManifest {
   const hash = createHash("sha256")
     .update(toJson(dataset.items))
     .update(toJson(dataset.recipes))
@@ -31,7 +24,7 @@ export async function emitDataset(
   outDir: string,
   dataset: Dataset,
   gameVersion: string,
-): Promise<Manifest> {
+): Promise<DatasetManifest> {
   const manifest = buildManifest(dataset, gameVersion);
   await mkdir(outDir, { recursive: true });
   await Promise.all([

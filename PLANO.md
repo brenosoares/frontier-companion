@@ -123,12 +123,19 @@ Objetivo: transformar JSON bruto em dados **confiáveis e tipados**.
 
 ### Fase 3 — Design system e layout base
 
-- [ ] Tokens no `@theme` do Tailwind 4 (cores, tipografia, espaçamento, raios), tema claro/escuro.
-- [ ] Componentes primitivos em `shared/ui` (Button, Card, Badge, Input, Table, Tabs, Dialog, Tooltip) — acessíveis (Radix/shadcn como base é aceitável).
-- [ ] Layout: header, navegação, footer (com links legais e disclaimer — ver Fase 7), responsivo mobile-first.
-- [ ] i18n estruturado (pt-BR/en), seletor de idioma, textos fora dos componentes.
-- [ ] Storybook (opcional) ou página interna de catálogo de componentes.
-- [ ] Acessibilidade: foco visível, contraste AA, navegação por teclado, `prefers-reduced-motion`.
+> **Estado:** concluída localmente. Decisões e justificativas no [ADR 0005](docs/adr/0005-design-system-and-i18n.md).
+
+- [x] Tokens no `@theme` do Tailwind 4 (paleta de marca + tokens semânticos), tema escuro (padrão) e claro; contraste AA verificado.
+- [x] Primitivos em `shared/ui`: Button, Badge, Card, SearchField, Sheet (Radix Dialog). _Adiados até haver uso real (Fase 4):_ Table, Tabs, Tooltip, Dialog genérico.
+- [x] Layout: sidebar à esquerda; header (logo + busca + idioma), conteúdo e footer (legal, disclaimer, versão dos dados, Buy Me a Coffee) à direita; responsivo com menu off-canvas.
+- [x] i18n pt-BR/en: rotas `[locale]`, dicionários tipados, seletor de idioma.
+- [ ] Storybook/catálogo de componentes — adiado (YAGNI; os componentes são poucos e cobertos por testes).
+- [x] Acessibilidade: skip link, landmarks, foco visível, `prefers-reduced-motion`, axe em CI (4 páginas × 2 idiomas × 2 temas + menu aberto).
+- [ ] Toggle manual de tema — adiado (segue o sistema).
+- [ ] Busca funcional — Fase 4 (campo está desabilitado).
+- [ ] `NEXT_PUBLIC_BMC_URL` — **pendente:** precisa da URL do Buy Me a Coffee.
+
+**Entrega:** shell navegável nos dois idiomas e temas, validado por testes unitários e E2E.
 
 ---
 
