@@ -156,7 +156,7 @@ describe("filterUsableSources", () => {
     expect(kept.map((s) => s.sourceId)).toEqual(["Rock"]);
     expect(warnings).toHaveLength(3);
     expect(warnings[0]).toMatch(/unknown item/);
-    expect(warnings[1]).toMatch(/Wip/);
+    expect(warnings[1]).toMatch(/unfinished or obsolete/);
   });
 
   it("does not mistake ordinary words for unfinished content", () => {

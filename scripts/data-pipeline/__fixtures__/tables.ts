@@ -28,9 +28,19 @@ export function rawItem(id: string, overrides: Record<string, unknown> = {}) {
   };
 }
 
-/** Construct row with a GUID-suffixed DisplayName, as in the real export. */
+/** A complete, valid construct row (GUID-suffixed fields, as in the real export). */
 export function rawConstruct(en: string, ptBR: string) {
-  return { [`DisplayName_30_${GUID}`]: rawText(en, ptBR) };
+  return {
+    [`DisplayName_30_${GUID}`]: rawText(en, ptBR),
+    [`Description_9_${GUID}`]: { CultureInvariantString: null },
+    [`Category_61_${GUID}`]: "MainConstructCategory::NewEnumerator1",
+    [`Type_41_${GUID}`]: "ConstructType::NewEnumerator9",
+    [`VariantFamily_71_${GUID}`]: { TagName: "None" },
+    [`FeatureFlag_68_${GUID}`]: { TagName: "None" },
+    [`Icon_5_${GUID}`]: { AssetPathName: "None", SubPathString: "" },
+    [`ItemCost_8_${GUID}`]: [],
+    [`Coziness_2_${GUID}`]: 0,
+  };
 }
 
 export function rawRecipe(output: string, inputs: Record<string, number>, time = 60) {

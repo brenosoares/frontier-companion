@@ -40,6 +40,18 @@ export function parseFeatureFlag(tagName: string): string | null {
   return tagName.replace(/^Features\./, "");
 }
 
+/**
+ * The flag that still gates content. Flags the owner confirmed as released (see
+ * `RELEASED_FEATURE_FLAGS`) no longer hide anything, so they resolve to null.
+ */
+export function resolveFeatureFlag(
+  tagName: string,
+  releasedFlags: ReadonlySet<string>,
+): string | null {
+  const flag = parseFeatureFlag(tagName);
+  return flag !== null && releasedFlags.has(flag) ? null : flag;
+}
+
 const DataTableFileSchema = z
   .tuple([z.object({ Rows: z.record(z.string(), z.unknown()) })])
   .rest(z.unknown());

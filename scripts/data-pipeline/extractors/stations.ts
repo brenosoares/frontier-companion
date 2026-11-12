@@ -30,7 +30,11 @@ export function extractStations(
 ): Station[] {
   return definitions
     .map((definition) =>
-      StationSchema.parse({ id: definition.id, name: resolveName(definition, constructRows) }),
+      StationSchema.parse({
+        id: definition.id,
+        family: definition.family,
+        name: resolveName(definition, constructRows),
+      }),
     )
     .sort((a, b) => a.id.localeCompare(b.id));
 }

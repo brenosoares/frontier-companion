@@ -14,6 +14,34 @@ export const DATA_TABLES_DIR = path.join(RAW_DATA_DIR, "FarMech/Content/DataTabl
 export const PIXEL_ICONS_DIR = path.join(RAW_DATA_DIR, "icons_pixel");
 /** Icons used by items are copied here and served by Next at `/icons/items/<name>.png`. */
 export const PUBLIC_ITEM_ICONS_DIR = path.join(repoRoot, "public/icons/items");
+/** Same, for constructs (`/icons/constructs/<name>.png`). */
+export const PUBLIC_CONSTRUCT_ICONS_DIR = path.join(repoRoot, "public/icons/constructs");
+
+/**
+ * Feature flags the owner confirmed as already released in the game. Content gated only by these
+ * is not hidden. The dump does not say which flags are active, so this list is the owner's call.
+ *
+ * On 1.0.2571 the owner confirmed ALL flags used by items and constructs. Flags are listed
+ * explicitly (not "everything") so that a flag introduced by a later patch still hides its
+ * content, and the pipeline warns about it, until the owner confirms it too.
+ */
+export const RELEASED_FEATURE_FLAGS: ReadonlySet<string> = new Set([
+  "Automator",
+  "AutumnSprouts2024",
+  "CarMode",
+  "Christmas2024",
+  "FarmerCustomization",
+  "LargeItemsAndMechHauling",
+  "Legacy",
+  "Limbo",
+  "MegaPatch1Miscs",
+  "Mesa",
+  "MiniPatch1Mics",
+  "ModularBuilding",
+  "Neighbours",
+  "RanchAnimals",
+  "Trailers",
+]);
 
 /** Output is git-ignored until the legal gate is cleared. */
 export const OUTPUT_DIR = path.join(repoRoot, "data/processed");
@@ -23,11 +51,21 @@ export interface StationDefinition {
   id: string;
   /** Recipe table listing what this station crafts. `DT_CompositeRecipes` is their union (verified). */
   table: string;
+  /** Crafting family: tiers of the same machine share it (`FurnaceTwo` -> `Furnace`). */
+  family: string;
   /** `DT_Constructs` row providing the localized name, or null when the station is not a construct. */
   constructId: string | null;
   /** Used only when `constructId` is null. Our own labels, based on the game's wording. */
   fallbackName?: { en: string; "pt-BR": string };
 }
+
+/** Tiers of a machine (Furnace, Furnace II, Furnace III…) form one family; the base id names it. */
+const FAMILY_OVERRIDES: Readonly<Record<string, string>> = {
+  FurnaceTwo: "Furnace",
+  SolarDehydrator: "FoodProcessor", // "Dehydrator Oven II"
+};
+
+export const familyOf = (id: string): string => FAMILY_OVERRIDES[id] ?? id.replace(/\d+$/, "");
 
 const station = (
   id: string,
@@ -37,6 +75,7 @@ const station = (
 ): StationDefinition => ({
   id,
   table,
+  family: familyOf(id),
   constructId,
   ...(fallbackName && { fallbackName }),
 });

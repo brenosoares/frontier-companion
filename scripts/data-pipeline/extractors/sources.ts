@@ -148,7 +148,7 @@ export function sortSources(sources: readonly ItemSource[]): ItemSource[] {
 
 /**
  * Keeps only sources a player can rely on. Drops (and reports) sources that reference an item that
- * does not exist, or that come from unfinished ("Wip") content, instead of failing the whole build.
+ * does not exist, or that come from unfinished or obsolete content, instead of failing the whole build.
  */
 export function filterUsableSources(
   sources: readonly ItemSource[],
@@ -161,7 +161,7 @@ export function filterUsableSources(
     if (!itemIds.has(source.itemId)) {
       warnings.push(`Dropped item source "${source.id}": the game data references an unknown item`);
     } else if (isUnfinished(source.sourceName.en)) {
-      warnings.push(`Dropped item source "${source.id}": unfinished ("Wip") content`);
+      warnings.push(`Dropped item source "${source.id}": unfinished or obsolete content`);
     } else {
       kept.push(source);
     }

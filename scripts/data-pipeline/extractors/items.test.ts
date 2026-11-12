@@ -4,8 +4,11 @@ import { emptyText, rawItem } from "../__fixtures__/tables";
 import { extractItems } from "./items";
 
 /** Pixel-art icon set containing only `TestBarIcon` unless told otherwise. */
-const extract = (rows: Record<string, unknown>, icons: string[] = ["TestBarIcon"]) =>
-  extractItems(rows, new Set(icons));
+const extract = (
+  rows: Record<string, unknown>,
+  icons: string[] = ["TestBarIcon"],
+  releasedFlags: string[] = [],
+) => extractItems(rows, { availableIcons: new Set(icons), releasedFlags: new Set(releasedFlags) });
 
 describe("extractItems", () => {
   it("maps a raw row to a clean item", () => {
@@ -77,5 +80,16 @@ describe("extractItems", () => {
 
     expect(ore?.icon).toBe("TestOreIcon");
     expect(bar?.icon).toBeNull();
+  });
+
+  it("treats a flag confirmed as released as no flag at all", () => {
+    const rows = {
+      A: rawItem("A", { FeatureFlag: { TagName: "Features.Trailers" } }),
+      B: rawItem("B", { FeatureFlag: { TagName: "Features.Limbo" } }),
+    };
+    const [a, b] = extract(rows, [], ["Trailers"]);
+
+    expect(a?.featureFlag).toBeNull();
+    expect(b?.featureFlag).toBe("Limbo");
   });
 });

@@ -13,6 +13,7 @@ const COLLECTIONS = [
   ["recipes", "recipes.json"],
   ["stations", "stations.json"],
   ["itemSources", "item-sources.json"],
+  ["constructs", "constructs.json"],
 ] as const satisfies readonly (readonly [keyof Dataset, string])[];
 
 export function buildManifest(dataset: Dataset, gameVersion: string): DatasetManifest {
@@ -28,6 +29,7 @@ export function buildManifest(dataset: Dataset, gameVersion: string): DatasetMan
       recipes: dataset.recipes.length,
       stations: dataset.stations.length,
       itemSources: dataset.itemSources.length,
+      constructs: dataset.constructs.length,
     },
   };
 }

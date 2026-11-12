@@ -26,16 +26,25 @@ const recipe = (id: string, output: string, inputs: string[]): Recipe => ({
 });
 
 describe("isUnfinished", () => {
-  it.each(["Magnetic Metal Ore Wip", "Bomb Plant [Wip]", "WIP Thing", "wip"])(
-    "flags %j",
+  it.each([
+    "Magnetic Metal Ore Wip",
+    "Bomb Plant [Wip]",
+    "WIP Thing",
+    "wip",
+    "PLACEHOLDER - Water Tower",
+    "Placeholder",
+    "Automator [Obsolete]",
+    "obsolete",
+  ])("flags %j", (text) => {
+    expect(isUnfinished(text)).toBe(true);
+  });
+
+  it.each(["Swipe Tree", "Wipeout Rock", "Whipped Cream", "Green Tree", "Placeholders Inc"])(
+    "accepts %j",
     (text) => {
-      expect(isUnfinished(text)).toBe(true);
+      expect(isUnfinished(text)).toBe(false);
     },
   );
-
-  it.each(["Swipe Tree", "Wipeout Rock", "Whipped Cream", "Green Tree"])("accepts %j", (text) => {
-    expect(isUnfinished(text)).toBe(false);
-  });
 });
 
 describe("dropUnfinishedItems", () => {
@@ -57,7 +66,7 @@ describe("dropUnfinishedItems", () => {
     const { warnings } = dropUnfinishedItems(items, recipes);
 
     expect(warnings).toEqual([
-      'Dropped item "Ghost": unfinished ("Wip") content',
+      'Dropped item "Ghost": unfinished or obsolete content',
       'Dropped recipe "GhostMaker": uses unfinished item "Ghost"',
       'Dropped recipe "GhostUser": uses unfinished item "Ghost"',
     ]);

@@ -3,7 +3,7 @@ import { mkdir, mkdtemp, readdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { copyItemIcons, listIconNames } from "./icons";
+import { copyIcons, listIconNames } from "./icons";
 
 let root: string;
 let source: string;
@@ -31,21 +31,17 @@ describe("listIconNames", () => {
   });
 });
 
-describe("copyItemIcons", () => {
+describe("copyIcons", () => {
   it("copies only the icons used by items, once each", async () => {
-    const count = await copyItemIcons(
-      [{ icon: "WheatIcon" }, { icon: "WheatIcon" }, { icon: null }, { icon: "OreIcon" }],
-      source,
-      dest,
-    );
+    const count = await copyIcons(["WheatIcon", "WheatIcon", null, "OreIcon"], source, dest);
 
     expect(count).toBe(2);
     expect((await readdir(dest)).sort()).toEqual(["OreIcon.png", "WheatIcon.png"]);
   });
 
   it("rebuilds the destination so stale icons are removed", async () => {
-    await copyItemIcons([{ icon: "WheatIcon" }], source, dest);
-    await copyItemIcons([{ icon: "OreIcon" }], source, dest);
+    await copyIcons(["WheatIcon"], source, dest);
+    await copyIcons(["OreIcon"], source, dest);
 
     expect(await readdir(dest)).toEqual(["OreIcon.png"]);
   });

@@ -4,202 +4,231 @@
     "name": {
       "en": "Assembler",
       "pt-BR": "Montador"
-    }
+    },
+    "family": "Assembler"
   },
   {
     "id": "ColorMixer",
     "name": {
       "en": "Color Mixer",
       "pt-BR": "Misturador de Cores"
-    }
+    },
+    "family": "ColorMixer"
   },
   {
     "id": "ColorRefiner",
     "name": {
       "en": "Flower Press",
       "pt-BR": "Prensa de Flores"
-    }
+    },
+    "family": "ColorRefiner"
   },
   {
     "id": "Compost",
     "name": {
       "en": "Fertilizer Infuser",
       "pt-BR": "Infusor de Fertilizante"
-    }
+    },
+    "family": "Compost"
   },
   {
     "id": "Compost2",
     "name": {
       "en": "Fertilizer Infuser II",
       "pt-BR": "Infusor de Fertilizante II"
-    }
+    },
+    "family": "Compost"
   },
   {
     "id": "Dresser",
     "name": {
       "en": "Animal Accessory Studio",
       "pt-BR": "Estúdio de Acessórios para Animais"
-    }
+    },
+    "family": "Dresser"
   },
   {
     "id": "FoodProcessor",
     "name": {
       "en": "Dehydrator Oven",
       "pt-BR": "Forno Desidratador"
-    }
+    },
+    "family": "FoodProcessor"
   },
   {
     "id": "FuelMaker",
     "name": {
       "en": "Oil Mixer",
       "pt-BR": "Misturador de Óleo"
-    }
+    },
+    "family": "FuelMaker"
   },
   {
     "id": "FuelMaker2",
     "name": {
       "en": "Oil Mixer II",
       "pt-BR": "Misturador de Óleo II"
-    }
+    },
+    "family": "FuelMaker"
   },
   {
     "id": "FuelMaker3",
     "name": {
       "en": "Oil Mixer III",
       "pt-BR": "Misturador de Óleo III"
-    }
+    },
+    "family": "FuelMaker"
   },
   {
     "id": "Furnace",
     "name": {
       "en": "Furnace",
       "pt-BR": "Fornalha"
-    }
+    },
+    "family": "Furnace"
   },
   {
     "id": "Furnace3",
     "name": {
       "en": "Furnace III",
       "pt-BR": "Fornalha III"
-    }
+    },
+    "family": "Furnace"
   },
   {
     "id": "FurnaceTwo",
     "name": {
       "en": "Furnace II",
       "pt-BR": "Fornalha II"
-    }
+    },
+    "family": "Furnace"
   },
   {
     "id": "Grinder",
     "name": {
       "en": "Grinder",
       "pt-BR": "Triturador"
-    }
+    },
+    "family": "Grinder"
   },
   {
     "id": "Grinder2",
     "name": {
       "en": "Grinder II",
       "pt-BR": "Triturador II"
-    }
+    },
+    "family": "Grinder"
   },
   {
     "id": "Grinder3",
     "name": {
       "en": "Grinder III",
       "pt-BR": "Triturador III"
-    }
+    },
+    "family": "Grinder"
   },
   {
     "id": "HeavyUtilityCrafter",
     "name": {
       "en": "Fabricator",
       "pt-BR": "Fabricante"
-    }
+    },
+    "family": "HeavyUtilityCrafter"
   },
   {
     "id": "Loom",
     "name": {
       "en": "Loom",
       "pt-BR": "Tear"
-    }
+    },
+    "family": "Loom"
   },
   {
     "id": "OilPresser",
     "name": {
       "en": "Oil Presser",
       "pt-BR": "Prensa de Óleo"
-    }
+    },
+    "family": "OilPresser"
   },
   {
     "id": "OilPresser2",
     "name": {
       "en": "Oil Presser II",
       "pt-BR": "Prensa de Óleo II"
-    }
+    },
+    "family": "OilPresser"
   },
   {
     "id": "OilPresser3",
     "name": {
       "en": "Oil Presser III",
       "pt-BR": "Prensa de Óleo III"
-    }
+    },
+    "family": "OilPresser"
   },
   {
     "id": "SeedMaker",
     "name": {
       "en": "Seed Extractor",
       "pt-BR": "Extrator de Semente"
-    }
+    },
+    "family": "SeedMaker"
   },
   {
     "id": "SeedMaker2",
     "name": {
       "en": "Seed Extractor II",
       "pt-BR": "Extrator de Semente II"
-    }
+    },
+    "family": "SeedMaker"
   },
   {
     "id": "SeedMaker3",
     "name": {
       "en": "Seed Extractor III",
       "pt-BR": "Extrator de Semente III"
-    }
+    },
+    "family": "SeedMaker"
   },
   {
     "id": "SeedMaker4",
     "name": {
       "en": "Seed Extractor IV",
       "pt-BR": "Extrator de Semente IV"
-    }
+    },
+    "family": "SeedMaker"
   },
   {
     "id": "SeedRefinement",
     "name": {
       "en": "Seed Modifier",
       "pt-BR": "Modificador de Sementes"
-    }
+    },
+    "family": "SeedRefinement"
   },
   {
     "id": "SeedRefinement2",
     "name": {
       "en": "Seed Modifier II",
       "pt-BR": "Modificador de Sementes II"
-    }
+    },
+    "family": "SeedRefinement"
   },
   {
     "id": "SeedRefinement3",
     "name": {
       "en": "Seed Modifier III",
       "pt-BR": "Modificador de Sementes III"
-    }
+    },
+    "family": "SeedRefinement"
   },
   {
     "id": "SolarDehydrator",
     "name": {
       "en": "Dehydrator Oven II",
       "pt-BR": "Forno Desidratador II"
-    }
+    },
+    "family": "FoodProcessor"
   }
 ]

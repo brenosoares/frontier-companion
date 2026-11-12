@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { type Item, ItemSchema } from "@/features/items/domain/item";
 import { toLocalizedText, RawTextSchema } from "../unreal/localized";
-import { assetStem, parseEnumValue, parseFeatureFlag } from "../unreal/normalize";
+import { resolveIcon } from "../unreal/icons";
+import { parseEnumValue, resolveFeatureFlag } from "../unreal/normalize";
 
 const RawItemSchema = z.object({
   EngineName: z.string(),
@@ -17,13 +18,14 @@ const RawItemSchema = z.object({
 
 type RawItem = z.infer<typeof RawItemSchema>;
 
-/** `T_AdvancedFuel1Icon` -> `AdvancedFuel1Icon` (the pixel-art files drop the `T_` prefix). */
-function resolveIcon(assetPath: string, availableIcons: ReadonlySet<string>): string | null {
-  const stem = assetStem(assetPath)?.replace(/^T_/, "") ?? null;
-  return stem !== null && availableIcons.has(stem) ? stem : null;
+export interface ItemOptions {
+  /** File names (without extension) present in the icon set. */
+  availableIcons: ReadonlySet<string>;
+  /** Feature flags confirmed as released: they stop hiding content. */
+  releasedFlags: ReadonlySet<string>;
 }
 
-function toItem(id: string, raw: RawItem, availableIcons: ReadonlySet<string>): Item {
+function toItem(id: string, raw: RawItem, options: ItemOptions): Item {
   if (raw.EngineName !== id) {
     throw new Error(`Item "${id}": EngineName "${raw.EngineName}" differs from row key`);
   }
@@ -37,24 +39,20 @@ function toItem(id: string, raw: RawItem, availableIcons: ReadonlySet<string>): 
     tags: raw.Tags.map(parseEnumValue),
     weight: raw.Weight,
     sellValue: raw.SellValue,
-    icon: resolveIcon(raw.Icon.AssetPathName, availableIcons),
-    featureFlag: parseFeatureFlag(raw.FeatureFlag.TagName),
+    icon: resolveIcon(raw.Icon.AssetPathName, options.availableIcons),
+    featureFlag: resolveFeatureFlag(raw.FeatureFlag.TagName, options.releasedFlags),
     isVirtual: parseEnumValue(raw.VirtualType) !== "NonVirtual",
   });
 }
 
-/** @param availableIcons file names (without extension) present in the icon set */
-export function extractItems(
-  rows: Record<string, unknown>,
-  availableIcons: ReadonlySet<string>,
-): Item[] {
+export function extractItems(rows: Record<string, unknown>, options: ItemOptions): Item[] {
   return Object.entries(rows)
     .map(([id, row]) => {
       const parsed = RawItemSchema.safeParse(row);
       if (!parsed.success) {
         throw new Error(`Item "${id}" has an unexpected shape\n${z.prettifyError(parsed.error)}`);
       }
-      return toItem(id, parsed.data, availableIcons);
+      return toItem(id, parsed.data, options);
     })
     .sort((a, b) => a.id.localeCompare(b.id));
 }
