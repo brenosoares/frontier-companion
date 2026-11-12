@@ -28,6 +28,11 @@ export function rawItem(id: string, overrides: Record<string, unknown> = {}) {
   };
 }
 
+/** Construct row with a GUID-suffixed DisplayName, as in the real export. */
+export function rawConstruct(en: string, ptBR: string) {
+  return { [`DisplayName_30_${GUID}`]: rawText(en, ptBR) };
+}
+
 export function rawRecipe(output: string, inputs: Record<string, number>, time = 60) {
   return {
     [`Output_34_${GUID}`]: { Name: output, Amount: 1 },

@@ -41,7 +41,7 @@ export function Header({ locale, messages, navItems }: HeaderProps) {
           <SearchField
             label={messages.search.label}
             placeholder={messages.search.placeholder}
-            disabled
+            action={localizedPath(locale, "/items")}
           />
         </div>
 

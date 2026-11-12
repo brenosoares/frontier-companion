@@ -17,7 +17,13 @@ const RawItemSchema = z.object({
 
 type RawItem = z.infer<typeof RawItemSchema>;
 
-function toItem(id: string, raw: RawItem): Item {
+/** `T_AdvancedFuel1Icon` -> `AdvancedFuel1Icon` (the pixel-art files drop the `T_` prefix). */
+function resolveIcon(assetPath: string, availableIcons: ReadonlySet<string>): string | null {
+  const stem = assetStem(assetPath)?.replace(/^T_/, "") ?? null;
+  return stem !== null && availableIcons.has(stem) ? stem : null;
+}
+
+function toItem(id: string, raw: RawItem, availableIcons: ReadonlySet<string>): Item {
   if (raw.EngineName !== id) {
     throw new Error(`Item "${id}": EngineName "${raw.EngineName}" differs from row key`);
   }
@@ -31,20 +37,24 @@ function toItem(id: string, raw: RawItem): Item {
     tags: raw.Tags.map(parseEnumValue),
     weight: raw.Weight,
     sellValue: raw.SellValue,
-    icon: assetStem(raw.Icon.AssetPathName),
+    icon: resolveIcon(raw.Icon.AssetPathName, availableIcons),
     featureFlag: parseFeatureFlag(raw.FeatureFlag.TagName),
     isVirtual: parseEnumValue(raw.VirtualType) !== "NonVirtual",
   });
 }
 
-export function extractItems(rows: Record<string, unknown>): Item[] {
+/** @param availableIcons file names (without extension) present in the icon set */
+export function extractItems(
+  rows: Record<string, unknown>,
+  availableIcons: ReadonlySet<string>,
+): Item[] {
   return Object.entries(rows)
     .map(([id, row]) => {
       const parsed = RawItemSchema.safeParse(row);
       if (!parsed.success) {
         throw new Error(`Item "${id}" has an unexpected shape\n${z.prettifyError(parsed.error)}`);
       }
-      return toItem(id, parsed.data);
+      return toItem(id, parsed.data, availableIcons);
     })
     .sort((a, b) => a.id.localeCompare(b.id));
 }

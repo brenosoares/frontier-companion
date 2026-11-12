@@ -20,4 +20,10 @@ export class JsonRecipeRepository implements RecipeRepository {
   async findByOutput(itemId: string): Promise<readonly Recipe[]> {
     return (await this.recipes.all()).filter((recipe) => recipe.output.itemId === itemId);
   }
+
+  async findByInput(itemId: string): Promise<readonly Recipe[]> {
+    return (await this.recipes.all()).filter((recipe) =>
+      recipe.inputs.some((input) => input.itemId === itemId),
+    );
+  }
 }

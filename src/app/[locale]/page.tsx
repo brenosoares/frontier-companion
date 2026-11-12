@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { localizedPath } from "@/shared/i18n/config";
 import { datasetManifest } from "@/shared/data/dataset-manifest";
 import { getMessages } from "@/shared/i18n/get-messages";
 import { Badge } from "@/shared/ui/badge";
@@ -5,12 +7,17 @@ import { Card, CardDescription, CardTitle } from "@/shared/ui/card";
 import { resolveLocale } from "./resolve-locale";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
-  const messages = getMessages(await resolveLocale(params));
+  const locale = await resolveLocale(params);
+  const messages = getMessages(locale);
   const { home } = messages;
 
   const stats = [
-    { title: home.itemsTitle, count: datasetManifest.counts.items },
-    { title: home.recipesTitle, count: datasetManifest.counts.recipes },
+    {
+      title: home.itemsTitle,
+      count: datasetManifest.counts.items,
+      href: localizedPath(locale, "/items"),
+    },
+    { title: home.recipesTitle, count: datasetManifest.counts.recipes, href: null },
   ];
 
   return (
@@ -24,9 +31,23 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        {stats.map(({ title, count }) => (
-          <Card key={title}>
-            <CardTitle>{title}</CardTitle>
+        {stats.map(({ title, count, href }) => (
+          <Card
+            key={title}
+            className={href ? "relative transition-colors hover:bg-surface-hover" : ""}
+          >
+            <CardTitle>
+              {href ? (
+                <Link
+                  href={href}
+                  className="rounded after:absolute after:inset-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                >
+                  {title}
+                </Link>
+              ) : (
+                title
+              )}
+            </CardTitle>
             <CardDescription>{home.count(count)}</CardDescription>
           </Card>
         ))}

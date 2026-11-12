@@ -14,7 +14,7 @@
     ],
     "weight": 500,
     "sellValue": 135,
-    "icon": "T_AdvancedFuel1Icon",
+    "icon": "AdvancedFuel1Icon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -33,7 +33,7 @@
     ],
     "weight": 500,
     "sellValue": 230,
-    "icon": "T_AdvancedFuel2Icon",
+    "icon": "AdvancedFuel2Icon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -52,7 +52,7 @@
     ],
     "weight": 500,
     "sellValue": 310,
-    "icon": "T_AdvancedFuel3Icon",
+    "icon": "AdvancedFuel3Icon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -71,7 +71,7 @@
     ],
     "weight": 500,
     "sellValue": 365,
-    "icon": "T_AdvancedFuel4Icon",
+    "icon": "AdvancedFuel4Icon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -90,7 +90,7 @@
     ],
     "weight": 500,
     "sellValue": 600,
-    "icon": "T_AdvancedFuel5Icon",
+    "icon": "AdvancedFuel5Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -110,7 +110,7 @@
     ],
     "weight": 500,
     "sellValue": 0,
-    "icon": "T_AdvancedRepairKitIcon",
+    "icon": "AdvancedRepairKitIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -130,7 +130,7 @@
     ],
     "weight": 1700,
     "sellValue": 25,
-    "icon": "T_AluminiumElectronicsIcon",
+    "icon": "AluminiumElectronicsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -150,7 +150,7 @@
     ],
     "weight": 2800,
     "sellValue": 40,
-    "icon": "T_AluminiumFrameIcon",
+    "icon": "AluminiumFrameIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -170,7 +170,7 @@
     ],
     "weight": 1700,
     "sellValue": 45,
-    "icon": "T_AluminiumMechanicalPartsIcon",
+    "icon": "AluminiumMechanicalPartsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -190,7 +190,7 @@
     ],
     "weight": 2000,
     "sellValue": 20,
-    "icon": "T_AluminiumRodIcon",
+    "icon": "AluminiumRodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -210,7 +210,7 @@
     ],
     "weight": 1400,
     "sellValue": 10,
-    "icon": "T_AluminiumWireIcon",
+    "icon": "AluminiumWireIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -229,7 +229,7 @@
     ],
     "weight": 500,
     "sellValue": 1250,
-    "icon": "T_AmberIcon",
+    "icon": "AmberIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -248,7 +248,7 @@
     ],
     "weight": 200,
     "sellValue": 300,
-    "icon": "T_AmberFragmentsIcon",
+    "icon": "AmberFragmentsIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -268,7 +268,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_BabyBlueDyeIcon",
+    "icon": "BabyBlueDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -288,7 +288,7 @@
     ],
     "weight": 500,
     "sellValue": 0,
-    "icon": "T_BasicRepairKitIcon",
+    "icon": "BasicRepairKitIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -307,7 +307,7 @@
     ],
     "weight": 1000,
     "sellValue": 100,
-    "icon": "T_BatteryIcon",
+    "icon": "BatteryIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -327,7 +327,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BentTreeIcon",
+    "icon": "BentTreeIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -346,7 +346,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_BeretHatIcon",
+    "icon": "BeretHatIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -366,7 +366,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_BlackColorflowerIcon",
+    "icon": "BlackColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -387,7 +387,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BlackColorflowerIcon",
+    "icon": "BlackColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -407,7 +407,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_BlackDyeIcon",
+    "icon": "BlackDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -426,7 +426,7 @@
     ],
     "weight": 10,
     "sellValue": 120,
-    "icon": "T_BloomsIcon",
+    "icon": "BloomsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -446,7 +446,7 @@
     ],
     "weight": 10,
     "sellValue": 360,
-    "icon": "T_Blooms_RareIcon",
+    "icon": "Blooms_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -465,7 +465,7 @@
     ],
     "weight": 500,
     "sellValue": 145,
-    "icon": "T_BloomsOilIcon",
+    "icon": "BloomsOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -486,7 +486,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BloomsIcon",
+    "icon": "BloomsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -508,7 +508,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BloomsIcon",
+    "icon": "BloomsIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -528,7 +528,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_BlueColorflowerIcon",
+    "icon": "BlueColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -549,7 +549,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BlueColorflowerIcon",
+    "icon": "BlueColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -569,7 +569,7 @@
     ],
     "weight": 2500,
     "sellValue": 100,
-    "icon": "T_BlueCrystalIcon",
+    "icon": "BlueCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -590,7 +590,7 @@
     ],
     "weight": 400,
     "sellValue": 60,
-    "icon": "T_BlueCrystalDustIcon",
+    "icon": "BlueCrystalDustIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -610,7 +610,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_BlueDyeIcon",
+    "icon": "BlueDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -630,7 +630,7 @@
     ],
     "weight": 800,
     "sellValue": 20,
-    "icon": "T_BlueGlassIcon",
+    "icon": "BlueGlassIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -650,7 +650,7 @@
     ],
     "weight": 800,
     "sellValue": 100,
-    "icon": "T_BlueLensIcon",
+    "icon": "BlueLensIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -669,7 +669,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_BowAccessoryIcon",
+    "icon": "BowAccessoryIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -689,7 +689,7 @@
     ],
     "weight": 2000,
     "sellValue": 15,
-    "icon": "T_BronzeBarIcon",
+    "icon": "BronzeBarIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -709,7 +709,7 @@
     ],
     "weight": 1700,
     "sellValue": 20,
-    "icon": "T_BronzeElectronicsIcon",
+    "icon": "BronzeElectronicsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -729,7 +729,7 @@
     ],
     "weight": 2800,
     "sellValue": 25,
-    "icon": "T_BronzeFrameIcon",
+    "icon": "BronzeFrameIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -749,7 +749,7 @@
     ],
     "weight": 1700,
     "sellValue": 30,
-    "icon": "T_BronzePartsIcon",
+    "icon": "BronzePartsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -769,7 +769,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_BrownDyeIcon",
+    "icon": "BrownDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -788,7 +788,7 @@
     ],
     "weight": 500,
     "sellValue": 200,
-    "icon": "T_BugAmberIcon",
+    "icon": "BugAmberIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -808,7 +808,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_BulbTreeIcon",
+    "icon": "BulbTreeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -828,7 +828,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_BumbleBeeYellowDyeIcon",
+    "icon": "BumbleBeeYellowDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -848,7 +848,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_CamoGreenDyeIcon",
+    "icon": "CamoGreenDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -868,7 +868,7 @@
     ],
     "weight": 10,
     "sellValue": 75,
-    "icon": "T_CarootIcon",
+    "icon": "CarootIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -888,7 +888,7 @@
     ],
     "weight": 10,
     "sellValue": 225,
-    "icon": "T_Caroot_RareIcon",
+    "icon": "Caroot_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -907,7 +907,7 @@
     ],
     "weight": 500,
     "sellValue": 90,
-    "icon": "T_CarootJuiceIcon",
+    "icon": "CarootJuiceIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -928,7 +928,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CarootIcon",
+    "icon": "CarootIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -950,7 +950,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CarootIcon",
+    "icon": "CarootIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -970,7 +970,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CherryTreeIcon",
+    "icon": "CherryTreeIcon",
     "featureFlag": "AutumnSprouts2024",
     "isVirtual": false
   },
@@ -990,7 +990,7 @@
     ],
     "weight": 10,
     "sellValue": 90,
-    "icon": "T_ChromaizeIcon",
+    "icon": "ChromaizeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1010,7 +1010,7 @@
     ],
     "weight": 10,
     "sellValue": 270,
-    "icon": "T_Chromaize_RareIcon",
+    "icon": "Chromaize_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -1029,7 +1029,7 @@
     ],
     "weight": 500,
     "sellValue": 110,
-    "icon": "T_ChromaizeOilIcon",
+    "icon": "ChromaizeOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1050,7 +1050,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_ChromaizeIcon",
+    "icon": "ChromaizeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1072,7 +1072,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_ChromaizeIcon",
+    "icon": "ChromaizeIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -1091,7 +1091,7 @@
     ],
     "weight": 500,
     "sellValue": 300,
-    "icon": "T_ClamIcon",
+    "icon": "ClamIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1110,7 +1110,7 @@
     ],
     "weight": 400,
     "sellValue": 2,
-    "icon": "T_ClayIcon",
+    "icon": "ClayIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1130,7 +1130,7 @@
     ],
     "weight": 800,
     "sellValue": 10,
-    "icon": "T_ClearGlassIcon",
+    "icon": "ClearGlassIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1150,7 +1150,7 @@
     ],
     "weight": 800,
     "sellValue": 10,
-    "icon": "T_ClearLensIcon",
+    "icon": "ClearLensIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1169,7 +1169,7 @@
     ],
     "weight": 300,
     "sellValue": 50,
-    "icon": "T_ClothIcon",
+    "icon": "ClothIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1188,7 +1188,7 @@
     ],
     "weight": 500,
     "sellValue": 20,
-    "icon": "T_CoalIcon",
+    "icon": "CoalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1208,7 +1208,7 @@
     ],
     "weight": 10,
     "sellValue": 150,
-    "icon": "T_CoilPlantIcon",
+    "icon": "CoilPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1228,7 +1228,7 @@
     ],
     "weight": 10,
     "sellValue": 450,
-    "icon": "T_CoilPlant_RareIcon",
+    "icon": "CoilPlant_RareIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1247,7 +1247,7 @@
     ],
     "weight": 500,
     "sellValue": 180,
-    "icon": "T_CoilPlantOilIcon",
+    "icon": "CoilPlantOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1268,7 +1268,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CoilPlantIcon",
+    "icon": "CoilPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1290,7 +1290,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CoilPlantIcon",
+    "icon": "CoilPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1311,7 +1311,7 @@
     ],
     "weight": 100,
     "sellValue": 100,
-    "icon": "T_CoilPlantStemIcon",
+    "icon": "CoilPlantStemIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1330,7 +1330,7 @@
     ],
     "weight": 500,
     "sellValue": 100,
-    "icon": "T_ConcreteIcon",
+    "icon": "ConcreteIcon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -1350,7 +1350,7 @@
     ],
     "weight": 1000,
     "sellValue": 5,
-    "icon": "T_CopperOreIcon",
+    "icon": "CopperOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1370,7 +1370,7 @@
     ],
     "weight": 1000,
     "sellValue": 3,
-    "icon": "T_CopperWireIcon",
+    "icon": "CopperWireIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1389,7 +1389,7 @@
     ],
     "weight": 10,
     "sellValue": 175,
-    "icon": "T_CottonCropIcon",
+    "icon": "CottonCropIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1409,7 +1409,7 @@
     ],
     "weight": 10,
     "sellValue": 525,
-    "icon": "T_CottonCrop_RareIcon",
+    "icon": "CottonCrop_RareIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1428,7 +1428,7 @@
     ],
     "weight": 500,
     "sellValue": 210,
-    "icon": "T_CottonCropOilIcon",
+    "icon": null,
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1449,7 +1449,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CottonCropIcon",
+    "icon": "CottonCropIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1471,7 +1471,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_CottonCropIcon",
+    "icon": "CottonCropIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1490,7 +1490,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_CowboyHatIcon",
+    "icon": "CowboyHatIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1510,7 +1510,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_CrimsonRedDyeIcon",
+    "icon": "CrimsonRedDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1530,7 +1530,7 @@
     ],
     "weight": 200,
     "sellValue": 0,
-    "icon": "T_CritterFood1Icon",
+    "icon": "CritterFood1Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1550,7 +1550,7 @@
     ],
     "weight": 200,
     "sellValue": 0,
-    "icon": "T_CritterFood2Icon",
+    "icon": "CritterFood2Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1570,7 +1570,7 @@
     ],
     "weight": 200,
     "sellValue": 0,
-    "icon": "T_CritterFood3Icon",
+    "icon": "CritterFood3Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1590,7 +1590,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_CrobEggIcon",
+    "icon": "CrobEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1610,7 +1610,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_CrystalDeerEggIcon",
+    "icon": "CrystalDeerEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1630,7 +1630,7 @@
     ],
     "weight": 2000,
     "sellValue": 500,
-    "icon": "T_CrystalMatrixIcon",
+    "icon": "CrystalMatrixIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1649,7 +1649,7 @@
     ],
     "weight": 500,
     "sellValue": 250,
-    "icon": "T_CrystalShardsIcon",
+    "icon": "CrystalShardsIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1669,7 +1669,7 @@
     ],
     "weight": 8000,
     "sellValue": 300,
-    "icon": "T_CubeMetalElectronicsIcon",
+    "icon": "CubeMetalElectronicsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1689,7 +1689,7 @@
     ],
     "weight": 16000,
     "sellValue": 480,
-    "icon": "T_CubeMetalFrameIcon",
+    "icon": "CubeMetalFrameIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1709,7 +1709,7 @@
     ],
     "weight": 8000,
     "sellValue": 120,
-    "icon": "T_CubeMetalOreIcon",
+    "icon": "CubeMetalOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1729,7 +1729,7 @@
     ],
     "weight": 8000,
     "sellValue": 350,
-    "icon": "T_CubeMetalPartsIcon",
+    "icon": "CubeMetalPartsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1749,7 +1749,7 @@
     ],
     "weight": 4000,
     "sellValue": 240,
-    "icon": "T_CubeMetalRefinedIcon",
+    "icon": "CubeMetalRefinedIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1769,7 +1769,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_DarkBlueDyeIcon",
+    "icon": "DarkBlueDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1789,7 +1789,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_DeepPurpleDyeIcon",
+    "icon": "DeepPurpleDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1808,7 +1808,7 @@
     ],
     "weight": 500,
     "sellValue": 100,
-    "icon": "T_EggsIcon",
+    "icon": "EggsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1827,7 +1827,7 @@
     ],
     "weight": 10,
     "sellValue": 100,
-    "icon": "T_ElectricPlantIcon",
+    "icon": "ElectricPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1847,7 +1847,7 @@
     ],
     "weight": 10,
     "sellValue": 300,
-    "icon": "T_ElectricPlant_RareIcon",
+    "icon": "ElectricPlant_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -1866,7 +1866,7 @@
     ],
     "weight": 500,
     "sellValue": 120,
-    "icon": "T_ElectricPlantOilIcon",
+    "icon": "ElectricPlantOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1887,7 +1887,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_ElectricPlantIcon",
+    "icon": "ElectricPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -1909,7 +1909,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_ElectricPlantIcon",
+    "icon": "ElectricPlantIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -1928,7 +1928,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_ElfHatIcon",
+    "icon": null,
     "featureFlag": "Limbo",
     "isVirtual": false
   },
@@ -1949,7 +1949,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_FanBushIcon",
+    "icon": "FanBushIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -1968,7 +1968,7 @@
     ],
     "weight": 100,
     "sellValue": 350,
-    "icon": "T_FeatherIcon",
+    "icon": "FeatherIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -1989,7 +1989,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_FernBush_YellowIcon",
+    "icon": "FernBush_YellowIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2010,7 +2010,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_FernBushIcon",
+    "icon": "FernBushIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2030,7 +2030,7 @@
     ],
     "weight": 50,
     "sellValue": 0,
-    "icon": "T_FertilizerX2Icon",
+    "icon": null,
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2050,7 +2050,7 @@
     ],
     "weight": 50,
     "sellValue": 0,
-    "icon": "T_FertilizerX4Icon",
+    "icon": null,
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2069,7 +2069,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_FlowerCrownIcon",
+    "icon": "FlowerCrownIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -2088,7 +2088,7 @@
     ],
     "weight": 500,
     "sellValue": 350,
-    "icon": "T_FossilFishIcon",
+    "icon": "FossilFishIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2107,7 +2107,7 @@
     ],
     "weight": 500,
     "sellValue": 130,
-    "icon": "T_FuelPlantOilIcon",
+    "icon": null,
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2127,7 +2127,7 @@
     ],
     "weight": 500,
     "sellValue": 20,
-    "icon": "T_FuelRockIcon",
+    "icon": "FuelRockIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2147,7 +2147,7 @@
     ],
     "weight": 10,
     "sellValue": 110,
-    "icon": "T_FuelWildIcon",
+    "icon": "FuelWildIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2167,7 +2167,7 @@
     ],
     "weight": 10,
     "sellValue": 330,
-    "icon": "T_FuelWild_RareIcon",
+    "icon": "FuelWild_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -2188,7 +2188,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_FuelWildIcon",
+    "icon": "FuelWildIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2210,7 +2210,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_FuelWildIcon",
+    "icon": "FuelWildIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -2229,7 +2229,7 @@
     ],
     "weight": 100,
     "sellValue": 300,
-    "icon": "T_FurIcon",
+    "icon": "FurIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -2248,7 +2248,7 @@
     ],
     "weight": 500,
     "sellValue": 450,
-    "icon": "T_GeodeShardsIcon",
+    "icon": "GeodeShardsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2270,7 +2270,7 @@
     ],
     "weight": 300,
     "sellValue": 200,
-    "icon": "T_GloFruitIcon",
+    "icon": null,
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2292,7 +2292,7 @@
     ],
     "weight": 200,
     "sellValue": 250,
-    "icon": "T_GloFruitDriedIcon",
+    "icon": "GloFruitDriedIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2312,7 +2312,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_GloIcon",
+    "icon": "GloIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2331,7 +2331,7 @@
     ],
     "weight": 800,
     "sellValue": 100,
-    "icon": "T_GloWoodIcon",
+    "icon": "GloWoodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2351,7 +2351,7 @@
     ],
     "weight": 4000,
     "sellValue": 400,
-    "icon": "T_GoldBarIcon",
+    "icon": "GoldBarIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2371,7 +2371,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_GoldenEggIcon",
+    "icon": "GoldenEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -2391,7 +2391,7 @@
     ],
     "weight": 4000,
     "sellValue": 200,
-    "icon": "T_GoldOreIcon",
+    "icon": "GoldOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2411,7 +2411,7 @@
     ],
     "weight": 4000,
     "sellValue": 100,
-    "icon": "T_GoldWireIcon",
+    "icon": "GoldWireIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2431,7 +2431,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_GrayDyeIcon",
+    "icon": "GrayDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2451,7 +2451,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_GreenColorflowerIcon",
+    "icon": "GreenColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2472,7 +2472,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_GreenColorflowerIcon",
+    "icon": "GreenColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2492,7 +2492,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_GreenDyeIcon",
+    "icon": "GreenDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2511,7 +2511,7 @@
     ],
     "weight": 800,
     "sellValue": 5,
-    "icon": "T_HardWoodIcon",
+    "icon": "HardWoodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2527,7 +2527,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_HardwoodGigaLogIcon",
+    "icon": "HardwoodGigaLogIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2547,7 +2547,7 @@
     ],
     "weight": 0,
     "sellValue": 100,
-    "icon": "T_HardwoodGigaSproutIcon",
+    "icon": "HardwoodGigaSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2564,7 +2564,7 @@
     ],
     "weight": 10,
     "sellValue": 75,
-    "icon": "T_HardwoodLogIcon",
+    "icon": "HardwoodLogIcon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -2583,7 +2583,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_HelmetIcon",
+    "icon": "HelmetIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -2604,7 +2604,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_HortensiaBush_FlowerIcon",
+    "icon": "HortensiaBush_FlowerIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2625,7 +2625,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_HortensiaBush_YellowIcon",
+    "icon": "HortensiaBush_YellowIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2646,7 +2646,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_HortensiaBushIcon",
+    "icon": "HortensiaBushIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2666,7 +2666,7 @@
     ],
     "weight": 2500,
     "sellValue": 80,
-    "icon": "T_IronBarIcon",
+    "icon": "IronBarIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2686,7 +2686,7 @@
     ],
     "weight": 2500,
     "sellValue": 55,
-    "icon": "T_IronElectronicsIcon",
+    "icon": "IronElectronicsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2706,7 +2706,7 @@
     ],
     "weight": 5000,
     "sellValue": 160,
-    "icon": "T_IronFrameIcon",
+    "icon": "IronFrameIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2726,7 +2726,7 @@
     ],
     "weight": 2500,
     "sellValue": 85,
-    "icon": "T_IronMechanicalPartsIcon",
+    "icon": "IronMechanicalPartsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2746,7 +2746,7 @@
     ],
     "weight": 5000,
     "sellValue": 40,
-    "icon": "T_IronOreIcon",
+    "icon": "IronOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2763,7 +2763,7 @@
     ],
     "weight": 10,
     "sellValue": 200,
-    "icon": "T_LargeAluminiumIcon",
+    "icon": "LargeAluminiumIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2780,7 +2780,7 @@
     ],
     "weight": 10,
     "sellValue": 1000,
-    "icon": "T_LargeBlueCrystalIcon",
+    "icon": "LargeBlueCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2801,7 +2801,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_LargeBush_YellowIcon",
+    "icon": "LargeBush_YellowIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2822,7 +2822,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_LargeBushIcon",
+    "icon": "LargeBushIcon",
     "featureFlag": "MiniPatch1Mics",
     "isVirtual": false
   },
@@ -2839,7 +2839,7 @@
     ],
     "weight": 10,
     "sellValue": 300,
-    "icon": "T_LargeCoalIcon",
+    "icon": "LargeCoalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2856,7 +2856,7 @@
     ],
     "weight": 10,
     "sellValue": 50,
-    "icon": "T_LargeCopperIcon",
+    "icon": "LargeCopperIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2873,7 +2873,7 @@
     ],
     "weight": 10,
     "sellValue": 1200,
-    "icon": "T_LargeCubeMetalIcon",
+    "icon": "LargeCubeMetalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2890,7 +2890,7 @@
     ],
     "weight": 10,
     "sellValue": 200,
-    "icon": "T_LargeFuelRockIcon",
+    "icon": "LargeFuelRockIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2907,7 +2907,7 @@
     ],
     "weight": 10,
     "sellValue": 2000,
-    "icon": "T_LargeGoldIcon",
+    "icon": "LargeGoldIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2924,7 +2924,7 @@
     ],
     "weight": 10,
     "sellValue": 400,
-    "icon": "T_LargeIronIcon",
+    "icon": "LargeIronIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2944,7 +2944,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_LargeItemTrailerIcon",
+    "icon": "LargeItemTrailerIcon",
     "featureFlag": "Trailers",
     "isVirtual": false
   },
@@ -2964,7 +2964,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_LargeItemTrailer3Icon",
+    "icon": "LargeItemTrailer3Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -2984,7 +2984,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_LargeItemTrailerMiniIcon",
+    "icon": "LargeItemTrailerMiniIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3001,7 +3001,7 @@
     ],
     "weight": 10,
     "sellValue": 150,
-    "icon": "T_LargeNickelIcon",
+    "icon": "LargeNickelIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3018,7 +3018,7 @@
     ],
     "weight": 10,
     "sellValue": 150,
-    "icon": "T_LargeRedCrystalIcon",
+    "icon": "LargeRedCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3035,7 +3035,7 @@
     ],
     "weight": 10,
     "sellValue": 30,
-    "icon": "T_LargeRockIcon",
+    "icon": "LargeRockIcon",
     "featureFlag": "LargeItemsAndMechHauling",
     "isVirtual": false
   },
@@ -3052,7 +3052,7 @@
     ],
     "weight": 10,
     "sellValue": 1000,
-    "icon": "T_LargeSilverIcon",
+    "icon": "LargeSilverIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3069,7 +3069,7 @@
     ],
     "weight": 10,
     "sellValue": 2000,
-    "icon": "T_LargeTallTechIcon",
+    "icon": "LargeTallTechIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3086,7 +3086,7 @@
     ],
     "weight": 10,
     "sellValue": 100,
-    "icon": "T_LargeTinIcon",
+    "icon": "LargeTinIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3103,7 +3103,7 @@
     ],
     "weight": 10,
     "sellValue": 600,
-    "icon": "T_LargeYellowCrystalIcon",
+    "icon": "LargeYellowCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3122,7 +3122,7 @@
     ],
     "weight": 500,
     "sellValue": 100,
-    "icon": "T_LightBulbIcon",
+    "icon": "LightBulbIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3142,7 +3142,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_LilypadTreeFloweringSproutIcon",
+    "icon": "LilypadTreeFloweringSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3162,7 +3162,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_LilypadTreeSproutIcon",
+    "icon": "LilypadTreeSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3182,7 +3182,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_MagentaDyeIcon",
+    "icon": "MagentaDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3202,7 +3202,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MeadowTreeLarge_GreenIcon",
+    "icon": "MeadowTreeLarge_GreenIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3222,7 +3222,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MeadowTreeLarge_PinkIcon",
+    "icon": "MeadowTreeLarge_PinkIcon",
     "featureFlag": "AutumnSprouts2024",
     "isVirtual": false
   },
@@ -3242,7 +3242,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MeadowTreeLarge_YellowIcon",
+    "icon": "MeadowTreeLarge_YellowIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3262,7 +3262,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MeadowTreeSmall_GreenIcon",
+    "icon": "MeadowTreeSmall_GreenIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3282,7 +3282,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MeadowTreeSmall_YellowIcon",
+    "icon": "MeadowTreeSmall_YellowIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3301,7 +3301,7 @@
     ],
     "weight": 5000,
     "sellValue": 1000,
-    "icon": "T_MeteoriteShardIcon",
+    "icon": "MeteoriteShardIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3321,7 +3321,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_MoxEggIcon",
+    "icon": "MoxEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -3341,7 +3341,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_MushroomTreeSproutIcon",
+    "icon": "MushroomTreeSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3361,7 +3361,7 @@
     ],
     "weight": 1500,
     "sellValue": 15,
-    "icon": "T_NickelOreIcon",
+    "icon": "NickelOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3380,7 +3380,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_NitrogenicDroppingIcon",
+    "icon": "NitrogenicDroppingIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3400,7 +3400,7 @@
     ],
     "weight": 50,
     "sellValue": 0,
-    "icon": "T_NitrogenicFertilizerIcon",
+    "icon": "NitrogenicFertilizerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3419,7 +3419,7 @@
     ],
     "weight": 100,
     "sellValue": 10,
-    "icon": "T_NitrogenicPowderIcon",
+    "icon": "NitrogenicPowderIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3438,7 +3438,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_NoxiousPodIcon",
+    "icon": "NoxiousPodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3457,7 +3457,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_NoxiousSporeIcon",
+    "icon": "NoxiousSporeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3477,7 +3477,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_OrangeColorflowerIcon",
+    "icon": "OrangeColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3498,7 +3498,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_OrangeColorflowerIcon",
+    "icon": "OrangeColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3518,7 +3518,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_OrangeDyeIcon",
+    "icon": "OrangeDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3538,7 +3538,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PalmTree01Icon",
+    "icon": "PalmTree01Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3558,7 +3558,7 @@
     ],
     "weight": 10,
     "sellValue": 200,
-    "icon": "T_PapristalkIcon",
+    "icon": "PapristalkIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3578,7 +3578,7 @@
     ],
     "weight": 10,
     "sellValue": 600,
-    "icon": "T_Papristalk_RareIcon",
+    "icon": "Papristalk_RareIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3597,7 +3597,7 @@
     ],
     "weight": 500,
     "sellValue": 240,
-    "icon": "T_PapristalkOilIcon",
+    "icon": "PapristalkOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3618,7 +3618,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PapristalkIcon",
+    "icon": "PapristalkIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3640,7 +3640,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PapristalkIcon",
+    "icon": "PapristalkIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3659,7 +3659,7 @@
     ],
     "weight": 100,
     "sellValue": 350,
-    "icon": "T_PearlDropIcon",
+    "icon": "PearlDropIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3678,7 +3678,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_PhosphoricDroppingIcon",
+    "icon": "PhosphoricDroppingIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3698,7 +3698,7 @@
     ],
     "weight": 50,
     "sellValue": 0,
-    "icon": "T_PhosphoricFertilizerIcon",
+    "icon": "PhosphoricFertilizerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3717,7 +3717,7 @@
     ],
     "weight": 100,
     "sellValue": 10,
-    "icon": "T_PhosphoricPowderIcon",
+    "icon": "PhosphoricPowderIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3736,7 +3736,7 @@
     ],
     "weight": 600,
     "sellValue": 50,
-    "icon": "T_PillowIcon",
+    "icon": "PillowIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -3756,7 +3756,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PineIcon",
+    "icon": "PineIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3776,7 +3776,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_PinkDyeIcon",
+    "icon": "PinkDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3797,7 +3797,7 @@
     ],
     "weight": 10,
     "sellValue": 1,
-    "icon": "T_PlantFiberIcon",
+    "icon": "PlantFiberIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3816,7 +3816,7 @@
     ],
     "weight": 500,
     "sellValue": 5,
-    "icon": "T_PlantOilIcon",
+    "icon": "PlantOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3837,7 +3837,7 @@
     ],
     "weight": 10,
     "sellValue": 45,
-    "icon": "T_PolyberryIcon",
+    "icon": "PolyberryIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3857,7 +3857,7 @@
     ],
     "weight": 10,
     "sellValue": 135,
-    "icon": "T_Polyberry_RareIcon",
+    "icon": "Polyberry_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -3876,7 +3876,7 @@
     ],
     "weight": 500,
     "sellValue": 55,
-    "icon": "T_PolyberryOilIcon",
+    "icon": "PolyberryOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3897,7 +3897,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PolyberryIcon",
+    "icon": "PolyberryIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3919,7 +3919,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PolyberryIcon",
+    "icon": "PolyberryIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -3938,7 +3938,7 @@
     ],
     "weight": 200,
     "sellValue": 90,
-    "icon": "T_PolymerIcon",
+    "icon": "PolymerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3957,7 +3957,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_PotassicDroppingIcon",
+    "icon": "PotassicDroppingIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3977,7 +3977,7 @@
     ],
     "weight": 50,
     "sellValue": 0,
-    "icon": "T_PotassicFertilizerIcon",
+    "icon": "PotassicFertilizerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -3996,7 +3996,7 @@
     ],
     "weight": 100,
     "sellValue": 10,
-    "icon": "T_PotassicPowderIcon",
+    "icon": "PotassicPowderIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4015,7 +4015,7 @@
     ],
     "weight": 2400,
     "sellValue": 0,
-    "icon": "T_PowerCoreIcon",
+    "icon": "PowerCoreIcon",
     "featureFlag": null,
     "isVirtual": true
   },
@@ -4034,7 +4034,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_PropellerHatIcon",
+    "icon": "PropellerHatIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -4054,7 +4054,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_PurpleColorflowerIcon",
+    "icon": "PurpleColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4075,7 +4075,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_PurpleColorflowerIcon",
+    "icon": "PurpleColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4095,7 +4095,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_PurpleDyeIcon",
+    "icon": "PurpleDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4114,7 +4114,7 @@
     ],
     "weight": 10,
     "sellValue": 225,
-    "icon": "T_QuartznipIcon",
+    "icon": "QuartznipIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4134,7 +4134,7 @@
     ],
     "weight": 10,
     "sellValue": 675,
-    "icon": "T_Quartznip_RareIcon",
+    "icon": "Quartznip_RareIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4153,7 +4153,7 @@
     ],
     "weight": 500,
     "sellValue": 270,
-    "icon": "T_QuartznipOilIcon",
+    "icon": "QuartznipOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4174,7 +4174,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_QuartznipIcon",
+    "icon": "QuartznipIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4196,7 +4196,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_QuartznipIcon",
+    "icon": "QuartznipIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4217,7 +4217,7 @@
     ],
     "weight": 10,
     "sellValue": 50,
-    "icon": "T_RabbageIcon",
+    "icon": "RabbageIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4237,7 +4237,7 @@
     ],
     "weight": 10,
     "sellValue": 150,
-    "icon": "T_Rabbage_RareIcon",
+    "icon": "Rabbage_RareIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -4256,7 +4256,7 @@
     ],
     "weight": 500,
     "sellValue": 60,
-    "icon": "T_RabbageOilIcon",
+    "icon": "RabbageOilIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4277,7 +4277,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_RabbageIcon",
+    "icon": "RabbageIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4299,7 +4299,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_RabbageIcon",
+    "icon": "RabbageIcon",
     "featureFlag": "Neighbours",
     "isVirtual": false
   },
@@ -4319,7 +4319,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_RatscallionEggIcon",
+    "icon": "RatscallionEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -4339,7 +4339,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_RedColorflowerIcon",
+    "icon": "RedColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4360,7 +4360,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_RedColorflowerIcon",
+    "icon": "RedColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4380,7 +4380,7 @@
     ],
     "weight": 2500,
     "sellValue": 15,
-    "icon": "T_RedCrystalIcon",
+    "icon": "RedCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4401,7 +4401,7 @@
     ],
     "weight": 400,
     "sellValue": 8,
-    "icon": "T_RedCrystalDustIcon",
+    "icon": "RedCrystalDustIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4421,7 +4421,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_RedDyeIcon",
+    "icon": "RedDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4441,7 +4441,7 @@
     ],
     "weight": 800,
     "sellValue": 15,
-    "icon": "T_RedGlassIcon",
+    "icon": "RedGlassIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4461,7 +4461,7 @@
     ],
     "weight": 800,
     "sellValue": 15,
-    "icon": "T_RedLensIcon",
+    "icon": "RedLensIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4480,7 +4480,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_ReindeerAntlersIcon",
+    "icon": "ReindeerAntlersIcon",
     "featureFlag": "Christmas2024",
     "isVirtual": false
   },
@@ -4500,7 +4500,7 @@
     ],
     "weight": 15000,
     "sellValue": 2000,
-    "icon": "T_ReinforcedTallTechIcon",
+    "icon": "ReinforcedTallTechIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4520,7 +4520,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_RockPlantIcon",
+    "icon": "RockPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4539,7 +4539,7 @@
     ],
     "weight": 300,
     "sellValue": 50,
-    "icon": "T_RopeIcon",
+    "icon": "RopeIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -4559,7 +4559,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_SafetyOrangeDyeIcon",
+    "icon": "SafetyOrangeDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4579,7 +4579,7 @@
     ],
     "weight": 400,
     "sellValue": 2,
-    "icon": "T_SandIcon",
+    "icon": "SandIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4598,7 +4598,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_SantaHatIcon",
+    "icon": "SantaHatIcon",
     "featureFlag": "Christmas2024",
     "isVirtual": false
   },
@@ -4617,7 +4617,7 @@
     ],
     "weight": 500,
     "sellValue": 150,
-    "icon": "T_SeashellIcon",
+    "icon": "SeashellIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4637,7 +4637,7 @@
     ],
     "weight": 4000,
     "sellValue": 200,
-    "icon": "T_SilverBarIcon",
+    "icon": "SilverBarIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4657,7 +4657,7 @@
     ],
     "weight": 6000,
     "sellValue": 100,
-    "icon": "T_SilverOreIcon",
+    "icon": "SilverOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4677,7 +4677,7 @@
     ],
     "weight": 3000,
     "sellValue": 50,
-    "icon": "T_SilverWireIcon",
+    "icon": "SilverWireIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4696,7 +4696,7 @@
     ],
     "weight": 800,
     "sellValue": 2,
-    "icon": "T_SoftwoodIcon",
+    "icon": "SoftwoodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4712,7 +4712,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_SoftwoodGigaLogIcon",
+    "icon": "SoftwoodGigaLogIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4732,7 +4732,7 @@
     ],
     "weight": 0,
     "sellValue": 100,
-    "icon": "T_SoftwoodGigaSproutIcon",
+    "icon": "SoftwoodGigaSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4749,7 +4749,7 @@
     ],
     "weight": 10,
     "sellValue": 30,
-    "icon": "T_SoftWoodLogIcon",
+    "icon": "SoftWoodLogIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4768,7 +4768,7 @@
     ],
     "weight": 500,
     "sellValue": 50,
-    "icon": "T_SpringIcon",
+    "icon": "SpringIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4788,7 +4788,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_StalktailEggIcon",
+    "icon": "StalktailEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -4808,7 +4808,7 @@
     ],
     "weight": 500,
     "sellValue": 0,
-    "icon": "T_StandardRepairKitIcon",
+    "icon": "StandardRepairKitIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4827,7 +4827,7 @@
     ],
     "weight": 500,
     "sellValue": 200,
-    "icon": "T_StarfishIcon",
+    "icon": "StarfishIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4847,7 +4847,7 @@
     ],
     "weight": 5000,
     "sellValue": 100,
-    "icon": "T_SteelBarIcon",
+    "icon": "SteelBarIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4867,7 +4867,7 @@
     ],
     "weight": 5000,
     "sellValue": 100,
-    "icon": "T_SteelElectronicsIcon",
+    "icon": "SteelElectronicsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4887,7 +4887,7 @@
     ],
     "weight": 10000,
     "sellValue": 200,
-    "icon": "T_SteelFrameIcon",
+    "icon": "SteelFrameIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4907,7 +4907,7 @@
     ],
     "weight": 5000,
     "sellValue": 105,
-    "icon": "T_SteelMechanicalPartsIcon",
+    "icon": "SteelMechanicalPartsIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4926,7 +4926,7 @@
     ],
     "weight": 900,
     "sellValue": 3,
-    "icon": "T_StoneIcon",
+    "icon": "StoneIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4946,7 +4946,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_StorageTrailerIcon",
+    "icon": "StorageTrailerIcon",
     "featureFlag": "Trailers",
     "isVirtual": false
   },
@@ -4966,7 +4966,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_StorageTrailer3Icon",
+    "icon": "StorageTrailer3Icon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -4986,7 +4986,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_StorageTrailerMiniIcon",
+    "icon": "StorageTrailerMiniIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5005,7 +5005,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_StrawHatIcon",
+    "icon": "StrawHatIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -5024,7 +5024,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_SunglassesIcon",
+    "icon": "SunglassesIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -5044,7 +5044,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_TallSwampTreeSproutIcon",
+    "icon": "TallSwampTreeSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5063,7 +5063,7 @@
     ],
     "weight": 10000,
     "sellValue": 100,
-    "icon": "T_TallTechIcon",
+    "icon": "TallTechIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5082,7 +5082,7 @@
     ],
     "weight": 10000,
     "sellValue": 200,
-    "icon": "T_TallTechPureIcon",
+    "icon": "TallTechPureIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5102,7 +5102,7 @@
     ],
     "weight": 2500,
     "sellValue": 10,
-    "icon": "T_TinOreIcon",
+    "icon": "TinOreIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5122,7 +5122,7 @@
     ],
     "weight": 300,
     "sellValue": 0,
-    "icon": "T_TookanEggIcon",
+    "icon": "TookanEggIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -5141,7 +5141,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_TopHatIcon",
+    "icon": "TopHatIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -5161,7 +5161,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_TurquoiseDyeIcon",
+    "icon": "TurquoiseDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5180,7 +5180,7 @@
     ],
     "weight": 0,
     "sellValue": 0,
-    "icon": "T_VikingHelmetIcon",
+    "icon": "VikingHelmetIcon",
     "featureFlag": "RanchAnimals",
     "isVirtual": false
   },
@@ -5200,7 +5200,7 @@
     ],
     "weight": 10,
     "sellValue": 0,
-    "icon": "T_WaterIcon",
+    "icon": "WaterIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5220,7 +5220,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_WaterPlantIcon",
+    "icon": "WaterPlantIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5239,7 +5239,7 @@
     ],
     "weight": 300,
     "sellValue": 50,
-    "icon": "T_WaxIcon",
+    "icon": "WaxIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5262,7 +5262,7 @@
     ],
     "weight": 10,
     "sellValue": 15,
-    "icon": "T_WheatIcon",
+    "icon": "WheatIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5282,7 +5282,7 @@
     ],
     "weight": 10,
     "sellValue": 45,
-    "icon": "T_Wheat_RareIcon",
+    "icon": "Wheat_RareIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5303,7 +5303,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_WheatIcon",
+    "icon": "WheatIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5325,7 +5325,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_WheatIcon",
+    "icon": "WheatIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5345,7 +5345,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_WhiteColorflowerIcon",
+    "icon": "WhiteColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5366,7 +5366,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_WhiteColorflowerIcon",
+    "icon": "WhiteColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5386,7 +5386,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_WhiteDyeIcon",
+    "icon": "WhiteDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5406,7 +5406,7 @@
     ],
     "weight": 10000,
     "sellValue": 1500,
-    "icon": "T_WiredTallTechIcon",
+    "icon": "WiredTallTechIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5425,7 +5425,7 @@
     ],
     "weight": 800,
     "sellValue": 2,
-    "icon": "T_WoodIcon",
+    "icon": "WoodIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5441,7 +5441,7 @@
     ],
     "weight": 100,
     "sellValue": 0,
-    "icon": "T_WoodGigaLogIcon",
+    "icon": "WoodGigaLogIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5461,7 +5461,7 @@
     ],
     "weight": 0,
     "sellValue": 100,
-    "icon": "T_WoodGigaSproutIcon",
+    "icon": "WoodGigaSproutIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5478,7 +5478,7 @@
     ],
     "weight": 10,
     "sellValue": 30,
-    "icon": "T_WoodLogIcon",
+    "icon": "WoodLogIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5498,7 +5498,7 @@
     ],
     "weight": 100,
     "sellValue": 50,
-    "icon": "T_YellowColorflowerIcon",
+    "icon": "YellowColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5519,7 +5519,7 @@
     ],
     "weight": 0,
     "sellValue": 1,
-    "icon": "T_YellowColorflowerIcon",
+    "icon": "YellowColorflowerIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5539,7 +5539,7 @@
     ],
     "weight": 2500,
     "sellValue": 60,
-    "icon": "T_YellowCrystalIcon",
+    "icon": "YellowCrystalIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5560,7 +5560,7 @@
     ],
     "weight": 400,
     "sellValue": 35,
-    "icon": "T_YellowCrystalDustIcon",
+    "icon": "YellowCrystalDustIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5580,7 +5580,7 @@
     ],
     "weight": 200,
     "sellValue": 60,
-    "icon": "T_YellowDyeIcon",
+    "icon": "YellowDyeIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5600,7 +5600,7 @@
     ],
     "weight": 800,
     "sellValue": 25,
-    "icon": "T_YellowGlassIcon",
+    "icon": "YellowGlassIcon",
     "featureFlag": null,
     "isVirtual": false
   },
@@ -5620,7 +5620,7 @@
     ],
     "weight": 800,
     "sellValue": 60,
-    "icon": "T_YellowLensIcon",
+    "icon": "YellowLensIcon",
     "featureFlag": null,
     "isVirtual": false
   }

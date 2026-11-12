@@ -16,7 +16,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   cacheComponents: true,
-  partialPrefetching: true,
+  // Explicitly off: with it on, unknown dynamic paths (e.g. /items/Nope) answer 200 instead of 404.
+  // Revisit when Next makes it mandatory (see ADR 0006).
+  partialPrefetching: false,
   turbopack: {
     rules: {
       "*.css": {

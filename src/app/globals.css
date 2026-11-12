@@ -20,6 +20,9 @@
   --color-frontier-red-soft: #f87171;
   --color-frontier-orange-soft: #fb923c;
   --color-frontier-green-soft: #4ade80;
+  /* Darker greens of the same hue: white text on them passes AA (5.0:1 and 7.1:1). */
+  --color-frontier-green-deep: #15803d;
+  --color-frontier-green-deeper: #166534;
   --color-frontier-blue-soft: #38bdf8;
   --color-frontier-purple-soft: #a78bfa;
 }
@@ -33,9 +36,10 @@
   --fg-muted: var(--color-frontier-muted);
   --border: #334155;
   --border-strong: #64748b;
-  --primary: var(--color-frontier-green);
-  --primary-hover: var(--color-frontier-green-soft);
-  --primary-fg: var(--color-frontier-dark);
+  --primary: var(--color-frontier-green-deep);
+  --primary-hover: var(--color-frontier-green-deeper);
+  --primary-fg: #ffffff;
+  --icon-tile: #cbd5e1;
   --danger: var(--color-frontier-red);
   --danger-fg: #ffffff;
   --link: var(--color-frontier-green-soft);
@@ -57,9 +61,9 @@
     --fg-muted: #475569;
     --border: #e2e8f0;
     --border-strong: #64748b;
-    --primary: #15803d;
-    --primary-hover: #166534;
-    --primary-fg: #ffffff;
+    --primary: var(--color-frontier-green-deep);
+    --primary-hover: var(--color-frontier-green-deeper);
+    --icon-tile: #e2e8f0;
     --danger: #b91c1c;
     --link: #15803d;
     --ring: #0369a1;
@@ -82,6 +86,7 @@
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
   --color-primary-foreground: var(--primary-fg);
+  --color-icon-tile: var(--icon-tile);
   --color-danger: var(--danger);
   --color-danger-foreground: var(--danger-fg);
   --color-link: var(--link);

@@ -1,0 +1,205 @@
+[
+  {
+    "id": "Assembler",
+    "name": {
+      "en": "Assembler",
+      "pt-BR": "Montador"
+    }
+  },
+  {
+    "id": "ColorMixer",
+    "name": {
+      "en": "Color Mixer",
+      "pt-BR": "Misturador de Cores"
+    }
+  },
+  {
+    "id": "ColorRefiner",
+    "name": {
+      "en": "Flower Press",
+      "pt-BR": "Prensa de Flores"
+    }
+  },
+  {
+    "id": "Compost",
+    "name": {
+      "en": "Fertilizer Infuser",
+      "pt-BR": "Infusor de Fertilizante"
+    }
+  },
+  {
+    "id": "Compost2",
+    "name": {
+      "en": "Fertilizer Infuser II",
+      "pt-BR": "Infusor de Fertilizante II"
+    }
+  },
+  {
+    "id": "Dresser",
+    "name": {
+      "en": "Animal Accessory Studio",
+      "pt-BR": "Estúdio de Acessórios para Animais"
+    }
+  },
+  {
+    "id": "FoodProcessor",
+    "name": {
+      "en": "Dehydrator Oven",
+      "pt-BR": "Forno Desidratador"
+    }
+  },
+  {
+    "id": "FuelMaker",
+    "name": {
+      "en": "Oil Mixer",
+      "pt-BR": "Misturador de Óleo"
+    }
+  },
+  {
+    "id": "FuelMaker2",
+    "name": {
+      "en": "Oil Mixer II",
+      "pt-BR": "Misturador de Óleo II"
+    }
+  },
+  {
+    "id": "FuelMaker3",
+    "name": {
+      "en": "Oil Mixer III",
+      "pt-BR": "Misturador de Óleo III"
+    }
+  },
+  {
+    "id": "Furnace",
+    "name": {
+      "en": "Furnace",
+      "pt-BR": "Fornalha"
+    }
+  },
+  {
+    "id": "Furnace3",
+    "name": {
+      "en": "Furnace III",
+      "pt-BR": "Fornalha III"
+    }
+  },
+  {
+    "id": "FurnaceTwo",
+    "name": {
+      "en": "Furnace II",
+      "pt-BR": "Fornalha II"
+    }
+  },
+  {
+    "id": "Grinder",
+    "name": {
+      "en": "Grinder",
+      "pt-BR": "Triturador"
+    }
+  },
+  {
+    "id": "Grinder2",
+    "name": {
+      "en": "Grinder II",
+      "pt-BR": "Triturador II"
+    }
+  },
+  {
+    "id": "Grinder3",
+    "name": {
+      "en": "Grinder III",
+      "pt-BR": "Triturador III"
+    }
+  },
+  {
+    "id": "HeavyUtilityCrafter",
+    "name": {
+      "en": "Fabricator",
+      "pt-BR": "Fabricante"
+    }
+  },
+  {
+    "id": "Loom",
+    "name": {
+      "en": "Loom",
+      "pt-BR": "Tear"
+    }
+  },
+  {
+    "id": "OilPresser",
+    "name": {
+      "en": "Oil Presser",
+      "pt-BR": "Prensa de Óleo"
+    }
+  },
+  {
+    "id": "OilPresser2",
+    "name": {
+      "en": "Oil Presser II",
+      "pt-BR": "Prensa de Óleo II"
+    }
+  },
+  {
+    "id": "OilPresser3",
+    "name": {
+      "en": "Oil Presser III",
+      "pt-BR": "Prensa de Óleo III"
+    }
+  },
+  {
+    "id": "SeedMaker",
+    "name": {
+      "en": "Seed Extractor",
+      "pt-BR": "Extrator de Semente"
+    }
+  },
+  {
+    "id": "SeedMaker2",
+    "name": {
+      "en": "Seed Extractor II",
+      "pt-BR": "Extrator de Semente II"
+    }
+  },
+  {
+    "id": "SeedMaker3",
+    "name": {
+      "en": "Seed Extractor III",
+      "pt-BR": "Extrator de Semente III"
+    }
+  },
+  {
+    "id": "SeedMaker4",
+    "name": {
+      "en": "Seed Extractor IV",
+      "pt-BR": "Extrator de Semente IV"
+    }
+  },
+  {
+    "id": "SeedRefinement",
+    "name": {
+      "en": "Seed Modifier",
+      "pt-BR": "Modificador de Sementes"
+    }
+  },
+  {
+    "id": "SeedRefinement2",
+    "name": {
+      "en": "Seed Modifier II",
+      "pt-BR": "Modificador de Sementes II"
+    }
+  },
+  {
+    "id": "SeedRefinement3",
+    "name": {
+      "en": "Seed Modifier III",
+      "pt-BR": "Modificador de Sementes III"
+    }
+  },
+  {
+    "id": "SolarDehydrator",
+    "name": {
+      "en": "Dehydrator Oven II",
+      "pt-BR": "Forno Desidratador II"
+    }
+  }
+]
