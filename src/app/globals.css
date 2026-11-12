@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens.
+ * 1) Brand palette (owner-provided, from the game's art) — raw colors, never used for body text.
+ * 2) "-soft" tints: AA-safe versions for colored TEXT on dark surfaces (brand reds/purples fail 4.5:1).
+ * 3) Semantic tokens (below, per theme): what components actually use. Dark is the default theme.
+ */
+@theme {
+  --color-frontier-red: #d62828;
+  --color-frontier-orange: #ea580c;
+  --color-frontier-green: #16a34a;
+  --color-frontier-blue: #0284c7;
+  --color-frontier-purple: #7c3aed;
+
+  --color-frontier-dark: #0f172a;
+  --color-frontier-card: #1e293b;
+  --color-frontier-muted: #94a3b8;
+
+  --color-frontier-red-soft: #f87171;
+  --color-frontier-orange-soft: #fb923c;
+  --color-frontier-green-soft: #4ade80;
+  --color-frontier-blue-soft: #38bdf8;
+  --color-frontier-purple-soft: #a78bfa;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --bg: var(--color-frontier-dark);
+  --surface: var(--color-frontier-card);
+  --surface-hover: #273549;
+  --fg: #e2e8f0;
+  --fg-muted: var(--color-frontier-muted);
+  --border: #334155;
+  --border-strong: #64748b;
+  --primary: var(--color-frontier-green);
+  --primary-hover: var(--color-frontier-green-soft);
+  --primary-fg: var(--color-frontier-dark);
+  --danger: var(--color-frontier-red);
+  --danger-fg: #ffffff;
+  --link: var(--color-frontier-green-soft);
+  --ring: var(--color-frontier-blue-soft);
+  --tone-red: var(--color-frontier-red-soft);
+  --tone-orange: var(--color-frontier-orange-soft);
+  --tone-green: var(--color-frontier-green-soft);
+  --tone-blue: var(--color-frontier-blue-soft);
+  --tone-purple: var(--color-frontier-purple-soft);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-hover: #f1f5f9;
+    --fg: #0f172a;
+    --fg-muted: #475569;
+    --border: #e2e8f0;
+    --border-strong: #64748b;
+    --primary: #15803d;
+    --primary-hover: #166534;
+    --primary-fg: #ffffff;
+    --danger: #b91c1c;
+    --link: #15803d;
+    --ring: #0369a1;
+    --tone-red: #991b1b;
+    --tone-orange: #9a3412;
+    --tone-green: #166534;
+    --tone-blue: #075985;
+    --tone-purple: #5b21b6;
+  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-foreground: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-fg);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-fg);
+  --color-link: var(--link);
+  --color-ring: var(--ring);
+  --color-tone-red: var(--tone-red);
+  --color-tone-orange: var(--tone-orange);
+  --color-tone-green: var(--tone-green);
+  --color-tone-blue: var(--tone-blue);
+  --color-tone-purple: var(--tone-purple);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

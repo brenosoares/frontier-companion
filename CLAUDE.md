@@ -32,7 +32,9 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 - Next 16 difere do que você conhece (ex.: `proxy` no lugar de `middleware`, `cacheComponents`). **Leia `node_modules/next/dist/docs/` antes de usar uma API do Next.**
 - Não adicione dependências sem necessidade clara; justifique no PR (manutenção, tamanho, segurança). Nada de `postinstall` de terceiros.
 - Nada de `dangerouslySetInnerHTML`; rich text do jogo é sanitizado **no pipeline**.
-- Textos de UI em arquivos de i18n, nunca hardcoded nos componentes (a partir da Fase 3).
+- Textos de UI em `src/shared/i18n/messages` (`pt-BR.ts` é a fonte do shape; `en.ts` deve casar). Nunca hardcode texto nos componentes. Rotas ficam sob `app/[locale]`.
+- Estilo: use **somente tokens semânticos** (`bg-surface`, `text-muted`, `text-primary-foreground`, `tone-*`…) definidos em `globals.css`; não use as cores cruas `frontier-*` para texto. Toda cor nova precisa passar AA nos dois temas (ADR 0005).
+- Componentes de UI novos: Tailwind + `cva` (+ Radix só quando a acessibilidade for difícil, ex.: dialog/menu). Sem bibliotecas de componentes prontas.
 - Acessibilidade é requisito: teclado, contraste AA, labels, `prefers-reduced-motion`.
 
 ## 4. Limites legais e de privacidade (INEGOCIÁVEIS)
