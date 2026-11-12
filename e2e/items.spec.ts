@@ -106,11 +106,23 @@ test.describe("item detail", () => {
   test("shows the item's pixel-art icon, loaded", async ({ page }) => {
     await page.goto("/pt-BR/items/BronzeBar");
 
-    const icon = page.locator('img[src="/icons/items/BronzeBarIcon.png"]');
+    const icon = page.getByRole("article").locator("header img").first();
+    await expect(icon).toHaveAttribute("src", "/icons/items/BronzeBarIcon.png");
     await expect(icon).toBeVisible();
     await expect
       .poll(() => icon.evaluate((image: HTMLImageElement) => image.naturalWidth))
       .toBeGreaterThan(0);
+  });
+
+  test("recipes show the icon of every ingredient and of the result", async ({ page }) => {
+    await page.goto("/pt-BR/items/BronzeBar");
+
+    const section = page.locator("section").filter({
+      has: page.getByRole("heading", { level: 2, name: "Como fazer" }),
+    });
+    const firstRecipe = section.locator(":scope > ul > li").first();
+    await expect(firstRecipe.locator("img")).toHaveCount(4); // 3 ingredients + the bar
+    await expect(firstRecipe.locator('img[src="/icons/items/CopperOreIcon.png"]')).toBeVisible();
   });
 
   test("ingredient links navigate to the ingredient page", async ({ page }) => {

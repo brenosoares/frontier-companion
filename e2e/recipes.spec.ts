@@ -64,7 +64,12 @@ test.describe("a construct category", () => {
     await expect(card).toContainText("Custo");
     await expect(card).toContainText("10×");
     await expect(card).toContainText("Modo de construção");
-    await expect(card.locator("img")).toHaveAttribute("src", /\/icons\/constructs\/.+\.png/);
+    await expect(card.locator("img").first()).toHaveAttribute(
+      "src",
+      /\/icons\/constructs\/.+\.png/,
+    );
+    // Every cost line carries its item's icon, like on the construct page.
+    await expect(card.locator('img[src^="/icons/items/"]').first()).toBeVisible();
   });
 
   test("clicking a card opens the construct's details", async ({ page }) => {
@@ -178,7 +183,8 @@ test.describe("materials calculator", () => {
   test("builds a multi-step plan in dependency order", async ({ page }) => {
     await page.goto("/pt-BR/calculator?item=CrystalMatrix&qty=3");
 
-    const steps = page.getByRole("region", { name: "Etapas de fabricação" }).getByRole("listitem");
+    // `ol > li`: the steps themselves, not the ingredient lists nested inside each one.
+    const steps = page.getByRole("region", { name: "Etapas de fabricação" }).locator("ol > li");
     await expect(steps.first()).toBeVisible();
     // The requested item is the last step; its ingredients come before it.
     await expect(steps.last()).toContainText("3× Prisma de Cristal");

@@ -55,7 +55,11 @@ const recipes: Recipe[] = [
   recipe("Seeds3", ["Seeds", 3], { Plant_Rare: 1 }),
 ];
 
-const item = (name: string, hasSource = true): CalculatorItem => ({ name, icon: null, hasSource });
+const item = (name: string, hasSource = true): CalculatorItem => ({
+  name,
+  icon: `${name.replace(/\W/g, "")}Icon`,
+  hasSource,
+});
 const items = {
   Bar: item("Bronze Bar"),
   Ore: item("Copper Ore"),
@@ -239,5 +243,16 @@ describe("MaterialsCalculator", () => {
       "href",
       "/en/items/Ore",
     );
+  });
+
+  it("shows the icon of each ingredient of a crafting step", async () => {
+    renderCalculator();
+    await userEvent.selectOptions(screen.getByLabelText("Item to craft"), "Bar");
+
+    const steps = screen.getByRole("region", { name: "Crafting steps" });
+    const icons = [...steps.querySelectorAll("img")].map((img) => img.getAttribute("src"));
+
+    expect(icons).toContain("/icons/items/CopperOreIcon.png");
+    expect(icons).toContain("/icons/items/WoodIcon.png");
   });
 });

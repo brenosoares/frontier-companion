@@ -16,8 +16,8 @@ const entry: CraftCardEntry = {
   icon: "BarrelIcon",
   iconKind: "construct",
   costs: [
-    { name: "Hardwood", amount: 10 },
-    { name: "Iron Frame", amount: 1234 },
+    { name: "Hardwood", amount: 10, icon: "HardwoodIcon" },
+    { name: "Iron Frame", amount: 1234, icon: null },
   ],
   madeIn: ["Build mode"],
   unavailable: false,
@@ -41,6 +41,17 @@ describe("CraftCard", () => {
       "src",
       "/icons/constructs/BarrelIcon.png",
     );
+  });
+
+  it("shows an icon for each cost, with a generic glyph when an item has none", () => {
+    const { container } = renderCard();
+    const costIcons = [...container.querySelectorAll("img")].map((img) => img.getAttribute("src"));
+
+    expect(costIcons).toEqual([
+      "/icons/constructs/BarrelIcon.png",
+      "/icons/items/HardwoodIcon.png",
+    ]);
+    expect(container.querySelectorAll("svg").length).toBeGreaterThanOrEqual(1);
   });
 
   it("formats quantities for the locale", () => {

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { formatNumber, formatTemplate } from "@/shared/lib/format";
 import { Badge } from "./badge";
 import { GameIcon, type GameIconKind } from "./game-icon";
+import { ItemLine } from "./item-line";
 
 /** A buildable or craftable thing, ready to show. Plain data: it also crosses to client components. */
 export interface CraftCardEntry {
@@ -10,8 +11,8 @@ export interface CraftCardEntry {
   name: string;
   icon: string | null;
   iconKind: GameIconKind;
-  /** What it costs, e.g. `{ name: "Wood", amount: 15 }`. */
-  costs: { name: string; amount: number }[];
+  /** What it costs, e.g. `{ name: "Wood", amount: 15, icon: "WoodIcon" }`. */
+  costs: { name: string; amount: number; icon: string | null }[];
   /** Units one craft yields; shown only when above 1. */
   yields?: number;
   /** Where it is made: station names, or "Build mode". */
@@ -62,11 +63,13 @@ export function CraftCard({ entry, locale, labels }: CraftCardProps) {
       {entry.costs.length > 0 && (
         <div className="text-sm">
           <p className="text-muted">{labels.cost}</p>
-          <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5">
+          <ul className="mt-2 flex flex-col gap-2">
             {entry.costs.map((cost) => (
               <li key={cost.name}>
-                <span className="font-semibold">{formatNumber(cost.amount, locale)}×</span>{" "}
-                {cost.name}
+                <ItemLine icon={cost.icon} size={24}>
+                  <span className="font-semibold">{formatNumber(cost.amount, locale)}×</span>{" "}
+                  {cost.name}
+                </ItemLine>
               </li>
             ))}
           </ul>

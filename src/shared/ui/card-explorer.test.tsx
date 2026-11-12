@@ -31,7 +31,7 @@ const entry = (index: number, overrides: Partial<CraftCardEntry> = {}): CraftCar
   name: `Thing ${index}`,
   icon: null,
   iconKind: "item",
-  costs: [{ name: "Wood", amount: 2 }],
+  costs: [{ name: "Wood", amount: 2, icon: null }],
   madeIn: ["Furnace"],
   unavailable: false,
   searchText: `thing ${index} wood`,

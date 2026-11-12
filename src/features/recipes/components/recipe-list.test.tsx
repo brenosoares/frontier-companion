@@ -9,10 +9,10 @@ const itemHref = (id: string) => `/en/items/${id}`;
 
 const recipe: RecipeView = {
   id: "Bar1",
-  output: { itemId: "Bar", name: "Bronze Bar", amount: 2 },
+  output: { itemId: "Bar", name: "Bronze Bar", icon: "BronzeBarIcon", amount: 2 },
   inputs: [
-    { itemId: "Ore", name: "Copper Ore", amount: 3 },
-    { itemId: "Wood", name: "Wood", amount: 1 },
+    { itemId: "Ore", name: "Copper Ore", icon: "CopperOreIcon", amount: 3 },
+    { itemId: "Wood", name: "Wood", icon: null, amount: 1 },
   ],
   timeSeconds: 120,
   bookLevel: 0,
@@ -65,5 +65,19 @@ describe("RecipeList", () => {
     expect(screen.getByText("Instant")).toBeInTheDocument();
     expect(screen.getByText("No station defined")).toBeInTheDocument();
     expect(screen.getByText("Requires recipe book level 2")).toBeInTheDocument();
+  });
+
+  it("shows the icon of every ingredient and of the result", () => {
+    const { container } = renderList([recipe]);
+    const sources = [...container.querySelectorAll("img")].map((img) => img.getAttribute("src"));
+
+    expect(sources).toEqual(["/icons/items/CopperOreIcon.png", "/icons/items/BronzeBarIcon.png"]);
+  });
+
+  it("falls back to a generic glyph for an ingredient without icon", () => {
+    const { container } = renderList([recipe]);
+    // Wood has no icon: 2 images (ore, bar) + 1 glyph for it.
+    expect(container.querySelectorAll("img")).toHaveLength(2);
+    expect(container.querySelectorAll("svg").length).toBeGreaterThanOrEqual(1);
   });
 });

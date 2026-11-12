@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Messages } from "@/shared/i18n/messages/types";
 import { formatDuration, formatTemplate } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
+import { ItemLine } from "@/shared/ui/item-line";
 import type { RecipeLine, RecipeView } from "../domain/recipe-view";
 
 interface RecipeListProps {
@@ -18,15 +19,19 @@ interface RecipeListProps {
 export function RecipeList({ recipes, locale, labels, itemHref, currentItemId }: RecipeListProps) {
   const renderLine = (line: RecipeLine) => {
     const text = `${line.amount}× ${line.name}`;
-    return line.itemId === currentItemId ? (
-      <span className="font-semibold">{text}</span>
-    ) : (
-      <Link
-        href={itemHref(line.itemId)}
-        className="rounded underline decoration-border-strong underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
-      >
-        {text}
-      </Link>
+    return (
+      <ItemLine icon={line.icon}>
+        {line.itemId === currentItemId ? (
+          <span className="font-semibold">{text}</span>
+        ) : (
+          <Link
+            href={itemHref(line.itemId)}
+            className="rounded underline decoration-border-strong underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+          >
+            {text}
+          </Link>
+        )}
+      </ItemLine>
     );
   };
 
@@ -34,8 +39,8 @@ export function RecipeList({ recipes, locale, labels, itemHref, currentItemId }:
     <ul className="flex flex-col gap-3">
       {recipes.map((recipe) => (
         <li key={recipe.id} className="rounded-xl border border-border bg-surface p-4">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            <ul aria-label={labels.ingredients} className="flex flex-wrap gap-x-3 gap-y-1">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+            <ul aria-label={labels.ingredients} className="flex flex-wrap gap-x-4 gap-y-2">
               {recipe.inputs.map((input) => (
                 <li key={input.itemId}>{renderLine(input)}</li>
               ))}
