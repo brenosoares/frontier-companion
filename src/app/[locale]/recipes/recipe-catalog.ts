@@ -57,7 +57,8 @@ async function buildCatalog(locale: Locale): Promise<RecipeCatalog> {
     recipeRepository.getAll(),
     stationRepository.getAll(),
     constructRepository.getAll(),
-    itemSourceRepository.getSourcedItemIds(),
+    // Mutated crops have a source, but need modified seeds: not a sensible default ingredient.
+    itemSourceRepository.getSourcedItemIds(["mutation"]),
   ]);
 
   const itemById = new Map(items.map((item) => [item.id, item]));

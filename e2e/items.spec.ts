@@ -95,8 +95,38 @@ test.describe("item detail", () => {
     await expect(page.getByRole("heading", { level: 2, name: "Como fazer" })).toHaveCount(0);
   });
 
+  test("a mutated crop links to the modified seeds it grows from", async ({ page }) => {
+    await page.goto("/pt-BR/items/Wheat_Rare");
+
+    await expect(page.getByRole("heading", { level: 2, name: "Onde encontrar" })).toBeVisible();
+    await expect(page.getByText("Cresce de sementes modificadas")).toBeVisible();
+    await page.getByRole("link", { name: "Sementes de Trigo Modificadas" }).click();
+
+    await expect(page).toHaveURL(/\/pt-BR\/items\/WheatSeeds_Refined$/);
+    // The modified seeds are crafted, so their own page says how to make them.
+    await expect(page.getByRole("heading", { level: 2, name: "Como fazer" })).toBeVisible();
+  });
+
+  test("shows the fruit a plant grows", async ({ page }) => {
+    await page.goto("/pt-BR/items/RedColorflower");
+    await expect(page.getByText("Fruto da planta")).toBeVisible();
+  });
+
+  test("shows what a merchant charges, without inventing a quantity", async ({ page }) => {
+    await page.goto("/pt-BR/items/PowerCore");
+
+    await expect(page.getByText("Vendido por mercadores")).toBeVisible();
+    await expect(page.getByText("10.000")).toBeVisible();
+    await expect(page.getByText("Quantidade:")).toHaveCount(0);
+  });
+
+  test("says an item may arrive in care packages", async ({ page }) => {
+    await page.goto("/pt-BR/items/Softwood");
+    await expect(page.getByText("Pode vir em pacotes de ajuda")).toBeVisible();
+  });
+
   test("items without a known origin say so honestly", async ({ page }) => {
-    await page.goto("/pt-BR/items/Clam");
+    await page.goto("/pt-BR/items/ElfHat");
 
     await expect(page.getByRole("heading", { level: 2, name: "Onde encontrar" })).toBeVisible();
     await expect(page.getByText("Não identificamos nos dados do jogo")).toBeVisible();
@@ -167,6 +197,9 @@ test.describe("accessibility (axe)", () => {
     "/pt-BR/items/CopperOre",
     "/en/items/CopperOre",
     "/pt-BR/items/Clam",
+    "/pt-BR/items/Wheat_Rare",
+    "/en/items/RedColorflower",
+    "/pt-BR/items/PowerCore",
   ];
 
   for (const scheme of ["dark", "light"] as const) {
@@ -200,4 +233,17 @@ test.describe("mobile", () => {
       expect(overflow).toBeLessThanOrEqual(0);
     });
   }
+});
+
+test.describe("origins from the game's blueprints", () => {
+  test("a treasure item says the Loot Goblin can drop it", async ({ page }) => {
+    await page.goto("/pt-BR/items/Clam");
+    await expect(page.getByText("Dropado pelo Goblin Saqueador")).toBeVisible();
+  });
+
+  test("a wild critter's egg links to the animal fed to get it", async ({ page }) => {
+    await page.goto("/pt-BR/items/CrobEgg");
+    await page.getByRole("link", { name: "Tartaguejo" }).first().click();
+    await expect(page).toHaveURL(/\/pt-BR\/animals\/Crob$/);
+  });
 });

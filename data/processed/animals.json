@@ -1,0 +1,236 @@
+[
+  {
+    "id": "Crob",
+    "name": {
+      "en": "Crobling",
+      "pt-BR": "Tartaguejo"
+    },
+    "icon": "CrobIcon",
+    "diet": "Nitrogenic",
+    "fodderItemId": "CritterFood1",
+    "loot": {
+      "product": {
+        "itemId": "PearlDrop",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "NitrogenicDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "CrobEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 200,
+      "dailyHunger": 1,
+      "minSquareMeters": 75,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "PearlDrop",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 1,
+      "growthDays": 1,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  },
+  {
+    "id": "CrystalDeer",
+    "name": {
+      "en": "Crystalhoof",
+      "pt-BR": "Casco de Cristal"
+    },
+    "icon": "CrystalDeerIcon",
+    "diet": "Phosphoric",
+    "fodderItemId": "CritterFood2",
+    "loot": {
+      "product": {
+        "itemId": "CrystalShards",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "PhosphoricDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "CrystalDeerEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 100,
+      "dailyHunger": 1,
+      "minSquareMeters": 100,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "CrystalShards",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 4,
+      "growthDays": 2,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  },
+  {
+    "id": "Mox",
+    "name": {
+      "en": "Mox",
+      "pt-BR": "Múfalo"
+    },
+    "icon": "MoxIcon",
+    "diet": "Phosphoric",
+    "fodderItemId": "CritterFood2",
+    "loot": {
+      "product": {
+        "itemId": "Fur",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "PotassicDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "MoxEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 300,
+      "dailyHunger": 1,
+      "minSquareMeters": 100,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "Fur",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 3,
+      "growthDays": 2,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  },
+  {
+    "id": "Ratscallion",
+    "name": {
+      "en": "Ratscallion",
+      "pt-BR": "Ratife"
+    },
+    "icon": "RatscallionIcon",
+    "diet": "Nitrogenic",
+    "fodderItemId": "CritterFood1",
+    "loot": {
+      "product": {
+        "itemId": "AmberFragments",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "NitrogenicDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "RatscallionEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 100,
+      "dailyHunger": 1,
+      "minSquareMeters": 50,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "AmberFragments",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 1,
+      "growthDays": 2,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  },
+  {
+    "id": "Stalktail",
+    "name": {
+      "en": "Stalktail",
+      "pt-BR": "Caulegarto"
+    },
+    "icon": "StalktailIcon",
+    "diet": "Potassic",
+    "fodderItemId": "CritterFood3",
+    "loot": {
+      "product": {
+        "itemId": "Wood",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "PhosphoricDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "StalktailEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 200,
+      "dailyHunger": 1,
+      "minSquareMeters": 50,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "Wood",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 2,
+      "growthDays": 1,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  },
+  {
+    "id": "Tookan",
+    "name": {
+      "en": "Swiftplume",
+      "pt-BR": "Plumaleve"
+    },
+    "icon": "TookanIcon",
+    "diet": "Potassic",
+    "fodderItemId": "CritterFood3",
+    "loot": {
+      "product": {
+        "itemId": "Feather",
+        "amount": 1
+      },
+      "droppings": {
+        "itemId": "PotassicDropping",
+        "amount": 1
+      },
+      "egg": {
+        "itemId": "TookanEgg"
+      }
+    },
+    "needs": {
+      "dailyThirst": 200,
+      "dailyHunger": 1,
+      "minSquareMeters": 75,
+      "minNearbyAnimals": 1
+    },
+    "wildFeeding": {
+      "resourceItemId": "Feather",
+      "eggChance": 5
+    },
+    "lifecycle": {
+      "incubationDays": 2,
+      "growthDays": 2,
+      "daysSadBeforeRunAway": 3,
+      "daysRunAwayBeforeDespawn": 7
+    }
+  }
+]

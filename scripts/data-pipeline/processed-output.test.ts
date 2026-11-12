@@ -3,6 +3,8 @@ import { access, readFile } from "node:fs/promises";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { DatasetManifestSchema } from "@/shared/domain/dataset-manifest";
+import { IncubatorSchema } from "@/features/animals/domain/animal";
+import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
 import { JsonItemSourceRepository } from "@/features/items/data/json-item-source-repository";
 import { CONSTRUCT_CATEGORIES } from "@/features/constructs/domain/construct";
@@ -15,9 +17,11 @@ import { getMessages } from "@/shared/i18n/get-messages";
 import {
   GAME_VERSION,
   OUTPUT_DIR,
+  PUBLIC_ANIMAL_ICONS_DIR,
   PUBLIC_CONSTRUCT_ICONS_DIR,
   PUBLIC_ITEM_ICONS_DIR,
 } from "./config";
+import { RANCH_STRUCTURE_IDS } from "../../src/app/[locale]/animals/ranch-structures";
 import { checkIntegrity } from "./quality/integrity";
 import { isUnfinished } from "./quality/unfinished";
 import { findSensitiveStrings } from "./quality/sanitize";
@@ -43,12 +47,26 @@ describe("committed dataset (data/processed)", () => {
     const stations = await new JsonStationRepository(load("stations.json")).getAll();
     const itemSources = await readAllSources();
     const constructs = await new JsonConstructRepository(load("constructs.json")).getAll();
+    const animals = await new JsonAnimalRepository(load("animals.json")).getAll();
+    const incubator = IncubatorSchema.parse(await read("incubator.json"));
 
     expect(items.length).toBeGreaterThan(0);
     expect(recipes.length).toBeGreaterThan(0);
     expect(stations.length).toBeGreaterThan(0);
-    expect(checkIntegrity({ items, recipes, stations, itemSources, constructs })).toEqual([]);
-    expect(findSensitiveStrings({ items, recipes, stations, itemSources, constructs })).toEqual([]);
+    expect(
+      checkIntegrity({ items, recipes, stations, itemSources, constructs, animals, incubator }),
+    ).toEqual([]);
+    expect(
+      findSensitiveStrings({
+        items,
+        recipes,
+        stations,
+        itemSources,
+        constructs,
+        animals,
+        incubator,
+      }),
+    ).toEqual([]);
   });
 
   it("has a manifest matching the configured game version and the data", async () => {
@@ -58,6 +76,7 @@ describe("committed dataset (data/processed)", () => {
     const stations = (await read("stations.json")) as unknown[];
     const itemSources = (await read("item-sources.json")) as unknown[];
     const constructs = (await read("constructs.json")) as unknown[];
+    const animals = (await read("animals.json")) as unknown[];
 
     expect(manifest.gameVersion).toBe(GAME_VERSION);
     expect(manifest.counts).toEqual({
@@ -66,6 +85,7 @@ describe("committed dataset (data/processed)", () => {
       stations: stations.length,
       itemSources: itemSources.length,
       constructs: constructs.length,
+      animals: animals.length,
     });
   });
 
@@ -99,6 +119,7 @@ describe("committed dataset (data/processed)", () => {
       "stations.json",
       "item-sources.json",
       "constructs.json",
+      "animals.json",
     ];
     for (const file of files) {
       const text = JSON.stringify(await read(file));
@@ -128,5 +149,35 @@ describe("committed dataset (data/processed)", () => {
     for (const { category } of constructs) counts.set(category, (counts.get(category) ?? 0) + 1);
 
     expect([...counts.keys()].sort()).toEqual([...CONSTRUCT_CATEGORIES].sort());
+  });
+
+  it("publishes a PNG for every animal icon", async () => {
+    const animals = await new JsonAnimalRepository(load("animals.json")).getAll();
+    const icons = animals.flatMap((animal) => (animal.icon ? [animal.icon] : []));
+
+    expect(icons.length).toBeGreaterThan(0);
+    const missing: string[] = [];
+    for (const icon of icons) {
+      await access(path.join(PUBLIC_ANIMAL_ICONS_DIR, `${icon}.png`)).catch(() =>
+        missing.push(icon),
+      );
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it("only lists ranch structures that exist in the dataset", async () => {
+    const constructs = await new JsonConstructRepository(load("constructs.json")).getAll();
+    const known = new Set(constructs.map((construct) => construct.id));
+
+    expect(RANCH_STRUCTURE_IDS.filter((id) => !known.has(id))).toEqual([]);
+  });
+
+  it("every animal has a label for its diet in every locale", async () => {
+    const animals = await new JsonAnimalRepository(load("animals.json")).getAll();
+    for (const locale of LOCALES) {
+      const diets: Record<string, string> = getMessages(locale).animals.diets;
+      const missing = animals.filter((animal) => !(animal.diet in diets)).map((a) => a.id);
+      expect({ locale, missing }).toEqual({ locale, missing: [] });
+    }
   });
 });

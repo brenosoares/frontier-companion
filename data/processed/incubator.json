@@ -1,0 +1,9 @@
+{
+  "lensChances": {
+    "smaller": 25,
+    "larger": 25,
+    "double": 10,
+    "rare": 10
+  },
+  "rareEggIncubationDays": 5
+}

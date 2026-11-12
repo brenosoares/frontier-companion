@@ -41,17 +41,24 @@ export default async function CalculatorPage({ params }: PageProps<"/[locale]/ca
   const locale = await resolveLocale(params);
   const messages = getMessages(locale);
 
-  const [recipes, items, stations, sourcedIds] = await Promise.all([
+  const [recipes, items, stations, sourcedIds, directIds] = await Promise.all([
     recipeRepository.getAll(),
     itemRepository.getAll(),
     stationRepository.getAll(),
     itemSourceRepository.getSourcedItemIds(),
+    // Without mutated crops: used to pick the default recipe, never to hide a source.
+    itemSourceRepository.getSourcedItemIds(["mutation"]),
   ]);
 
   const itemData: Record<string, CalculatorItem> = Object.fromEntries(
     items.map((item) => [
       item.id,
-      { name: item.name[locale], icon: item.icon, hasSource: sourcedIds.has(item.id) },
+      {
+        name: item.name[locale],
+        icon: item.icon,
+        hasSource: sourcedIds.has(item.id),
+        directlyObtainable: directIds.has(item.id),
+      },
     ]),
   );
   const stationNames = Object.fromEntries(

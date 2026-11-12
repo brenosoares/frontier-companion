@@ -14,11 +14,13 @@ const COLLECTIONS = [
   ["stations", "stations.json"],
   ["itemSources", "item-sources.json"],
   ["constructs", "constructs.json"],
+  ["animals", "animals.json"],
 ] as const satisfies readonly (readonly [keyof Dataset, string])[];
 
 export function buildManifest(dataset: Dataset, gameVersion: string): DatasetManifest {
   const hash = createHash("sha256");
   for (const [name] of COLLECTIONS) hash.update(toJson(dataset[name]));
+  hash.update(toJson(dataset.incubator));
 
   return {
     schemaVersion: 1,
@@ -30,6 +32,7 @@ export function buildManifest(dataset: Dataset, gameVersion: string): DatasetMan
       stations: dataset.stations.length,
       itemSources: dataset.itemSources.length,
       constructs: dataset.constructs.length,
+      animals: dataset.animals.length,
     },
   };
 }
@@ -43,6 +46,7 @@ export async function emitDataset(
   await mkdir(outDir, { recursive: true });
   await Promise.all([
     ...COLLECTIONS.map(([name, file]) => writeFile(path.join(outDir, file), toJson(dataset[name]))),
+    writeFile(path.join(outDir, "incubator.json"), toJson(dataset.incubator)),
     writeFile(path.join(outDir, "manifest.json"), toJson(manifest)),
   ]);
   return manifest;

@@ -4,10 +4,36 @@ import { buildDataset, type RawTableSource } from "./build-dataset";
 import { STATIONS } from "./config";
 import { dataTableFile, rawConstruct, rawItem, rawRecipe } from "./__fixtures__/tables";
 
+const blueprint = (properties: Record<string, unknown>) => [
+  { Type: "Default__X", Name: "Default__X", Properties: properties },
+];
+
+const blueprints: Record<string, unknown> = {
+  "Creatures/BP_CritterCharacter.json": blueprint({ FeedDropChance: 1 }),
+  "Constructs/BP_EggIncubatorConstruct.json": blueprint({
+    ChanceToSpawnSmall: 0.25,
+    ChanceToSpawnLarge: 0.25,
+    ChanceToSpawnDouble: 0.1,
+    ChanceToSpawnRare: 0.1,
+    RareEggIncubationTime: 5,
+    EggToAnimal: [],
+  }),
+  "Hazards/BP_HazardBreakable.json": blueprint({}),
+  "Creatures/BP_LootGoblin.json": blueprint({ ItemPools: [], DropTable: [] }),
+};
+
 function memorySource(tables: Record<string, Record<string, unknown>>): RawTableSource {
   return {
     async readTable(name) {
       return dataTableFile(tables[name] ?? {});
+    },
+    async readBlueprint(relativePath) {
+      const file = blueprints[relativePath];
+      if (!file) throw new Error(`no blueprint ${relativePath}`);
+      return file;
+    },
+    async listBlueprints() {
+      return [];
     },
   };
 }

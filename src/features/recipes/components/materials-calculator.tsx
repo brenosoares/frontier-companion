@@ -32,6 +32,11 @@ export interface CalculatorItem {
   icon: string | null;
   /** The game data tells where this item can be found (so a raw material is not a dead end). */
   hasSource: boolean;
+  /**
+   * It can be gathered or bought as is. False for items that need a special process (mutated
+   * crops), so the default recipe avoids them even though their origin is known.
+   */
+  directlyObtainable: boolean;
 }
 
 /** Only plain strings cross the server -> client boundary. */
@@ -81,7 +86,7 @@ export function MaterialsCalculator({
 
   const variants = useMemo(() => buildVariantIndex(recipes), [recipes]);
   const isObtainable = useCallback(
-    (itemId: string) => variants.has(itemId) || items[itemId]?.hasSource === true,
+    (itemId: string) => variants.has(itemId) || items[itemId]?.directlyObtainable === true,
     [variants, items],
   );
   const nameOf = (itemId: string) => items[itemId]?.name ?? itemId;
@@ -280,11 +285,12 @@ export function MaterialsCalculator({
                         {nameOf(material.itemId)}
                       </Link>
                     </p>
-                    {!isObtainable(material.itemId) && (
-                      <Badge tone="orange" className="self-start">
-                        {labels.noKnownSource}
-                      </Badge>
-                    )}
+                    {!variants.has(material.itemId) &&
+                      items[material.itemId]?.hasSource !== true && (
+                        <Badge tone="orange" className="self-start">
+                          {labels.noKnownSource}
+                        </Badge>
+                      )}
                   </div>
                 </li>
               ))}

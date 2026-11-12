@@ -1,3 +1,4 @@
+import type { Animal, Incubator } from "@/features/animals/domain/animal";
 import type { Construct } from "@/features/constructs/domain/construct";
 import type { Item } from "@/features/items/domain/item";
 import type { ItemSource } from "@/features/items/domain/item-source";
@@ -10,6 +11,8 @@ export interface Dataset {
   stations: readonly Station[];
   itemSources: readonly ItemSource[];
   constructs: readonly Construct[];
+  animals: readonly Animal[];
+  incubator: Incubator;
 }
 
 function findDuplicates(ids: readonly string[]): string[] {
@@ -29,6 +32,7 @@ export function checkIntegrity({
   stations,
   itemSources,
   constructs,
+  animals,
 }: Dataset): string[] {
   const issues: string[] = [];
   const itemIds = new Set(items.map((item) => item.id));
@@ -51,6 +55,9 @@ export function checkIntegrity({
     if (!itemIds.has(source.itemId)) {
       issues.push(`Item source "${source.id}" references unknown item "${source.itemId}"`);
     }
+    if (source.kind === "mutation" && !itemIds.has(source.sourceId)) {
+      issues.push(`Item source "${source.id}" grows from unknown seed "${source.sourceId}"`);
+    }
   }
 
   for (const id of findDuplicates(constructs.map((construct) => construct.id))) {
@@ -60,6 +67,23 @@ export function checkIntegrity({
     for (const { itemId } of construct.costs) {
       if (!itemIds.has(itemId)) {
         issues.push(`Construct "${construct.id}" costs unknown item "${itemId}"`);
+      }
+    }
+  }
+  for (const id of findDuplicates(animals.map((animal) => animal.id))) {
+    issues.push(`Duplicate animal id "${id}"`);
+  }
+  for (const animal of animals) {
+    const referenced = [
+      ["fodder", animal.fodderItemId],
+      ["wild resource", animal.wildFeeding.resourceItemId],
+      ["product", animal.loot.product.itemId],
+      ["droppings", animal.loot.droppings.itemId],
+      ["egg", animal.loot.egg.itemId],
+    ] as const;
+    for (const [role, itemId] of referenced) {
+      if (!itemIds.has(itemId)) {
+        issues.push(`Animal "${animal.id}" has unknown ${role} item "${itemId}"`);
       }
     }
   }

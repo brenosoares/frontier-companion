@@ -1,12 +1,27 @@
 import { RELEASED_FEATURE_FLAGS, STATIONS } from "./config";
+import { extractAnimals } from "./extractors/animals";
+import {
+  BLUEPRINT_PATHS,
+  blueprintDefaults,
+  critterFeedSources,
+  extractHazardSources,
+  extractIncubator,
+  extractLargeItemSources,
+  extractLootGoblinSources,
+  extractWildFeeding,
+} from "./extractors/blueprints";
 import { extractBlueprintPrices, extractConstructs } from "./extractors/constructs";
 import { extractItems } from "./extractors/items";
 import { extractRecipes } from "./extractors/recipes";
 import {
   extractAnimalSources,
+  extractCarePackageSources,
+  extractMerchantSources,
+  extractMutationSources,
   extractNodeSources,
   extractPlantSources,
   filterUsableSources,
+  reconcileItemIdCase,
   sortSources,
 } from "./extractors/sources";
 import { extractStations } from "./extractors/stations";
@@ -18,6 +33,10 @@ import { parseDataTableRows } from "./unreal/normalize";
 /** Port: where raw tables come from (filesystem in production, memory in tests). */
 export interface RawTableSource {
   readTable(tableName: string): Promise<unknown>;
+  /** A Blueprint export, by path relative to `Content/Blueprints`. */
+  readBlueprint(relativePath: string): Promise<unknown>;
+  /** Blueprint files directly inside a directory (`BP_*.json` file names). */
+  listBlueprints(relativeDirectory: string): Promise<string[]>;
 }
 
 export interface BuildResult {
@@ -33,6 +52,13 @@ async function readRows(
   tableName: string,
 ): Promise<Record<string, unknown>> {
   return parseDataTableRows(await source.readTable(tableName), tableName);
+}
+
+async function readDefaults(
+  source: RawTableSource,
+  relativePath: string,
+): Promise<Record<string, unknown>> {
+  return blueprintDefaults(await source.readBlueprint(relativePath), relativePath);
 }
 
 async function readStationRows(
@@ -65,6 +91,8 @@ export async function buildDataset(
     animalRows,
     critterRows,
     merchantEntryRows,
+    carePackageRows,
+    critterFoodRows,
   ] = await Promise.all([
     readRows(source, "DT_Items"),
     readRows(source, "DT_CompositeRecipes"),
@@ -76,7 +104,40 @@ export async function buildDataset(
     readRows(source, "DT_RanchAnimals"),
     readRows(source, "DT_Critters"),
     readRows(source, "DT_MerchantBundleEntries"),
+    readRows(source, "DT_CarePackageRewards"),
+    readRows(source, "DT_CritterFood"),
   ]);
+
+  const [critterParent, incubatorDefaults, hazardDefaults, lootGoblinDefaults, largeItemFiles] =
+    await Promise.all([
+      readDefaults(source, BLUEPRINT_PATHS.critterParent),
+      readDefaults(source, BLUEPRINT_PATHS.eggIncubator),
+      readDefaults(source, BLUEPRINT_PATHS.hazardBreakable),
+      readDefaults(source, BLUEPRINT_PATHS.lootGoblin),
+      source.listBlueprints(BLUEPRINT_PATHS.largeItemsDirectory),
+    ]);
+  const largeItems = await Promise.all(
+    largeItemFiles.map(async (file) => ({
+      label: file,
+      defaults: await readDefaults(source, `${BLUEPRINT_PATHS.largeItemsDirectory}/${file}`),
+    })),
+  );
+  const wildFeeding = new Map(
+    await Promise.all(
+      Object.keys(animalRows).map(
+        async (id) =>
+          [
+            id,
+            extractWildFeeding(
+              await readDefaults(source, BLUEPRINT_PATHS.critter(id)),
+              critterParent,
+              id,
+            ),
+          ] as const,
+      ),
+    ),
+  );
+  const { incubator, eggToAnimal } = extractIncubator(incubatorDefaults);
 
   const unfinished = dropUnfinishedItems(
     extractItems(itemRows, { availableIcons: iconNames, releasedFlags }),
@@ -90,13 +151,32 @@ export async function buildDataset(
       blueprintPrices: extractBlueprintPrices(merchantEntryRows),
     }),
   );
+  const animals = extractAnimals(animalRows, critterRows, critterFoodRows, {
+    availableIcons: iconNames,
+    wildFeeding,
+    eggToAnimal,
+  });
+  const itemIds = new Set(items.map((item) => item.id));
   const { kept: itemSources, warnings: sourceWarnings } = filterUsableSources(
-    sortSources([
-      ...extractNodeSources(nodeRows),
-      ...extractPlantSources([smallPlantRows, largePlantRows], new Set(Object.keys(nodeRows))),
-      ...extractAnimalSources(animalRows, critterRows),
-    ]),
-    new Set(items.map((item) => item.id)),
+    reconcileItemIdCase(
+      sortSources([
+        ...extractNodeSources(nodeRows),
+        ...extractPlantSources([smallPlantRows, largePlantRows], new Set(Object.keys(nodeRows))),
+        ...extractAnimalSources(animalRows, critterRows),
+        ...extractMerchantSources(merchantEntryRows),
+        ...extractCarePackageSources(carePackageRows),
+        ...extractMutationSources(items),
+        ...extractLargeItemSources(largeItems, new Map(items.map((item) => [item.id, item.name]))),
+        ...extractHazardSources(hazardDefaults),
+        ...extractLootGoblinSources(lootGoblinDefaults),
+        ...animals.flatMap((animal) => {
+          const feeding = wildFeeding.get(animal.id);
+          return feeding ? critterFeedSources(animal.id, animal.name, feeding) : [];
+        }),
+      ]),
+      itemIds,
+    ),
+    itemIds,
   );
 
   const dataset: Dataset = {
@@ -105,6 +185,8 @@ export async function buildDataset(
     stations: extractStations(STATIONS, constructRows),
     itemSources,
     constructs: builtConstructs.constructs,
+    animals,
+    incubator,
   };
 
   return {

@@ -3,7 +3,11 @@ import Image from "next/image";
 import { cn } from "@/shared/lib/cn";
 
 /** Where each kind of icon is published (`pnpm data:build`). */
-const ICON_DIRECTORIES = { item: "/icons/items", construct: "/icons/constructs" } as const;
+const ICON_DIRECTORIES = {
+  item: "/icons/items",
+  construct: "/icons/constructs",
+  animal: "/icons/animals",
+} as const;
 
 export type GameIconKind = keyof typeof ICON_DIRECTORIES;
 
