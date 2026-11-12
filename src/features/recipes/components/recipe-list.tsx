@@ -1,7 +1,7 @@
 import { ArrowRight, Clock } from "lucide-react";
 import Link from "next/link";
 import type { Messages } from "@/shared/i18n/messages/types";
-import { formatDuration } from "@/shared/lib/format";
+import { formatDuration, formatTemplate } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
 import type { RecipeLine, RecipeView } from "../domain/recipe-view";
 
@@ -61,7 +61,9 @@ export function RecipeList({ recipes, locale, labels, itemHref, currentItemId }:
                 <span>{labels.noStation}</span>
               )}
             </span>
-            {recipe.bookLevel > 0 && <span>{labels.bookLevel(recipe.bookLevel)}</span>}
+            {recipe.bookLevel > 0 && (
+              <span>{formatTemplate(labels.bookLevel, { level: recipe.bookLevel })}</span>
+            )}
           </div>
         </li>
       ))}

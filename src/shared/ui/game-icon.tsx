@@ -2,7 +2,13 @@ import { Package } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/shared/lib/cn";
 
-interface ItemIconProps {
+/** Where each kind of icon is published (`pnpm data:build`). */
+const ICON_DIRECTORIES = { item: "/icons/items", construct: "/icons/constructs" } as const;
+
+export type GameIconKind = keyof typeof ICON_DIRECTORIES;
+
+interface GameIconProps {
+  kind: GameIconKind;
   /** Icon file name (no extension) from the dataset; null renders a generic placeholder. */
   icon: string | null;
   /** Pixel size of the image inside the tile. */
@@ -11,10 +17,10 @@ interface ItemIconProps {
 }
 
 /**
- * Decorative item icon: the item's name is always shown next to it, so it has no alt text.
+ * Decorative icon of an item or construct: the item's name is always shown next to it, so it has no alt text.
  * Pixel art is scaled with nearest-neighbour to stay crisp, and served as-is (no optimizer).
  */
-export function ItemIcon({ icon, size, className }: ItemIconProps) {
+export function GameIcon({ kind, icon, size, className }: GameIconProps) {
   return (
     <span
       aria-hidden="true"
@@ -25,7 +31,7 @@ export function ItemIcon({ icon, size, className }: ItemIconProps) {
     >
       {icon ? (
         <Image
-          src={`/icons/items/${icon}.png`}
+          src={`${ICON_DIRECTORIES[kind]}/${icon}.png`}
           alt=""
           width={size}
           height={size}

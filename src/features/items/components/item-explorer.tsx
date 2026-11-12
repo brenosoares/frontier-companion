@@ -50,6 +50,7 @@ export function ItemExplorer({ entries, locale, labels }: ItemExplorerProps) {
   const searchParams = useSearchParams();
   const [state, setState] = useState<ExplorerState>(() => parseExplorerState(searchParams));
 
+  const hasUnavailable = useMemo(() => entries.some((entry) => entry.unavailable), [entries]);
   const availableTags = useMemo(
     () => collectTags(entries, state.showUnavailable),
     [entries, state.showUnavailable],
@@ -125,15 +126,19 @@ export function ItemExplorer({ entries, locale, labels }: ItemExplorerProps) {
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={state.showUnavailable}
-            onChange={(event) => update({ showUnavailable: event.target.checked })}
-            className="size-4 accent-primary"
-          />
-          {labels.showUnavailable}
-        </label>
+        {hasUnavailable ? (
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={state.showUnavailable}
+              onChange={(event) => update({ showUnavailable: event.target.checked })}
+              className="size-4 accent-primary"
+            />
+            {labels.showUnavailable}
+          </label>
+        ) : (
+          <span />
+        )}
 
         <div className="flex items-center gap-3">
           <p role="status" className="text-sm text-muted">

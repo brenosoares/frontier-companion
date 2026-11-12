@@ -1,8 +1,9 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Calculator } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { Button } from "@/shared/ui/button";
 import { ItemHeader } from "@/features/items/components/item-header";
 import { ItemSourceList } from "@/features/items/components/item-source-list";
 import { RecipeList } from "@/features/recipes/components/recipe-list";
@@ -95,6 +96,15 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
       </Link>
 
       <ItemHeader item={item} locale={locale} labels={text} />
+
+      {isCraftable && (
+        <Button asChild variant="secondary" className="self-start">
+          <Link href={`${localizedPath(locale, "/calculator")}?item=${id}`}>
+            <Calculator aria-hidden="true" className="size-4" />
+            {text.detail.calculate}
+          </Link>
+        </Button>
+      )}
 
       {/* Craftable items show how to make them; raw items show where to find them; both can apply. */}
       {isCraftable && <Section title={text.detail.obtain}>{renderRecipes(producing)}</Section>}

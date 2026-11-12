@@ -9,6 +9,10 @@ export class JsonItemSourceRepository implements ItemSourceRepository {
     this.sources = new JsonCollection(ItemSourceSchema, load, "item sources");
   }
 
+  async getSourcedItemIds(): Promise<ReadonlySet<string>> {
+    return new Set((await this.sources.all()).map((source) => source.itemId));
+  }
+
   async findByItem(itemId: string): Promise<readonly ItemSource[]> {
     return (await this.sources.all())
       .filter((source) => source.itemId === itemId)

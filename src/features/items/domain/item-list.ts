@@ -1,4 +1,5 @@
 import type { Locale } from "@/shared/domain/localized-text";
+import { matchesAllWords, normalizeText } from "@/shared/lib/text";
 import type { Item } from "./item";
 
 /** Internal tags that carry no meaning for players (never shown nor offered as a filter). */
@@ -36,15 +37,6 @@ export interface ItemFilters {
   showUnavailable: boolean;
 }
 
-/** Lowercase, trimmed and without diacritics: "Óleo" and "oleo" compare equal. */
-export function normalizeText(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .trim();
-}
-
 export function toListEntry(item: Item, locale: Locale): ItemListEntry {
   return {
     id: item.id,
@@ -63,13 +55,11 @@ export function filterItems(
   entries: readonly ItemListEntry[],
   { query, tag, showUnavailable }: ItemFilters,
 ): ItemListEntry[] {
-  const words = normalizeText(query).split(/\s+/).filter(Boolean);
-
   return entries.filter(
     (entry) =>
       (showUnavailable || !entry.unavailable) &&
       (tag === null || entry.tags.includes(tag)) &&
-      words.every((word) => entry.searchText.includes(word)),
+      matchesAllWords(entry.searchText, query),
   );
 }
 

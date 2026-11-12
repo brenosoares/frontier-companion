@@ -5,7 +5,7 @@ import { formatNumber } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
 import type { Item } from "../domain/item";
 import { visibleTags } from "../domain/item-list";
-import { ItemIcon } from "./item-icon";
+import { GameIcon } from "@/shared/ui/game-icon";
 
 interface ItemHeaderProps {
   item: Item;
@@ -24,7 +24,7 @@ export function ItemHeader({ item, locale, labels }: ItemHeaderProps) {
   return (
     <header className="flex flex-col gap-4">
       <div className="flex items-center gap-4">
-        <ItemIcon icon={item.icon} size={64} className="size-20 border border-border" />
+        <GameIcon kind="item" icon={item.icon} size={64} className="size-20 border border-border" />
         <h1 className="text-3xl font-semibold tracking-tight break-words sm:text-4xl">
           {item.name[locale]}
         </h1>
