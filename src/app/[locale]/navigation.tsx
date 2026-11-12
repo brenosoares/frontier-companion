@@ -1,4 +1,4 @@
-import { Calculator, Home, Package, PawPrint, ScrollText } from "lucide-react";
+import { Calculator, Hammer, Home, Package, PawPrint, ScrollText } from "lucide-react";
 import { type Locale, localizedPath } from "@/shared/i18n/config";
 import type { Messages } from "@/shared/i18n/messages/types";
 import type { NavItem } from "@/shared/layout/nav-item";
@@ -20,6 +20,11 @@ export function buildNavItems(locale: Locale, messages: Messages): NavItem[] {
       href: localizedPath(locale, "/recipes"),
       label: messages.nav.recipes,
       icon: <ScrollText className="size-5" />,
+    },
+    {
+      href: localizedPath(locale, "/constructs"),
+      label: messages.nav.constructs,
+      icon: <Hammer className="size-5" />,
     },
     {
       href: localizedPath(locale, "/calculator"),

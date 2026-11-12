@@ -19,6 +19,7 @@ export const en: Messages = {
     items: "Items",
     recipes: "Recipes",
     calculator: "Calculator",
+    constructs: "Constructs",
     animals: "Animals",
   },
   search: {
@@ -151,13 +152,14 @@ export const en: Messages = {
       Wood: "Wood",
     },
   },
+  constructsHub: {
+    title: "Constructs and decorations",
+    intro: "Everything you place in build mode, with its resource cost.",
+    back: "Back to constructs",
+  },
   recipesHub: {
     title: "Recipes",
-    intro: "Pick a category to see what you can build or craft.",
-    build: {
-      title: "Constructs and decorations",
-      intro: "Everything you place in build mode, with its resource cost.",
-    },
+    intro: "Pick a machine type to see what you can craft.",
     craft: {
       title: "Crafting",
       intro: "Items crafted in machines, by machine type.",

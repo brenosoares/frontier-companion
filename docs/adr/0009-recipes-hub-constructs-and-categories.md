@@ -34,7 +34,7 @@ com as categorias do jogo ("decorativo, modular, storage…").
 7. **Conteúdo de desenvolvimento ou aposentado é descartado:** "WIP", **"PLACEHOLDER"** (3 construções) e **"[Obsolete]"** (Automator e Automator II; o dono verificou no jogo que não existem mais, e o próprio dump já os esconde da lista de uso). Palavra inteira apenas. **PLACEHOLDER é descartado por decisão do dono** (contexto abaixo).
 8. **Blocos reutilizáveis em `shared/ui`:** `CraftCard` (card) e `CardExplorer` (grade com filtro, toggle de indisponíveis e paginação, estado na URL) servem às duas seções; `GameIcon` substitui `ItemIcon` e serve `/icons/items` e `/icons/constructs` (488 ícones de construção publicados).
 9. **Camadas:** `app/[locale]/recipes/recipe-catalog.ts` é o único ponto que junta construções, itens, receitas e estações e entrega dados simples (cards) à interface. Features continuam isoladas.
-10. **Rotas:** `/recipes` (hub), `/recipes/[categoria]` (ids `constructs-storage`, `decorations-lights`, `craft-Furnace`…) e `/recipes/constructs/[id]` (detalhe). O detalhe de item fabricado continua em `/items/[id]`.
+10. **Rotas** (construções passaram para `/constructs`, ver [ADR 0013](0013-constructs-section.md)): `/recipes` (hub), `/recipes/[categoria]` (ids `constructs-storage`, `decorations-lights`, `craft-Furnace`…) e `/recipes/constructs/[id]` (detalhe). O detalhe de item fabricado continua em `/items/[id]`.
 11. **"Onde é feito"** de uma construção é "Modo de construção" (todas são feitas nele) e, no detalhe, o preço do blueprint no mercador quando o jogo o vende.
 
 ## Ícones: associação tolerante

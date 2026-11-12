@@ -9,8 +9,8 @@ import { getMessages } from "@/shared/i18n/get-messages";
 import { formatNumber, formatTemplate } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
 import { GameIcon } from "@/shared/ui/game-icon";
-import { constructRepository, itemRepository } from "../../../data";
-import { assertLocale } from "../../../resolve-locale";
+import { constructRepository, itemRepository } from "../../data";
+import { assertLocale } from "../../resolve-locale";
 
 export async function generateStaticParams() {
   const constructs = await constructRepository.getAll();
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: PageProps<"/[locale]/recipes/constructs/[id]">): Promise<Metadata> {
+}: PageProps<"/[locale]/constructs/[id]">): Promise<Metadata> {
   const { locale: rawLocale, id } = await params;
   const locale = assertLocale(rawLocale);
   const construct = await constructRepository.getById(id);
@@ -40,9 +40,7 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
-export default async function ConstructPage({
-  params,
-}: PageProps<"/[locale]/recipes/constructs/[id]">) {
+export default async function ConstructPage({ params }: PageProps<"/[locale]/constructs/[id]">) {
   const { locale: rawLocale, id } = await params;
   const locale = assertLocale(rawLocale);
   const { constructPage: text, recipesHub, items: itemText } = getMessages(locale);
@@ -57,7 +55,7 @@ export default async function ConstructPage({
   return (
     <article className="flex max-w-4xl flex-col gap-8">
       <Link
-        href={localizedPath(locale, `/recipes/${construct.category}`)}
+        href={localizedPath(locale, `/constructs/category/${construct.category}`)}
         className="inline-flex items-center gap-2 self-start rounded text-sm text-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
       >
         <ArrowLeft aria-hidden="true" className="size-4" />
