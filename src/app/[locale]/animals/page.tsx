@@ -52,7 +52,7 @@ export default async function AnimalsPage({ params }: PageProps<"/[locale]/anima
     if (!construct) return null;
     return {
       id: construct.id,
-      href: localizedPath(locale, `/recipes/constructs/${construct.id}`),
+      href: localizedPath(locale, `/constructs/${construct.id}`),
       name: construct.name[locale],
       icon: construct.icon,
       iconKind: "construct",

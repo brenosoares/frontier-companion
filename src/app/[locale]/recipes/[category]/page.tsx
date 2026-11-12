@@ -29,7 +29,9 @@ function toExplorerLabels({ recipesHub, items }: Messages): CardExplorerLabels {
 
 export async function generateStaticParams() {
   const { categories } = await loadRecipeCatalog(DEFAULT_LOCALE);
-  return LOCALES.flatMap((locale) => categories.map(({ id }) => ({ locale, category: id })));
+  return LOCALES.flatMap((locale) =>
+    categories.filter(({ group }) => group === "craft").map(({ id }) => ({ locale, category: id })),
+  );
 }
 
 export async function generateMetadata({
@@ -38,7 +40,7 @@ export async function generateMetadata({
   const { locale: rawLocale, category } = await params;
   const locale = assertLocale(rawLocale);
   const summary = (await loadRecipeCatalog(locale)).categories.find((c) => c.id === category);
-  if (!summary) notFound();
+  if (!summary || summary.group !== "craft") notFound();
   return { title: summary.label };
 }
 
@@ -52,12 +54,7 @@ export default async function RecipeCategoryPage({
   const catalog = await loadRecipeCatalog(locale);
   const summary = catalog.categories.find((c) => c.id === category);
   const entries = catalog.entries.get(category);
-  if (!summary || !entries) notFound();
-
-  const groupLabel =
-    summary.group === "craft"
-      ? messages.recipesHub.craft.title
-      : messages.recipesHub.groups[summary.group];
+  if (!summary || summary.group !== "craft" || !entries) notFound();
 
   return (
     <div className="flex max-w-6xl flex-col gap-6">
@@ -70,7 +67,7 @@ export default async function RecipeCategoryPage({
       </Link>
 
       <header className="flex flex-col gap-1">
-        <p className="text-sm text-muted">{groupLabel}</p>
+        <p className="text-sm text-muted">{messages.recipesHub.craft.title}</p>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{summary.label}</h1>
       </header>
 

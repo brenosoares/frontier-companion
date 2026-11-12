@@ -37,7 +37,7 @@ test.describe("animals index", () => {
     const incubator = page.getByRole("link", { name: /Incubadora de Ovos/ });
     await expect(incubator).toContainText("Custo");
     await incubator.click();
-    await expect(page).toHaveURL(/\/pt-BR\/recipes\/constructs\/EggIncubator$/);
+    await expect(page).toHaveURL(/\/pt-BR\/constructs\/EggIncubator$/);
   });
 
   test("is in the sidebar and is localized", async ({ page }) => {

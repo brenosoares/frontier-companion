@@ -29,7 +29,20 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     // Locale detection via Accept-Language (proxy) is intentionally deferred; see ADR 0005.
-    return [{ source: "/", destination: "/pt-BR", permanent: false }];
+    return [
+      { source: "/", destination: "/pt-BR", permanent: false },
+      // Constructs used to live under Recipes.
+      {
+        source: "/:locale/recipes/constructs/:id",
+        destination: "/:locale/constructs/:id",
+        permanent: true,
+      },
+      {
+        source: "/:locale/recipes/:category(constructs-.+|decorations-.+)",
+        destination: "/:locale/constructs/category/:category",
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];

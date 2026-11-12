@@ -19,6 +19,7 @@ export const ptBR = {
     items: "Itens",
     recipes: "Receitas",
     calculator: "Calculadora",
+    constructs: "Construções",
     animals: "Animais",
   },
   search: {
@@ -152,13 +153,14 @@ export const ptBR = {
       Wood: "Madeira",
     },
   },
+  constructsHub: {
+    title: "Construções e decorações",
+    intro: "Tudo o que você constrói no modo de construção, com o custo em recursos.",
+    back: "Voltar para construções",
+  },
   recipesHub: {
     title: "Receitas",
-    intro: "Escolha uma categoria para ver o que você pode construir ou fabricar.",
-    build: {
-      title: "Construções e decorações",
-      intro: "Tudo o que você constrói no modo de construção, com o custo em recursos.",
-    },
+    intro: "Escolha um tipo de máquina para ver o que você pode fabricar.",
     craft: {
       title: "Fabricação",
       intro: "Itens fabricados em máquinas, por tipo de máquina.",

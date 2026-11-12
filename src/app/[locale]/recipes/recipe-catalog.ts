@@ -107,7 +107,7 @@ async function buildCatalog(locale: Locale): Promise<RecipeCatalog> {
         .filter((construct) => construct.category === category)
         .map((construct) => ({
           id: construct.id,
-          href: localizedPath(locale, `/recipes/constructs/${construct.id}`),
+          href: localizedPath(locale, `/constructs/${construct.id}`),
           name: construct.name[locale],
           icon: construct.icon,
           iconKind: "construct",

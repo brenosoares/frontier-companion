@@ -8,29 +8,25 @@ import { expect, test } from "@playwright/test";
 test.describe("recipes hub", () => {
   test.use({ viewport: { width: 1280, height: 900 } });
 
-  test("starts with the categories, grouped like the game's build menu and crafting machines", async ({
+  test("starts with the crafting machines; constructs live in their own section", async ({
     page,
   }) => {
     await page.goto("/pt-BR/recipes");
 
     await expect(page.getByRole("heading", { level: 1, name: "Receitas" })).toBeVisible();
-    await expect(
-      page.getByRole("heading", { level: 2, name: "Construções e decorações" }),
-    ).toBeVisible();
-    await expect(page.getByRole("heading", { level: 3, name: "Construções" })).toBeVisible();
-    await expect(page.getByRole("heading", { level: 3, name: "Decorações" })).toBeVisible();
     await expect(page.getByRole("heading", { level: 2, name: "Fabricação" })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 3 })).toHaveCount(0);
 
-    for (const name of ["Armazenamento", "Cercas", "Móveis", "Luzes", "Fornalha", "Montador"]) {
+    for (const name of ["Fornalha", "Montador"]) {
       await expect(page.getByRole("link", { name: new RegExp(`^${name}`) }).first()).toBeVisible();
     }
+    await expect(page.getByRole("link", { name: /^Armazenamento/ })).toHaveCount(0);
   });
 
   test("shows how many entries each category has", async ({ page }) => {
     await page.goto("/pt-BR/recipes");
 
-    // Nothing is hidden behind a feature flag, so even Modular lists its pieces.
-    await expect(page.getByRole("link", { name: /^Modular\s+\d+ itens/ }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: /^Fornalha\s+\d+ itens/ }).first()).toBeVisible();
     await expect(page.getByText(/possivelmente indisponíveis/)).toHaveCount(0);
   });
 
@@ -46,10 +42,8 @@ test.describe("recipes hub", () => {
 
   test("is localized", async ({ page }) => {
     await page.goto("/en/recipes");
-    await expect(
-      page.getByRole("heading", { level: 2, name: "Constructs and decorations" }),
-    ).toBeVisible();
-    await expect(page.getByRole("link", { name: /^Storage/ }).first()).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: "Crafting" })).toBeVisible();
+    await expect(page.getByRole("link", { name: /^Furnace/ }).first()).toBeVisible();
   });
 });
 
@@ -57,7 +51,7 @@ test.describe("a construct category", () => {
   test.use({ viewport: { width: 1280, height: 900 } });
 
   test("shows cards with icon, name, cost and where it is made", async ({ page }) => {
-    await page.goto("/pt-BR/recipes/constructs-storage");
+    await page.goto("/pt-BR/constructs/category/constructs-storage");
 
     await expect(page.getByRole("heading", { level: 1, name: "Armazenamento" })).toBeVisible();
     const card = page.getByRole("link", { name: /Caixa de Madeira/ });
@@ -73,10 +67,10 @@ test.describe("a construct category", () => {
   });
 
   test("clicking a card opens the construct's details", async ({ page }) => {
-    await page.goto("/pt-BR/recipes/constructs-storage");
-    await page.locator('a[href$="/recipes/constructs/StorageBox"]').click();
+    await page.goto("/pt-BR/constructs/category/constructs-storage");
+    await page.locator('a[href$="/constructs/StorageBox"]').click();
 
-    await expect(page).toHaveURL(/\/pt-BR\/recipes\/constructs\/\w+$/);
+    await expect(page).toHaveURL(/\/pt-BR\/constructs\/\w+$/);
     await expect(
       page.getByRole("heading", { level: 1, name: "Caixa de Armazenamento" }),
     ).toBeVisible();
@@ -89,15 +83,15 @@ test.describe("a construct category", () => {
   });
 
   test("a construct's cost links to the item page", async ({ page }) => {
-    await page.goto("/pt-BR/recipes/constructs-storage");
-    await page.locator('a[href$="/recipes/constructs/StorageBox"]').click();
+    await page.goto("/pt-BR/constructs/category/constructs-storage");
+    await page.locator('a[href$="/constructs/StorageBox"]').click();
     await page.getByRole("link", { name: "Madeira", exact: true }).click();
 
     await expect(page).toHaveURL(/\/pt-BR\/items\/Wood$/);
   });
 
   test("filters by name or ingredient and mirrors the filter in the URL", async ({ page }) => {
-    await page.goto("/pt-BR/recipes/constructs-storage");
+    await page.goto("/pt-BR/constructs/category/constructs-storage");
     const status = page.getByRole("status");
     const before = parseInt(await status.innerText());
 
@@ -108,7 +102,7 @@ test.describe("a construct category", () => {
   });
 
   test("offers no availability toggle when nothing is flagged", async ({ page }) => {
-    await page.goto("/pt-BR/recipes/decorations-lights");
+    await page.goto("/pt-BR/constructs/category/decorations-lights");
     await expect(page.getByRole("status")).toBeVisible();
     await expect(page.getByLabel("Mostrar conteúdo possivelmente indisponível")).toHaveCount(0);
   });
@@ -116,7 +110,7 @@ test.describe("a construct category", () => {
   test("a construct formerly behind a flag is shown normally, with its blueprint price", async ({
     page,
   }) => {
-    await page.goto("/pt-BR/recipes/constructs/AnimalBedSmall");
+    await page.goto("/pt-BR/constructs/AnimalBedSmall");
 
     await expect(page.getByRole("note")).toHaveCount(0);
     await expect(page.getByText(/blueprint é vendido por mercadores por/)).toBeVisible();
@@ -156,7 +150,7 @@ test.describe("a crafting category", () => {
 test.describe("unknown categories and constructs", () => {
   test("answer 404", async ({ request }) => {
     expect((await request.get("/pt-BR/recipes/nope")).status()).toBe(404);
-    expect((await request.get("/pt-BR/recipes/constructs/Nope")).status()).toBe(404);
+    expect((await request.get("/pt-BR/constructs/Nope")).status()).toBe(404);
     expect((await request.get("/fr/recipes")).status()).toBe(404);
   });
 });
@@ -242,12 +236,12 @@ test.describe("accessibility (axe)", () => {
   const pages = [
     "/pt-BR/recipes",
     "/en/recipes",
-    "/pt-BR/recipes/constructs-storage",
-    "/en/recipes/decorations-furniture",
-    "/pt-BR/recipes/constructs-modular",
+    "/pt-BR/constructs/category/constructs-storage",
+    "/en/constructs/category/decorations-furniture",
+    "/pt-BR/constructs/category/constructs-modular",
     "/pt-BR/recipes/craft-Furnace",
-    "/pt-BR/recipes/constructs/AnimalBedSmall",
-    "/en/recipes/constructs/StorageBox",
+    "/pt-BR/constructs/AnimalBedSmall",
+    "/en/constructs/StorageBox",
     "/pt-BR/calculator",
     "/pt-BR/calculator?item=CrystalMatrix&qty=3",
     "/en/calculator?item=WheatSeeds&qty=7",
@@ -274,8 +268,8 @@ test.describe("mobile", () => {
 
   for (const path of [
     "/pt-BR/recipes",
-    "/pt-BR/recipes/constructs-storage",
-    "/pt-BR/recipes/constructs/StorageBox",
+    "/pt-BR/constructs/category/constructs-storage",
+    "/pt-BR/constructs/StorageBox",
     "/pt-BR/calculator?item=CrystalMatrix&qty=3",
   ]) {
     test(`${path} has no horizontal scroll`, async ({ page }) => {
