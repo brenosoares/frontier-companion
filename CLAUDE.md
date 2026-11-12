@@ -19,6 +19,7 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 - **Static-first**: sem banco, sem API pública, sem contas de usuário no MVP. Dados vêm do pipeline validado em build (ADR 0002).
 - Idiomas: pt-BR e en. Nome: **Frontier Companion** (projeto de fãs, não oficial). Versão do jogo: `1.0.2571`.
 - Conteúdo com _feature flag_ desligada fica **oculto por padrão**; spoilers (missões/lore) atrás de toggle.
+- **Conteúdo "Wip" (work in progress) do jogo é sempre descartado** pelo pipeline (itens, receitas, origens), com aviso; um teste de contrato garante que nada "Wip" chegue ao dataset.
 - Monetização: **apenas Buy Me a Coffee**. Proibido adicionar ads, analytics com cookies/identificadores, trackers, pixels ou qualquer SDK de terceiros sem aprovação.
 - Contato oficial: soareswdesign@gmail.com.
 
@@ -32,6 +33,8 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 - Next 16 difere do que você conhece (ex.: `proxy` no lugar de `middleware`, `cacheComponents`). **Leia `node_modules/next/dist/docs/` antes de usar uma API do Next.**
 - Não adicione dependências sem necessidade clara; justifique no PR (manutenção, tamanho, segurança). Nada de `postinstall` de terceiros.
 - Nada de `dangerouslySetInnerHTML`; rich text do jogo é sanitizado **no pipeline**.
+- Dados do jogo só são lidos por repositórios; o único lugar que conhece os JSONs é `src/app/[locale]/data.ts` (composition root). Features **não se importam**: a página (`app`) compõe e passa _view models_. Props de componentes cliente são só dados simples (sem funções).
+- `next.config.ts`: `partialPrefetching` fica `false` (senão rotas inexistentes respondem 200 em vez de 404; ADR 0006).
 - Textos de UI em `src/shared/i18n/messages` (`pt-BR.ts` é a fonte do shape; `en.ts` deve casar). Nunca hardcode texto nos componentes. Rotas ficam sob `app/[locale]`.
 - Estilo: use **somente tokens semânticos** (`bg-surface`, `text-muted`, `text-primary-foreground`, `tone-*`…) definidos em `globals.css`; não use as cores cruas `frontier-*` para texto. Toda cor nova precisa passar AA nos dois temas (ADR 0005).
 - Componentes de UI novos: Tailwind + `cva` (+ Radix só quando a acessibilidade for difícil, ex.: dialog/menu). Sem bibliotecas de componentes prontas.
@@ -39,9 +42,9 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 
 ## 4. Limites legais e de privacidade (INEGOCIÁVEIS)
 
-- **Nunca** commitar: dumps brutos do jogo (`FarMech/`, `data/raw`), PNGs/ícones oficiais, áudio, textos de EULA (`DT_Agreements`), falas (`ST_VOText`, `DT_AdditionalSpeechLineData`), segredos ou `.env*`. Os dados brutos ficam **fora do repo** (`RAW_DATA_DIR`).
+- **Nunca** commitar: dumps brutos do jogo (`FarMech/`, `data/raw`), PNGs/ícones originais do jogo, áudio, textos de EULA (`DT_Agreements`), falas (`ST_VOText`, `DT_AdditionalSpeechLineData`), segredos ou `.env*`. Os dados brutos ficam **fora do repo** (`RAW_DATA_DIR`).
 - **Nosso JSON curado (`data/processed/`) é versionado** e é a única forma de dado do jogo que o app consome. Ele é gerado **somente** por `pnpm data:build` (nunca editar à mão) e contém só o que a UI usa, em schemas nossos (ADR 0004). Não inclua nele lore/falas/EULA, caminhos de asset do engine, nem campos "por garantia".
-- Ícones/PNGs e qualquer asset gráfico oficial continuam fora do repo até o **gate legal** (PLANO.md §7). Até lá, use placeholders. O gate também vale para tornar o repositório público (o JSON curado tem nomes e descrições do jogo).
+- **Ícones:** os PNGs originais do jogo nunca entram no repo. A única exceção, decidida pelo dono, é o conjunto em **pixel art** (`icons_pixel`, gerado fora do repo a partir dos originais), publicado pelo pipeline em `public/icons/items/` (só os usados). Não commite nenhum outro asset gráfico do jogo. O **gate legal** (PLANO.md §7) vale para tornar o repo público e lançar: pixel art derivada de arte oficial continua sendo obra derivada; o JSON curado também tem nomes e descrições do jogo.
 - Não usar logo/arte oficial como identidade do site; sempre exibir o disclaimer de projeto não oficial.
 - Coletar o mínimo de dados pessoais (meta: zero). Sem fontes/CDNs/embeds de terceiros que vazem IP; fontes via `next/font`.
 - Logs e erros sem PII. Mensagens de erro ao cliente são genéricas.

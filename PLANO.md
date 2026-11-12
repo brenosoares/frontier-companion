@@ -115,7 +115,7 @@ Objetivo: transformar JSON bruto em dados **confiáveis e tipados**.
 - [x] `ItemRepository`/`RecipeRepository` + `JsonItemRepository`/`JsonRecipeRepository` (sobre `JsonCollection` genérico: DRY).
 - [x] Testes: 62 no total (unit com fixtures **sintéticas**, integração do pipeline em memória, contrato contra a saída real quando existir).
 - [x] Passo de CI de dados: teste de contrato sobre o JSON **commitado** (schemas, integridade, strings sensíveis, versão) roda no CI; o pipeline é validado com fixtures sintéticas. O dump real só existe localmente (`pnpm data:build`).
-- [ ] Ícones: processamento (PNG → WebP/AVIF) **adiado** — depende do gate legal. A saída só referencia o nome do ícone.
+- [x] Ícones: o conjunto em **pixel art** (`icons_pixel`) é publicado pelo pipeline em `public/icons/items/` — só os usados ([ADR 0007](docs/adr/0007-item-sources-icons-and-primary-color.md)). Os PNGs originais seguem fora do repo. **Gate legal pendente** para abrir o repo/lançar.
 
 **Entrega:** `pnpm data:build` gera dados validados; erros de dado quebram o build do pipeline.
 
@@ -141,17 +141,19 @@ Objetivo: transformar JSON bruto em dados **confiáveis e tipados**.
 
 ### Fase 4 — Features do MVP (ciclos curtos, uma feature por vez)
 
-Cada feature segue o mesmo molde: **domain → repository → UI → testes → a11y → PR**.
+Cada feature segue o mesmo molde: **domain → repository → UI → testes → a11y → PR**. Decisões em [ADR 0006](docs/adr/0006-items-catalog.md).
 
-1. [ ] **Catálogo/Enciclopédia** — lista com busca, filtros, ordenação; página de detalhe (`generateStaticParams`).
-2. [ ] **Busca global** — índice gerado em build (ex.: FlexSearch/MiniSearch), client-side.
-3. [ ] **Receitas / Crafting** — árvore de dependências, cálculo de materiais totais (função pura, 100% testada).
-4. [ ] **Calculadoras** (ex.: rendimento, tempo, custo) — lógica no `domain`, UI burra.
+1. [x] **Catálogo/Enciclopédia de itens** (inclui ícones pixel art e "Onde encontrar": nós, plantas e animais do rancho; [ADR 0007](docs/adr/0007-item-sources-icons-and-primary-color.md)) — lista com busca (sem acento, bilíngue), filtro por categoria, ordenação, toggle de conteúdo possivelmente indisponível, estado na URL; página de detalhe (`/items/[id]`) com receitas "Como fazer" e "Usado em", estações localizadas.
+2. [x] **Busca global (v1)** — campo do header leva ao catálogo com `?q=`. _Evolução:_ página de busca própria quando houver mais entidades.
+3. [ ] **Receitas / Crafting** — página de receitas, árvore de dependências, cálculo de materiais totais (função pura, 100% testada).
+4. [ ] **Calculadoras** (rendimento, tempo, custo).
 5. [ ] **Comparador** de itens/upgrades.
-6. [ ] **Checklist de progresso** — persistência local (ver Fase 6).
-7. [ ] **Changelog por patch** (usa o diff da Fase 2).
+6. [ ] **Checklist de progresso** — persistência local (Fase 6).
+7. [ ] **Changelog por patch** (diff do JSON curado entre versões).
+8. [ ] Demais entidades sob demanda: construções, módulos, plantas, criaturas, missões…
+9. [ ] **Origem dos 49 itens restantes**: mercadores, entregas, regiões (exige nomes de regiões e mercadores localizados).
 
-> A lista exata depende do mapa de dados da Fase 0. Priorizamos por valor ao jogador × esforço.
+> Ordem sugerida das próximas: receitas/crafting (reaproveita tudo o que já existe) → plantas e criaturas → construções.
 
 ---
 
@@ -325,7 +327,7 @@ Segurança (§3) e privacidade (§4) **não são fases finais isoladas**: os ite
 **Decididas (Fase 0)**
 
 - ✅ Dados brutos em `d:\projects\frontier-companion-data-raw` (**fora** do repo). O pipeline lê o caminho via `RAW_DATA_DIR`; `data/raw` não existe no git. Inventário em [docs/data-inventory.md](docs/data-inventory.md).
-- ✅ Imagens: 1103 ícones PNG de UI (~17,7 MB) disponíveis → o pipeline converte para WebP/AVIF e gera mapa `itemId → ícone` com fallback.
+- ✅ Imagens: 1103 ícones PNG de UI disponíveis; o dono gerou uma versão **pixel art** (`icons_pixel`) autorizada para uso. O pipeline publica só os ícones dos itens (ADR 0007) e a UI usa um glifo genérico quando falta (6 itens).
 - ✅ Repositório **privado** agora; público depois — **gate obrigatório antes de abrir** (ver abaixo).
 - ✅ Monetização: apenas **Buy Me a Coffee** (link/botão simples; sem ads, sem vender dados, sem paywall de conteúdo do jogo).
 - ✅ Idiomas: pt-BR + en (os dados já trazem ambos).
@@ -334,7 +336,7 @@ Segurança (§3) e privacidade (§4) **não são fases finais isoladas**: os ite
 **Gate antes de tornar o repo público ou lançar o site**
 
 1. Ler o EULA/ToS do jogo e procurar política de fan content do estúdio; idealmente obter **autorização por escrito** — especialmente para os **ícones** (arte oficial) e porque o Buy Me a Coffee torna o projeto "com fluxo de dinheiro" (aumenta o risco, mesmo sendo doação).
-2. Sem autorização: publicar só dados factuais (números, nomes, relações) e **trocar os ícones** por arte própria/genérica; manter `data/raw` e PNGs fora do histórico git público.
+2. Sem autorização: publicar só dados factuais (números, nomes, relações) e **trocar os ícones** (inclusive a pixel art, que é derivada da arte oficial) por arte própria/genérica; manter `data/raw` e PNGs fora do histórico git público.
 3. **Cuidado com o histórico git:** se os ícones/JSONs entrarem em qualquer commit e depois o repo virar público, o histórico expõe tudo. Por isso: assets processados só entram no repo quando decidirmos; até lá `.gitignore` + (se for versionar) repositório separado/privado para assets.
 
 **Ainda em aberto**
