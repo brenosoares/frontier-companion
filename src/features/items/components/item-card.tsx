@@ -3,7 +3,7 @@ import Link from "next/link";
 import { formatNumber } from "@/shared/lib/format";
 import { Badge } from "@/shared/ui/badge";
 import type { ItemListEntry } from "../domain/item-list";
-import { ItemIcon } from "./item-icon";
+import { GameIcon } from "@/shared/ui/game-icon";
 
 const MAX_VISIBLE_TAGS = 3;
 
@@ -30,7 +30,7 @@ export function ItemCard({ entry, href, locale, labels }: ItemCardProps) {
       className="flex h-full flex-col gap-3 rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
     >
       <div className="flex items-start gap-3">
-        <ItemIcon icon={entry.icon} size={40} className="size-12" />
+        <GameIcon kind="item" icon={entry.icon} size={40} className="size-12" />
         <span className="min-w-0 font-medium break-words">{entry.name}</span>
       </div>
 

@@ -1,13 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { normalizeText } from "@/shared/lib/text";
 import type { Item } from "./item";
-import {
-  collectTags,
-  filterItems,
-  type ItemListEntry,
-  normalizeText,
-  sortItems,
-  toListEntry,
-} from "./item-list";
+import { collectTags, filterItems, type ItemListEntry, sortItems, toListEntry } from "./item-list";
 
 const item = (id: string, overrides: Partial<Item> = {}): Item => ({
   id,
@@ -35,13 +29,6 @@ const entry = (id: string, overrides: Partial<ItemListEntry> = {}): ItemListEntr
 });
 
 const NO_FILTERS = { query: "", tag: null, showUnavailable: false };
-
-describe("normalizeText", () => {
-  it("removes accents, case and surrounding spaces", () => {
-    expect(normalizeText("  Óleo de Rubimora ")).toBe("oleo de rubimora");
-    expect(normalizeText("Minério")).toBe("minerio");
-  });
-});
 
 describe("toListEntry", () => {
   it("localizes the name but searches in both languages and by id", () => {

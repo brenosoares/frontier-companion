@@ -139,4 +139,15 @@ describe("ItemExplorer", () => {
 
     expect(field).toHaveValue("ore");
   });
+
+  it("offers the availability toggle only when some item is possibly unavailable", () => {
+    render(
+      <ItemExplorer
+        entries={entries.filter((entry) => !entry.unavailable)}
+        locale="en"
+        labels={labels}
+      />,
+    );
+    expect(screen.queryByLabelText("Show possibly unavailable content")).not.toBeInTheDocument();
+  });
 });

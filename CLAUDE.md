@@ -18,8 +18,9 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 - Stack: Next.js 16 (App Router) + React 19 + TypeScript estrito + Tailwind CSS 4 + pnpm. Sem trocar de framework, gerenciador de pacotes ou biblioteca de estilo.
 - **Static-first**: sem banco, sem API pública, sem contas de usuário no MVP. Dados vêm do pipeline validado em build (ADR 0002).
 - Idiomas: pt-BR e en. Nome: **Frontier Companion** (projeto de fãs, não oficial). Versão do jogo: `1.0.2571`.
-- Conteúdo com _feature flag_ desligada fica **oculto por padrão**; spoilers (missões/lore) atrás de toggle.
-- **Conteúdo "Wip" (work in progress) do jogo é sempre descartado** pelo pipeline (itens, receitas, origens), com aviso; um teste de contrato garante que nada "Wip" chegue ao dataset.
+- Conteúdo sob _feature flag_ **ainda não confirmada como lançada** fica oculto por padrão (hoje nenhum: todas as flags atuais foram confirmadas); spoilers (missões/lore) atrás de toggle.
+- **Conteúdo "Wip", "PLACEHOLDER" (desenvolvimento) ou "Obsolete" (aposentado pelo jogo) é sempre descartado** pelo pipeline (itens, receitas, origens, construções), com aviso; um teste de contrato garante que nada assim chegue ao dataset.
+- **`RELEASED_FEATURE_FLAGS` (`scripts/data-pipeline/config.ts`) é decisão do dono:** só se preenche com flags que ele confirmar como lançadas; IAs nunca adivinham. Na 1.0.2571 o dono confirmou as 15 flags existentes; uma flag nova de patch futuro continua oculta (e o `data:build` avisa) até ele confirmar. A classificação de construções em categorias (`construct-category.ts`) é inferência a ser revisada: não a reescreva sem pedido.
 - Monetização: **apenas Buy Me a Coffee**. Proibido adicionar ads, analytics com cookies/identificadores, trackers, pixels ou qualquer SDK de terceiros sem aprovação.
 - Contato oficial: soareswdesign@gmail.com.
 

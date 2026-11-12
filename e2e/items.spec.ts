@@ -1,19 +1,21 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-// Facts below come from the committed dataset (data/processed): 224 available + 61 flagged items.
-const AVAILABLE_COUNT = 224;
-const TOTAL_COUNT = 285;
+// Facts below come from the committed dataset (data/processed): 285 items.
+const ITEM_COUNT = 285;
 
 test.describe("items catalog", () => {
   test.use({ viewport: { width: 1280, height: 800 } });
 
-  test("lists available items and hides flagged ones by default", async ({ page }) => {
+  test("lists every item: all feature flags are confirmed as released, so nothing is hidden", async ({
+    page,
+  }) => {
     await page.goto("/pt-BR/items");
 
     await expect(page.getByRole("heading", { level: 1, name: "Itens" })).toBeVisible();
-    await expect(page.getByRole("status")).toHaveText(`${AVAILABLE_COUNT} itens`);
-    await expect(page.getByRole("link", { name: /Óleo de Rubimora/ })).toHaveCount(0);
+    await expect(page.getByRole("status")).toHaveText(`${ITEM_COUNT} itens`);
+    await expect(page.getByRole("link", { name: /Óleo de Rubimora/ })).toBeVisible();
+    await expect(page.getByLabel("Mostrar conteúdo possivelmente indisponível")).toHaveCount(0);
   });
 
   test("filters by text ignoring accents, and mirrors the filter in the URL", async ({ page }) => {
@@ -36,19 +38,11 @@ test.describe("items catalog", () => {
     await page.goto("/pt-BR/items");
     await page.getByLabel("Categoria").selectOption("Metal");
     const metalCount = await page.getByRole("status").innerText();
-    expect(parseInt(metalCount)).toBeLessThan(AVAILABLE_COUNT);
+    expect(parseInt(metalCount)).toBeLessThan(ITEM_COUNT);
 
     await page.getByLabel("Ordenar por").selectOption("value");
     await expect(page).toHaveURL(/tag=Metal/);
     await expect(page).toHaveURL(/sort=value/);
-  });
-
-  test("reveals possibly unavailable content on request", async ({ page }) => {
-    await page.goto("/pt-BR/items");
-    await page.getByLabel("Mostrar conteúdo possivelmente indisponível").check();
-
-    await expect(page.getByRole("status")).toHaveText(`${TOTAL_COUNT} itens`);
-    await expect(page.getByRole("link", { name: /Óleo de Rubimora/ })).toBeVisible();
   });
 
   test("restores filters from a shared URL", async ({ page }) => {
@@ -127,11 +121,6 @@ test.describe("item detail", () => {
     await expect(page.getByRole("heading", { level: 1, name: "Minério de Cobre" })).toBeVisible();
     // It is an ingredient of the bronze bar, listed under "Usado em".
     await expect(page.getByRole("link", { name: "1× Barra de Bronze" }).first()).toBeVisible();
-  });
-
-  test("warns that flagged items may be unavailable", async ({ page }) => {
-    await page.goto("/pt-BR/items/AdvancedFuel1");
-    await expect(page.getByRole("note")).toContainText("flag de funcionalidade");
   });
 
   test("is localized", async ({ page }) => {

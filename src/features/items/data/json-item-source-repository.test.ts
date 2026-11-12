@@ -26,6 +26,11 @@ describe("JsonItemSourceRepository", () => {
     expect(found.map((s) => s.sourceId)).toEqual(["Cliff", "Rock"]);
   });
 
+  it("lists the ids of items that have at least one source", async () => {
+    const repository = new JsonItemSourceRepository(async () => data);
+    expect(await repository.getSourcedItemIds()).toEqual(new Set(["Stone", "Wood"]));
+  });
+
   it("returns nothing for an item without sources", async () => {
     const repository = new JsonItemSourceRepository(async () => data);
     expect(await repository.findByItem("Nope")).toEqual([]);

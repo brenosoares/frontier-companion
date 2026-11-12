@@ -21,8 +21,9 @@ const dataset: Dataset = {
     },
   ],
   recipes: [],
-  stations: [{ id: "Furnace", name: { en: "Furnace", "pt-BR": "Fornalha" } }],
+  stations: [{ id: "Furnace", family: "Furnace", name: { en: "Furnace", "pt-BR": "Fornalha" } }],
   itemSources: [],
+  constructs: [],
 };
 
 let tempDir: string | undefined;
@@ -36,7 +37,7 @@ describe("buildManifest", () => {
     const a = buildManifest(dataset, "9.9.9");
     const b = buildManifest(structuredClone(dataset), "9.9.9");
     expect(a).toEqual(b);
-    expect(a.counts).toEqual({ items: 1, recipes: 0, stations: 1, itemSources: 0 });
+    expect(a.counts).toEqual({ items: 1, recipes: 0, stations: 1, itemSources: 0, constructs: 0 });
     expect(a.dataVersion).toMatch(/^[0-9a-f]{12}$/);
   });
 

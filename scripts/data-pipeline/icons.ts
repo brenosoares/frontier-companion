@@ -1,6 +1,5 @@
 import { copyFile, mkdir, readdir, rm } from "node:fs/promises";
 import path from "node:path";
-import type { Item } from "@/features/items/domain/item";
 
 /** Names (without extension) of the PNG icons in a directory. */
 export async function listIconNames(directory: string): Promise<Set<string>> {
@@ -13,15 +12,15 @@ export async function listIconNames(directory: string): Promise<Set<string>> {
 }
 
 /**
- * Publishes only the icons that items actually use. `destDir` is generated output and is rebuilt
- * from scratch, so icons of removed items never linger. Returns how many files were copied.
+ * Publishes only the icons that are actually used. `destDir` is generated output and is rebuilt
+ * from scratch, so icons of removed content never linger. Returns how many files were copied.
  */
-export async function copyItemIcons(
-  items: readonly Pick<Item, "icon">[],
+export async function copyIcons(
+  icons: readonly (string | null)[],
   sourceDir: string,
   destDir: string,
 ): Promise<number> {
-  const names = new Set(items.flatMap((item) => (item.icon ? [item.icon] : [])));
+  const names = new Set(icons.flatMap((icon) => (icon ? [icon] : [])));
 
   await rm(destDir, { recursive: true, force: true });
   await mkdir(destDir, { recursive: true });

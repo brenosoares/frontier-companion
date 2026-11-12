@@ -5,10 +5,13 @@
  * The files are bundled at build time (no runtime I/O), which suits static rendering with
  * `cacheComponents`. They are still validated by Zod when first read.
  */
+import constructsJson from "@data/processed/constructs.json";
 import itemSourcesJson from "@data/processed/item-sources.json";
 import itemsJson from "@data/processed/items.json";
 import recipesJson from "@data/processed/recipes.json";
 import stationsJson from "@data/processed/stations.json";
+import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
+import type { ConstructRepository } from "@/features/constructs/domain/construct-repository";
 import { JsonItemRepository } from "@/features/items/data/json-item-repository";
 import { JsonItemSourceRepository } from "@/features/items/data/json-item-source-repository";
 import type { ItemRepository } from "@/features/items/domain/item-repository";
@@ -25,4 +28,7 @@ export const stationRepository: StationRepository = new JsonStationRepository(
 );
 export const itemSourceRepository: ItemSourceRepository = new JsonItemSourceRepository(
   async () => itemSourcesJson,
+);
+export const constructRepository: ConstructRepository = new JsonConstructRepository(
+  async () => constructsJson,
 );

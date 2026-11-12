@@ -145,8 +145,8 @@ Cada feature segue o mesmo molde: **domain → repository → UI → testes → 
 
 1. [x] **Catálogo/Enciclopédia de itens** (inclui ícones pixel art e "Onde encontrar": nós, plantas e animais do rancho; [ADR 0007](docs/adr/0007-item-sources-icons-and-primary-color.md)) — lista com busca (sem acento, bilíngue), filtro por categoria, ordenação, toggle de conteúdo possivelmente indisponível, estado na URL; página de detalhe (`/items/[id]`) com receitas "Como fazer" e "Usado em", estações localizadas.
 2. [x] **Busca global (v1)** — campo do header leva ao catálogo com `?q=`. _Evolução:_ página de busca própria quando houver mais entidades.
-3. [ ] **Receitas / Crafting** — página de receitas, árvore de dependências, cálculo de materiais totais (função pura, 100% testada).
-4. [ ] **Calculadoras** (rendimento, tempo, custo).
+3. [x] **Receitas** — hub de categorias (construções e decorações do menu de construção + fabricação por máquina) → cards (ícone, nome, custo, onde é feito) → detalhe; **calculadora de materiais** ([ADR 0008](docs/adr/0008-recipes-and-materials-calculator.md), [ADR 0009](docs/adr/0009-recipes-hub-constructs-and-categories.md)). **Decididos pelo dono:** flags (todas lançadas), "[Obsolete]" e "PLACEHOLDER" são descartados. ADR 0009 revisado.
+4. [ ] **Outras calculadoras** (rendimento, custo). _A de materiais já está no item 3._
 5. [ ] **Comparador** de itens/upgrades.
 6. [ ] **Checklist de progresso** — persistência local (Fase 6).
 7. [ ] **Changelog por patch** (diff do JSON curado entre versões).

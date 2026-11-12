@@ -17,7 +17,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       count: datasetManifest.counts.items,
       href: localizedPath(locale, "/items"),
     },
-    { title: home.recipesTitle, count: datasetManifest.counts.recipes, href: null },
+    {
+      title: home.recipesTitle,
+      count: datasetManifest.counts.recipes,
+      href: localizedPath(locale, "/recipes"),
+    },
   ];
 
   return (

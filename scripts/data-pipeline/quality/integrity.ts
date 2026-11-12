@@ -1,3 +1,4 @@
+import type { Construct } from "@/features/constructs/domain/construct";
 import type { Item } from "@/features/items/domain/item";
 import type { ItemSource } from "@/features/items/domain/item-source";
 import type { Recipe } from "@/features/recipes/domain/recipe";
@@ -8,6 +9,7 @@ export interface Dataset {
   recipes: readonly Recipe[];
   stations: readonly Station[];
   itemSources: readonly ItemSource[];
+  constructs: readonly Construct[];
 }
 
 function findDuplicates(ids: readonly string[]): string[] {
@@ -21,7 +23,13 @@ function findDuplicates(ids: readonly string[]): string[] {
 }
 
 /** Referential integrity. Returns human-readable issues; empty means the dataset is consistent. */
-export function checkIntegrity({ items, recipes, stations, itemSources }: Dataset): string[] {
+export function checkIntegrity({
+  items,
+  recipes,
+  stations,
+  itemSources,
+  constructs,
+}: Dataset): string[] {
   const issues: string[] = [];
   const itemIds = new Set(items.map((item) => item.id));
   const stationIds = new Set(stations.map((station) => station.id));
@@ -42,6 +50,22 @@ export function checkIntegrity({ items, recipes, stations, itemSources }: Datase
   for (const source of itemSources) {
     if (!itemIds.has(source.itemId)) {
       issues.push(`Item source "${source.id}" references unknown item "${source.itemId}"`);
+    }
+  }
+
+  for (const id of findDuplicates(constructs.map((construct) => construct.id))) {
+    issues.push(`Duplicate construct id "${id}"`);
+  }
+  for (const construct of constructs) {
+    for (const { itemId } of construct.costs) {
+      if (!itemIds.has(itemId)) {
+        issues.push(`Construct "${construct.id}" costs unknown item "${itemId}"`);
+      }
+    }
+  }
+  for (const station of stations) {
+    if (!stationIds.has(station.family)) {
+      issues.push(`Station "${station.id}" belongs to unknown family "${station.family}"`);
     }
   }
 

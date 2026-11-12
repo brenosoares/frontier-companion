@@ -11,6 +11,7 @@ export const DatasetManifestSchema = z.object({
     recipes: z.number().int().nonnegative(),
     stations: z.number().int().nonnegative(),
     itemSources: z.number().int().nonnegative(),
+    constructs: z.number().int().nonnegative(),
   }),
 });
 

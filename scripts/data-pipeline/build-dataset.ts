@@ -1,4 +1,5 @@
-import { STATIONS } from "./config";
+import { RELEASED_FEATURE_FLAGS, STATIONS } from "./config";
+import { extractBlueprintPrices, extractConstructs } from "./extractors/constructs";
 import { extractItems } from "./extractors/items";
 import { extractRecipes } from "./extractors/recipes";
 import {
@@ -10,7 +11,7 @@ import {
 } from "./extractors/sources";
 import { extractStations } from "./extractors/stations";
 import { checkIntegrity, type Dataset } from "./quality/integrity";
-import { dropUnfinishedItems } from "./quality/unfinished";
+import { dropUnfinishedConstructs, dropUnfinishedItems } from "./quality/unfinished";
 import { findSensitiveStrings, type SensitiveFinding } from "./quality/sanitize";
 import { parseDataTableRows } from "./unreal/normalize";
 
@@ -44,12 +45,14 @@ async function readStationRows(
 }
 
 /**
- * @param iconNames file names (without extension) available in the icon set; items whose icon is
- *   not in it get `icon: null`.
+ * @param iconNames file names (without extension) available in the icon set; content whose icon
+ *   is not in it gets `icon: null`.
+ * @param releasedFlags feature flags confirmed as released: they stop hiding content.
  */
 export async function buildDataset(
   source: RawTableSource,
   iconNames: ReadonlySet<string>,
+  releasedFlags: ReadonlySet<string> = RELEASED_FEATURE_FLAGS,
 ): Promise<BuildResult> {
   const [
     itemRows,
@@ -61,6 +64,7 @@ export async function buildDataset(
     largePlantRows,
     animalRows,
     critterRows,
+    merchantEntryRows,
   ] = await Promise.all([
     readRows(source, "DT_Items"),
     readRows(source, "DT_CompositeRecipes"),
@@ -71,13 +75,21 @@ export async function buildDataset(
     readRows(source, "DT_LargePlants"),
     readRows(source, "DT_RanchAnimals"),
     readRows(source, "DT_Critters"),
+    readRows(source, "DT_MerchantBundleEntries"),
   ]);
 
   const unfinished = dropUnfinishedItems(
-    extractItems(itemRows, iconNames),
+    extractItems(itemRows, { availableIcons: iconNames, releasedFlags }),
     extractRecipes(compositeRows, stationRows),
   );
   const { items } = unfinished;
+  const builtConstructs = dropUnfinishedConstructs(
+    extractConstructs(constructRows, {
+      availableIcons: iconNames,
+      releasedFlags,
+      blueprintPrices: extractBlueprintPrices(merchantEntryRows),
+    }),
+  );
   const { kept: itemSources, warnings: sourceWarnings } = filterUsableSources(
     sortSources([
       ...extractNodeSources(nodeRows),
@@ -92,11 +104,12 @@ export async function buildDataset(
     recipes: unfinished.recipes,
     stations: extractStations(STATIONS, constructRows),
     itemSources,
+    constructs: builtConstructs.constructs,
   };
 
   return {
     dataset,
-    warnings: [...unfinished.warnings, ...sourceWarnings],
+    warnings: [...unfinished.warnings, ...builtConstructs.warnings, ...sourceWarnings],
     integrityIssues: checkIntegrity(dataset),
     sensitiveFindings: findSensitiveStrings(dataset),
   };
