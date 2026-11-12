@@ -32,6 +32,7 @@ Trabalhe **somente na fase atual** do plano. Não antecipe fases nem adicione es
 - SOLID, DRY, KISS, YAGNI. Funções pequenas, nomes claros, sem `any`, sem `@ts-ignore`/`eslint-disable` sem justificativa em comentário, sem código morto, sem comentários que narram o óbvio.
 - Server Components por padrão; `"use client"` só onde há interação.
 - Next 16 difere do que você conhece (ex.: `proxy` no lugar de `middleware`, `cacheComponents`). **Leia `node_modules/next/dist/docs/` antes de usar uma API do Next.**
+- **Dado que o jogo não informa fica `null`** (nome, quantidade, chance, preço…): nunca invente nem estime. Vínculos inferidos (ex.: planta mutante ↔ sementes) são documentados em ADR e não criam origem quando a convenção falha.
 - Não adicione dependências sem necessidade clara; justifique no PR (manutenção, tamanho, segurança). Nada de `postinstall` de terceiros.
 - Nada de `dangerouslySetInnerHTML`; rich text do jogo é sanitizado **no pipeline**.
 - Dados do jogo só são lidos por repositórios; o único lugar que conhece os JSONs é `src/app/[locale]/data.ts` (composition root). Features **não se importam**: a página (`app`) compõe e passa _view models_. Props de componentes cliente são só dados simples (sem funções).

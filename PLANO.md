@@ -151,7 +151,8 @@ Cada feature segue o mesmo molde: **domain → repository → UI → testes → 
 6. [ ] **Checklist de progresso** — persistência local (Fase 6).
 7. [ ] **Changelog por patch** (diff do JSON curado entre versões).
 8. [ ] Demais entidades sob demanda: construções, módulos, plantas, criaturas, missões…
-9. [ ] **Origem dos 49 itens restantes**: mercadores, entregas, regiões (exige nomes de regiões e mercadores localizados).
+9. [x] **Origem dos itens restantes** (49 → 22): fruto de planta, mercadores, plantas mutantes e pacotes de ajuda ([ADR 0010](docs/adr/0010-more-item-origins.md)). Faltam trocas com vizinhos e os itens sem nenhum dado no jogo.
+10. [x] **Animais** — lista, detalhe (o que dá, alimentação, criação) e estruturas do rancho ([ADR 0011](docs/adr/0011-animals.md)). Como conseguir o animal (alimentar o bicho selvagem → ovo → incubadora) e chances das lentes vêm dos Blueprints ([ADR 0012](docs/adr/0012-blueprint-extraction.md)). Faltam loot de criaturas selvagens por região e acessórios.
 
 > Ordem sugerida das próximas: receitas/crafting (reaproveita tudo o que já existe) → plantas e criaturas → construções.
 
