@@ -1,0 +1,5627 @@
+[
+  {
+    "id": "AdvancedFuel1",
+    "name": {
+      "en": "Rabberry Oil",
+      "pt-BR": "Óleo de Rubimora"
+    },
+    "description": {
+      "en": "An efficient fuel source.",
+      "pt-BR": "Uma fonte de combustível eficiente."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 135,
+    "icon": "T_AdvancedFuel1Icon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "AdvancedFuel2",
+    "name": {
+      "en": "Chromoot Oil",
+      "pt-BR": "Óleo de Cromenoura-forte"
+    },
+    "description": {
+      "en": "An efficient fuel source.",
+      "pt-BR": "Uma fonte de combustível eficiente."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 230,
+    "icon": "T_AdvancedFuel2Icon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "AdvancedFuel3",
+    "name": {
+      "en": "Lumtwig Oil",
+      "pt-BR": "Óleo de Lumifigueira"
+    },
+    "description": {
+      "en": "An efficient fuel source.",
+      "pt-BR": "Uma fonte de combustível eficiente."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 310,
+    "icon": "T_AdvancedFuel3Icon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "AdvancedFuel4",
+    "name": {
+      "en": "Honeyvine Oil",
+      "pt-BR": "Óleo de Melvideira"
+    },
+    "description": {
+      "en": "An efficient fuel source.",
+      "pt-BR": "Uma fonte de combustível eficiente."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 365,
+    "icon": "T_AdvancedFuel4Icon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "AdvancedFuel5",
+    "name": {
+      "en": "Papriznip Oil",
+      "pt-BR": "Óleo de Paprinaca"
+    },
+    "description": {
+      "en": "An efficient fuel source.",
+      "pt-BR": "Uma fonte de combustível eficiente."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 600,
+    "icon": "T_AdvancedFuel5Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AdvancedRepairKit",
+    "name": {
+      "en": "Superior Repair Kit",
+      "pt-BR": "Kit de Reparos Superior"
+    },
+    "description": {
+      "en": "A high quality repair kit to repair mech parts.",
+      "pt-BR": "Um kit de reparo de alta qualidade para consertar peças do meca."
+    },
+    "tags": [
+      "RepairKit",
+      "StaticPricing"
+    ],
+    "weight": 500,
+    "sellValue": 0,
+    "icon": "T_AdvancedRepairKitIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AluminiumElectronics",
+    "name": {
+      "en": "Aluminum Electronics",
+      "pt-BR": "Peças Eletrônicas de Alumínio"
+    },
+    "description": {
+      "en": "A variety of computer modules.",
+      "pt-BR": "Uma variedade de módulos computadorizados."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1700,
+    "sellValue": 25,
+    "icon": "T_AluminiumElectronicsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AluminiumFrame",
+    "name": {
+      "en": "Aluminum Frame",
+      "pt-BR": "Estrutura de Alumínio"
+    },
+    "description": {
+      "en": "Keeps things in place.",
+      "pt-BR": "Mantém as coisas no lugar."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 2800,
+    "sellValue": 40,
+    "icon": "T_AluminiumFrameIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AluminiumMechanicalParts",
+    "name": {
+      "en": "Aluminum Parts",
+      "pt-BR": "Peças de Alumínio"
+    },
+    "description": {
+      "en": "An assortment of spare parts.",
+      "pt-BR": "Uma variedade de peças sobressalentes."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1700,
+    "sellValue": 45,
+    "icon": "T_AluminiumMechanicalPartsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AluminiumRod",
+    "name": {
+      "en": "Aluminum Rod",
+      "pt-BR": "Haste de Alumínio"
+    },
+    "description": {
+      "en": "A light and malleable metal.",
+      "pt-BR": "Um metal leve e maleável."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 2000,
+    "sellValue": 20,
+    "icon": "T_AluminiumRodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AluminiumWire",
+    "name": {
+      "en": "Aluminum Wire",
+      "pt-BR": "Fio de Alumínio"
+    },
+    "description": {
+      "en": "A good material for electric circuits.",
+      "pt-BR": "Um bom material para circuitos elétricos."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1400,
+    "sellValue": 10,
+    "icon": "T_AluminiumWireIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Amber",
+    "name": {
+      "en": "Amber",
+      "pt-BR": "Âmbar"
+    },
+    "description": {
+      "en": "Crystallized Amber. Can be sold for a pretty penny.",
+      "pt-BR": "Âmbar cristalizado. Pode ser vendido por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 1250,
+    "icon": "T_AmberIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "AmberFragments",
+    "name": {
+      "en": "Amber Fragments",
+      "pt-BR": "Fragmentos de Âmbar"
+    },
+    "description": {
+      "en": "Can be combined into valuable Amber.",
+      "pt-BR": "Podem ser combinados em um valioso âmbar."
+    },
+    "tags": [
+      "Animal"
+    ],
+    "weight": 200,
+    "sellValue": 300,
+    "icon": "T_AmberFragmentsIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "BabyBlueDye",
+    "name": {
+      "en": "Sky Blue Paint",
+      "pt-BR": "Tinta Azul-celeste"
+    },
+    "description": {
+      "en": "Paints constructs sky blue.",
+      "pt-BR": "Pinta construções com a cor azul-celeste."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_BabyBlueDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BasicRepairKit",
+    "name": {
+      "en": "Basic Repair Kit",
+      "pt-BR": "Kit de Reparos Básico"
+    },
+    "description": {
+      "en": "A low quality repair kit used to repair mech parts.",
+      "pt-BR": "Um kit de reparo de baixa qualidade usado para consertar peças do meca."
+    },
+    "tags": [
+      "RepairKit",
+      "StaticPricing"
+    ],
+    "weight": 500,
+    "sellValue": 0,
+    "icon": "T_BasicRepairKitIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Battery",
+    "name": {
+      "en": "Battery",
+      "pt-BR": "Bateria"
+    },
+    "description": {
+      "en": "A fully charged battery.",
+      "pt-BR": "Uma bateria totalmente carregada."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 1000,
+    "sellValue": 100,
+    "icon": "T_BatteryIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BentTreeSeed",
+    "name": {
+      "en": "Steadwood Tree Sprout",
+      "pt-BR": "Broto de Árvore Resistente"
+    },
+    "description": {
+      "en": "Grows into a Steadwood Tree.",
+      "pt-BR": "Cresce e vira uma Árvore Resistente."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BentTreeIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "BeretHat",
+    "name": {
+      "en": "Beret",
+      "pt-BR": "Boina"
+    },
+    "description": {
+      "en": "Gives the wearer a sophisticated vibe.",
+      "pt-BR": "Proporciona um ar sofisticado a quem a usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_BeretHatIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "BlackColorflower",
+    "name": {
+      "en": "Black Colorflower",
+      "pt-BR": "Coloriflor Preta"
+    },
+    "description": {
+      "en": "A flower full of black pigment. Can be used to create Black Paint.",
+      "pt-BR": "Uma flor repleta de pigmento preto. Pode ser usada para criar Tinta Preta."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_BlackColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlackColorflowerSeed",
+    "name": {
+      "en": "Black Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Preta"
+    },
+    "description": {
+      "en": "Grows into a Black Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Preta e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BlackColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlackDye",
+    "name": {
+      "en": "Black Paint",
+      "pt-BR": "Tinta Preta"
+    },
+    "description": {
+      "en": "Paints constructs black.",
+      "pt-BR": "Pinta construções com a cor preta."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_BlackDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Blooms",
+    "name": {
+      "en": "Lumbloom",
+      "pt-BR": "Lumiflor"
+    },
+    "description": {
+      "en": "A ball-shaped flower with self-illuminating properties.",
+      "pt-BR": "Uma flor com formato redondo e propriedades de iluminação autônoma."
+    },
+    "tags": [
+      "Plant"
+    ],
+    "weight": 10,
+    "sellValue": 120,
+    "icon": "T_BloomsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Blooms_Rare",
+    "name": {
+      "en": "Lumbloom (Mutated)",
+      "pt-BR": "Lumiflor (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a ball-shaped flower with self-illuminating properties.",
+      "pt-BR": "Uma variante rara de uma flor com formato redondo e propriedades de iluminação autônoma."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 360,
+    "icon": "T_Blooms_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "BloomsOil",
+    "name": {
+      "en": "Lumbloom Oil",
+      "pt-BR": "Óleo de Lumiflor"
+    },
+    "description": {
+      "en": "An oil made out of Lumbloom. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Lumiflor. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 145,
+    "icon": "T_BloomsOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BloomsSeeds",
+    "name": {
+      "en": "Lumbloom Seeds",
+      "pt-BR": "Sementes de Lumiflor"
+    },
+    "description": {
+      "en": "Grows into a Lumbloom.",
+      "pt-BR": "Cresce e vira uma Lumiflor."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BloomsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BloomsSeeds_Refined",
+    "name": {
+      "en": "Spliced Lumbloom Seeds",
+      "pt-BR": "Sementes de Lumiflor Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Lumbloom.",
+      "pt-BR": "Cresce e vira uma Lumiflor Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BloomsIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "BlueColorflower",
+    "name": {
+      "en": "Blue Colorflower",
+      "pt-BR": "Coloriflor Azul"
+    },
+    "description": {
+      "en": "A flower full of blue pigment. Can be used to create Blue Paint.",
+      "pt-BR": "Uma flor repleta de pigmento azul. Pode ser usada para criar Tinta Azul."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_BlueColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueColorflowerSeed",
+    "name": {
+      "en": "Blue Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Azul"
+    },
+    "description": {
+      "en": "Grows into a Blue Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Azul e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BlueColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueCrystal",
+    "name": {
+      "en": "Blue Crystal",
+      "pt-BR": "Cristal Azul"
+    },
+    "description": {
+      "en": "A natural energy focus. Glows gently at night.",
+      "pt-BR": "Um foco de energia natural. Brilha suavemente à noite."
+    },
+    "tags": [
+      "Colored",
+      "Crystal"
+    ],
+    "weight": 2500,
+    "sellValue": 100,
+    "icon": "T_BlueCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueCrystalDust",
+    "name": {
+      "en": "Blue Crystal Dust",
+      "pt-BR": "Pó de Cristal Azul"
+    },
+    "description": {
+      "en": "Dust made out of Blue Crystal.",
+      "pt-BR": "Pó feito de Cristal Azul."
+    },
+    "tags": [
+      "Colored",
+      "Powder",
+      "Infusable"
+    ],
+    "weight": 400,
+    "sellValue": 60,
+    "icon": "T_BlueCrystalDustIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueDye",
+    "name": {
+      "en": "Blue Paint",
+      "pt-BR": "Tinta Azul"
+    },
+    "description": {
+      "en": "Paints constructs blue.",
+      "pt-BR": "Pinta construções com a cor azul."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_BlueDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueGlass",
+    "name": {
+      "en": "Blue Glass",
+      "pt-BR": "Vidro Azul"
+    },
+    "description": {
+      "en": "Glass made from Blue Crystal Dust.",
+      "pt-BR": "Vidro feito com Pó de Cristal Azul."
+    },
+    "tags": [
+      "Colored",
+      "Glass"
+    ],
+    "weight": 800,
+    "sellValue": 20,
+    "icon": "T_BlueGlassIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BlueLens",
+    "name": {
+      "en": "Blue Lens",
+      "pt-BR": "Lente Azul"
+    },
+    "description": {
+      "en": "A pinpoint energy focus.",
+      "pt-BR": "Um foco localizado de energia."
+    },
+    "tags": [
+      "Colored",
+      "Lens"
+    ],
+    "weight": 800,
+    "sellValue": 100,
+    "icon": "T_BlueLensIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BowAccessory",
+    "name": {
+      "en": "Bow",
+      "pt-BR": "Laço"
+    },
+    "description": {
+      "en": "Gives the wearer an endearing vibe.",
+      "pt-BR": "Proporciona um ar cativante a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_BowAccessoryIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "BronzeBar",
+    "name": {
+      "en": "Bronze Bar",
+      "pt-BR": "Barra de Bronze"
+    },
+    "description": {
+      "en": "An alloy of Copper and Tin.",
+      "pt-BR": "Uma liga de Cobre e Estanho."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 2000,
+    "sellValue": 15,
+    "icon": "T_BronzeBarIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BronzeElectronics",
+    "name": {
+      "en": "Bronze Electronics",
+      "pt-BR": "Peças Eletrônicas de Bronze"
+    },
+    "description": {
+      "en": "A variety of computer modules.",
+      "pt-BR": "Uma variedade de módulos computadorizados."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1700,
+    "sellValue": 20,
+    "icon": "T_BronzeElectronicsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BronzeFrame",
+    "name": {
+      "en": "Bronze Frame",
+      "pt-BR": "Estrutura de Bronze"
+    },
+    "description": {
+      "en": "Keeps things in place.",
+      "pt-BR": "Mantém as coisas no lugar."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 2800,
+    "sellValue": 25,
+    "icon": "T_BronzeFrameIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BronzeParts",
+    "name": {
+      "en": "Bronze Parts",
+      "pt-BR": "Peças de Bronze"
+    },
+    "description": {
+      "en": "An assortment of spare parts.",
+      "pt-BR": "Uma variedade de peças sobressalentes."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1700,
+    "sellValue": 30,
+    "icon": "T_BronzePartsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BrownDye",
+    "name": {
+      "en": "Brown Paint",
+      "pt-BR": "Tinta Marrom"
+    },
+    "description": {
+      "en": "Paints constructs brown.",
+      "pt-BR": "Pinta construções com a cor marrom."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_BrownDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BugAmber",
+    "name": {
+      "en": "Bug Fossil",
+      "pt-BR": "Fóssil de Inseto"
+    },
+    "description": {
+      "en": "An ancient insect preserved in tree sap. Can be sold for a pretty penny.",
+      "pt-BR": "Um inseto centenário preservado em seiva de árvore. Pode ser vendido por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 200,
+    "icon": "T_BugAmberIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BulbTreeSeed",
+    "name": {
+      "en": "Spirepot Tree Sprout",
+      "pt-BR": "Broto de Árvore Bojuda"
+    },
+    "description": {
+      "en": "Grows into a Spirepot Tree.",
+      "pt-BR": "Cresce e vira uma Árvore Bojuda."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_BulbTreeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "BumbleBeeYellowDye",
+    "name": {
+      "en": "Bronze Paint",
+      "pt-BR": "Tinta Bronze"
+    },
+    "description": {
+      "en": "Paints constructs bronze.",
+      "pt-BR": "Pinta construções com a cor bronze."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_BumbleBeeYellowDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CamoGreenDye",
+    "name": {
+      "en": "Moss Green Paint",
+      "pt-BR": "Tinta Verde-musgo"
+    },
+    "description": {
+      "en": "Paints constructs moss green.",
+      "pt-BR": "Pinta construções com a cor verde-musgo."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_CamoGreenDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Caroot",
+    "name": {
+      "en": "Caroot",
+      "pt-BR": "Cenoura-forte"
+    },
+    "description": {
+      "en": "A carrot-like tuber with branching stems.",
+      "pt-BR": "Um tubérculo parecido com uma cenoura, com caule ramificado."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable"
+    ],
+    "weight": 10,
+    "sellValue": 75,
+    "icon": "T_CarootIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Caroot_Rare",
+    "name": {
+      "en": "Caroot (Mutated)",
+      "pt-BR": "Cenoura-forte (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a carrot-like tuber with branching stems.",
+      "pt-BR": "Uma variante rara de um tubérculo parecido com uma cenoura com caule ramificado."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 225,
+    "icon": "T_Caroot_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "CarootJuice",
+    "name": {
+      "en": "Caroot Oil",
+      "pt-BR": "Óleo de Cenoura-forte"
+    },
+    "description": {
+      "en": "An oil made from Caroot. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Cenoura-forte. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 90,
+    "icon": "T_CarootJuiceIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CarootSeeds",
+    "name": {
+      "en": "Caroot Seeds",
+      "pt-BR": "Sementes de Cenoura-forte"
+    },
+    "description": {
+      "en": "Grows into a Caroot.",
+      "pt-BR": "Cresce e vira uma Cenoura-forte."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CarootIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CarootSeeds_Refined",
+    "name": {
+      "en": "Spliced Caroot Seeds",
+      "pt-BR": "Sementes de Cenoura-forte Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Caroot.",
+      "pt-BR": "Cresce e vira uma Cenoura-forte Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CarootIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "CherryTreeSeed",
+    "name": {
+      "en": "Blossom Tree Sprout (Mutated)",
+      "pt-BR": "Broto de Cerejeira (Mutante)"
+    },
+    "description": {
+      "en": "Grows into a Mutated Blossom Tree.",
+      "pt-BR": "Cresce e vira uma Cerejeira Mutante."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CherryTreeIcon",
+    "featureFlag": "AutumnSprouts2024",
+    "isVirtual": false
+  },
+  {
+    "id": "Chromaize",
+    "name": {
+      "en": "Chromaize",
+      "pt-BR": "Cromilho"
+    },
+    "description": {
+      "en": "A colorful corn-like stalk plant.",
+      "pt-BR": "Uma planta alta e colorida, parecida com milho."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable"
+    ],
+    "weight": 10,
+    "sellValue": 90,
+    "icon": "T_ChromaizeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Chromaize_Rare",
+    "name": {
+      "en": "Chromaize (Mutated)",
+      "pt-BR": "Cromilho (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a colorful corn-like stalk plant.",
+      "pt-BR": "Uma variante rara de uma planta alta e colorida parecida com milho."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 270,
+    "icon": "T_Chromaize_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "ChromaizeOil",
+    "name": {
+      "en": "Chromaize Oil",
+      "pt-BR": "Óleo de Cromilho"
+    },
+    "description": {
+      "en": "An oil made from Chromaize. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Cromilho. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 110,
+    "icon": "T_ChromaizeOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ChromaizeSeeds",
+    "name": {
+      "en": "Chromaize Seeds",
+      "pt-BR": "Sementes de Cromilho"
+    },
+    "description": {
+      "en": "Grows into Chromaize.",
+      "pt-BR": "Cresce e vira um Cromilho."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_ChromaizeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ChromaizeSeeds_Refined",
+    "name": {
+      "en": "Spliced Chromaize Seeds",
+      "pt-BR": "Sementes de Cromilho Modificadas"
+    },
+    "description": {
+      "en": "Grows into Mutated Chromaize.",
+      "pt-BR": "Cresce e vira um Cromilho Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_ChromaizeIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "Clam",
+    "name": {
+      "en": "Clam",
+      "pt-BR": "Ostra"
+    },
+    "description": {
+      "en": "A clam, may contain a pearl. Can be sold for a pretty penny.",
+      "pt-BR": "Uma ostra, pode conter uma pérola. Pode ser vendido por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 300,
+    "icon": "T_ClamIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Clay",
+    "name": {
+      "en": "Clay",
+      "pt-BR": "Argila"
+    },
+    "description": {
+      "en": "Hardens quickly, good for simple construction.",
+      "pt-BR": "Endurece rapidamente, ideal para construções simples."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 400,
+    "sellValue": 2,
+    "icon": "T_ClayIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ClearGlass",
+    "name": {
+      "en": "Clear Glass",
+      "pt-BR": "Vidro Transparente"
+    },
+    "description": {
+      "en": "Glass made from Sand.",
+      "pt-BR": "Vidro feito com Areia."
+    },
+    "tags": [
+      "Colored",
+      "Glass"
+    ],
+    "weight": 800,
+    "sellValue": 10,
+    "icon": "T_ClearGlassIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ClearLens",
+    "name": {
+      "en": "Clear Lens",
+      "pt-BR": "Lente Transparente"
+    },
+    "description": {
+      "en": "A pinpoint energy focus.",
+      "pt-BR": "Um foco localizado de energia."
+    },
+    "tags": [
+      "Colored",
+      "Lens"
+    ],
+    "weight": 800,
+    "sellValue": 10,
+    "icon": "T_ClearLensIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Cloth",
+    "name": {
+      "en": "Cloth",
+      "pt-BR": "Tecido"
+    },
+    "description": {
+      "en": "A basic piece of cloth.",
+      "pt-BR": "Um pedaço de tecido básico."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 300,
+    "sellValue": 50,
+    "icon": "T_ClothIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "Coal",
+    "name": {
+      "en": "Coal",
+      "pt-BR": "Carvão"
+    },
+    "description": {
+      "en": "Natural coal, burns well.",
+      "pt-BR": "Carvão natural, tem uma queima boa."
+    },
+    "tags": [
+      "Mineral"
+    ],
+    "weight": 500,
+    "sellValue": 20,
+    "icon": "T_CoalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlant",
+    "name": {
+      "en": "Coilvine Stem",
+      "pt-BR": "Haste de Espideira"
+    },
+    "description": {
+      "en": "A sturdy plant that grows in a spiral shape.",
+      "pt-BR": "Uma planta robusta que cresce em formato de espiral."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable"
+    ],
+    "weight": 10,
+    "sellValue": 150,
+    "icon": "T_CoilPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlant_Rare",
+    "name": {
+      "en": "Coilvine Stem (Mutated)",
+      "pt-BR": "Haste de Espideira (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a sturdy plant that grows in a spiral shape.",
+      "pt-BR": "Uma variante rara de uma planta robusta que cresce em formato de espiral."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 450,
+    "icon": "T_CoilPlant_RareIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlantOil",
+    "name": {
+      "en": "Coilvine Oil",
+      "pt-BR": "Óleo de Espideira"
+    },
+    "description": {
+      "en": "An oil made from Coilvine. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Espideira. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 180,
+    "icon": "T_CoilPlantOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlantSeeds",
+    "name": {
+      "en": "Coilvine Seed",
+      "pt-BR": "Semente de Espideira"
+    },
+    "description": {
+      "en": "Grows into a Coilvine.",
+      "pt-BR": "Cresce e vira uma Espideira."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CoilPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlantSeeds_Refined",
+    "name": {
+      "en": "Spliced Coilvine Seed",
+      "pt-BR": "Semente de Espideira Modificada"
+    },
+    "description": {
+      "en": "Grows into a Mutated Coilvine.",
+      "pt-BR": "Cresce e vira uma Espideira Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CoilPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CoilPlantStem",
+    "name": {
+      "en": "Natural Coil",
+      "pt-BR": "Espiral Natural"
+    },
+    "description": {
+      "en": "A dried stem from a Coilvine.",
+      "pt-BR": "Uma haste desidratada de Espideira."
+    },
+    "tags": [
+      "Decomposable",
+      "Crafted",
+      "Plant"
+    ],
+    "weight": 100,
+    "sellValue": 100,
+    "icon": "T_CoilPlantStemIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Concrete",
+    "name": {
+      "en": "Concrete",
+      "pt-BR": "Concreto"
+    },
+    "description": {
+      "en": "Advanced construction material.",
+      "pt-BR": "Material de construção avançado."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 500,
+    "sellValue": 100,
+    "icon": "T_ConcreteIcon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "CopperOre",
+    "name": {
+      "en": "Copper Ore",
+      "pt-BR": "Minério de Cobre"
+    },
+    "description": {
+      "en": "Can be turned into wire.",
+      "pt-BR": "Pode ser transformado em fiação."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 1000,
+    "sellValue": 5,
+    "icon": "T_CopperOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CopperWire",
+    "name": {
+      "en": "Copper Wire",
+      "pt-BR": "Fiação de Cobre"
+    },
+    "description": {
+      "en": "A good material for electric circuits.",
+      "pt-BR": "Um bom material para circuitos elétricos."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 1000,
+    "sellValue": 3,
+    "icon": "T_CopperWireIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CottonCrop",
+    "name": {
+      "en": "Cloudbud",
+      "pt-BR": "Botão-nuvem"
+    },
+    "description": {
+      "en": "A bulky plant with a cotton-like crown.",
+      "pt-BR": "Uma grande planta com corola parecida com algodão."
+    },
+    "tags": [
+      "Plant"
+    ],
+    "weight": 10,
+    "sellValue": 175,
+    "icon": "T_CottonCropIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CottonCrop_Rare",
+    "name": {
+      "en": "Cloudbud (Mutated)",
+      "pt-BR": "Botão-nuvem (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a bulky plant with a cotton-like crown.",
+      "pt-BR": "Uma variante rara de uma grande planta com corola parecida com algodão."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 525,
+    "icon": "T_CottonCrop_RareIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CottonCropOil",
+    "name": {
+      "en": "Cloudbud Oil",
+      "pt-BR": "Óleo de Botão-nuvem"
+    },
+    "description": {
+      "en": "An oil made from Cloudbud. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Botão-nuvem. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 210,
+    "icon": "T_CottonCropOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CottonCropSeeds",
+    "name": {
+      "en": "Cloudbud Seeds",
+      "pt-BR": "Sementes de Botão-nuvem"
+    },
+    "description": {
+      "en": "Grows into Cloudbud.",
+      "pt-BR": "Cresce e vira um Botão-nuvem."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CottonCropIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CottonCropSeeds_Refined",
+    "name": {
+      "en": "Spliced Cloudbud Seeds",
+      "pt-BR": "Sementes de Botão-nuvem Modificadas"
+    },
+    "description": {
+      "en": "Grows into Mutated Cloudbud.",
+      "pt-BR": "Cresce e vira Botão-nuvem Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Refined",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_CottonCropIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CowboyHat",
+    "name": {
+      "en": "Cowboy Hat",
+      "pt-BR": "Chapéu de Caubói"
+    },
+    "description": {
+      "en": "Gives the wearer a rootin' tootin' vibe.",
+      "pt-BR": "Proporciona um ar sertanejo a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_CowboyHatIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "CrimsonRedDye",
+    "name": {
+      "en": "Wine Red Paint",
+      "pt-BR": "Tinta Bordô"
+    },
+    "description": {
+      "en": "Paints constructs wine red.",
+      "pt-BR": "Pinta construções com a cor bordô."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_CrimsonRedDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CritterFood1",
+    "name": {
+      "en": "Mild Fodder",
+      "pt-BR": "Forragem Suave"
+    },
+    "description": {
+      "en": "A tasty treat for the local wildlife.",
+      "pt-BR": "Um petisco saboroso para a vida selvagem local."
+    },
+    "tags": [
+      "StaticPricing",
+      "Feed"
+    ],
+    "weight": 200,
+    "sellValue": 0,
+    "icon": "T_CritterFood1Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CritterFood2",
+    "name": {
+      "en": "Sour Fodder",
+      "pt-BR": "Forragem Azeda"
+    },
+    "description": {
+      "en": "A tasty treat for the local wildlife.",
+      "pt-BR": "Um petisco saboroso para a vida selvagem local."
+    },
+    "tags": [
+      "StaticPricing",
+      "Feed"
+    ],
+    "weight": 200,
+    "sellValue": 0,
+    "icon": "T_CritterFood2Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CritterFood3",
+    "name": {
+      "en": "Sweet Fodder",
+      "pt-BR": "Forragem Doce"
+    },
+    "description": {
+      "en": "A tasty treat for the local wildlife.",
+      "pt-BR": "Um petisco saboroso para a vida selvagem local."
+    },
+    "tags": [
+      "StaticPricing",
+      "Feed"
+    ],
+    "weight": 200,
+    "sellValue": 0,
+    "icon": "T_CritterFood3Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CrobEgg",
+    "name": {
+      "en": "Crobling Egg",
+      "pt-BR": "Ovo de Tartaguejo"
+    },
+    "description": {
+      "en": "May hatch into a Crobling if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Tartaguejo se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_CrobEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "CrystalDeerEgg",
+    "name": {
+      "en": "Crystalhoof Egg",
+      "pt-BR": "Ovo de Casco de Cristal"
+    },
+    "description": {
+      "en": "May hatch into a Crystalhoof if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Casco de Cristal se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_CrystalDeerEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "CrystalMatrix",
+    "name": {
+      "en": "Crystal Prism",
+      "pt-BR": "Prisma de Cristal"
+    },
+    "description": {
+      "en": "A precisely crafted crystal prism with extraordinary light refraction properties.",
+      "pt-BR": "Um prisma de cristal trabalhado com precisão, com propriedades extraordinárias de refração da luz."
+    },
+    "tags": [
+      "Crystal",
+      "Crafted"
+    ],
+    "weight": 2000,
+    "sellValue": 500,
+    "icon": "T_CrystalMatrixIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CrystalShards",
+    "name": {
+      "en": "Crystal Shards",
+      "pt-BR": "Fragmentos de Cristal"
+    },
+    "description": {
+      "en": "Can be reformed into any color Crystal with the right bonding materal.",
+      "pt-BR": "Podem ser restaurados em qualquer cor de Cristal se o material de colagem correto for usado."
+    },
+    "tags": [
+      "Animal"
+    ],
+    "weight": 500,
+    "sellValue": 250,
+    "icon": "T_CrystalShardsIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "CubeMetalElectronics",
+    "name": {
+      "en": "Fractalite Electronics",
+      "pt-BR": "Peças Eletrônicas de Fractalita"
+    },
+    "description": {
+      "en": "A variety of computer modules.",
+      "pt-BR": "Uma variedade de módulos computadorizados."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 8000,
+    "sellValue": 300,
+    "icon": "T_CubeMetalElectronicsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CubeMetalFrame",
+    "name": {
+      "en": "Fractalite Frame",
+      "pt-BR": "Estrutura de Fractalita"
+    },
+    "description": {
+      "en": "Keeps things in place.",
+      "pt-BR": "Mantém as coisas no lugar."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 16000,
+    "sellValue": 480,
+    "icon": "T_CubeMetalFrameIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CubeMetalOre",
+    "name": {
+      "en": "Fractalite Ore",
+      "pt-BR": "Minério de Fractalita"
+    },
+    "description": {
+      "en": "Can be turned into Fractalite Bars.",
+      "pt-BR": "Pode ser transformado em Barras de Fractalita."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 8000,
+    "sellValue": 120,
+    "icon": "T_CubeMetalOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CubeMetalParts",
+    "name": {
+      "en": "Fractalite Parts",
+      "pt-BR": "Peças de Fractalita"
+    },
+    "description": {
+      "en": "An assortment of spare parts.",
+      "pt-BR": "Uma variedade de peças sobressalentes."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 8000,
+    "sellValue": 350,
+    "icon": "T_CubeMetalPartsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "CubeMetalRefined",
+    "name": {
+      "en": "Fractalite Bar",
+      "pt-BR": "Barra de Fractalita"
+    },
+    "description": {
+      "en": "A rare metal with strange properties.",
+      "pt-BR": "Um metal raro com propriedades estranhas."
+    },
+    "tags": [
+      "Metal",
+      "Bar"
+    ],
+    "weight": 4000,
+    "sellValue": 240,
+    "icon": "T_CubeMetalRefinedIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "DarkBlueDye",
+    "name": {
+      "en": "Sapphire Blue Paint",
+      "pt-BR": "Tinta Azul-safira"
+    },
+    "description": {
+      "en": "Paints constructs sapphire blue.",
+      "pt-BR": "Pinta construções com a cor azul-safira."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_DarkBlueDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "DeepPurpleDye",
+    "name": {
+      "en": "Night Violet Paint",
+      "pt-BR": "Tinta Violeta-escuro"
+    },
+    "description": {
+      "en": "Paints constructs night violet.",
+      "pt-BR": "Pinta construções com a cor violeta-escuro."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_DeepPurpleDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Eggs",
+    "name": {
+      "en": "Pinecorn",
+      "pt-BR": "Pinilho"
+    },
+    "description": {
+      "en": "A natural treasure. Can be sold for a pretty penny.",
+      "pt-BR": "Uma tesouro da natureza. Pode ser vendido por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 100,
+    "icon": "T_EggsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ElectricPlant",
+    "name": {
+      "en": "Zappertwig",
+      "pt-BR": "Eletrofigueira"
+    },
+    "description": {
+      "en": "A forked plant charged with electricity.",
+      "pt-BR": "Uma planta bifurcada, carregada com eletricidade."
+    },
+    "tags": [
+      "Plant"
+    ],
+    "weight": 10,
+    "sellValue": 100,
+    "icon": "T_ElectricPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ElectricPlant_Rare",
+    "name": {
+      "en": "Zappertwig (Mutated)",
+      "pt-BR": "Eletrofigueira (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a forked plant charged with electricity.",
+      "pt-BR": "Uma variante rara de uma planta bifurcada carregada com eletricidade."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 300,
+    "icon": "T_ElectricPlant_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "ElectricPlantOil",
+    "name": {
+      "en": "Zappertwig Oil",
+      "pt-BR": "Óleo de Eletrofigueira"
+    },
+    "description": {
+      "en": "An oil made from Zappertwig. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Eletrofigueira. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 120,
+    "icon": "T_ElectricPlantOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ElectricPlantSeeds",
+    "name": {
+      "en": "Zappertwig Seeds",
+      "pt-BR": "Sementes de Eletrofigueira"
+    },
+    "description": {
+      "en": "Grows into a Zappertwig.",
+      "pt-BR": "Cresce e vira uma Eletrofigueira."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_ElectricPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ElectricPlantSeeds_Refined",
+    "name": {
+      "en": "Spliced Zappertwig Seeds",
+      "pt-BR": "Sementes de Eletrofigueira Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Zappertwig.",
+      "pt-BR": "Cresce e vira uma Eletrofigueira Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_ElectricPlantIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "ElfHat",
+    "name": {
+      "en": "Elf Hat",
+      "pt-BR": "Chapéu de Duende"
+    },
+    "description": {
+      "en": "Gives the wearer a merry vibe.",
+      "pt-BR": "Proporciona um ar alegre a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_ElfHatIcon",
+    "featureFlag": "Limbo",
+    "isVirtual": false
+  },
+  {
+    "id": "FanBushSeed",
+    "name": {
+      "en": "Fan Bush Sprout",
+      "pt-BR": "Broto de Arbusto Leque"
+    },
+    "description": {
+      "en": "Grows into a Fan Bush.",
+      "pt-BR": "Cresce e vira um Arbusto Leque."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_FanBushIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "Feather",
+    "name": {
+      "en": "Feather",
+      "pt-BR": "Pena"
+    },
+    "description": {
+      "en": "A loose feather.",
+      "pt-BR": "Uma pena solta."
+    },
+    "tags": [
+      "Animal"
+    ],
+    "weight": 100,
+    "sellValue": 350,
+    "icon": "T_FeatherIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "FernBush_YellowSeed",
+    "name": {
+      "en": "Yellow Fern Sprout",
+      "pt-BR": "Broto de Samambaia Amarela"
+    },
+    "description": {
+      "en": "Grows into a Fern with yellow leaves.",
+      "pt-BR": "Cresce e vira uma Samambaia com folhas amarelas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_FernBush_YellowIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "FernBushSeed",
+    "name": {
+      "en": "Green Fern Sprout",
+      "pt-BR": "Broto de Samambaia Verde"
+    },
+    "description": {
+      "en": "Grows into a Green Fern.",
+      "pt-BR": "Cresce e vira uma Samambaia Verde."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_FernBushIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "FertilizerX2",
+    "name": {
+      "en": "Yield Fertilizer x2",
+      "pt-BR": "Fertilizante de Rendimento x2"
+    },
+    "description": {
+      "en": "Can be used with the Fertilizer Spreader to multiply the yield of a mound's next harvest by 2. Only one fertilizer can be active on a mound.",
+      "pt-BR": "Pode ser usado com a Fertilizadora para multiplicar por 2 o rendimento da próxima colheita de um monte. Somente um fertilizante pode ser usado por monte."
+    },
+    "tags": [
+      "Fertilizer",
+      "StaticPricing"
+    ],
+    "weight": 50,
+    "sellValue": 0,
+    "icon": "T_FertilizerX2Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FertilizerX4",
+    "name": {
+      "en": "Yield Fertilizer x4",
+      "pt-BR": "Fertilizante de Rendimento x4"
+    },
+    "description": {
+      "en": "Can be used with the Fertilizer Spreader to multiply the yield of a mound's next harvest by 4. Only one fertilizer can be active on a mound.",
+      "pt-BR": "Pode ser usado com a Fertilizadora para multiplicar por 4 o rendimento da próxima colheita de um monte. Somente um fertilizante pode ser usado por monte."
+    },
+    "tags": [
+      "Fertilizer",
+      "StaticPricing"
+    ],
+    "weight": 50,
+    "sellValue": 0,
+    "icon": "T_FertilizerX4Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FlowerCrown",
+    "name": {
+      "en": "Flower Crown",
+      "pt-BR": "Coroa de Flores"
+    },
+    "description": {
+      "en": "Gives the wearer a summery vibe.",
+      "pt-BR": "Proporciona um ar estival a quem a usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_FlowerCrownIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "FossilFish",
+    "name": {
+      "en": "Fossil Fish",
+      "pt-BR": "Fóssil de Peixe"
+    },
+    "description": {
+      "en": "A fossilized skeleton of a fish. Can be sold for a pretty penny.",
+      "pt-BR": "Uma espinha fossilizada de peixe. Pode ser vendida por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 350,
+    "icon": "T_FossilFishIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FuelPlantOil",
+    "name": {
+      "en": "Honeybottle Oil",
+      "pt-BR": "Óleo de Copo-de-mel"
+    },
+    "description": {
+      "en": "An oil made from Honeybottle. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Copo-de-mel. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 130,
+    "icon": "T_FuelPlantOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FuelRock",
+    "name": {
+      "en": "Refillite",
+      "pt-BR": "Refilita"
+    },
+    "description": {
+      "en": "A brittle stone that can be used to fuel your mech.",
+      "pt-BR": "Uma pedra quebradiça que pode ser usada para abastecer seu meca."
+    },
+    "tags": [
+      "Oil",
+      "Mineral"
+    ],
+    "weight": 500,
+    "sellValue": 20,
+    "icon": "T_FuelRockIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FuelWild",
+    "name": {
+      "en": "Honeybottle",
+      "pt-BR": "Copo-de-mel"
+    },
+    "description": {
+      "en": "A bottle-shaped plant with very thick nectar.",
+      "pt-BR": "Uma planta em formato de copo com um néctar bem espesso."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable"
+    ],
+    "weight": 10,
+    "sellValue": 110,
+    "icon": "T_FuelWildIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FuelWild_Rare",
+    "name": {
+      "en": "Honeybottle (Mutated)",
+      "pt-BR": "Copo-de-mel (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a bottle-shaped plant with very thick nectar.",
+      "pt-BR": "Uma variante rara de uma planta em formato de copo com um néctar bem espesso."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 330,
+    "icon": "T_FuelWild_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "FuelWildSeeds",
+    "name": {
+      "en": "Honeybottle Seeds",
+      "pt-BR": "Sementes de Copo-de-mel"
+    },
+    "description": {
+      "en": "Grows into a Honeybottle.",
+      "pt-BR": "Cresce e vira um Copo-de-mel."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_FuelWildIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "FuelWildSeeds_Refined",
+    "name": {
+      "en": "Spliced Honeybottle Seeds",
+      "pt-BR": "Sementes de Copo-de-mel Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Honeybottle.",
+      "pt-BR": "Cresce e vira um Copo-de-mel Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_FuelWildIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "Fur",
+    "name": {
+      "en": "Fur",
+      "pt-BR": "Pelagem"
+    },
+    "description": {
+      "en": "A soft patch of fur.",
+      "pt-BR": "Um pedaço de pelagem macia."
+    },
+    "tags": [
+      "Animal"
+    ],
+    "weight": 100,
+    "sellValue": 300,
+    "icon": "T_FurIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "GeodeShards",
+    "name": {
+      "en": "Geode Shards",
+      "pt-BR": "Fragmentos de Geodo"
+    },
+    "description": {
+      "en": "Some shards from a geode. Can be sold for a pretty penny.",
+      "pt-BR": "Alguns fragmentos de um geodo. Podem ser vendidos por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 450,
+    "icon": "T_GeodeShardsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GloFruit",
+    "name": {
+      "en": "Glo Fruit",
+      "pt-BR": "Fruta-luz"
+    },
+    "description": {
+      "en": "An elongated fruit that glows at night.",
+      "pt-BR": "Uma fruta alongada que brilha à noite."
+    },
+    "tags": [
+      "Fruit",
+      "Decomposable",
+      "Infusable",
+      "Plant"
+    ],
+    "weight": 300,
+    "sellValue": 200,
+    "icon": "T_GloFruitIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GloFruitDried",
+    "name": {
+      "en": "Dried Glo Fruit",
+      "pt-BR": "Fruta-luz Desidratada"
+    },
+    "description": {
+      "en": "A potent fuel.",
+      "pt-BR": "Um combustível potente."
+    },
+    "tags": [
+      "Fruit",
+      "Decomposable",
+      "Plant",
+      "Crafted"
+    ],
+    "weight": 200,
+    "sellValue": 250,
+    "icon": "T_GloFruitDriedIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GloSeed",
+    "name": {
+      "en": "Glo Tree Sprout",
+      "pt-BR": "Broto de Árvore-luz"
+    },
+    "description": {
+      "en": "Grows into a Glo Tree, takes 2 days to bear fruit.",
+      "pt-BR": "Cresce e vira uma Árvore-luz, leva 2 dias para criar frutos."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_GloIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GloWood",
+    "name": {
+      "en": "Glo Wood",
+      "pt-BR": "Madeira-luz"
+    },
+    "description": {
+      "en": "Light but strong, radiates a faint glow.",
+      "pt-BR": "Leve, mas resistente, irradia um brilho suave."
+    },
+    "tags": [
+      "Wood"
+    ],
+    "weight": 800,
+    "sellValue": 100,
+    "icon": "T_GloWoodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GoldBar",
+    "name": {
+      "en": "Gold Bar",
+      "pt-BR": "Barra de Ouro"
+    },
+    "description": {
+      "en": "A rare metal bar.",
+      "pt-BR": "Uma barra de metal raro."
+    },
+    "tags": [
+      "Metal",
+      "Bar"
+    ],
+    "weight": 4000,
+    "sellValue": 400,
+    "icon": "T_GoldBarIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GoldenEgg",
+    "name": {
+      "en": "Radiant Egg",
+      "pt-BR": "Ovo Radiante"
+    },
+    "description": {
+      "en": "May hatch into a rare Farm Animal if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Animal de Fazenda raro se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_GoldenEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "GoldOre",
+    "name": {
+      "en": "Gold Ore",
+      "pt-BR": "Minério de Ouro"
+    },
+    "description": {
+      "en": "A rare metal, can be refined into Gold Bars.",
+      "pt-BR": "Um metal raro, pode ser refinado em Barras de Ouro."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 4000,
+    "sellValue": 200,
+    "icon": "T_GoldOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GoldWire",
+    "name": {
+      "en": "Gold Wire",
+      "pt-BR": "Fio de Ouro"
+    },
+    "description": {
+      "en": "A good material for electric circuits.",
+      "pt-BR": "Um bom material para circuitos elétricos."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 4000,
+    "sellValue": 100,
+    "icon": "T_GoldWireIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GrayDye",
+    "name": {
+      "en": "Gray Paint",
+      "pt-BR": "Tinta Cinza"
+    },
+    "description": {
+      "en": "Paints constructs gray.",
+      "pt-BR": "Pinta construções com a cor cinza."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_GrayDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GreenColorflower",
+    "name": {
+      "en": "Green Colorflower",
+      "pt-BR": "Coloriflor Verde"
+    },
+    "description": {
+      "en": "A flower full of green pigment. Can be used to create Green Paint.",
+      "pt-BR": "Uma flor repleta de pigmento verde. Pode ser usada para criar Tinta Verde."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_GreenColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GreenColorflowerSeed",
+    "name": {
+      "en": "Green Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Verde"
+    },
+    "description": {
+      "en": "Grows into a Green Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Verde e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_GreenColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "GreenDye",
+    "name": {
+      "en": "Green Paint",
+      "pt-BR": "Tinta Verde"
+    },
+    "description": {
+      "en": "Paints constructs green.",
+      "pt-BR": "Pinta construções com a cor verde."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_GreenDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "HardWood",
+    "name": {
+      "en": "Hardwood",
+      "pt-BR": "Madeira de Lei"
+    },
+    "description": {
+      "en": "A strong building material.",
+      "pt-BR": "Um material sólido para construções."
+    },
+    "tags": [
+      "Wood"
+    ],
+    "weight": 800,
+    "sellValue": 5,
+    "icon": "T_HardWoodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "HardwoodGigaLog",
+    "name": {
+      "en": "Giant Hardwood Log",
+      "pt-BR": "Tronco de Madeira de Lei Gigante"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_HardwoodGigaLogIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "HardwoodGigaSprout",
+    "name": {
+      "en": "Giant Hardwood Tree Sprout",
+      "pt-BR": "Broto de Árvore de Madeira de Lei Gigante"
+    },
+    "description": {
+      "en": "Grows into Giant Hardwood Tree.",
+      "pt-BR": "Cresce e vira uma Árvore de Madeira de Lei Gigante."
+    },
+    "tags": [
+      "StaticPricing",
+      "LargeSeed"
+    ],
+    "weight": 0,
+    "sellValue": 100,
+    "icon": "T_HardwoodGigaSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "HardwoodLog",
+    "name": {
+      "en": "Hardwood Log",
+      "pt-BR": "Tronco de Madeira de Lei"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 75,
+    "icon": "T_HardwoodLogIcon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "Helmet",
+    "name": {
+      "en": "Helmet",
+      "pt-BR": "Capacete"
+    },
+    "description": {
+      "en": "Gives the wearer a tough vibe.",
+      "pt-BR": "Proporciona um ar durão a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_HelmetIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "HortensiaBush_FlowerSeed",
+    "name": {
+      "en": "Flowering Hortensia Bush Sprout",
+      "pt-BR": "Broto de Arbusto de Hortênsia Florido"
+    },
+    "description": {
+      "en": "Grows into a Flowering Hortensia Bush.",
+      "pt-BR": "Cresce e vira um Arbusto de Hortênsia Florido."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_HortensiaBush_FlowerIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "HortensiaBush_YellowSeed",
+    "name": {
+      "en": "Red Hortensia Bush Sprout",
+      "pt-BR": "Broto de Arbusto de Hortênsia Vermelha"
+    },
+    "description": {
+      "en": "Grows into a Hortensia Bush with red leaves.",
+      "pt-BR": "Cresce e vira um Arbusto de Hortênsia com folhas vermelhas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_HortensiaBush_YellowIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "HortensiaBushSeed",
+    "name": {
+      "en": "Green Hortensia Bush Sprout",
+      "pt-BR": "Broto de Arbusto de Hortênsia Verde"
+    },
+    "description": {
+      "en": "Grows into a Green Hortensia Bush.",
+      "pt-BR": "Cresce e vira um Arbusto de Hortênsia Verde."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_HortensiaBushIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "IronBar",
+    "name": {
+      "en": "Iron Bar",
+      "pt-BR": "Barra de Ferro"
+    },
+    "description": {
+      "en": "A hard metal. May also be turned into Steel Bars.",
+      "pt-BR": "Um metal resistente. Também pode ser transformado em Barras de Aço."
+    },
+    "tags": [
+      "Metal",
+      "Bar"
+    ],
+    "weight": 2500,
+    "sellValue": 80,
+    "icon": "T_IronBarIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "IronElectronics",
+    "name": {
+      "en": "Iron Electronics",
+      "pt-BR": "Peças Eletrônicas de Ferro"
+    },
+    "description": {
+      "en": "A variety of computer modules.",
+      "pt-BR": "Uma variedade de módulos computadorizados."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 2500,
+    "sellValue": 55,
+    "icon": "T_IronElectronicsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "IronFrame",
+    "name": {
+      "en": "Iron Frame",
+      "pt-BR": "Estrutura de Ferro"
+    },
+    "description": {
+      "en": "Keeps things in place.",
+      "pt-BR": "Mantém as coisas no lugar."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 5000,
+    "sellValue": 160,
+    "icon": "T_IronFrameIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "IronMechanicalParts",
+    "name": {
+      "en": "Iron Parts",
+      "pt-BR": "Peças de Ferro"
+    },
+    "description": {
+      "en": "An assortment of spare parts.",
+      "pt-BR": "Uma variedade de peças sobressalentes."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 2500,
+    "sellValue": 85,
+    "icon": "T_IronMechanicalPartsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "IronOre",
+    "name": {
+      "en": "Iron Ore",
+      "pt-BR": "Minério de Ferro"
+    },
+    "description": {
+      "en": "Can be refined into Iron Bars.",
+      "pt-BR": "Pode ser refinado em Barras de Ferro."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 5000,
+    "sellValue": 40,
+    "icon": "T_IronOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeAluminium",
+    "name": {
+      "en": "Aluminum Chunk",
+      "pt-BR": "Pedaço de Alumínio"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 200,
+    "icon": "T_LargeAluminiumIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeBlueCrystal",
+    "name": {
+      "en": "Blue Crystal Chunk",
+      "pt-BR": "Pedaço de Cristal Azul"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 1000,
+    "icon": "T_LargeBlueCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeBush_YellowSeed",
+    "name": {
+      "en": "Large Red Bush Sprout",
+      "pt-BR": "Broto de Arbusto Grande Vermelho"
+    },
+    "description": {
+      "en": "Grows into a Large Bush with red leaves.",
+      "pt-BR": "Cresce e vira um Arbusto Grande com folhas vermelhas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_LargeBush_YellowIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "LargeBushSeed",
+    "name": {
+      "en": "Large Bush Sprout",
+      "pt-BR": "Broto de Arbusto Grande"
+    },
+    "description": {
+      "en": "Grows into a Large Bush.",
+      "pt-BR": "Cresce e vira um Arbusto Grande."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Root"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_LargeBushIcon",
+    "featureFlag": "MiniPatch1Mics",
+    "isVirtual": false
+  },
+  {
+    "id": "LargeCoal",
+    "name": {
+      "en": "Coal Chunk",
+      "pt-BR": "Pedaço de Carvão"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 300,
+    "icon": "T_LargeCoalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeCopper",
+    "name": {
+      "en": "Copper Chunk",
+      "pt-BR": "Pedaço de Cobre"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 50,
+    "icon": "T_LargeCopperIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeCubeMetal",
+    "name": {
+      "en": "Fractalite Chunk",
+      "pt-BR": "Pedaço de Fractalita"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 1200,
+    "icon": "T_LargeCubeMetalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeFuelRock",
+    "name": {
+      "en": "Refillite Chunk",
+      "pt-BR": "Pedaço de Refilita"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 200,
+    "icon": "T_LargeFuelRockIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeGold",
+    "name": {
+      "en": "Gold Chunk",
+      "pt-BR": "Pedaço de Ouro"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 2000,
+    "icon": "T_LargeGoldIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeIron",
+    "name": {
+      "en": "Iron Chunk",
+      "pt-BR": "Pedaço de Ferro"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 400,
+    "icon": "T_LargeIronIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeItemTrailer",
+    "name": {
+      "en": "Large Object Trailer II",
+      "pt-BR": "Trailer de Objetos Grandes II"
+    },
+    "description": {
+      "en": "A mobile container for Large Objects that can attach to the mech and other Trailers.",
+      "pt-BR": "Um contêiner móvel para Objetos Grandes que pode ser anexado ao meca e a outros Trailers."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_LargeItemTrailerIcon",
+    "featureFlag": "Trailers",
+    "isVirtual": false
+  },
+  {
+    "id": "LargeItemTrailer3",
+    "name": {
+      "en": "Large Object Trailer III",
+      "pt-BR": "Trailer de Objetos Grandes III"
+    },
+    "description": {
+      "en": "A mobile container for Large Objects that can attach to the mech and other Trailers.",
+      "pt-BR": "Um contêiner móvel para Objetos Grandes que pode ser anexado ao meca e a outros Trailers."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_LargeItemTrailer3Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeItemTrailerMini",
+    "name": {
+      "en": "Large Object Trailer",
+      "pt-BR": "Trailer de Objetos Grandes"
+    },
+    "description": {
+      "en": "A mobile container for Large Objects that can attach to the mech.",
+      "pt-BR": "Um contêiner móvel para Objetos Grandes que pode ser anexado ao meca."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_LargeItemTrailerMiniIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeNickel",
+    "name": {
+      "en": "Nickel Chunk",
+      "pt-BR": "Pedaço de Níquel"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 150,
+    "icon": "T_LargeNickelIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeRedCrystal",
+    "name": {
+      "en": "Red Crystal Chunk",
+      "pt-BR": "Pó de Cristal Vermelho"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 150,
+    "icon": "T_LargeRedCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeRock",
+    "name": {
+      "en": "Rock Chunk",
+      "pt-BR": "Pedaço de Pedra"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 30,
+    "icon": "T_LargeRockIcon",
+    "featureFlag": "LargeItemsAndMechHauling",
+    "isVirtual": false
+  },
+  {
+    "id": "LargeSilver",
+    "name": {
+      "en": "Silver Chunk",
+      "pt-BR": "Pedaço de Prata"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 1000,
+    "icon": "T_LargeSilverIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeTallTech",
+    "name": {
+      "en": "Ancient Scraps",
+      "pt-BR": "Fragmentos Antigos"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 2000,
+    "icon": "T_LargeTallTechIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeTin",
+    "name": {
+      "en": "Tin Chunk",
+      "pt-BR": "Pedaço de Estanho"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 100,
+    "icon": "T_LargeTinIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LargeYellowCrystal",
+    "name": {
+      "en": "Yellow Crystal Chunk",
+      "pt-BR": "Pedaço de Cristal Amarelo"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 600,
+    "icon": "T_LargeYellowCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LightBulb",
+    "name": {
+      "en": "Light Bulb",
+      "pt-BR": "Lâmpada"
+    },
+    "description": {
+      "en": "A natural source of light.",
+      "pt-BR": "Uma fonte de luz natural."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 500,
+    "sellValue": 100,
+    "icon": "T_LightBulbIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LilypadTreeFloweringSprout",
+    "name": {
+      "en": "Flowering Lilypad Tree Sprout",
+      "pt-BR": "Broto de Árvore de Nenúfar Florida"
+    },
+    "description": {
+      "en": "Grows into Flowering Lilypad Tree.",
+      "pt-BR": "Cresce e vira uma Árvore de Nenúfar Florida."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_LilypadTreeFloweringSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "LilypadTreeSprout",
+    "name": {
+      "en": "Lilypad Tree Sprout",
+      "pt-BR": "Broto de Árvore de Nenúfar"
+    },
+    "description": {
+      "en": "Grows into Lilypad Tree.",
+      "pt-BR": "Cresce e vira uma Árvore de Nenúfar."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_LilypadTreeSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MagentaDye",
+    "name": {
+      "en": "Pink Paint",
+      "pt-BR": "Tinta Rosa"
+    },
+    "description": {
+      "en": "Paints things pink.",
+      "pt-BR": "Pinta objetos com a cor rosa."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_MagentaDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MeadowTreeLarge_GreenSeed",
+    "name": {
+      "en": "Large Green Tree Sprout",
+      "pt-BR": "Broto de Árvore Verde Grande"
+    },
+    "description": {
+      "en": "Grows into a Large Tree with green leaves.",
+      "pt-BR": "Cresce e vira uma Árvore Grande com folhas verdes."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MeadowTreeLarge_GreenIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MeadowTreeLarge_PinkSeed",
+    "name": {
+      "en": "Large Pink Tree Sprout (Mutated)",
+      "pt-BR": "Broto de Árvore Rosa Grande (Mutante)"
+    },
+    "description": {
+      "en": "Grows into a Large Tree with pink leaves.",
+      "pt-BR": "Cresce e vira uma Árvore Grande com folhas rosas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MeadowTreeLarge_PinkIcon",
+    "featureFlag": "AutumnSprouts2024",
+    "isVirtual": false
+  },
+  {
+    "id": "MeadowTreeLarge_YellowSeed",
+    "name": {
+      "en": "Large Yellow Tree Sprout",
+      "pt-BR": "Broto de Árvore Amarela Grande"
+    },
+    "description": {
+      "en": "Grows into a Large Tree with yellow leaves.",
+      "pt-BR": "Cresce e vira uma Árvore Grande com folhas amarelas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MeadowTreeLarge_YellowIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MeadowTreeSmall_GreenSeed",
+    "name": {
+      "en": "Green Tree Sprout",
+      "pt-BR": "Broto de Árvore Verde"
+    },
+    "description": {
+      "en": "Grows into a Tree with green leaves.",
+      "pt-BR": "Cresce e vira uma Árvore com folhas verdes."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MeadowTreeSmall_GreenIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MeadowTreeSmall_YellowSeed",
+    "name": {
+      "en": "Yellow Tree Sprout",
+      "pt-BR": "Broto de Árvore Amarela"
+    },
+    "description": {
+      "en": "Grows into a Tree with yellow leaves.",
+      "pt-BR": "Cresce e vira uma Árvore com folhas amarelas."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MeadowTreeSmall_YellowIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MeteoriteShard",
+    "name": {
+      "en": "Meteorite Shard",
+      "pt-BR": "Fragmento de Meteorito"
+    },
+    "description": {
+      "en": "A mysterious alloy of unknown elements.",
+      "pt-BR": "Uma liga misteriosa composta por elementos desconhecidos."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 5000,
+    "sellValue": 1000,
+    "icon": "T_MeteoriteShardIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "MoxEgg",
+    "name": {
+      "en": "Mox Egg",
+      "pt-BR": "Ovo de Múfalo"
+    },
+    "description": {
+      "en": "May hatch into a Mox if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Múfalo se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_MoxEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "MushroomTreeSprout",
+    "name": {
+      "en": "Mushroom Tree Sprout",
+      "pt-BR": "Broto de Árvore-cogumelo"
+    },
+    "description": {
+      "en": "Grows into Mushroom Tree.",
+      "pt-BR": "Cresce e vira uma Árvore-cogumelo."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_MushroomTreeSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NickelOre",
+    "name": {
+      "en": "Nickel Ore",
+      "pt-BR": "Minério de Níquel"
+    },
+    "description": {
+      "en": "A rare metal.",
+      "pt-BR": "Um metal raro."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 1500,
+    "sellValue": 15,
+    "icon": "T_NickelOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NitrogenicDropping",
+    "name": {
+      "en": "Nitrogenic Droppings",
+      "pt-BR": "Dejetos Nitrogênicos"
+    },
+    "description": {
+      "en": "Can be used to make Nitrogenic Powder.",
+      "pt-BR": "Pode ser usado para criar Pó Nitrogênico."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_NitrogenicDroppingIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NitrogenicFertilizer",
+    "name": {
+      "en": "Nitrogenic Mulch",
+      "pt-BR": "Cobertura Morta Nitrogênica"
+    },
+    "description": {
+      "en": "Can be used with the Fertilizer Spreader to turn mounds Nitrogenic.",
+      "pt-BR": "Pode ser usada com a Fertilizadora para transformar montes Nitrogênicos."
+    },
+    "tags": [
+      "Fertilizer",
+      "StaticPricing"
+    ],
+    "weight": 50,
+    "sellValue": 0,
+    "icon": "T_NitrogenicFertilizerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NitrogenicPowder",
+    "name": {
+      "en": "Nitrogenic Powder",
+      "pt-BR": "Pó Nitrogênico"
+    },
+    "description": {
+      "en": "Can be used to make Nitrogenic Mulch and Fertilizers.",
+      "pt-BR": "Pode ser usado para criar Fertilizantes e Coberturas Mortas Nitrogênicas."
+    },
+    "tags": [
+      "Powder"
+    ],
+    "weight": 100,
+    "sellValue": 10,
+    "icon": "T_NitrogenicPowderIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NoxiousPod",
+    "name": {
+      "en": "Noxious Pod",
+      "pt-BR": "Vagem Nociva"
+    },
+    "description": {
+      "en": "Full of noxious energy, can be purified.",
+      "pt-BR": "Repleto de energia nociva, pode ser purificado."
+    },
+    "tags": [
+      "Noxious"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_NoxiousPodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "NoxiousSpore",
+    "name": {
+      "en": "Noxious Spore",
+      "pt-BR": "Esporo Nocivo"
+    },
+    "description": {
+      "en": "Safely contained.",
+      "pt-BR": "Está guardado em segurança."
+    },
+    "tags": [
+      "Noxious"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_NoxiousSporeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "OrangeColorflower",
+    "name": {
+      "en": "Orange Colorflower",
+      "pt-BR": "Coloriflor Laranja"
+    },
+    "description": {
+      "en": "A flower full of orange pigment. Can be used to create Orange Paint.",
+      "pt-BR": "Uma flor repleta de pigmento laranja. Pode ser usada para criar Tinta Laranja."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_OrangeColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "OrangeColorflowerSeed",
+    "name": {
+      "en": "Orange Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Laranja"
+    },
+    "description": {
+      "en": "Grows into an Orange Colorflower plant, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Laranja e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_OrangeColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "OrangeDye",
+    "name": {
+      "en": "Orange Paint",
+      "pt-BR": "Tinta Laranja"
+    },
+    "description": {
+      "en": "Paints constructs orange.",
+      "pt-BR": "Pinta construções com a cor laranja."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_OrangeDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PalmTree01Seed",
+    "name": {
+      "en": "Wingleaf Palm Sprout",
+      "pt-BR": "Broto de Palmeira de Folha Pinada"
+    },
+    "description": {
+      "en": "Grows into a Wingleaf Palm.",
+      "pt-BR": "Cresce e vira uma Palmeira de Folha Pinada."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PalmTree01Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Papristalk",
+    "name": {
+      "en": "Papristalk",
+      "pt-BR": "Lampimentão"
+    },
+    "description": {
+      "en": "A pepper-like plant with tendrilic stalks.",
+      "pt-BR": "Planta parecida com um pimentão, cujos talos são retorcidos."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable"
+    ],
+    "weight": 10,
+    "sellValue": 200,
+    "icon": "T_PapristalkIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Papristalk_Rare",
+    "name": {
+      "en": "Papristalk (Mutated)",
+      "pt-BR": "Lampimentão (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a pepper-like plant with tendrilic stalks.",
+      "pt-BR": "Uma variante rara de uma planta parecida com um pimentão, cujos talos são retorcidos."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 600,
+    "icon": "T_Papristalk_RareIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PapristalkOil",
+    "name": {
+      "en": "Papristalk Oil",
+      "pt-BR": "Óleo de Lampimentão"
+    },
+    "description": {
+      "en": "An oil made from Papristalk. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Lampimentão. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 240,
+    "icon": "T_PapristalkOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PapristalkSeeds",
+    "name": {
+      "en": "Papristalk Seeds",
+      "pt-BR": "Sementes de Lampimentão"
+    },
+    "description": {
+      "en": "Grows into a Papristalk.",
+      "pt-BR": "Cresce e vira um Lampimentão."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PapristalkIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PapristalkSeeds_Refined",
+    "name": {
+      "en": "Spliced Papristalk Seeds",
+      "pt-BR": "Sementes de Lampimentão Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Papristalk.",
+      "pt-BR": "Cresce e vira um Lampimentão Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Potassic",
+      "Refined"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PapristalkIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PearlDrop",
+    "name": {
+      "en": "Shimmerpearl",
+      "pt-BR": "Pérola-luz"
+    },
+    "description": {
+      "en": "Bright and bristling with energy.",
+      "pt-BR": "Brilhante e cheio de energia."
+    },
+    "tags": [
+      "Animal"
+    ],
+    "weight": 100,
+    "sellValue": 350,
+    "icon": "T_PearlDropIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PhosphoricDropping",
+    "name": {
+      "en": "Phosphoric Droppings",
+      "pt-BR": "Dejetos Fosfóricos"
+    },
+    "description": {
+      "en": "Can be used to make Phosphoric Powder.",
+      "pt-BR": "Pode ser usado para criar Pó Fosfórico."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_PhosphoricDroppingIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PhosphoricFertilizer",
+    "name": {
+      "en": "Phosphoric Mulch",
+      "pt-BR": "Cobertura Morta Fosfórica"
+    },
+    "description": {
+      "en": "Can be used with the Fertilizer Spreader to turn mounds Phosphoric.",
+      "pt-BR": "Pode ser usada com a Fertilizadora transformar montes Fosfóricos."
+    },
+    "tags": [
+      "Fertilizer",
+      "StaticPricing"
+    ],
+    "weight": 50,
+    "sellValue": 0,
+    "icon": "T_PhosphoricFertilizerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PhosphoricPowder",
+    "name": {
+      "en": "Phosphoric Powder",
+      "pt-BR": "Pó Fosfórico"
+    },
+    "description": {
+      "en": "Can be used to make Phosphoric Mulch and Fertilizers.",
+      "pt-BR": "Pode ser usado para criar Fertilizantes e Coberturas Mortas Fosfóricas."
+    },
+    "tags": [
+      "Powder"
+    ],
+    "weight": 100,
+    "sellValue": 10,
+    "icon": "T_PhosphoricPowderIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Pillow",
+    "name": {
+      "en": "Pillow Fluff",
+      "pt-BR": "Penugem de Travesseiro"
+    },
+    "description": {
+      "en": "A critical component of any pillow.",
+      "pt-BR": "Um componente essencial de qualquer travesseiro."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 600,
+    "sellValue": 50,
+    "icon": "T_PillowIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "PineSeed",
+    "name": {
+      "en": "Pine Sprout",
+      "pt-BR": "Broto de Pinheiro"
+    },
+    "description": {
+      "en": "Grows into a Pine.",
+      "pt-BR": "Cresce e vira um Pinheiro."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PineIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PinkDye",
+    "name": {
+      "en": "Rose Paint",
+      "pt-BR": "Tinta Magenta"
+    },
+    "description": {
+      "en": "Paints constructs rose.",
+      "pt-BR": "Pinta construções com a cor magenta."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_PinkDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PlantFiber",
+    "name": {
+      "en": "Plant Fiber",
+      "pt-BR": "Fibra Vegetal"
+    },
+    "description": {
+      "en": "Stringy bits of plant material.",
+      "pt-BR": "Pedaços fibrosos de material vegetal."
+    },
+    "tags": [
+      "Decomposable",
+      "StaticPricing",
+      "Plant"
+    ],
+    "weight": 10,
+    "sellValue": 1,
+    "icon": "T_PlantFiberIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PlantOil",
+    "name": {
+      "en": "Plant Oil",
+      "pt-BR": "Óleo de Planta"
+    },
+    "description": {
+      "en": "An oil made from plant material. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de material vegetal. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 5,
+    "icon": "T_PlantOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Polyberry",
+    "name": {
+      "en": "Polyberry",
+      "pt-BR": "Plastimora"
+    },
+    "description": {
+      "en": "A large rubbery berry.",
+      "pt-BR": "Uma grande baga emborrachada."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable",
+      "Berry"
+    ],
+    "weight": 10,
+    "sellValue": 45,
+    "icon": "T_PolyberryIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Polyberry_Rare",
+    "name": {
+      "en": "Polyberry (Mutated)",
+      "pt-BR": "Plastimora (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a large rubbery berry.",
+      "pt-BR": "Uma variante rara de uma grande baga emborrachada."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 135,
+    "icon": "T_Polyberry_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "PolyberryOil",
+    "name": {
+      "en": "Polyberry Oil",
+      "pt-BR": "Óleo de Plastimora"
+    },
+    "description": {
+      "en": "An oil made from Polyberry. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Plastimora. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 55,
+    "icon": "T_PolyberryOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PolyberrySeeds",
+    "name": {
+      "en": "Polyberry Seeds",
+      "pt-BR": "Sementes de Plastimora"
+    },
+    "description": {
+      "en": "Grows into a Polyberry.",
+      "pt-BR": "Cresce e vira uma Plastimora."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PolyberryIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PolyberrySeeds_Refined",
+    "name": {
+      "en": "Spliced Polyberry Seeds",
+      "pt-BR": "Sementes de Plastimora Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Polyberry.",
+      "pt-BR": "Cresce e vira uma Plastimora Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Potassic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PolyberryIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "Polymer",
+    "name": {
+      "en": "Polymer",
+      "pt-BR": "Polímero"
+    },
+    "description": {
+      "en": "A versatile material made from Polyberries.",
+      "pt-BR": "Um material versátil feito de Plastimoras."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 200,
+    "sellValue": 90,
+    "icon": "T_PolymerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PotassicDropping",
+    "name": {
+      "en": "Potassic Droppings",
+      "pt-BR": "Dejetos Potássicos"
+    },
+    "description": {
+      "en": "Can be used to make Potassic Powder.",
+      "pt-BR": "Pode ser usado para criar Pó Potássico."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_PotassicDroppingIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PotassicFertilizer",
+    "name": {
+      "en": "Potassic Mulch",
+      "pt-BR": "Cobertura Morta Potássica"
+    },
+    "description": {
+      "en": "Can be used with the Fertilizer Spreader to turn mounds Potassic.",
+      "pt-BR": "Pode ser usada com a Fertilizadora transformar montes Potássicos."
+    },
+    "tags": [
+      "Fertilizer",
+      "StaticPricing"
+    ],
+    "weight": 50,
+    "sellValue": 0,
+    "icon": "T_PotassicFertilizerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PotassicPowder",
+    "name": {
+      "en": "Potassic Powder",
+      "pt-BR": "Pó Potássico"
+    },
+    "description": {
+      "en": "Can be used to make Potassic Mulch and Fertilizers.",
+      "pt-BR": "Pode ser usado para criar Fertilizantes e Coberturas Mortas Potássicas."
+    },
+    "tags": [
+      "Powder"
+    ],
+    "weight": 100,
+    "sellValue": 10,
+    "icon": "T_PotassicPowderIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PowerCore",
+    "name": {
+      "en": "Power Core",
+      "pt-BR": "Núcleo de Energia"
+    },
+    "description": {
+      "en": "A powerful energy source. Increases Mech Power by 1 when bought.",
+      "pt-BR": "Uma fonte potente de energia. Aumenta a Energia do Meca em 1 ao ser comprado."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 2400,
+    "sellValue": 0,
+    "icon": "T_PowerCoreIcon",
+    "featureFlag": null,
+    "isVirtual": true
+  },
+  {
+    "id": "PropellerHat",
+    "name": {
+      "en": "Propeller Hat",
+      "pt-BR": "Chapéu com Hélice"
+    },
+    "description": {
+      "en": "Gives the wearer a childlike vibe.",
+      "pt-BR": "Proporciona um ar infantil a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_PropellerHatIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "PurpleColorflower",
+    "name": {
+      "en": "Purple Colorflower",
+      "pt-BR": "Coloriflor Roxa"
+    },
+    "description": {
+      "en": "A flower full of purple pigment. Can be used to create Purple Paint.",
+      "pt-BR": "Uma flor repleta de pigmento roxo. Pode ser usada para criar Tinta Roxa."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_PurpleColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PurpleColorflowerSeed",
+    "name": {
+      "en": "Purple Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Roxa"
+    },
+    "description": {
+      "en": "Grows into a Purple Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Roxa e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_PurpleColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "PurpleDye",
+    "name": {
+      "en": "Purple Paint",
+      "pt-BR": "Tinta Roxa"
+    },
+    "description": {
+      "en": "Paints things purple.",
+      "pt-BR": "Pinta objetos com a cor roxa."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_PurpleDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Quartznip",
+    "name": {
+      "en": "Quartznip",
+      "pt-BR": "Pastiquartzo"
+    },
+    "description": {
+      "en": "A bulbous plant with a crystallized base.",
+      "pt-BR": "Uma planta bulbosa com uma base cristalina."
+    },
+    "tags": [
+      "Plant"
+    ],
+    "weight": 10,
+    "sellValue": 225,
+    "icon": "T_QuartznipIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Quartznip_Rare",
+    "name": {
+      "en": "Quartznip (Mutated)",
+      "pt-BR": "Pastiquartzo (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a bulbous plant with a crystallized base.",
+      "pt-BR": "Uma variante rara de uma planta bulbosa com uma base cristalina."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 675,
+    "icon": "T_Quartznip_RareIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "QuartznipOil",
+    "name": {
+      "en": "Quartznip Oil",
+      "pt-BR": "Óleo de Pastiquartzo"
+    },
+    "description": {
+      "en": "An oil made from Quartznip. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Pastiquartzo. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 270,
+    "icon": "T_QuartznipOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "QuartznipSeeds",
+    "name": {
+      "en": "Quartznip Seeds",
+      "pt-BR": "Sementes de Pastiquartzo"
+    },
+    "description": {
+      "en": "Grows into Quartznip.",
+      "pt-BR": "Cresce e vira um Pastiquartzo."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_QuartznipIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "QuartznipSeeds_Refined",
+    "name": {
+      "en": "Spliced Quartznip Seeds",
+      "pt-BR": "Sementes de Pastiquartzo Modificadas"
+    },
+    "description": {
+      "en": "Grows into Mutated Quartznip.",
+      "pt-BR": "Cresce e vira Pastiquartzo Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Refined",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_QuartznipIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Rabbage",
+    "name": {
+      "en": "Rabbage",
+      "pt-BR": "Rubipolho"
+    },
+    "description": {
+      "en": "A cabbage-like plant with thick red sap.",
+      "pt-BR": "Uma planta parecida com um repolho que possui uma espessa seiva vermelha."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable",
+      "Infusable"
+    ],
+    "weight": 10,
+    "sellValue": 50,
+    "icon": "T_RabbageIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Rabbage_Rare",
+    "name": {
+      "en": "Rabbage (Mutated)",
+      "pt-BR": "Rubipolho (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a cabbage-like plant with thick blue sap.",
+      "pt-BR": "Uma variante rara de planta parecida com um repolho que possui uma espessa seiva azul."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 150,
+    "icon": "T_Rabbage_RareIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "RabbageOil",
+    "name": {
+      "en": "Rabbage Oil",
+      "pt-BR": "Óleo de Rubipolho"
+    },
+    "description": {
+      "en": "An oil made from Rabbage. Can be used to fuel your mech.",
+      "pt-BR": "Um óleo feito de Rubipolho. Pode ser usado para abastecer seu meca."
+    },
+    "tags": [
+      "Oil"
+    ],
+    "weight": 500,
+    "sellValue": 60,
+    "icon": "T_RabbageOilIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RabbageSeeds",
+    "name": {
+      "en": "Rabbage Seeds",
+      "pt-BR": "Sementes de Rubipolho"
+    },
+    "description": {
+      "en": "Grows into a Rabbage.",
+      "pt-BR": "Cresce e vira um Rubipolho."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_RabbageIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RabbageSeeds_Refined",
+    "name": {
+      "en": "Spliced Rabbage Seeds",
+      "pt-BR": "Sementes de Rubipolho Modificadas"
+    },
+    "description": {
+      "en": "Grows into a Mutated Rabbage.",
+      "pt-BR": "Cresce e vira um Rubipolho Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Phosphoric"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_RabbageIcon",
+    "featureFlag": "Neighbours",
+    "isVirtual": false
+  },
+  {
+    "id": "RatscallionEgg",
+    "name": {
+      "en": "Ratscallion Egg",
+      "pt-BR": "Ovo de Ratife"
+    },
+    "description": {
+      "en": "May hatch into a Ratscallion if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Ratife se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_RatscallionEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "RedColorflower",
+    "name": {
+      "en": "Red Colorflower",
+      "pt-BR": "Coloriflor Vermelha"
+    },
+    "description": {
+      "en": "A flower full of red pigment. Can be used to create Red Paint.",
+      "pt-BR": "Uma flor repleta de pigmento vermelho. Pode ser usada para criar Tinta Vermelha."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_RedColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedColorflowerSeed",
+    "name": {
+      "en": "Red Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Vermelha"
+    },
+    "description": {
+      "en": "Grows into a Red Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Vermelha e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_RedColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedCrystal",
+    "name": {
+      "en": "Red Crystal",
+      "pt-BR": "Cristal Vermelho"
+    },
+    "description": {
+      "en": "A natural energy focus. Glows gently at night.",
+      "pt-BR": "Um foco de energia natural. Brilha suavemente à noite."
+    },
+    "tags": [
+      "Colored",
+      "Crystal"
+    ],
+    "weight": 2500,
+    "sellValue": 15,
+    "icon": "T_RedCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedCrystalDust",
+    "name": {
+      "en": "Red Crystal Dust",
+      "pt-BR": "Pó de Cristal Vermelho"
+    },
+    "description": {
+      "en": "Dust made out of Red Crystal.",
+      "pt-BR": "Pó feito de Cristal Vermelho."
+    },
+    "tags": [
+      "Colored",
+      "Powder",
+      "Infusable"
+    ],
+    "weight": 400,
+    "sellValue": 8,
+    "icon": "T_RedCrystalDustIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedDye",
+    "name": {
+      "en": "Red Paint",
+      "pt-BR": "Tinta Vermelha"
+    },
+    "description": {
+      "en": "Paints constructs red.",
+      "pt-BR": "Pinta construções com a cor vermelha."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_RedDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedGlass",
+    "name": {
+      "en": "Red Glass",
+      "pt-BR": "Vidro Vermelho"
+    },
+    "description": {
+      "en": "Glass made from Red Crystal Dust.",
+      "pt-BR": "Vidro feito com Pó de Cristal Vermelho."
+    },
+    "tags": [
+      "Colored",
+      "Glass"
+    ],
+    "weight": 800,
+    "sellValue": 15,
+    "icon": "T_RedGlassIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RedLens",
+    "name": {
+      "en": "Red Lens",
+      "pt-BR": "Lente Vermelha"
+    },
+    "description": {
+      "en": "A pinpoint energy focus.",
+      "pt-BR": "Um foco localizado de energia."
+    },
+    "tags": [
+      "Colored",
+      "Lens"
+    ],
+    "weight": 800,
+    "sellValue": 15,
+    "icon": "T_RedLensIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "ReindeerAntlers",
+    "name": {
+      "en": "Reindeer Antlers",
+      "pt-BR": "Chifres de Rena"
+    },
+    "description": {
+      "en": "Gives the wearer a shiny vibe.",
+      "pt-BR": "Proporciona um ar radiante a quem os usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_ReindeerAntlersIcon",
+    "featureFlag": "Christmas2024",
+    "isVirtual": false
+  },
+  {
+    "id": "ReinforcedTallTech",
+    "name": {
+      "en": "Reinforced Tall Tech",
+      "pt-BR": "Tecnologia Reforçada dos Elevados"
+    },
+    "description": {
+      "en": "Ancient technology encased by a reinforced frame.",
+      "pt-BR": "Tecnologia antiga revestida por uma estrutura reforçada."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 15000,
+    "sellValue": 2000,
+    "icon": "T_ReinforcedTallTechIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "RockPlantSeed",
+    "name": {
+      "en": "Gravelgourd Sprout",
+      "pt-BR": "Broto de Pedregolha"
+    },
+    "description": {
+      "en": "Grows into a Gravelgourd.",
+      "pt-BR": "Cresce e vira um Pedregolha."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_RockPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Rope",
+    "name": {
+      "en": "Rope",
+      "pt-BR": "Corda"
+    },
+    "description": {
+      "en": "A length of simple rope.",
+      "pt-BR": "Um pedaço de corda simples."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 300,
+    "sellValue": 50,
+    "icon": "T_RopeIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "SafetyOrangeDye",
+    "name": {
+      "en": "Citrine Brown Paint",
+      "pt-BR": "Tinta Marrom-escura"
+    },
+    "description": {
+      "en": "Paints constructs citrine brown.",
+      "pt-BR": "Pinta construções com a cor marrom-escura."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_SafetyOrangeDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Sand",
+    "name": {
+      "en": "Sand",
+      "pt-BR": "Areia"
+    },
+    "description": {
+      "en": "Sand made out of crushed Stone.",
+      "pt-BR": "Areia feita de Pedra triturada."
+    },
+    "tags": [
+      "StaticPricing",
+      "Powder"
+    ],
+    "weight": 400,
+    "sellValue": 2,
+    "icon": "T_SandIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SantaHat",
+    "name": {
+      "en": "Santa Hat",
+      "pt-BR": "Chapéu do Papai Noel"
+    },
+    "description": {
+      "en": "Gives the wearer a holly jolly vibe.",
+      "pt-BR": "Proporciona um ar festivo a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_SantaHatIcon",
+    "featureFlag": "Christmas2024",
+    "isVirtual": false
+  },
+  {
+    "id": "Seashell",
+    "name": {
+      "en": "Seashell",
+      "pt-BR": "Concha"
+    },
+    "description": {
+      "en": "A beautiful seashell. Can be sold for a pretty penny.",
+      "pt-BR": "Uma bela concha. Pode ser vendida por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 150,
+    "icon": "T_SeashellIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SilverBar",
+    "name": {
+      "en": "Silver Bar",
+      "pt-BR": "Barra de Prata"
+    },
+    "description": {
+      "en": "A rare metal bar.",
+      "pt-BR": "Uma barra de metal raro."
+    },
+    "tags": [
+      "Metal",
+      "Bar"
+    ],
+    "weight": 4000,
+    "sellValue": 200,
+    "icon": "T_SilverBarIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SilverOre",
+    "name": {
+      "en": "Silver Ore",
+      "pt-BR": "Minério de Prata"
+    },
+    "description": {
+      "en": "A rare metal, can be refined into Silver Bars.",
+      "pt-BR": "Um metal raro, pode ser refinado em Barras de Prata."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 6000,
+    "sellValue": 100,
+    "icon": "T_SilverOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SilverWire",
+    "name": {
+      "en": "Silver Wire",
+      "pt-BR": "Fio de Prata"
+    },
+    "description": {
+      "en": "A good material for electric circuits.",
+      "pt-BR": "Um bom material para circuitos elétricos."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 3000,
+    "sellValue": 50,
+    "icon": "T_SilverWireIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Softwood",
+    "name": {
+      "en": "Softwood",
+      "pt-BR": "Madeira Macia"
+    },
+    "description": {
+      "en": "A malleable material.",
+      "pt-BR": "Um material maleável."
+    },
+    "tags": [
+      "Wood"
+    ],
+    "weight": 800,
+    "sellValue": 2,
+    "icon": "T_SoftwoodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SoftwoodGigaLog",
+    "name": {
+      "en": "Giant Softwood Log",
+      "pt-BR": "Tronco de Madeira Macia Gigante"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_SoftwoodGigaLogIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SoftwoodGigaSprout",
+    "name": {
+      "en": "Giant Softwood Tree Sprout",
+      "pt-BR": "Broto de Árvore de Madeira Macia Gigante"
+    },
+    "description": {
+      "en": "Grows into Giant Softwood Tree.",
+      "pt-BR": "Cresce e vira Árvore de Madeira Macia Gigante."
+    },
+    "tags": [
+      "StaticPricing",
+      "LargeSeed"
+    ],
+    "weight": 0,
+    "sellValue": 100,
+    "icon": "T_SoftwoodGigaSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SoftWoodLog",
+    "name": {
+      "en": "Softwood Log",
+      "pt-BR": "Toras de Madeira Macia"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 30,
+    "icon": "T_SoftWoodLogIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Spring",
+    "name": {
+      "en": "Spring",
+      "pt-BR": "Mola"
+    },
+    "description": {
+      "en": "A coil spring used for compression and tension.",
+      "pt-BR": "Uma mola espiral usada para compressão e tensão."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 500,
+    "sellValue": 50,
+    "icon": "T_SpringIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "StalktailEgg",
+    "name": {
+      "en": "Stalktail Egg",
+      "pt-BR": "Ovo de Caulegarto"
+    },
+    "description": {
+      "en": "May hatch into a Stalktail if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar um Caulegarto se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_StalktailEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "StandardRepairKit",
+    "name": {
+      "en": "Advanced Repair Kit",
+      "pt-BR": "Kit de Reparos Avançado"
+    },
+    "description": {
+      "en": "A medium quality repair kit to repair mech parts.",
+      "pt-BR": "Um kit de reparo de média qualidade para consertar peças do meca."
+    },
+    "tags": [
+      "RepairKit",
+      "StaticPricing"
+    ],
+    "weight": 500,
+    "sellValue": 0,
+    "icon": "T_StandardRepairKitIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Starfish",
+    "name": {
+      "en": "Starfish",
+      "pt-BR": "Estrela-do-mar"
+    },
+    "description": {
+      "en": "A dried starfish. Can be sold for a pretty penny.",
+      "pt-BR": "Uma estrela-do-mar desidratada. Pode ser vendida por um bom dinheiro."
+    },
+    "tags": [
+      "Treasure"
+    ],
+    "weight": 500,
+    "sellValue": 200,
+    "icon": "T_StarfishIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SteelBar",
+    "name": {
+      "en": "Steel Bar",
+      "pt-BR": "Barra de Aço"
+    },
+    "description": {
+      "en": "Stronger than Iron and just as useful.",
+      "pt-BR": "Mais resistente e tão útil quanto Ferro."
+    },
+    "tags": [
+      "Metal",
+      "Bar"
+    ],
+    "weight": 5000,
+    "sellValue": 100,
+    "icon": "T_SteelBarIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SteelElectronics",
+    "name": {
+      "en": "Steel Electronics",
+      "pt-BR": "Peças Eletrônicas de Aço"
+    },
+    "description": {
+      "en": "A variety of computer modules.",
+      "pt-BR": "Uma variedade de módulos computadorizados."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 5000,
+    "sellValue": 100,
+    "icon": "T_SteelElectronicsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SteelFrame",
+    "name": {
+      "en": "Steel Frame",
+      "pt-BR": "Estrutura de Aço"
+    },
+    "description": {
+      "en": "Keeps things in place.",
+      "pt-BR": "Mantém as coisas no lugar."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 10000,
+    "sellValue": 200,
+    "icon": "T_SteelFrameIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "SteelMechanicalParts",
+    "name": {
+      "en": "Steel Parts",
+      "pt-BR": "Peças de Aço"
+    },
+    "description": {
+      "en": "An assortment of spare parts.",
+      "pt-BR": "Uma variedade de peças sobressalentes."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 5000,
+    "sellValue": 105,
+    "icon": "T_SteelMechanicalPartsIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Stone",
+    "name": {
+      "en": "Stone",
+      "pt-BR": "Pedra"
+    },
+    "description": {
+      "en": "A solid building material, makes for a good foundation.",
+      "pt-BR": "Um material sólido para construção, ideal para boas fundações."
+    },
+    "tags": [
+      "Mineral"
+    ],
+    "weight": 900,
+    "sellValue": 3,
+    "icon": "T_StoneIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "StorageTrailer",
+    "name": {
+      "en": "Storage Trailer II",
+      "pt-BR": "Trailer de Armazenamento II"
+    },
+    "description": {
+      "en": "A mobile storage box that can attach to the mech and other Trailers.",
+      "pt-BR": "Uma caixa de armazenamento móvel que pode ser acoplada ao meca e a outros Trailers."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_StorageTrailerIcon",
+    "featureFlag": "Trailers",
+    "isVirtual": false
+  },
+  {
+    "id": "StorageTrailer3",
+    "name": {
+      "en": "Storage Trailer III",
+      "pt-BR": "Trailer de Armazenamento III"
+    },
+    "description": {
+      "en": "A mobile storage box that can attach to the mech and other Trailers.",
+      "pt-BR": "Uma caixa de armazenamento móvel que pode ser acoplada ao meca e a outros Trailers."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_StorageTrailer3Icon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "StorageTrailerMini",
+    "name": {
+      "en": "Storage Trailer",
+      "pt-BR": "Trailer de Armazenamento"
+    },
+    "description": {
+      "en": "A mobile storage box that can attach to the mech.",
+      "pt-BR": "Uma caixa de armazenamento móvel que pode ser acoplada ao meca."
+    },
+    "tags": [
+      "HeavyUtility",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_StorageTrailerMiniIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "StrawHat",
+    "name": {
+      "en": "Straw Hat",
+      "pt-BR": "Chapéu de Palha"
+    },
+    "description": {
+      "en": "Gives the wearer a laid-back vibe.",
+      "pt-BR": "Proporciona um ar descontraído a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_StrawHatIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "Sunglasses",
+    "name": {
+      "en": "Sunglasses",
+      "pt-BR": "Óculos de Sol"
+    },
+    "description": {
+      "en": "Gives the wearer a cool vibe.",
+      "pt-BR": "Proporciona um ar descolado a quem os usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_SunglassesIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "TallSwampTreeSprout",
+    "name": {
+      "en": "Starfall Tree Sprout",
+      "pt-BR": "Broto de Árvore Astrocadente"
+    },
+    "description": {
+      "en": "Grows into Starfall Tree.",
+      "pt-BR": "Cresce e vira uma Árvore Astrocadente"
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_TallSwampTreeSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "TallTech",
+    "name": {
+      "en": "Tall Tech. (Corrupted)",
+      "pt-BR": "Tecnologia dos Elevados (Corrompida)"
+    },
+    "description": {
+      "en": "Ancient technology in need of purification before repurposing.",
+      "pt-BR": "Tecnologia antiga que precisa ser purificada antes de ser reaproveitada."
+    },
+    "tags": [
+      "StaticPricing"
+    ],
+    "weight": 10000,
+    "sellValue": 100,
+    "icon": "T_TallTechIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "TallTechPure",
+    "name": {
+      "en": "Tall Tech. (Purified)",
+      "pt-BR": "Tecnologia dos Elevados (Purificada)"
+    },
+    "description": {
+      "en": "Purified ancient technology ready to power advanced craftsmanship.",
+      "pt-BR": "Tecnologia antiga purificada, pronta para impulsionar criações avançadas."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 10000,
+    "sellValue": 200,
+    "icon": "T_TallTechPureIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "TinOre",
+    "name": {
+      "en": "Tin Ore",
+      "pt-BR": "Minério de Estanho"
+    },
+    "description": {
+      "en": "Weak on its own, but can be combined with Copper Ore to make Bronze.",
+      "pt-BR": "Sozinho, ele é fraco, mas pode ser combinado com Minério de Cobre para criar Bronze."
+    },
+    "tags": [
+      "Metal",
+      "Mineral"
+    ],
+    "weight": 2500,
+    "sellValue": 10,
+    "icon": "T_TinOreIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "TookanEgg",
+    "name": {
+      "en": "Swiftplume Egg",
+      "pt-BR": "Ovo de Plumaleve"
+    },
+    "description": {
+      "en": "May hatch into a Swiftplume if placed in an Egg Incubator.",
+      "pt-BR": "Pode eclodir e virar uma Plumaleve se for colocado em uma Incubadora de Ovos."
+    },
+    "tags": [
+      "Egg",
+      "StaticPricing"
+    ],
+    "weight": 300,
+    "sellValue": 0,
+    "icon": "T_TookanEggIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "TopHat",
+    "name": {
+      "en": "Top Hat",
+      "pt-BR": "Cartola"
+    },
+    "description": {
+      "en": "Gives the wearer a posh vibe.",
+      "pt-BR": "Proporciona um ar elegante a quem a usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_TopHatIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "TurquoiseDye",
+    "name": {
+      "en": "Turquoise Paint",
+      "pt-BR": "Tinta Turquesa"
+    },
+    "description": {
+      "en": "Paints constructs turquoise.",
+      "pt-BR": "Pinta construções com a cor turquesa."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_TurquoiseDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "VikingHelmet",
+    "name": {
+      "en": "Viking Helmet",
+      "pt-BR": "Capacete Viking"
+    },
+    "description": {
+      "en": "Gives the wearer a (historically inaccurate) barbaric vibe.",
+      "pt-BR": "Proporciona um ar bárbaro (historicamente impreciso) a quem o usa."
+    },
+    "tags": [
+      "Clothing"
+    ],
+    "weight": 0,
+    "sellValue": 0,
+    "icon": "T_VikingHelmetIcon",
+    "featureFlag": "RanchAnimals",
+    "isVirtual": false
+  },
+  {
+    "id": "Water",
+    "name": {
+      "en": "Water",
+      "pt-BR": "Água"
+    },
+    "description": {
+      "en": "Drinkable water, good for plants.",
+      "pt-BR": "Água potável, boa para plantas."
+    },
+    "tags": [
+      "Liquid",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 0,
+    "icon": "T_WaterIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WaterPlantSeed",
+    "name": {
+      "en": "Pondpitcher Sprout",
+      "pt-BR": "Broto de Hidroplanta"
+    },
+    "description": {
+      "en": "Grows into a Pondpitcher.",
+      "pt-BR": "Cresce e vira uma Hidroplanta."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_WaterPlantIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Wax",
+    "name": {
+      "en": "Wax",
+      "pt-BR": "Cera"
+    },
+    "description": {
+      "en": "A soft material.",
+      "pt-BR": "Um material macio."
+    },
+    "tags": [
+      "Crafted"
+    ],
+    "weight": 300,
+    "sellValue": 50,
+    "icon": "T_WaxIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Wheat",
+    "name": {
+      "en": "Wheat",
+      "pt-BR": "Trigo"
+    },
+    "description": {
+      "en": "Originally from Earth, grows quickly.",
+      "pt-BR": "Originário da Terra, cresce rapidamente."
+    },
+    "tags": [
+      "Plant",
+      "Decomposable",
+      "Grain",
+      "Infusable",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 15,
+    "icon": "T_WheatIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Wheat_Rare",
+    "name": {
+      "en": "Wheat (Mutated)",
+      "pt-BR": "Trigo (Mutante)"
+    },
+    "description": {
+      "en": "A rare variant of a plant originally from Earth, grows quickly.",
+      "pt-BR": "Uma variante rara de uma planta originária da Terra, cresce rapidamente."
+    },
+    "tags": [
+      "Plant",
+      "Rare"
+    ],
+    "weight": 10,
+    "sellValue": 45,
+    "icon": "T_Wheat_RareIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WheatSeeds",
+    "name": {
+      "en": "Wheat Seeds",
+      "pt-BR": "Sementes de Trigo"
+    },
+    "description": {
+      "en": "Grows into Wheat.",
+      "pt-BR": "Cresce e vira Trigo."
+    },
+    "tags": [
+      "SmallSeed",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_WheatIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WheatSeeds_Refined",
+    "name": {
+      "en": "Spliced Wheat Seeds",
+      "pt-BR": "Sementes de Trigo Modificadas"
+    },
+    "description": {
+      "en": "Grows into Mutated Wheat.",
+      "pt-BR": "Cresce e vira Trigo Mutante."
+    },
+    "tags": [
+      "SmallSeed",
+      "Refined",
+      "StaticPricing",
+      "Nitrogenic"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_WheatIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WhiteColorflower",
+    "name": {
+      "en": "White Colorflower",
+      "pt-BR": "Coloriflor Branca"
+    },
+    "description": {
+      "en": "A flower full of white pigment. Can be used to create White Paint.",
+      "pt-BR": "Uma flor repleta de pigmento branco. Pode ser usada para criar Tinta Branca."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_WhiteColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WhiteColorflowerSeed",
+    "name": {
+      "en": "White Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Branca"
+    },
+    "description": {
+      "en": "Grows into a White Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Branca e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_WhiteColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WhiteDye",
+    "name": {
+      "en": "White Paint",
+      "pt-BR": "Tinta Branca"
+    },
+    "description": {
+      "en": "Paints constructs white.",
+      "pt-BR": "Pinta construções com a cor branca."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_WhiteDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WiredTallTech",
+    "name": {
+      "en": "Rewired Tall Tech",
+      "pt-BR": "Tecnologia Refeita dos Elevados"
+    },
+    "description": {
+      "en": "An intricate piece of circuitry powered by ancient technology.",
+      "pt-BR": "Um circuito complexo movido por tecnologia antiga."
+    },
+    "tags": [
+      "Metal",
+      "Crafted"
+    ],
+    "weight": 10000,
+    "sellValue": 1500,
+    "icon": "T_WiredTallTechIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "Wood",
+    "name": {
+      "en": "Wood",
+      "pt-BR": "Madeira"
+    },
+    "description": {
+      "en": "The most basic and reliable of building materials.",
+      "pt-BR": "O mais básico e confiável dos materiais de construção."
+    },
+    "tags": [
+      "Wood"
+    ],
+    "weight": 800,
+    "sellValue": 2,
+    "icon": "T_WoodIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WoodGigaLog",
+    "name": {
+      "en": "Giant Wood Log",
+      "pt-BR": "Tronco de Madeira Gigante"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem"
+    ],
+    "weight": 100,
+    "sellValue": 0,
+    "icon": "T_WoodGigaLogIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WoodGigaSprout",
+    "name": {
+      "en": "Giant Wood Tree Sprout",
+      "pt-BR": "Broto de Árvore de Madeira Gigante"
+    },
+    "description": {
+      "en": "Grows into Giant Wood Tree.",
+      "pt-BR": "Cresce e vira Árvore de Madeira Gigante."
+    },
+    "tags": [
+      "StaticPricing",
+      "LargeSeed"
+    ],
+    "weight": 0,
+    "sellValue": 100,
+    "icon": "T_WoodGigaSproutIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "WoodLog",
+    "name": {
+      "en": "Wood Log",
+      "pt-BR": "Tronco de Madeira"
+    },
+    "description": null,
+    "tags": [
+      "LargeItem",
+      "StaticPricing"
+    ],
+    "weight": 10,
+    "sellValue": 30,
+    "icon": "T_WoodLogIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowColorflower",
+    "name": {
+      "en": "Yellow Colorflower",
+      "pt-BR": "Coloriflor Amarela"
+    },
+    "description": {
+      "en": "A flower full of yellow pigment. Can be used to create Yellow Paint.",
+      "pt-BR": "Uma flor repleta de pigmento amarelo. Pode ser usada para criar Tinta Amarela."
+    },
+    "tags": [
+      "Decomposable",
+      "Flower"
+    ],
+    "weight": 100,
+    "sellValue": 50,
+    "icon": "T_YellowColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowColorflowerSeed",
+    "name": {
+      "en": "Yellow Colorflower Sprout",
+      "pt-BR": "Broto de Coloriflor Amarela"
+    },
+    "description": {
+      "en": "Grows into a Yellow Colorflower, takes 2 days to bloom.",
+      "pt-BR": "Cresce e vira uma Coloriflor Amarela e leva 2 dias para florescer."
+    },
+    "tags": [
+      "LargeSeed",
+      "StaticPricing",
+      "Flower"
+    ],
+    "weight": 0,
+    "sellValue": 1,
+    "icon": "T_YellowColorflowerIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowCrystal",
+    "name": {
+      "en": "Yellow Crystal",
+      "pt-BR": "Cristal Amarelo"
+    },
+    "description": {
+      "en": "A natural energy focus. Glows gently at night.",
+      "pt-BR": "Um foco de energia natural. Brilha suavemente à noite."
+    },
+    "tags": [
+      "Colored",
+      "Crystal"
+    ],
+    "weight": 2500,
+    "sellValue": 60,
+    "icon": "T_YellowCrystalIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowCrystalDust",
+    "name": {
+      "en": "Yellow Crystal Dust",
+      "pt-BR": "Pó de Cristal Amarelo"
+    },
+    "description": {
+      "en": "Dust made from Yellow Crystal.",
+      "pt-BR": "Pó feito de Cristal Amarelo."
+    },
+    "tags": [
+      "Colored",
+      "Powder",
+      "Infusable"
+    ],
+    "weight": 400,
+    "sellValue": 35,
+    "icon": "T_YellowCrystalDustIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowDye",
+    "name": {
+      "en": "Yellow Paint",
+      "pt-BR": "Tinta Amarela"
+    },
+    "description": {
+      "en": "Paints constructs yellow.",
+      "pt-BR": "Pinta construções com a cor amarela."
+    },
+    "tags": [
+      "StaticPricing",
+      "Paint"
+    ],
+    "weight": 200,
+    "sellValue": 60,
+    "icon": "T_YellowDyeIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowGlass",
+    "name": {
+      "en": "Yellow Glass",
+      "pt-BR": "Vidro Amarelo"
+    },
+    "description": {
+      "en": "Glass made from Yellow Crystal Dust.",
+      "pt-BR": "Vidro feito com Pó de Cristal Amarelo."
+    },
+    "tags": [
+      "Colored",
+      "Glass"
+    ],
+    "weight": 800,
+    "sellValue": 25,
+    "icon": "T_YellowGlassIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  },
+  {
+    "id": "YellowLens",
+    "name": {
+      "en": "Yellow Lens",
+      "pt-BR": "Lente Amarela"
+    },
+    "description": {
+      "en": "A pinpoint energy focus.",
+      "pt-BR": "Um foco localizado de energia."
+    },
+    "tags": [
+      "Colored",
+      "Lens"
+    ],
+    "weight": 800,
+    "sellValue": 60,
+    "icon": "T_YellowLensIcon",
+    "featureFlag": null,
+    "isVirtual": false
+  }
+]
