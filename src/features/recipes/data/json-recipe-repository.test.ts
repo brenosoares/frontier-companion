@@ -27,6 +27,13 @@ describe("JsonRecipeRepository", () => {
     expect(await repository.findByOutput("Unknown")).toEqual([]);
   });
 
+  it("finds every recipe consuming an item", async () => {
+    const repository = new JsonRecipeRepository(async () => data);
+    const found = await repository.findByInput("TestOre");
+    expect(found).toHaveLength(3);
+    expect(await repository.findByInput("Unknown")).toEqual([]);
+  });
+
   it("refuses malformed data", async () => {
     const repository = new JsonRecipeRepository(async () => [{ id: "X" }]);
     await expect(repository.getAll()).rejects.toThrow(/Invalid recipes data/);

@@ -10,40 +10,71 @@ export const RAW_DATA_DIR = path.resolve(
 );
 
 export const DATA_TABLES_DIR = path.join(RAW_DATA_DIR, "FarMech/Content/DataTables");
-export const ICONS_DIR = path.join(RAW_DATA_DIR, "FarMech/Content/Graphics/UI/Icons");
+/** Pixel-art icon set (generated outside the repo from the game icons). */
+export const PIXEL_ICONS_DIR = path.join(RAW_DATA_DIR, "icons_pixel");
+/** Icons used by items are copied here and served by Next at `/icons/items/<name>.png`. */
+export const PUBLIC_ITEM_ICONS_DIR = path.join(repoRoot, "public/icons/items");
 
 /** Output is git-ignored until the legal gate is cleared. */
 export const OUTPUT_DIR = path.join(repoRoot, "data/processed");
 
-/** Recipe table per station. `DT_CompositeRecipes` is the union of all of them (verified). */
-export const STATION_RECIPE_TABLES = [
-  ["Assembler", "DT_AssemblerRecipes"],
-  ["ColorMixer", "DT_ColorMixerRecipes"],
-  ["ColorRefiner", "DT_ColorRefinerRecipes"],
-  ["Compost", "DT_CompostRecipes"],
-  ["Compost2", "DT_Compost2Recipes"],
-  ["Dresser", "DT_DresserRecipes"],
-  ["FoodProcessor", "DT_FoodProcessorRecipes"],
-  ["FuelMaker", "DT_FuelMakerRecipes"],
-  ["FuelMaker2", "DT_FuelMaker2Recipes"],
-  ["FuelMaker3", "DT_FuelMaker3Recipes"],
-  ["Furnace", "DT_FurnaceRecipe"],
-  ["FurnaceTwo", "DT_FurnaceTwoRecipe"],
-  ["Furnace3", "DT_Furnace3Recipe"],
-  ["Grinder", "DT_GrinderRecipes"],
-  ["Grinder2", "DT_Grinder2Recipes"],
-  ["Grinder3", "DT_Grinder3Recipes"],
-  ["HeavyUtilityCrafter", "DT_HeavyUtilityCrafterRecipes"],
-  ["Loom", "DT_LoomRecipes"],
-  ["OilPresser", "DT_OilPresserRecipes"],
-  ["OilPresser2", "DT_OilPresser2Recipes"],
-  ["OilPresser3", "DT_OilPresser3Recipes"],
-  ["SeedMaker", "DT_SeedMakerRecipes"],
-  ["SeedMaker2", "DT_SeedMaker2Recipes"],
-  ["SeedMaker3", "DT_SeedMaker3Recipes"],
-  ["SeedMaker4", "DT_SeedMaker4Recipes"],
-  ["SeedRefinement", "DT_SeedRefinementRecipes"],
-  ["SeedRefinement2", "DT_SeedRefinement2Recipes"],
-  ["SeedRefinement3", "DT_SeedRefinement3Recipes"],
-  ["SolarDehydrator", "DT_SolarDehydratorRecipes"],
-] as const satisfies readonly (readonly [station: string, table: string])[];
+export interface StationDefinition {
+  /** Station id used by `recipe.stations`. */
+  id: string;
+  /** Recipe table listing what this station crafts. `DT_CompositeRecipes` is their union (verified). */
+  table: string;
+  /** `DT_Constructs` row providing the localized name, or null when the station is not a construct. */
+  constructId: string | null;
+  /** Used only when `constructId` is null. Our own labels, based on the game's wording. */
+  fallbackName?: { en: string; "pt-BR": string };
+}
+
+const station = (
+  id: string,
+  table: string,
+  constructId: string | null = id,
+  fallbackName?: StationDefinition["fallbackName"],
+): StationDefinition => ({
+  id,
+  table,
+  constructId,
+  ...(fallbackName && { fallbackName }),
+});
+
+/** Seed refinement is done by an NPC machine (Ulf's Seed Modifier), which is not a construct. */
+const seedModifier = (suffix: string): StationDefinition["fallbackName"] => ({
+  en: `Seed Modifier${suffix}`,
+  "pt-BR": `Modificador de Sementes${suffix}`,
+});
+
+export const STATIONS: readonly StationDefinition[] = [
+  station("Assembler", "DT_AssemblerRecipes"),
+  station("ColorMixer", "DT_ColorMixerRecipes"),
+  station("ColorRefiner", "DT_ColorRefinerRecipes"),
+  station("Compost", "DT_CompostRecipes", "CompostBox"),
+  station("Compost2", "DT_Compost2Recipes", "CompostBox2"),
+  station("Dresser", "DT_DresserRecipes", "AnimalDresser"),
+  station("FoodProcessor", "DT_FoodProcessorRecipes"),
+  station("FuelMaker", "DT_FuelMakerRecipes"),
+  station("FuelMaker2", "DT_FuelMaker2Recipes"),
+  station("FuelMaker3", "DT_FuelMaker3Recipes"),
+  station("Furnace", "DT_FurnaceRecipe"),
+  station("FurnaceTwo", "DT_FurnaceTwoRecipe"),
+  station("Furnace3", "DT_Furnace3Recipe"),
+  station("Grinder", "DT_GrinderRecipes"),
+  station("Grinder2", "DT_Grinder2Recipes"),
+  station("Grinder3", "DT_Grinder3Recipes"),
+  station("HeavyUtilityCrafter", "DT_HeavyUtilityCrafterRecipes"),
+  station("Loom", "DT_LoomRecipes"),
+  station("OilPresser", "DT_OilPresserRecipes"),
+  station("OilPresser2", "DT_OilPresser2Recipes"),
+  station("OilPresser3", "DT_OilPresser3Recipes"),
+  station("SeedMaker", "DT_SeedMakerRecipes"),
+  station("SeedMaker2", "DT_SeedMaker2Recipes", "Seedmaker2"),
+  station("SeedMaker3", "DT_SeedMaker3Recipes"),
+  station("SeedMaker4", "DT_SeedMaker4Recipes"),
+  station("SeedRefinement", "DT_SeedRefinementRecipes", null, seedModifier("")),
+  station("SeedRefinement2", "DT_SeedRefinement2Recipes", null, seedModifier(" II")),
+  station("SeedRefinement3", "DT_SeedRefinement3Recipes", null, seedModifier(" III")),
+  station("SolarDehydrator", "DT_SolarDehydratorRecipes"),
+];

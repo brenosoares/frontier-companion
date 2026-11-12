@@ -1,0 +1,2433 @@
+[
+  {
+    "id": "animal-droppings:Crob:NitrogenicDropping",
+    "itemId": "NitrogenicDropping",
+    "kind": "animal-droppings",
+    "sourceId": "Crob",
+    "sourceName": {
+      "en": "Crobling",
+      "pt-BR": "Tartaguejo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-droppings:CrystalDeer:PhosphoricDropping",
+    "itemId": "PhosphoricDropping",
+    "kind": "animal-droppings",
+    "sourceId": "CrystalDeer",
+    "sourceName": {
+      "en": "Crystalhoof",
+      "pt-BR": "Casco de Cristal"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-droppings:Mox:PotassicDropping",
+    "itemId": "PotassicDropping",
+    "kind": "animal-droppings",
+    "sourceId": "Mox",
+    "sourceName": {
+      "en": "Mox",
+      "pt-BR": "Múfalo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-droppings:Ratscallion:NitrogenicDropping",
+    "itemId": "NitrogenicDropping",
+    "kind": "animal-droppings",
+    "sourceId": "Ratscallion",
+    "sourceName": {
+      "en": "Ratscallion",
+      "pt-BR": "Ratife"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-droppings:Stalktail:PhosphoricDropping",
+    "itemId": "PhosphoricDropping",
+    "kind": "animal-droppings",
+    "sourceId": "Stalktail",
+    "sourceName": {
+      "en": "Stalktail",
+      "pt-BR": "Caulegarto"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-droppings:Tookan:PotassicDropping",
+    "itemId": "PotassicDropping",
+    "kind": "animal-droppings",
+    "sourceId": "Tookan",
+    "sourceName": {
+      "en": "Swiftplume",
+      "pt-BR": "Plumaleve"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:Crob:CrobEgg",
+    "itemId": "CrobEgg",
+    "kind": "animal-egg",
+    "sourceId": "Crob",
+    "sourceName": {
+      "en": "Crobling",
+      "pt-BR": "Tartaguejo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:CrystalDeer:CrystalDeerEgg",
+    "itemId": "CrystalDeerEgg",
+    "kind": "animal-egg",
+    "sourceId": "CrystalDeer",
+    "sourceName": {
+      "en": "Crystalhoof",
+      "pt-BR": "Casco de Cristal"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:Mox:MoxEgg",
+    "itemId": "MoxEgg",
+    "kind": "animal-egg",
+    "sourceId": "Mox",
+    "sourceName": {
+      "en": "Mox",
+      "pt-BR": "Múfalo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:Ratscallion:RatscallionEgg",
+    "itemId": "RatscallionEgg",
+    "kind": "animal-egg",
+    "sourceId": "Ratscallion",
+    "sourceName": {
+      "en": "Ratscallion",
+      "pt-BR": "Ratife"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:Stalktail:StalktailEgg",
+    "itemId": "StalktailEgg",
+    "kind": "animal-egg",
+    "sourceId": "Stalktail",
+    "sourceName": {
+      "en": "Stalktail",
+      "pt-BR": "Caulegarto"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-egg:Tookan:TookanEgg",
+    "itemId": "TookanEgg",
+    "kind": "animal-egg",
+    "sourceId": "Tookan",
+    "sourceName": {
+      "en": "Swiftplume",
+      "pt-BR": "Plumaleve"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:Crob:PearlDrop",
+    "itemId": "PearlDrop",
+    "kind": "animal-product",
+    "sourceId": "Crob",
+    "sourceName": {
+      "en": "Crobling",
+      "pt-BR": "Tartaguejo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:CrystalDeer:CrystalShards",
+    "itemId": "CrystalShards",
+    "kind": "animal-product",
+    "sourceId": "CrystalDeer",
+    "sourceName": {
+      "en": "Crystalhoof",
+      "pt-BR": "Casco de Cristal"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:Mox:Fur",
+    "itemId": "Fur",
+    "kind": "animal-product",
+    "sourceId": "Mox",
+    "sourceName": {
+      "en": "Mox",
+      "pt-BR": "Múfalo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:Ratscallion:AmberFragments",
+    "itemId": "AmberFragments",
+    "kind": "animal-product",
+    "sourceId": "Ratscallion",
+    "sourceName": {
+      "en": "Ratscallion",
+      "pt-BR": "Ratife"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:Stalktail:Wood",
+    "itemId": "Wood",
+    "kind": "animal-product",
+    "sourceId": "Stalktail",
+    "sourceName": {
+      "en": "Stalktail",
+      "pt-BR": "Caulegarto"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "animal-product:Tookan:Feather",
+    "itemId": "Feather",
+    "kind": "animal-product",
+    "sourceId": "Tookan",
+    "sourceName": {
+      "en": "Swiftplume",
+      "pt-BR": "Plumaleve"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:AluminiumDeposit:LargeAluminium",
+    "itemId": "LargeAluminium",
+    "kind": "node",
+    "sourceId": "AluminiumDeposit",
+    "sourceName": {
+      "en": "Aluminum Deposit",
+      "pt-BR": "Depósito de Alumínio"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:AluminiumDepositSmall:AluminiumRod",
+    "itemId": "AluminiumRod",
+    "kind": "node",
+    "sourceId": "AluminiumDepositSmall",
+    "sourceName": {
+      "en": "Small Aluminum Deposit",
+      "pt-BR": "Pequeno Depósito de Alumínio"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:BasicRock:GeodeShards",
+    "itemId": "GeodeShards",
+    "kind": "node",
+    "sourceId": "BasicRock",
+    "sourceName": {
+      "en": "Rock",
+      "pt-BR": "Pedra"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:BasicRock:Stone",
+    "itemId": "Stone",
+    "kind": "node",
+    "sourceId": "BasicRock",
+    "sourceName": {
+      "en": "Rock",
+      "pt-BR": "Pedra"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:BasicRockBig:GeodeShards",
+    "itemId": "GeodeShards",
+    "kind": "node",
+    "sourceId": "BasicRockBig",
+    "sourceName": {
+      "en": "Big Rock",
+      "pt-BR": "Pedra Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:BasicRockBig:LargeRock",
+    "itemId": "LargeRock",
+    "kind": "node",
+    "sourceId": "BasicRockBig",
+    "sourceName": {
+      "en": "Big Rock",
+      "pt-BR": "Pedra Grande"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:BasicRockBig:Stone",
+    "itemId": "Stone",
+    "kind": "node",
+    "sourceId": "BasicRockBig",
+    "sourceName": {
+      "en": "Big Rock",
+      "pt-BR": "Pedra Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:BentTree:BentTreeSeed",
+    "itemId": "BentTreeSeed",
+    "kind": "node",
+    "sourceId": "BentTree",
+    "sourceName": {
+      "en": "Steadwood Tree",
+      "pt-BR": "Árvore Resistente"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:BentTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BentTree",
+    "sourceName": {
+      "en": "Steadwood Tree",
+      "pt-BR": "Árvore Resistente"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:BentTree:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "BentTree",
+    "sourceName": {
+      "en": "Steadwood Tree",
+      "pt-BR": "Árvore Resistente"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:BigLeafs:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BigLeafs",
+    "sourceName": {
+      "en": "Large Leaf",
+      "pt-BR": "Folha Grande"
+    },
+    "minAmount": 8,
+    "maxAmount": 10,
+    "chance": 100
+  },
+  {
+    "id": "node:BlueCrystal:LargeBlueCrystal",
+    "itemId": "LargeBlueCrystal",
+    "kind": "node",
+    "sourceId": "BlueCrystal",
+    "sourceName": {
+      "en": "Blue Crystal Deposit",
+      "pt-BR": "Depósito de Cristal Azul"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:BlueCrystalSmall:BlueCrystal",
+    "itemId": "BlueCrystal",
+    "kind": "node",
+    "sourceId": "BlueCrystalSmall",
+    "sourceName": {
+      "en": "Small Blue Crystal Deposit",
+      "pt-BR": "Depósito de Cristal Azul Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:BorgirBush:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BorgirBush",
+    "sourceName": {
+      "en": "Tall Succulent",
+      "pt-BR": "Suculenta Alta"
+    },
+    "minAmount": 4,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "node:BubbleBush:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BubbleBush",
+    "sourceName": {
+      "en": "Loop Reed",
+      "pt-BR": "Junco Laçado"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:BulbTree:BulbTreeSeed",
+    "itemId": "BulbTreeSeed",
+    "kind": "node",
+    "sourceId": "BulbTree",
+    "sourceName": {
+      "en": "Spirepot Sapling",
+      "pt-BR": "Mudas de Árvore Bojuda"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 35
+  },
+  {
+    "id": "node:BulbTree:HardWood",
+    "itemId": "HardWood",
+    "kind": "node",
+    "sourceId": "BulbTree",
+    "sourceName": {
+      "en": "Spirepot Sapling",
+      "pt-BR": "Mudas de Árvore Bojuda"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:BulbTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BulbTree",
+    "sourceName": {
+      "en": "Spirepot Sapling",
+      "pt-BR": "Mudas de Árvore Bojuda"
+    },
+    "minAmount": 5,
+    "maxAmount": 7,
+    "chance": 100
+  },
+  {
+    "id": "node:BulbTreeLarge:BulbTreeSeed",
+    "itemId": "BulbTreeSeed",
+    "kind": "node",
+    "sourceId": "BulbTreeLarge",
+    "sourceName": {
+      "en": "Spirepot Tree",
+      "pt-BR": "Árvore Bojuda"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 35
+  },
+  {
+    "id": "node:BulbTreeLarge:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "BulbTreeLarge",
+    "sourceName": {
+      "en": "Spirepot Tree",
+      "pt-BR": "Árvore Bojuda"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:BulbTreeLarge:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "BulbTreeLarge",
+    "sourceName": {
+      "en": "Spirepot Tree",
+      "pt-BR": "Árvore Bojuda"
+    },
+    "minAmount": 8,
+    "maxAmount": 10,
+    "chance": 100
+  },
+  {
+    "id": "node:BulbTreeLarge:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "BulbTreeLarge",
+    "sourceName": {
+      "en": "Spirepot Tree",
+      "pt-BR": "Árvore Bojuda"
+    },
+    "minAmount": 5,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:Cacti_Large:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "Cacti_Large",
+    "sourceName": {
+      "en": "Cactus",
+      "pt-BR": "Cacto"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:Cacti_Large:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "Cacti_Large",
+    "sourceName": {
+      "en": "Cactus",
+      "pt-BR": "Cacto"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:CliffTreeLarge:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "CliffTreeLarge",
+    "sourceName": {
+      "en": "Waterwatcher Tree",
+      "pt-BR": "Árvore Aquática"
+    },
+    "minAmount": 3,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:CliffTreeLarge:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "CliffTreeLarge",
+    "sourceName": {
+      "en": "Waterwatcher Tree",
+      "pt-BR": "Árvore Aquática"
+    },
+    "minAmount": 10,
+    "maxAmount": 12,
+    "chance": 100
+  },
+  {
+    "id": "node:CliffTreeLarge:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "CliffTreeLarge",
+    "sourceName": {
+      "en": "Waterwatcher Tree",
+      "pt-BR": "Árvore Aquática"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:CoalDeposit:LargeCoal",
+    "itemId": "LargeCoal",
+    "kind": "node",
+    "sourceId": "CoalDeposit",
+    "sourceName": {
+      "en": "Coal Deposit",
+      "pt-BR": "Depósito de Carvão"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:CoalDepositSmall:Coal",
+    "itemId": "Coal",
+    "kind": "node",
+    "sourceId": "CoalDepositSmall",
+    "sourceName": {
+      "en": "Small Coal Deposit",
+      "pt-BR": "Depósito de Carvão Pequeno"
+    },
+    "minAmount": 5,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:CopperDeposit:LargeCopper",
+    "itemId": "LargeCopper",
+    "kind": "node",
+    "sourceId": "CopperDeposit",
+    "sourceName": {
+      "en": "Copper Deposit",
+      "pt-BR": "Depósito de Cobre"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:CopperDepositSmall:CopperOre",
+    "itemId": "CopperOre",
+    "kind": "node",
+    "sourceId": "CopperDepositSmall",
+    "sourceName": {
+      "en": "Small Copper Deposit",
+      "pt-BR": "Depósito de Cobre Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:CubeMetalDeposit:LargeCubeMetal",
+    "itemId": "LargeCubeMetal",
+    "kind": "node",
+    "sourceId": "CubeMetalDeposit",
+    "sourceName": {
+      "en": "Fractalite Deposit",
+      "pt-BR": "Depósito de Fractalita"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:CubeMetalDepositSmall:CubeMetalOre",
+    "itemId": "CubeMetalOre",
+    "kind": "node",
+    "sourceId": "CubeMetalDepositSmall",
+    "sourceName": {
+      "en": "Small Fractalite Deposit",
+      "pt-BR": "Depósito de Fractalita Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:DenseLeavesWall:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "DenseLeavesWall",
+    "sourceName": {
+      "en": "Forest Hedge",
+      "pt-BR": "Sebe Florestal"
+    },
+    "minAmount": 12,
+    "maxAmount": 14,
+    "chance": 100
+  },
+  {
+    "id": "node:DenseTree:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "DenseTree",
+    "sourceName": {
+      "en": "Oldenwood Tree",
+      "pt-BR": "Árvore Antiga"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:DenseTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "DenseTree",
+    "sourceName": {
+      "en": "Oldenwood Tree",
+      "pt-BR": "Árvore Antiga"
+    },
+    "minAmount": 5,
+    "maxAmount": 8,
+    "chance": 100
+  },
+  {
+    "id": "node:FallenTree:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "FallenTree",
+    "sourceName": {
+      "en": "Fallen Tree",
+      "pt-BR": "Árvore Caída"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:FuelRockDeposit:LargeFuelRock",
+    "itemId": "LargeFuelRock",
+    "kind": "node",
+    "sourceId": "FuelRockDeposit",
+    "sourceName": {
+      "en": "Refillite Deposit",
+      "pt-BR": "Depósito de Refilita"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:GigaTree_Hardwood:HardwoodGigaLog",
+    "itemId": "HardwoodGigaLog",
+    "kind": "node",
+    "sourceId": "GigaTree_Hardwood",
+    "sourceName": {
+      "en": "Giant Hardwood Tree",
+      "pt-BR": "Árvore de Madeira de Lei Gigante"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:GigaTree_Softwood:SoftwoodGigaLog",
+    "itemId": "SoftwoodGigaLog",
+    "kind": "node",
+    "sourceId": "GigaTree_Softwood",
+    "sourceName": {
+      "en": "Giant Softwood Tree",
+      "pt-BR": "Árvore de Madeira Macia Gigante"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:GigaTree_Wood:WoodGigaLog",
+    "itemId": "WoodGigaLog",
+    "kind": "node",
+    "sourceId": "GigaTree_Wood",
+    "sourceName": {
+      "en": "Giant Wood Tree",
+      "pt-BR": "Árvore de Madeira Gigante"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:GloTree:GloSeed",
+    "itemId": "GloSeed",
+    "kind": "node",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:GloTree:GloWood",
+    "itemId": "GloWood",
+    "kind": "node",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:GloTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 4,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "node:GoldDeposit:LargeGold",
+    "itemId": "LargeGold",
+    "kind": "node",
+    "sourceId": "GoldDeposit",
+    "sourceName": {
+      "en": "Gold Deposit",
+      "pt-BR": "Depósito de Ouro"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:GoldDepositSmall:GoldOre",
+    "itemId": "GoldOre",
+    "kind": "node",
+    "sourceId": "GoldDepositSmall",
+    "sourceName": {
+      "en": "Small Gold Deposit",
+      "pt-BR": "Depósito de Ouro Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:IronDeposit:LargeIron",
+    "itemId": "LargeIron",
+    "kind": "node",
+    "sourceId": "IronDeposit",
+    "sourceName": {
+      "en": "Iron Deposit",
+      "pt-BR": "Depósito de Ferro"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:IronDepositSmall:IronOre",
+    "itemId": "IronOre",
+    "kind": "node",
+    "sourceId": "IronDepositSmall",
+    "sourceName": {
+      "en": "Small Iron Deposit",
+      "pt-BR": "Depósito de Ferro Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:LilypadTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "LilypadTree",
+    "sourceName": {
+      "en": "Lilypad Tree",
+      "pt-BR": "Árvore de Nenúfar"
+    },
+    "minAmount": 3,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "node:LilypadTree:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "LilypadTree",
+    "sourceName": {
+      "en": "Lilypad Tree",
+      "pt-BR": "Árvore de Nenúfar"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:LilypadTreeFlowering:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "LilypadTreeFlowering",
+    "sourceName": {
+      "en": "Flowering Lilypad Tree",
+      "pt-BR": "Árvore de Nenúfar Florida"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:LilypadTreeFlowering:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "LilypadTreeFlowering",
+    "sourceName": {
+      "en": "Flowering Lilypad Tree",
+      "pt-BR": "Árvore de Nenúfar Florida"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:LilypadTreePlatform:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "LilypadTreePlatform",
+    "sourceName": {
+      "en": "Lilypad",
+      "pt-BR": "Nenúfar"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowBushLarge:HortensiaBush_FlowerSeed",
+    "itemId": "HortensiaBush_FlowerSeed",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowBushLarge:HortensiaBush_YellowSeed",
+    "itemId": "HortensiaBush_YellowSeed",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowBushLarge:HortensiaBushSeed",
+    "itemId": "HortensiaBushSeed",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowBushLarge:LargeBush_YellowSeed",
+    "itemId": "LargeBush_YellowSeed",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowBushLarge:LargeBushSeed",
+    "itemId": "LargeBushSeed",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowBushLarge:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowBushLarge",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 7,
+    "maxAmount": 9,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowBushSmall:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowBushSmall",
+    "sourceName": {
+      "en": "Bush",
+      "pt-BR": "Arbusto"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeLarge:PineSeed",
+    "itemId": "PineSeed",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeLarge",
+    "sourceName": {
+      "en": "Large Pine",
+      "pt-BR": "Pinheiro Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowPineTreeLarge:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeLarge",
+    "sourceName": {
+      "en": "Large Pine",
+      "pt-BR": "Pinheiro Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeLarge:SoftWoodLog",
+    "itemId": "SoftWoodLog",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeLarge",
+    "sourceName": {
+      "en": "Large Pine",
+      "pt-BR": "Pinheiro Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeLarge:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeLarge",
+    "sourceName": {
+      "en": "Large Pine",
+      "pt-BR": "Pinheiro Grande"
+    },
+    "minAmount": 5,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeSmall:PineSeed",
+    "itemId": "PineSeed",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeSmall",
+    "sourceName": {
+      "en": "Pine",
+      "pt-BR": "Pinheiro"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowPineTreeSmall:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeSmall",
+    "sourceName": {
+      "en": "Pine",
+      "pt-BR": "Pinheiro"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeSmall:SoftWoodLog",
+    "itemId": "SoftWoodLog",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeSmall",
+    "sourceName": {
+      "en": "Pine",
+      "pt-BR": "Pinheiro"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowPineTreeSmall:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "MeadowPineTreeSmall",
+    "sourceName": {
+      "en": "Pine",
+      "pt-BR": "Pinheiro"
+    },
+    "minAmount": 3,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeBlocker:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "MeadowTreeBlocker",
+    "sourceName": {
+      "en": "Log",
+      "pt-BR": "Tronco"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeBranch:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "MeadowTreeBranch",
+    "sourceName": {
+      "en": "Branch",
+      "pt-BR": "Galho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Green:Amber",
+    "itemId": "Amber",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Green",
+    "sourceName": {
+      "en": "Large Green Tree",
+      "pt-BR": "Árvore Verde Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowTreeLarge_Green:HardWood",
+    "itemId": "HardWood",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Green",
+    "sourceName": {
+      "en": "Large Green Tree",
+      "pt-BR": "Árvore Verde Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Green:MeadowTreeLarge_GreenSeed",
+    "itemId": "MeadowTreeLarge_GreenSeed",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Green",
+    "sourceName": {
+      "en": "Large Green Tree",
+      "pt-BR": "Árvore Verde Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowTreeLarge_Green:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Green",
+    "sourceName": {
+      "en": "Large Green Tree",
+      "pt-BR": "Árvore Verde Grande"
+    },
+    "minAmount": 5,
+    "maxAmount": 7,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Green:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Green",
+    "sourceName": {
+      "en": "Large Green Tree",
+      "pt-BR": "Árvore Verde Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Yellow:Amber",
+    "itemId": "Amber",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Yellow",
+    "sourceName": {
+      "en": "Large Yellow Tree",
+      "pt-BR": "Árvore Amarela Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:MeadowTreeLarge_Yellow:HardWood",
+    "itemId": "HardWood",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Yellow",
+    "sourceName": {
+      "en": "Large Yellow Tree",
+      "pt-BR": "Árvore Amarela Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Yellow:MeadowTreeLarge_YellowSeed",
+    "itemId": "MeadowTreeLarge_YellowSeed",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Yellow",
+    "sourceName": {
+      "en": "Large Yellow Tree",
+      "pt-BR": "Árvore Amarela Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowTreeLarge_Yellow:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Yellow",
+    "sourceName": {
+      "en": "Large Yellow Tree",
+      "pt-BR": "Árvore Amarela Grande"
+    },
+    "minAmount": 5,
+    "maxAmount": 7,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeLarge_Yellow:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "MeadowTreeLarge_Yellow",
+    "sourceName": {
+      "en": "Large Yellow Tree",
+      "pt-BR": "Árvore Amarela Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeSmall_Green:MeadowTreeSmall_GreenSeed",
+    "itemId": "MeadowTreeSmall_GreenSeed",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Green",
+    "sourceName": {
+      "en": "Green Tree",
+      "pt-BR": "Árvore Verde"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowTreeSmall_Green:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Green",
+    "sourceName": {
+      "en": "Green Tree",
+      "pt-BR": "Árvore Verde"
+    },
+    "minAmount": 3,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeSmall_Green:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Green",
+    "sourceName": {
+      "en": "Green Tree",
+      "pt-BR": "Árvore Verde"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeSmall_Yellow:MeadowTreeSmall_YellowSeed",
+    "itemId": "MeadowTreeSmall_YellowSeed",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Yellow",
+    "sourceName": {
+      "en": "Yellow Tree",
+      "pt-BR": "Árvore Amarela"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:MeadowTreeSmall_Yellow:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Yellow",
+    "sourceName": {
+      "en": "Yellow Tree",
+      "pt-BR": "Árvore Amarela"
+    },
+    "minAmount": 3,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "node:MeadowTreeSmall_Yellow:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "node",
+    "sourceId": "MeadowTreeSmall_Yellow",
+    "sourceName": {
+      "en": "Yellow Tree",
+      "pt-BR": "Árvore Amarela"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:Meteorite:Stone",
+    "itemId": "Stone",
+    "kind": "node",
+    "sourceId": "Meteorite",
+    "sourceName": {
+      "en": "Fallen Meteor",
+      "pt-BR": "Meteoro Caído"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:Mushroom:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "Mushroom",
+    "sourceName": {
+      "en": "Mushroom",
+      "pt-BR": "Cogumelo"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:MushroomTower:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "MushroomTower",
+    "sourceName": {
+      "en": "Shroomy Stump",
+      "pt-BR": "Cepo de Cogumelo"
+    },
+    "minAmount": 4,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "node:MushroomTower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MushroomTower",
+    "sourceName": {
+      "en": "Shroomy Stump",
+      "pt-BR": "Cepo de Cogumelo"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:MushroomTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "MushroomTree",
+    "sourceName": {
+      "en": "Mushroom Tree",
+      "pt-BR": "Árvore-cogumelo"
+    },
+    "minAmount": 8,
+    "maxAmount": 10,
+    "chance": 100
+  },
+  {
+    "id": "node:MushroomTree:SoftWoodLog",
+    "itemId": "SoftWoodLog",
+    "kind": "node",
+    "sourceId": "MushroomTree",
+    "sourceName": {
+      "en": "Mushroom Tree",
+      "pt-BR": "Árvore-cogumelo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:NickelDeposit:LargeNickel",
+    "itemId": "LargeNickel",
+    "kind": "node",
+    "sourceId": "NickelDeposit",
+    "sourceName": {
+      "en": "Nickel Deposit",
+      "pt-BR": "Depósito de Níquel"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:NickelDepositSmall:NickelOre",
+    "itemId": "NickelOre",
+    "kind": "node",
+    "sourceId": "NickelDepositSmall",
+    "sourceName": {
+      "en": "Small Nickel Deposit",
+      "pt-BR": "Depósito de Níquel Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:PalmTree01:PalmTree01Seed",
+    "itemId": "PalmTree01Seed",
+    "kind": "node",
+    "sourceId": "PalmTree01",
+    "sourceName": {
+      "en": "Wingleaf Palm",
+      "pt-BR": "Palmeira de Folha Pinada"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 35
+  },
+  {
+    "id": "node:PalmTree01:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "PalmTree01",
+    "sourceName": {
+      "en": "Wingleaf Palm",
+      "pt-BR": "Palmeira de Folha Pinada"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "node:PalmTree01:Wood",
+    "itemId": "Wood",
+    "kind": "node",
+    "sourceId": "PalmTree01",
+    "sourceName": {
+      "en": "Wingleaf Palm",
+      "pt-BR": "Palmeira de Folha Pinada"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:PondRock:Stone",
+    "itemId": "Stone",
+    "kind": "node",
+    "sourceId": "PondRock",
+    "sourceName": {
+      "en": "Pond Rock",
+      "pt-BR": "Lago Rochoso"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:RedCrystal:LargeRedCrystal",
+    "itemId": "LargeRedCrystal",
+    "kind": "node",
+    "sourceId": "RedCrystal",
+    "sourceName": {
+      "en": "Red Crystal Deposit",
+      "pt-BR": "Depósito de Cristal Vermelho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:RedCrystalSmall:RedCrystal",
+    "itemId": "RedCrystal",
+    "kind": "node",
+    "sourceId": "RedCrystalSmall",
+    "sourceName": {
+      "en": "Small Red Crystal Deposit",
+      "pt-BR": "Pequeno Depósito de Cristal Vermelho"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:Root:HardWood",
+    "itemId": "HardWood",
+    "kind": "node",
+    "sourceId": "Root",
+    "sourceName": {
+      "en": "Hard Root",
+      "pt-BR": "Raiz Resistente"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:SilverDeposit:LargeSilver",
+    "itemId": "LargeSilver",
+    "kind": "node",
+    "sourceId": "SilverDeposit",
+    "sourceName": {
+      "en": "Silver Deposit",
+      "pt-BR": "Depósito de Prata"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:SilverDepositSmall:SilverOre",
+    "itemId": "SilverOre",
+    "kind": "node",
+    "sourceId": "SilverDepositSmall",
+    "sourceName": {
+      "en": "Small Silver Deposit",
+      "pt-BR": "Depósito de Prata Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:SnakeBush:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "SnakeBush",
+    "sourceName": {
+      "en": "Succulent",
+      "pt-BR": "Suculenta"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:Stump:Amber",
+    "itemId": "Amber",
+    "kind": "node",
+    "sourceId": "Stump",
+    "sourceName": {
+      "en": "Stump",
+      "pt-BR": "Cepa"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 5
+  },
+  {
+    "id": "node:Stump:HardWood",
+    "itemId": "HardWood",
+    "kind": "node",
+    "sourceId": "Stump",
+    "sourceName": {
+      "en": "Stump",
+      "pt-BR": "Cepa"
+    },
+    "minAmount": 1,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:Succulent:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "Succulent",
+    "sourceName": {
+      "en": "Succulent",
+      "pt-BR": "Suculenta"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:SucculentBush:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "SucculentBush",
+    "sourceName": {
+      "en": "Succulent",
+      "pt-BR": "Suculenta"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:TallSwampTree:HardwoodLog",
+    "itemId": "HardwoodLog",
+    "kind": "node",
+    "sourceId": "TallSwampTree",
+    "sourceName": {
+      "en": "Starfall Tree",
+      "pt-BR": "Árvore Astrocadente"
+    },
+    "minAmount": 3,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:TallSwampTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "TallSwampTree",
+    "sourceName": {
+      "en": "Starfall Tree",
+      "pt-BR": "Árvore Astrocadente"
+    },
+    "minAmount": 10,
+    "maxAmount": 12,
+    "chance": 100
+  },
+  {
+    "id": "node:TallTechDeposit:LargeTallTech",
+    "itemId": "LargeTallTech",
+    "kind": "node",
+    "sourceId": "TallTechDeposit",
+    "sourceName": {
+      "en": "Ancient Scraps",
+      "pt-BR": "Fragmentos Antigos"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:TinDeposit:LargeTin",
+    "itemId": "LargeTin",
+    "kind": "node",
+    "sourceId": "TinDeposit",
+    "sourceName": {
+      "en": "Tin Deposit",
+      "pt-BR": "Depósito de Estanho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:TinDepositSmall:TinOre",
+    "itemId": "TinOre",
+    "kind": "node",
+    "sourceId": "TinDepositSmall",
+    "sourceName": {
+      "en": "Small Tin Deposit",
+      "pt-BR": "Depósito de Estanho Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "node:Tumblebush:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "node",
+    "sourceId": "Tumblebush",
+    "sourceName": {
+      "en": "Bush",
+      "pt-BR": "Arbusto"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "node:TutorialRock:Stone",
+    "itemId": "Stone",
+    "kind": "node",
+    "sourceId": "TutorialRock",
+    "sourceName": {
+      "en": "Brittle Rock",
+      "pt-BR": "Pedra Quebradiça"
+    },
+    "minAmount": 13,
+    "maxAmount": 13,
+    "chance": 100
+  },
+  {
+    "id": "node:YellowCrystal:LargeYellowCrystal",
+    "itemId": "LargeYellowCrystal",
+    "kind": "node",
+    "sourceId": "YellowCrystal",
+    "sourceName": {
+      "en": "Yellow Crystal Deposit",
+      "pt-BR": "Depósito de Cristal Amarelo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "node:YellowCrystalSmall:YellowCrystal",
+    "itemId": "YellowCrystal",
+    "kind": "node",
+    "sourceId": "YellowCrystalSmall",
+    "sourceName": {
+      "en": "Small Yellow Crystal Deposit",
+      "pt-BR": "Depósito de Cristal Amarelo Pequeno"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "plant:BlackColorflower:BlackColorflowerSeed",
+    "itemId": "BlackColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "BlackColorflower",
+    "sourceName": {
+      "en": "Black Colorflower",
+      "pt-BR": "Coloriflor Preta"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:BlackColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "BlackColorflower",
+    "sourceName": {
+      "en": "Black Colorflower",
+      "pt-BR": "Coloriflor Preta"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:Blooms:Blooms",
+    "itemId": "Blooms",
+    "kind": "plant",
+    "sourceId": "Blooms",
+    "sourceName": {
+      "en": "Lumbloom",
+      "pt-BR": "Lumiflor"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:BlueColorflower:BlueColorflowerSeed",
+    "itemId": "BlueColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "BlueColorflower",
+    "sourceName": {
+      "en": "Blue Colorflower",
+      "pt-BR": "Coloriflor Azul"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:BlueColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "BlueColorflower",
+    "sourceName": {
+      "en": "Blue Colorflower",
+      "pt-BR": "Coloriflor Azul"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:Caroot:Caroot",
+    "itemId": "Caroot",
+    "kind": "plant",
+    "sourceId": "Caroot",
+    "sourceName": {
+      "en": "Caroot",
+      "pt-BR": "Cenoura-forte"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:CherryTree:HardWood",
+    "itemId": "HardWood",
+    "kind": "plant",
+    "sourceId": "CherryTree",
+    "sourceName": {
+      "en": "Mutated Blossom Tree",
+      "pt-BR": "Cerejeira Mutante"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:CherryTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "CherryTree",
+    "sourceName": {
+      "en": "Mutated Blossom Tree",
+      "pt-BR": "Cerejeira Mutante"
+    },
+    "minAmount": 4,
+    "maxAmount": 6,
+    "chance": 100
+  },
+  {
+    "id": "plant:CherryTree:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "plant",
+    "sourceId": "CherryTree",
+    "sourceName": {
+      "en": "Mutated Blossom Tree",
+      "pt-BR": "Cerejeira Mutante"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:Chromaize:Chromaize",
+    "itemId": "Chromaize",
+    "kind": "plant",
+    "sourceId": "Chromaize",
+    "sourceName": {
+      "en": "Chromaize",
+      "pt-BR": "Cromilho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:CoilPlant:CoilPlant",
+    "itemId": "CoilPlant",
+    "kind": "plant",
+    "sourceId": "CoilPlant",
+    "sourceName": {
+      "en": "Coilvine",
+      "pt-BR": "Espideira"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:CottonCrop:CottonCrop",
+    "itemId": "CottonCrop",
+    "kind": "plant",
+    "sourceId": "CottonCrop",
+    "sourceName": {
+      "en": "Cloudbud",
+      "pt-BR": "Botão-nuvem"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:ElectricPlant:ElectricPlant",
+    "itemId": "ElectricPlant",
+    "kind": "plant",
+    "sourceId": "ElectricPlant",
+    "sourceName": {
+      "en": "Zappertwig",
+      "pt-BR": "Eletrofigueira"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:FanBush:FanBushSeed",
+    "itemId": "FanBushSeed",
+    "kind": "plant",
+    "sourceId": "FanBush",
+    "sourceName": {
+      "en": "Fan Bush",
+      "pt-BR": "Arbusto Leque"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:FernBush_Yellow:FernBush_YellowSeed",
+    "itemId": "FernBush_YellowSeed",
+    "kind": "plant",
+    "sourceId": "FernBush_Yellow",
+    "sourceName": {
+      "en": "Yellow Fern",
+      "pt-BR": "Samambaia Amarela"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:FernBush:FernBushSeed",
+    "itemId": "FernBushSeed",
+    "kind": "plant",
+    "sourceId": "FernBush",
+    "sourceName": {
+      "en": "Green Fern",
+      "pt-BR": "Samambaia Verde"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:FuelRock:FuelRock",
+    "itemId": "FuelRock",
+    "kind": "plant",
+    "sourceId": "FuelRock",
+    "sourceName": {
+      "en": "Refillite",
+      "pt-BR": "Refilita"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:FuelWild:FuelWild",
+    "itemId": "FuelWild",
+    "kind": "plant",
+    "sourceId": "FuelWild",
+    "sourceName": {
+      "en": "Honeybottle",
+      "pt-BR": "Copo-de-mel"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:GloTree:GloSeed",
+    "itemId": "GloSeed",
+    "kind": "plant",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "plant:GloTree:GloWood",
+    "itemId": "GloWood",
+    "kind": "plant",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "plant:GloTree:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "GloTree",
+    "sourceName": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "minAmount": 4,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "plant:GreenColorflower:GreenColorflowerSeed",
+    "itemId": "GreenColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "GreenColorflower",
+    "sourceName": {
+      "en": "Green Colorflower",
+      "pt-BR": "Coloriflor Verde"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:GreenColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "GreenColorflower",
+    "sourceName": {
+      "en": "Green Colorflower",
+      "pt-BR": "Coloriflor Verde"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:HortensiaBush_Flower:HortensiaBush_FlowerSeed",
+    "itemId": "HortensiaBush_FlowerSeed",
+    "kind": "plant",
+    "sourceId": "HortensiaBush_Flower",
+    "sourceName": {
+      "en": "Flowering Hortensia Bush",
+      "pt-BR": "Arbusto de Hortênsia Florido"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:HortensiaBush_Yellow:HortensiaBush_YellowSeed",
+    "itemId": "HortensiaBush_YellowSeed",
+    "kind": "plant",
+    "sourceId": "HortensiaBush_Yellow",
+    "sourceName": {
+      "en": "Red Hortensia Bush",
+      "pt-BR": "Arbusto de Hortênsia Vermelha"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:HortensiaBush:HortensiaBushSeed",
+    "itemId": "HortensiaBushSeed",
+    "kind": "plant",
+    "sourceId": "HortensiaBush",
+    "sourceName": {
+      "en": "Green Hortensia Bush",
+      "pt-BR": "Arbusto de Hortênsia Verde"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:LargeBush_Yellow:LargeBush_YellowSeed",
+    "itemId": "LargeBush_YellowSeed",
+    "kind": "plant",
+    "sourceId": "LargeBush_Yellow",
+    "sourceName": {
+      "en": "Large Red Bush",
+      "pt-BR": "Arbusto Grande Vermelho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:LargeBush:LargeBushSeed",
+    "itemId": "LargeBushSeed",
+    "kind": "plant",
+    "sourceId": "LargeBush",
+    "sourceName": {
+      "en": "Large Bush",
+      "pt-BR": "Arbusto Grande"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:MeadowTreeLarge_Pink:HardWood",
+    "itemId": "HardWood",
+    "kind": "plant",
+    "sourceId": "MeadowTreeLarge_Pink",
+    "sourceName": {
+      "en": "Mutated Large Pink Tree",
+      "pt-BR": "Árvore Rosa Mutante Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 4,
+    "chance": 100
+  },
+  {
+    "id": "plant:MeadowTreeLarge_Pink:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "MeadowTreeLarge_Pink",
+    "sourceName": {
+      "en": "Mutated Large Pink Tree",
+      "pt-BR": "Árvore Rosa Mutante Grande"
+    },
+    "minAmount": 5,
+    "maxAmount": 7,
+    "chance": 100
+  },
+  {
+    "id": "plant:MeadowTreeLarge_Pink:WoodLog",
+    "itemId": "WoodLog",
+    "kind": "plant",
+    "sourceId": "MeadowTreeLarge_Pink",
+    "sourceName": {
+      "en": "Mutated Large Pink Tree",
+      "pt-BR": "Árvore Rosa Mutante Grande"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "plant:OrangeColorflower:OrangeColorflowerSeed",
+    "itemId": "OrangeColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "OrangeColorflower",
+    "sourceName": {
+      "en": "Orange Colorflower",
+      "pt-BR": "Coloriflor Laranja"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:OrangeColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "OrangeColorflower",
+    "sourceName": {
+      "en": "Orange Colorflower",
+      "pt-BR": "Coloriflor Laranja"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:Papristalk:Papristalk",
+    "itemId": "Papristalk",
+    "kind": "plant",
+    "sourceId": "Papristalk",
+    "sourceName": {
+      "en": "Papristalk",
+      "pt-BR": "Lampimentão"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:Pine:PineSeed",
+    "itemId": "PineSeed",
+    "kind": "plant",
+    "sourceId": "Pine",
+    "sourceName": {
+      "en": "Pine",
+      "pt-BR": "Pinheiro"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 34
+  },
+  {
+    "id": "plant:Polyberry:Polyberry",
+    "itemId": "Polyberry",
+    "kind": "plant",
+    "sourceId": "Polyberry",
+    "sourceName": {
+      "en": "Polyberry",
+      "pt-BR": "Plastimora"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:PurpleColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "PurpleColorflower",
+    "sourceName": {
+      "en": "Purple Colorflower",
+      "pt-BR": "Coloriflor Roxa"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:PurpleColorflower:PurpleColorflowerSeed",
+    "itemId": "PurpleColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "PurpleColorflower",
+    "sourceName": {
+      "en": "Purple Colorflower",
+      "pt-BR": "Coloriflor Roxa"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:Quartznip:Quartznip",
+    "itemId": "Quartznip",
+    "kind": "plant",
+    "sourceId": "Quartznip",
+    "sourceName": {
+      "en": "Quartznip",
+      "pt-BR": "Pastiquartzo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:Rabbage:Rabbage",
+    "itemId": "Rabbage",
+    "kind": "plant",
+    "sourceId": "Rabbage",
+    "sourceName": {
+      "en": "Rabbage",
+      "pt-BR": "Rubipolho"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:RedColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "RedColorflower",
+    "sourceName": {
+      "en": "Red Colorflower",
+      "pt-BR": "Coloriflor Vermelha"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:RedColorflower:RedColorflowerSeed",
+    "itemId": "RedColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "RedColorflower",
+    "sourceName": {
+      "en": "Red Colorflower",
+      "pt-BR": "Coloriflor Vermelha"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:RockPlant:LargeRock",
+    "itemId": "LargeRock",
+    "kind": "plant",
+    "sourceId": "RockPlant",
+    "sourceName": {
+      "en": "Gravelgourd",
+      "pt-BR": "Pedregolha"
+    },
+    "minAmount": 2,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "plant:RockPlant:RockPlantSeed",
+    "itemId": "RockPlantSeed",
+    "kind": "plant",
+    "sourceId": "RockPlant",
+    "sourceName": {
+      "en": "Gravelgourd",
+      "pt-BR": "Pedregolha"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:RockPlant:Stone",
+    "itemId": "Stone",
+    "kind": "plant",
+    "sourceId": "RockPlant",
+    "sourceName": {
+      "en": "Gravelgourd",
+      "pt-BR": "Pedregolha"
+    },
+    "minAmount": 1,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:WaterPlant:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "WaterPlant",
+    "sourceName": {
+      "en": "Pondpitcher",
+      "pt-BR": "Hidroplanta"
+    },
+    "minAmount": 3,
+    "maxAmount": 5,
+    "chance": 100
+  },
+  {
+    "id": "plant:WaterPlant:WaterPlantSeed",
+    "itemId": "WaterPlantSeed",
+    "kind": "plant",
+    "sourceId": "WaterPlant",
+    "sourceName": {
+      "en": "Pondpitcher",
+      "pt-BR": "Hidroplanta"
+    },
+    "minAmount": 1,
+    "maxAmount": 2,
+    "chance": 100
+  },
+  {
+    "id": "plant:Wheat:Wheat",
+    "itemId": "Wheat",
+    "kind": "plant",
+    "sourceId": "Wheat",
+    "sourceName": {
+      "en": "Wheat",
+      "pt-BR": "Trigo"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:WhiteColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "WhiteColorflower",
+    "sourceName": {
+      "en": "White Colorflower",
+      "pt-BR": "Coloriflor Branca"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:WhiteColorflower:WhiteColorflowerSeed",
+    "itemId": "WhiteColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "WhiteColorflower",
+    "sourceName": {
+      "en": "White Colorflower",
+      "pt-BR": "Coloriflor Branca"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  },
+  {
+    "id": "plant:YellowColorflower:PlantFiber",
+    "itemId": "PlantFiber",
+    "kind": "plant",
+    "sourceId": "YellowColorflower",
+    "sourceName": {
+      "en": "Yellow Colorflower",
+      "pt-BR": "Coloriflor Amarela"
+    },
+    "minAmount": 2,
+    "maxAmount": 3,
+    "chance": 100
+  },
+  {
+    "id": "plant:YellowColorflower:YellowColorflowerSeed",
+    "itemId": "YellowColorflowerSeed",
+    "kind": "plant",
+    "sourceId": "YellowColorflower",
+    "sourceName": {
+      "en": "Yellow Colorflower",
+      "pt-BR": "Coloriflor Amarela"
+    },
+    "minAmount": 1,
+    "maxAmount": 1,
+    "chance": 100
+  }
+]

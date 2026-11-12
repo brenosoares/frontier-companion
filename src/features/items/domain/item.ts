@@ -11,7 +11,7 @@ export const ItemSchema = z.object({
   tags: z.array(PascalCaseId),
   weight: z.number().int().nonnegative(),
   sellValue: z.number().int().nonnegative(),
-  /** Icon file stem (e.g. "T_AdvancedFuel1Icon"); null when the item has no icon. */
+  /** Icon file name without extension, served at `/icons/items/<icon>.png`; null when unavailable. */
   icon: z.string().nullable(),
   /** Game feature flag gating this item, or null when ungated. */
   featureFlag: z.string().nullable(),

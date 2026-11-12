@@ -1,9 +1,11 @@
 {
   "schemaVersion": 1,
   "gameVersion": "1.0.2571",
-  "dataVersion": "7d7ab5843b02",
+  "dataVersion": "724c53e2694e",
   "counts": {
     "items": 285,
-    "recipes": 362
+    "recipes": 362,
+    "stations": 29,
+    "itemSources": 187
   }
 }

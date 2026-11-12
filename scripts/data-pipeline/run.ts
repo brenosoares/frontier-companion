@@ -1,9 +1,15 @@
-import { readdir, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { buildDataset, type RawTableSource } from "./build-dataset";
-import { DATA_TABLES_DIR, GAME_VERSION, ICONS_DIR, OUTPUT_DIR } from "./config";
+import {
+  DATA_TABLES_DIR,
+  GAME_VERSION,
+  OUTPUT_DIR,
+  PIXEL_ICONS_DIR,
+  PUBLIC_ITEM_ICONS_DIR,
+} from "./config";
 import { emitDataset } from "./emit";
-import type { Dataset } from "./quality/integrity";
+import { copyItemIcons, listIconNames } from "./icons";
 
 const fileSource: RawTableSource = {
   async readTable(tableName) {
@@ -11,11 +17,6 @@ const fileSource: RawTableSource = {
     return JSON.parse(await readFile(file, "utf-8"));
   },
 };
-
-async function findMissingIcons({ items }: Dataset): Promise<string[]> {
-  const available = new Set((await readdir(ICONS_DIR)).map((file) => path.parse(file).name));
-  return items.flatMap((item) => (item.icon && !available.has(item.icon) ? [item.id] : []));
-}
 
 function fail(title: string, lines: readonly string[]): never {
   console.error(`\n✖ ${title} (${lines.length})`);
@@ -25,7 +26,11 @@ function fail(title: string, lines: readonly string[]): never {
 }
 
 async function main(): Promise<void> {
-  const { dataset, integrityIssues, sensitiveFindings } = await buildDataset(fileSource);
+  const iconNames = await listIconNames(PIXEL_ICONS_DIR);
+  const { dataset, warnings, integrityIssues, sensitiveFindings } = await buildDataset(
+    fileSource,
+    iconNames,
+  );
 
   if (integrityIssues.length > 0) fail("Integrity issues", integrityIssues);
   if (sensitiveFindings.length > 0) {
@@ -36,14 +41,18 @@ async function main(): Promise<void> {
   }
 
   const manifest = await emitDataset(OUTPUT_DIR, dataset, GAME_VERSION);
-  const missingIcons = await findMissingIcons(dataset);
+  const iconCount = await copyItemIcons(dataset.items, PIXEL_ICONS_DIR, PUBLIC_ITEM_ICONS_DIR);
+  const withoutIcon = dataset.items.filter((item) => item.icon === null).length;
+  const { counts } = manifest;
 
   console.warn(`✔ Emitted to ${OUTPUT_DIR}`);
   console.warn(`  game ${manifest.gameVersion} · data ${manifest.dataVersion}`);
-  console.warn(`  ${manifest.counts.items} items · ${manifest.counts.recipes} recipes`);
-  if (missingIcons.length > 0) {
-    console.warn(`  ⚠ ${missingIcons.length} items reference icons missing from the dump`);
-  }
+  console.warn(
+    `  ${counts.items} items · ${counts.recipes} recipes · ${counts.stations} stations · ${counts.itemSources} item sources`,
+  );
+  console.warn(`  ${iconCount} icons published to ${PUBLIC_ITEM_ICONS_DIR}`);
+  if (withoutIcon > 0) console.warn(`  ⚠ ${withoutIcon} items have no icon in the icon set`);
+  for (const warning of warnings) console.warn(`  ⚠ ${warning}`);
 }
 
 main().catch((error: unknown) => {
