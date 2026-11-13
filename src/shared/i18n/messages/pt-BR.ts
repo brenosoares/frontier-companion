@@ -263,6 +263,14 @@ export const ptBR = {
     chipsGeneral: "Chips sem parte definida",
     general: "Sem parte definida",
     cards: { attributes: "Atributos", power: "Energia {count}", unique: "Único" },
+    compare: {
+      title: "Comparar {part}",
+      intro: "Todos os níveis lado a lado: atributos e custo de construção.",
+      attribute: "Atributo",
+      cost: "Custo de construção",
+      none: "Não tem",
+      link: "Comparar níveis",
+    },
     yes: "Sim",
     part: {
       tier: "Nível {tier} de {total}",

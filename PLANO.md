@@ -147,7 +147,7 @@ Cada feature segue o mesmo molde: **domain → repository → UI → testes → 
 2. [x] **Busca global (v1)** — campo do header leva ao catálogo com `?q=`. _Evolução:_ página de busca própria quando houver mais entidades.
 3. [x] **Receitas** — hub de fabricação por máquina → cards (ícone, nome, custo, onde é feito) → detalhe; **calculadora de materiais** ([ADR 0008](docs/adr/0008-recipes-and-materials-calculator.md), [ADR 0009](docs/adr/0009-recipes-hub-constructs-and-categories.md)). **Decididos pelo dono:** flags (todas lançadas), "[Obsolete]" e "PLACEHOLDER" são descartados. ADR 0009 revisado. **Construções e decorações** têm seção própria (`/constructs`, [ADR 0013](docs/adr/0013-constructs-section.md)).
 4. [ ] **Outras calculadoras** (rendimento, custo). _A de materiais já está no item 3._
-5. [ ] **Comparador** de itens/upgrades.
+5. [~] **Comparador** — feito para níveis de partes do mecha (`/mech/compare/[category]`, [ADR 0018](docs/adr/0018-mech-compare.md)); faltam itens e chips.
 6. [ ] **Checklist de progresso** — persistência local (Fase 6).
 7. [ ] **Changelog por patch** (diff do JSON curado entre versões).
 8. [ ] Demais entidades sob demanda: construções, módulos, plantas, criaturas, missões…
@@ -156,7 +156,7 @@ Cada feature segue o mesmo molde: **domain → repository → UI → testes → 
 11. [x] **Mecha** — partes do corpo, ferramentas, modos de transformação e chips de upgrade por parte, com custos ([ADR 0014](docs/adr/0014-mech.md)).
 12. [x] **Plantas** — lavouras e plantas grandes cultivadas: tempos, colheita, frutos e semente ([ADR 0015](docs/adr/0015-plants.md)). Fertilizantes, reagentes e qualidade da colheita em `/plants/fertilizing` ([ADR 0017](docs/adr/0017-fertilizers-and-quality.md)).
 
-> Ordem sugerida das próximas: calculadoras de rendimento e custo → comparador.
+> Ordem sugerida das próximas: calculadoras de rendimento e custo → comparador de itens e chips.
 
 ---
 
