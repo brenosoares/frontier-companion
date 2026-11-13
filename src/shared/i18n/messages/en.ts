@@ -256,6 +256,14 @@ export const en: Messages = {
     chipsGeneral: "Chips with no set part",
     general: "No set part",
     cards: { attributes: "Attributes", power: "Power {count}", unique: "Unique" },
+    compare: {
+      title: "Compare {part}",
+      intro: "Every tier side by side: attributes and build cost.",
+      attribute: "Attribute",
+      cost: "Build cost",
+      none: "None",
+      link: "Compare tiers",
+    },
     yes: "Yes",
     part: {
       tier: "Tier {tier} of {total}",

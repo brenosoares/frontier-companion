@@ -181,6 +181,84 @@ test.describe("mech chip detail", () => {
   });
 });
 
+test.describe("mech comparison", () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test("compares every tier of a part side by side, attributes first and cost below", async ({
+    page,
+  }) => {
+    await page.goto("/pt-BR/mech/category/spike-saw");
+    await page.getByRole("link", { name: "Comparar níveis" }).click();
+    await expect(page).toHaveURL(/\/pt-BR\/mech\/compare\/spike-saw$/);
+
+    await expect(
+      page.getByRole("heading", { level: 1, name: "Comparar Serra Dentada" }),
+    ).toBeVisible();
+    const table = page.getByRole("table", { name: "Comparar Serra Dentada" });
+    const headers = table.locator("thead").getByRole("columnheader");
+    await expect(headers).toHaveCount(9);
+    await expect(headers.nth(1)).toContainText("Serra Dentada Mk. 0");
+    await expect(headers.last()).toContainText("Serra Dentada Mk. 7");
+
+    const durability = table.getByRole("row").filter({
+      has: page.getByRole("rowheader", { name: "Durabilidade" }),
+    });
+    await expect(durability.getByRole("cell")).toHaveText([
+      "1.000",
+      "1.000",
+      "1.500",
+      "2.000",
+      "2.500",
+      "3.000",
+      "4.000",
+      "5.000",
+    ]);
+
+    await expect(table.getByText("Custo de construção", { exact: true })).toBeVisible();
+    const copper = table.getByRole("row").filter({
+      has: page.locator('a[href$="/items/CopperOre"]'),
+    });
+    await expect(copper.getByRole("cell").first()).toHaveText("3×");
+    await expect(copper.getByRole("cell").nth(2)).toHaveText("—");
+    await expect(copper.getByRole("cell").nth(2).getByLabel("Não tem")).toBeVisible();
+  });
+
+  test("a stat only some tiers have shows a dash for the others", async ({ page }) => {
+    await page.goto("/pt-BR/mech/compare/spike-saw");
+    const sweep = page
+      .getByRole("row")
+      .filter({ has: page.getByRole("rowheader", { name: "Varredura", exact: true }) });
+    await expect(sweep.getByRole("cell").first()).toContainText("—");
+    await expect(sweep.getByRole("cell").nth(1)).toHaveText("Sim");
+  });
+
+  test("column headers link to each part", async ({ page }) => {
+    await page.goto("/pt-BR/mech/compare/engine");
+    await page
+      .getByRole("columnheader", { name: /Motor Estrutural/ })
+      .getByRole("link")
+      .click();
+    await expect(page).toHaveURL(/\/pt-BR\/mech\/NakedEngine$/);
+  });
+
+  test("is localized, and chip categories or unknown ones have no comparison", async ({
+    page,
+    request,
+  }) => {
+    await page.goto("/en/mech/compare/legs");
+    await expect(page.getByRole("heading", { level: 1, name: "Compare Legs" })).toBeVisible();
+    await expect(page.getByRole("rowheader", { name: "Durability" })).toBeVisible();
+
+    expect((await request.get("/pt-BR/mech/compare/chips-legs")).status()).toBe(404);
+    expect((await request.get("/pt-BR/mech/compare/nope")).status()).toBe(404);
+  });
+
+  test("chip category pages have no compare link", async ({ page }) => {
+    await page.goto("/pt-BR/mech/category/chips-spike-saw");
+    await expect(page.getByRole("link", { name: "Comparar níveis" })).toHaveCount(0);
+  });
+});
+
 test.describe("mech accessibility (axe)", () => {
   const pages = [
     "/pt-BR/mech",
@@ -190,6 +268,8 @@ test.describe("mech accessibility (axe)", () => {
     "/pt-BR/mech/Jackhammer3",
     "/en/mech/NakedArmSet",
     "/pt-BR/mech/chip/ToolRange0",
+    "/pt-BR/mech/compare/spike-saw",
+    "/en/mech/compare/arms",
   ];
 
   for (const scheme of ["dark", "light"] as const) {
@@ -209,7 +289,12 @@ test.describe("mech accessibility (axe)", () => {
 test.describe("mech on mobile", () => {
   test.use({ viewport: { width: 375, height: 700 } });
 
-  for (const path of ["/pt-BR/mech", "/pt-BR/mech/category/engine", "/pt-BR/mech/Jackhammer3"]) {
+  for (const path of [
+    "/pt-BR/mech",
+    "/pt-BR/mech/category/engine",
+    "/pt-BR/mech/Jackhammer3",
+    "/pt-BR/mech/compare/spike-saw",
+  ]) {
     test(`${path} has no horizontal scroll`, async ({ page }) => {
       await page.goto(path);
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

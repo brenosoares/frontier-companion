@@ -67,6 +67,14 @@ export default async function MechCategoryPage({
       <header className="flex flex-col gap-1">
         <p className="text-sm text-muted">{messages.mech.groups[summary.group]}</p>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{summary.label}</h1>
+        {summary.group !== "chips" && (
+          <Link
+            href={localizedPath(locale, `/mech/compare/${category}`)}
+            className="self-start rounded text-sm underline decoration-border-strong underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+          >
+            {messages.mech.compare.link}
+          </Link>
+        )}
       </header>
 
       {/* useSearchParams needs a Suspense boundary so the rest of the page stays static. */}
