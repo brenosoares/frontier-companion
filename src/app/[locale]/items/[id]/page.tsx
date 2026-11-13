@@ -20,9 +20,11 @@ import {
   itemRepository,
   itemSourceRepository,
   mechRepository,
+  plantRepository,
   recipeRepository,
   stationRepository,
 } from "../../data";
+import { recipeNames } from "../../recipe-names";
 import { assertLocale } from "../../resolve-locale";
 
 export async function generateStaticParams() {
@@ -61,7 +63,7 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
   const item = await itemRepository.getById(id);
   if (!item) notFound();
 
-  const [items, stations, producing, consuming, sources, mechParts, mechChips, constructs] =
+  const [items, stations, producing, consuming, sources, mechParts, mechChips, constructs, plants] =
     await Promise.all([
       itemRepository.getAll(),
       stationRepository.getAll(),
@@ -71,16 +73,10 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
       mechRepository.getParts(),
       mechRepository.getChips(),
       constructRepository.getAll(),
+      plantRepository.getAll(),
     ]);
 
-  const itemNames = new Map(items.map((entry) => [entry.id, entry.name[locale]]));
-  const itemIcons = new Map(items.map((entry) => [entry.id, entry.icon]));
-  const stationNames = new Map(stations.map((station) => [station.id, station.name[locale]]));
-  const names = {
-    itemName: (itemId: string) => itemNames.get(itemId) ?? itemId,
-    itemIcon: (itemId: string) => itemIcons.get(itemId) ?? null,
-    stationName: (stationId: string) => stationNames.get(stationId) ?? stationId,
-  };
+  const names = recipeNames(items, stations, locale);
   const toViews = (recipes: readonly Recipe[]) =>
     recipes.map((recipe) => toRecipeView(recipe, names));
 
@@ -202,7 +198,12 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
 
       {hasSources && (
         <Section title={text.detail.whereToFind}>
-          <ItemSourceList sources={sources} locale={locale} labels={text.sources} />
+          <ItemSourceList
+            sources={sources}
+            locale={locale}
+            labels={text.sources}
+            plantIds={plants.map((plant) => plant.id)}
+          />
         </Section>
       )}
 

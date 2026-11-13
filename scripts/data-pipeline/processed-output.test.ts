@@ -5,6 +5,8 @@ import { describe, expect, it } from "vitest";
 import { DatasetManifestSchema } from "@/shared/domain/dataset-manifest";
 import { PART_CATEGORIES } from "@/features/mech/domain/mech";
 import { IncubatorSchema } from "@/features/animals/domain/animal";
+import { JsonPlantRepository } from "@/features/plants/data/json-plant-repository";
+import { CROP_TYPES } from "@/features/plants/domain/plant";
 import { JsonMechRepository } from "@/features/mech/data/json-mech-repository";
 import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
@@ -21,6 +23,7 @@ import {
   OUTPUT_DIR,
   PUBLIC_ANIMAL_ICONS_DIR,
   PUBLIC_MECH_ICONS_DIR,
+  PUBLIC_PLANT_ICONS_DIR,
   PUBLIC_CONSTRUCT_ICONS_DIR,
   PUBLIC_ITEM_ICONS_DIR,
 } from "./config";
@@ -63,6 +66,7 @@ describe("committed dataset (data/processed)", () => {
     const mechStats = await mech.getStats();
     const mechParts = await mech.getParts();
     const mechChips = await mech.getChips();
+    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
 
     expect(items.length).toBeGreaterThan(0);
     expect(recipes.length).toBeGreaterThan(0);
@@ -79,6 +83,7 @@ describe("committed dataset (data/processed)", () => {
         mechStats,
         mechParts,
         mechChips,
+        plants,
       }),
     ).toEqual([]);
     expect(
@@ -107,6 +112,7 @@ describe("committed dataset (data/processed)", () => {
     const animals = (await read("animals.json")) as unknown[];
     const mechParts = (await read("mech-parts.json")) as unknown[];
     const mechChips = (await read("mech-chips.json")) as unknown[];
+    const plants = (await read("plants.json")) as unknown[];
 
     expect(manifest.gameVersion).toBe(GAME_VERSION);
     expect(manifest.counts).toEqual({
@@ -118,6 +124,7 @@ describe("committed dataset (data/processed)", () => {
       animals: animals.length,
       mechParts: mechParts.length,
       mechChips: mechChips.length,
+      plants: plants.length,
     });
   });
 
@@ -243,5 +250,30 @@ describe("committed dataset (data/processed)", () => {
       expect(tiers.length).toBeGreaterThan(0);
       expect(tiers).toEqual(tiers.map((_, index) => index + 1));
     }
+  });
+
+  it("has a UI label, in every locale, for every crop type and plant group", async () => {
+    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
+    for (const locale of LOCALES) {
+      const { types, groups } = getMessages(locale).plants;
+      const typeLabels: Record<string, string> = types;
+      const groupLabels: Record<string, string> = groups;
+      expect(CROP_TYPES.filter((type) => !(type in typeLabels))).toEqual([]);
+      expect(plants.filter((plant) => !(plant.kind in groupLabels)).map((p) => p.id)).toEqual([]);
+    }
+  });
+
+  it("publishes a PNG for every plant icon", async () => {
+    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
+    const icons = plants.flatMap((plant) => (plant.icon ? [plant.icon] : []));
+
+    expect(icons.length).toBeGreaterThan(0);
+    const missing: string[] = [];
+    for (const icon of icons) {
+      await access(path.join(PUBLIC_PLANT_ICONS_DIR, `${icon}.png`)).catch(() =>
+        missing.push(icon),
+      );
+    }
+    expect(missing).toEqual([]);
   });
 });

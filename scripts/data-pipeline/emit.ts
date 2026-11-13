@@ -18,6 +18,7 @@ const COLLECTIONS = [
   ["mechStats", "mech-stats.json"],
   ["mechParts", "mech-parts.json"],
   ["mechChips", "mech-chips.json"],
+  ["plants", "plants.json"],
 ] as const satisfies readonly (readonly [keyof Dataset, string])[];
 
 export function buildManifest(dataset: Dataset, gameVersion: string): DatasetManifest {
@@ -38,6 +39,7 @@ export function buildManifest(dataset: Dataset, gameVersion: string): DatasetMan
       animals: dataset.animals.length,
       mechParts: dataset.mechParts.length,
       mechChips: dataset.mechChips.length,
+      plants: dataset.plants.length,
     },
   };
 }

@@ -21,6 +21,7 @@ export const en: Messages = {
     calculator: "Calculator",
     constructs: "Constructs",
     mech: "Mech",
+    plants: "Plants",
     animals: "Animals",
   },
   search: {
@@ -283,6 +284,46 @@ export const en: Messages = {
         "This chip has a feature flag in the game data and may not be available in the current version.",
       kind: "Chip",
     },
+  },
+  plants: {
+    title: "Plants",
+    intro:
+      "The plants you grow: how long they need, what they give when harvested and each one's seed.",
+    back: "Back to plants",
+    groups: { crop: "Crops", large: "Trees and flowers" },
+    groupIntros: {
+      crop: "Small plants, by nutrient type.",
+      large: "Large plants you tend that give fruit or wood.",
+    },
+    types: { Nitrogenic: "Nitrogenic", Phosphoric: "Phosphoric", Potassic: "Potassic" },
+    mature: "Matures in {days}",
+    days: { one: "{count} day", other: "{count} days" },
+    seedLabel: "Seed",
+    cultivation: {
+      title: "Growing",
+      type: "Type",
+      mature: "To mature",
+      dry: "Until it dries",
+      breaking: "Breaking level",
+      dryHint: "A crop needs water within this interval to avoid drying out.",
+    },
+    harvest: {
+      title: "Harvest",
+      hint: "What drops when the plant is harvested. The chance is that of at least one unit.",
+      none: "The game data does not list what this plant gives when harvested.",
+    },
+    fruit: {
+      title: "Fruit",
+      daysToGrow: "Time to grow a fruit",
+      lifetime: "Fruits over its lifetime",
+    },
+    seed: { title: "Seed", none: "The game data does not name a seed for this plant." },
+    usedIn: {
+      title: "Used in",
+      shared: "Items that several plants give. See where each is used on the item page:",
+      none: "No recipe uses what this plant gives.",
+    },
+    chance: "{chance} chance",
   },
   animals: {
     title: "Animals",

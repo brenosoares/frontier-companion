@@ -41,6 +41,8 @@ interface ItemSourceListProps {
   sources: readonly ItemSource[];
   locale: Locale;
   labels: Messages["items"]["sources"];
+  /** Plants that have a page; only their sources link to it (scenery plants have none). */
+  plantIds?: readonly string[];
 }
 
 /** "3×" or "3–5×" (en dash), localized. */
@@ -55,8 +57,14 @@ function formatChance(chance: number, locale: Locale): string {
   );
 }
 
-/** Origins that have a page of their own: the seeds of a mutation, a large item, and animals. */
-function sourceHref(source: ItemSource, locale: Locale): string | null {
+/** Origins that have a page of their own: mutation seeds, large items, animals and plants. */
+function sourceHref(
+  source: ItemSource,
+  locale: Locale,
+  plantIds: ReadonlySet<string>,
+): string | null {
+  if ((source.kind === "plant" || source.kind === "plant-fruit") && plantIds.has(source.sourceId))
+    return localizedPath(locale, `/plants/${source.sourceId}`);
   if (source.kind === "mutation" || source.kind === "large-item")
     return localizedPath(locale, `/items/${source.sourceId}`);
   if (source.kind.startsWith("animal-") || source.kind === "critter-feed")
@@ -67,7 +75,8 @@ function sourceHref(source: ItemSource, locale: Locale): string | null {
 const LINK_CLASS =
   "rounded underline decoration-border-strong underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring";
 
-export function ItemSourceList({ sources, locale, labels }: ItemSourceListProps) {
+export function ItemSourceList({ sources, locale, labels, plantIds = [] }: ItemSourceListProps) {
+  const linkablePlants = new Set(plantIds);
   return (
     <ul className="grid gap-3 sm:grid-cols-2">
       {sources.map((source) => {
@@ -85,8 +94,8 @@ export function ItemSourceList({ sources, locale, labels }: ItemSourceListProps)
             <Icon aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-muted" />
             <div className="flex min-w-0 flex-col gap-1.5">
               <span className="font-medium break-words">
-                {sourceHref(source, locale) ? (
-                  <Link href={sourceHref(source, locale)!} className={LINK_CLASS}>
+                {sourceHref(source, locale, linkablePlants) ? (
+                  <Link href={sourceHref(source, locale, linkablePlants)!} className={LINK_CLASS}>
                     {title}
                   </Link>
                 ) : (
