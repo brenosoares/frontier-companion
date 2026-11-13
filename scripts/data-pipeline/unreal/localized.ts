@@ -19,3 +19,17 @@ export function toLocalizedText(raw: RawText): LocalizedText | null {
   const ptBR = raw.LocalizedString.trim();
   return en && ptBR ? { en, "pt-BR": ptBR } : null;
 }
+
+/**
+ * Reduces the game's rich text to plain text: `<Mark1>Hose</>` -> `Hose`. Key bindings the game
+ * fills in at runtime (`{UseToolPrimary}`) cannot be known here, so they read `[UseToolPrimary]`.
+ */
+export function toPlainText(text: LocalizedText | null): LocalizedText | null {
+  if (!text) return null;
+  const plain = (value: string) =>
+    value
+      .replace(/<[^>]*>/g, "")
+      .replace(/\{(\w+)\}/g, "[$1]")
+      .trim();
+  return { en: plain(text.en), "pt-BR": plain(text["pt-BR"]) };
+}

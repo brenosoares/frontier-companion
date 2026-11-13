@@ -81,4 +81,24 @@ describe("CraftCard", () => {
     expect(screen.queryByText("Cost")).not.toBeInTheDocument();
     expect(screen.queryByText("Made in:")).not.toBeInTheDocument();
   });
+
+  it("can show attributes as pills above the cost instead of below it", () => {
+    renderCard({ detailsFirst: true, madeIn: ["Durability: 2,000", "Mod Slots: 3"] });
+    const link = screen.getByRole("link");
+
+    const details = within(link).getByText("Made in");
+    const cost = within(link).getByText("Cost");
+    expect(details.compareDocumentPosition(cost) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(within(link).getByText("Durability: 2,000")).toBeInTheDocument();
+    expect(within(link).getByText("Mod Slots: 3")).toBeInTheDocument();
+  });
+
+  it("keeps the cost first and the pills last by default", () => {
+    renderCard();
+    const link = screen.getByRole("link");
+
+    const cost = within(link).getByText("Cost");
+    const madeIn = within(link).getByText("Made in:");
+    expect(cost.compareDocumentPosition(madeIn) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
 });

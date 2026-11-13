@@ -7,6 +7,7 @@ const ICON_DIRECTORIES = {
   item: "/icons/items",
   construct: "/icons/constructs",
   animal: "/icons/animals",
+  mech: "/icons/mech",
 } as const;
 
 export type GameIconKind = keyof typeof ICON_DIRECTORIES;

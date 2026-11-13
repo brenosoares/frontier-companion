@@ -13,6 +13,8 @@ export const DatasetManifestSchema = z.object({
     itemSources: z.number().int().nonnegative(),
     constructs: z.number().int().nonnegative(),
     animals: z.number().int().nonnegative(),
+    mechParts: z.number().int().nonnegative(),
+    mechChips: z.number().int().nonnegative(),
   }),
 });
 

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "Hauling.Capacity",
+    "name": {
+      "en": "Hauling Capacity",
+      "pt-BR": "Capacidade de Transporte"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Health.Max",
+    "name": {
+      "en": "Durability",
+      "pt-BR": "Durabilidade"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Inventory.Add",
+    "name": {
+      "en": "Inventory Capacity",
+      "pt-BR": "Capacidade do Inventário"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "IrrigationHose.HydroBlast.Unlock",
+    "name": {
+      "en": "Hydro Blast",
+      "pt-BR": "Hidrojato"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "IrrigationHose.ImpactRadius",
+    "name": {
+      "en": "Impact Radius",
+      "pt-BR": "Raio de Impacto"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "IrrigationHose.LitersPerSecond",
+    "name": {
+      "en": "Flow Rate",
+      "pt-BR": "Vazão"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "IrrigationHose.SpreadBoxWidth",
+    "name": {
+      "en": "Hydro Blast Width",
+      "pt-BR": "Largura do Hidrojato"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Mech.Stability",
+    "name": {
+      "en": "Stability",
+      "pt-BR": "Estabilidade"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "ResourceVacuum.HarvestVortex",
+    "name": {
+      "en": "Harvest Vortex",
+      "pt-BR": "Vórtice de Colheita"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "SeedShooter.LockOn.Add",
+    "name": {
+      "en": "Lock-On Targets",
+      "pt-BR": "Mira em Alvos"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "SeedShooter.LockOn.Unlock",
+    "name": {
+      "en": "Lock-On",
+      "pt-BR": "Mirar"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "SeedShooter.Minigun.Radius",
+    "name": {
+      "en": "Minigun Radius",
+      "pt-BR": "Raio da Miniarma"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "SeedShooter.Minigun.Speed",
+    "name": {
+      "en": "Minigun Speed",
+      "pt-BR": "Velocidade da Miniarma"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "SeedShooter.MoundSeedCapacity",
+    "name": {
+      "en": "Seed Stacking",
+      "pt-BR": "Acúmulo de Sementes"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Slots",
+    "name": {
+      "en": "Mod Slots",
+      "pt-BR": "Espaços de Modificação"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Spikesaw.Strike.BreakingLevel",
+    "name": {
+      "en": "Alien Tech Breaking",
+      "pt-BR": "Desmonte de Tecnologia Alienígena"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "SpikeSaw.Strike.Damage",
+    "name": {
+      "en": "Strike Damage",
+      "pt-BR": "Dano de Golpe"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "SpikeSaw.Swing.Damage",
+    "name": {
+      "en": "Sweep Damage",
+      "pt-BR": "Dano de Varredura"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "SpikeSaw.Swing.Unlock",
+    "name": {
+      "en": "Sweep",
+      "pt-BR": "Varredura"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "Sprint.Speed",
+    "name": {
+      "en": "Sprint Speed",
+      "pt-BR": "Velocidade de Corrida"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "SproutCannon.AltFire.Radius",
+    "name": {
+      "en": "Volley Radius",
+      "pt-BR": "Raio da Rajada"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "SproutCannon.AltFire.Unlock",
+    "name": {
+      "en": "Volley",
+      "pt-BR": "Rajada"
+    },
+    "kind": "unlock"
+  },
+  {
+    "id": "Tool.Range",
+    "name": {
+      "en": "Tool Range",
+      "pt-BR": "Gama de Ferramentas"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "Trailblazer.Boost.Duration",
+    "name": {
+      "en": "Boost Duration",
+      "pt-BR": "Duração do Impulso"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "Trailblazer.Boost.Recharge",
+    "name": {
+      "en": "Boost Recharge Rate",
+      "pt-BR": "Aumentar a Taxa de Recarga"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "TransformMode.ActiveSpeed",
+    "name": {
+      "en": "Active Speed",
+      "pt-BR": "Velocidade Ativa"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "TransformMode.Speed",
+    "name": {
+      "en": "Transform Speed",
+      "pt-BR": "Velocidade de Transformação"
+    },
+    "kind": "percent"
+  },
+  {
+    "id": "TransformMode.Width",
+    "name": {
+      "en": "Extra Width",
+      "pt-BR": "Largura Extra"
+    },
+    "kind": "number"
+  },
+  {
+    "id": "WaterTank.Capacity",
+    "name": {
+      "en": "Water Capacity",
+      "pt-BR": "Capacidade da Água"
+    },
+    "kind": "number"
+  }
+]

@@ -25,6 +25,9 @@ const dataset: Dataset = {
   itemSources: [],
   constructs: [],
   animals: [],
+  mechStats: [],
+  mechParts: [],
+  mechChips: [],
   incubator: {
     lensChances: { smaller: 25, larger: 25, double: 10, rare: 10 },
     rareEggIncubationDays: 5,
@@ -49,6 +52,8 @@ describe("buildManifest", () => {
       itemSources: 0,
       constructs: 0,
       animals: 0,
+      mechParts: 0,
+      mechChips: 0,
     });
     expect(a.dataVersion).toMatch(/^[0-9a-f]{12}$/);
   });

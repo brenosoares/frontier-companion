@@ -1,4 +1,5 @@
 import { RELEASED_FEATURE_FLAGS, STATIONS } from "./config";
+import { extractMechChips, extractMechParts, extractMechStats } from "./extractors/mech";
 import { extractAnimals } from "./extractors/animals";
 import {
   BLUEPRINT_PATHS,
@@ -93,6 +94,9 @@ export async function buildDataset(
     merchantEntryRows,
     carePackageRows,
     critterFoodRows,
+    moduleRows,
+    chipRows,
+    statDisplayRows,
   ] = await Promise.all([
     readRows(source, "DT_Items"),
     readRows(source, "DT_CompositeRecipes"),
@@ -106,6 +110,9 @@ export async function buildDataset(
     readRows(source, "DT_MerchantBundleEntries"),
     readRows(source, "DT_CarePackageRewards"),
     readRows(source, "DT_CritterFood"),
+    readRows(source, "DT_Modules"),
+    readRows(source, "DT_CoreUpgrades"),
+    readRows(source, "DT_StatDisplay"),
   ]);
 
   const [critterParent, incubatorDefaults, hazardDefaults, lootGoblinDefaults, largeItemFiles] =
@@ -151,6 +158,10 @@ export async function buildDataset(
       blueprintPrices: extractBlueprintPrices(merchantEntryRows),
     }),
   );
+  const mechOptions = { availableIcons: iconNames, releasedFlags };
+  const mechStats = extractMechStats(statDisplayRows);
+  const builtMechParts = extractMechParts(moduleRows, mechStats, mechOptions);
+  const builtMechChips = extractMechChips(chipRows, mechOptions);
   const animals = extractAnimals(animalRows, critterRows, critterFoodRows, {
     availableIcons: iconNames,
     wildFeeding,
@@ -187,11 +198,20 @@ export async function buildDataset(
     constructs: builtConstructs.constructs,
     animals,
     incubator,
+    mechStats,
+    mechParts: builtMechParts.parts,
+    mechChips: builtMechChips.chips,
   };
 
   return {
     dataset,
-    warnings: [...unfinished.warnings, ...builtConstructs.warnings, ...sourceWarnings],
+    warnings: [
+      ...unfinished.warnings,
+      ...builtConstructs.warnings,
+      ...builtMechParts.warnings,
+      ...builtMechChips.warnings,
+      ...sourceWarnings,
+    ],
     integrityIssues: checkIntegrity(dataset),
     sensitiveFindings: findSensitiveStrings(dataset),
   };

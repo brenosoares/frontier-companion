@@ -1,0 +1,4371 @@
+[
+  {
+    "id": "AllDefense0",
+    "name": {
+      "en": "All Armor Up Lv. 1",
+      "pt-BR": "Reforço em Toda a Armadura Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the damage all mech parts take by 15% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido em todas as peças do meca em 15% (até um máximo de 90%)."
+    },
+    "icon": "AllDefenseIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllDefense1",
+    "name": {
+      "en": "All Armor Up Lv. 2",
+      "pt-BR": "Reforço em Toda a Armadura Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the damage all mech parts take by 20% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido em todas as peças do meca em 20% (até um máximo de 90%)."
+    },
+    "icon": "AllDefenseIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllDefense2",
+    "name": {
+      "en": "All Armor Up Lv. 3",
+      "pt-BR": "Reforço em Toda a Armadura Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the damage all mech parts take by 25% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido em todas as peças do meca em 25% (até um máximo de 90%)."
+    },
+    "icon": "AllDefenseIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "WiredTallTech",
+        "amount": 1
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolRange0",
+    "name": {
+      "en": "All Tool Range Lv. 1",
+      "pt-BR": "Alcance de Todas as Ferramentas Nv. 1"
+    },
+    "description": {
+      "en": "Increases the range of all tools by 20%.",
+      "pt-BR": "Aumenta o alcance de todas as ferramentas em 20%."
+    },
+    "icon": "AllToolRangeIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 5
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolRange1",
+    "name": {
+      "en": "All Tool Range Lv. 2",
+      "pt-BR": "Alcance de Todas as Ferramentas Nv. 2"
+    },
+    "description": {
+      "en": "Increases the range of all tools by 25%.",
+      "pt-BR": "Aumenta o alcance de todas as ferramentas em 25%."
+    },
+    "icon": "AllToolRangeIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolRange2",
+    "name": {
+      "en": "All Tool Range Lv. 3",
+      "pt-BR": "Alcance de Todas as Ferramentas Nv. 3"
+    },
+    "description": {
+      "en": "Increases the range of all tools by 30%.",
+      "pt-BR": "Aumenta o alcance de todas as ferramentas em 30%."
+    },
+    "icon": "AllToolRangeIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 10
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolSpeed0",
+    "name": {
+      "en": "All Tool Speed Lv. 1",
+      "pt-BR": "Velocidade de Todas as Ferramentas Nv. 1"
+    },
+    "description": {
+      "en": "Increases the speed of all tools by 10%.",
+      "pt-BR": "Aumenta a velocidade de todas as ferramentas em 10%."
+    },
+    "icon": "AllToolSpeedIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 5
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolSpeed1",
+    "name": {
+      "en": "All Tool Speed Lv. 2",
+      "pt-BR": "Velocidade de Todas as Ferramentas Nv. 2"
+    },
+    "description": {
+      "en": "Increases the speed of all tools by 15%.",
+      "pt-BR": "Aumenta a velocidade de todas as ferramentas em 15%."
+    },
+    "icon": "AllToolSpeedIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllToolSpeed2",
+    "name": {
+      "en": "All Tool Speed Lv. 3",
+      "pt-BR": "Velocidade de Todas as Ferramentas Nv. 3"
+    },
+    "description": {
+      "en": "Increases the speed of all tools by 20%.",
+      "pt-BR": "Aumenta a velocidade de todas as ferramentas em 20%."
+    },
+    "icon": "AllToolSpeedIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 10
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllTransformMoveSpeed0",
+    "name": {
+      "en": "All Transform Mode Movement Speed Lv. 1",
+      "pt-BR": "Velocidade de Movimento de Todos os Modos de Transformação Nv. 1"
+    },
+    "description": {
+      "en": "Increases the movement speed of all Transform Modes by 10%.",
+      "pt-BR": "Aumenta a velocidade de movimento de todos os Modos de Transformação em 10%."
+    },
+    "icon": "AllTransformMoveSpeedIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllTransformMoveSpeed1",
+    "name": {
+      "en": "All Transform Mode Movement Speed Lv. 2",
+      "pt-BR": "Velocidade de Movimento de Todos os Modos de Transformação Nv. 2"
+    },
+    "description": {
+      "en": "Increases the movement speed of all Transform Modes by 12.5%.",
+      "pt-BR": "Aumenta a velocidade de movimento de todos os Modos de Transformação em 12,5%."
+    },
+    "icon": "AllTransformMoveSpeedIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AllTransformMoveSpeed2",
+    "name": {
+      "en": "All Transform Mode Movement Speed Lv. 3",
+      "pt-BR": "Velocidade de Movimento de Todos os Modos de Transformação Nv. 3"
+    },
+    "description": {
+      "en": "Increases the movement speed of all Transform Modes by 15%.",
+      "pt-BR": "Aumenta a velocidade de movimento de todos os Modos de Transformação em 15%."
+    },
+    "icon": "AllTransformMoveSpeedIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AnchorFeet0",
+    "name": {
+      "en": "Anchor Feet",
+      "pt-BR": "Pés de Ancoragem"
+    },
+    "description": {
+      "en": "Makes the mech more stable and far less likely to fall over.",
+      "pt-BR": "Deixa o meca mais estável e com muito menos probabilidade de cair."
+    },
+    "icon": null,
+    "powerCost": 1,
+    "costs": [],
+    "fits": [
+      "legs"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "AutoPickupRadius0",
+    "name": {
+      "en": "Auto Pickup Radius Lv. 1",
+      "pt-BR": "Área de coleta automática Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's item auto pickup radius by 20%.",
+      "pt-BR": "Aumenta a área de coleta automática de itens do meca em 20%."
+    },
+    "icon": "AutoPickupRadiusIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AutoPickupRadius1",
+    "name": {
+      "en": "Auto Pickup Radius Lv. 2",
+      "pt-BR": "Área de Coleta Automática Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's item auto pickup radius by 25%.",
+      "pt-BR": "Aumenta a área de coleta automática de itens do meca em 25%."
+    },
+    "icon": "AutoPickupRadiusIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "AutoPickupRadius2",
+    "name": {
+      "en": "Auto Pickup Radius Lv. 3",
+      "pt-BR": "Área de Coleta Automática Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's item auto pickup radius by 30%.",
+      "pt-BR": "Aumenta a área de coleta automática de itens do meca em 30%."
+    },
+    "icon": "AutoPickupRadiusIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BalancedSpikeSawDamage0",
+    "name": {
+      "en": "Balanced Spike Saw Damage Lv. 1",
+      "pt-BR": "Dano Equilibrado da Serra Dentada Nv. 1"
+    },
+    "description": {
+      "en": "Increases the damage all Spike Saw abilities by 30.",
+      "pt-BR": "Aumenta o dano de todas as habilidades da Serra Dentada em 30."
+    },
+    "icon": "BalancedSpikeSawDamageIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BalancedSpikeSawDamage1",
+    "name": {
+      "en": "Balanced Spike Saw Damage Lv. 2",
+      "pt-BR": "Dano Equilibrado da Serra Dentada Nv. 2"
+    },
+    "description": {
+      "en": "Increases the damage all Spike Saw abilities by 60.",
+      "pt-BR": "Aumenta o dano de todas as habilidades da Serra Dentada em 60."
+    },
+    "icon": "BalancedSpikeSawDamageIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BalancedSpikeSawDamage2",
+    "name": {
+      "en": "Balanced Spike Saw Damage Lv. 3",
+      "pt-BR": "Dano Equilibrado da Serra Dentada Nv. 3"
+    },
+    "description": {
+      "en": "Increases the damage all Spike Saw abilities by 100.",
+      "pt-BR": "Aumenta o dano de todas as habilidades da Serra Dentada em 100."
+    },
+    "icon": "BalancedSpikeSawDamageIcon",
+    "powerCost": 25,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeCost0",
+    "name": {
+      "en": "Boost Lunge Cost Lv. 1",
+      "pt-BR": "Custo do Impulso de Propulsão Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the cost of the mech's Boost Lunge ability by 20% (to a maximum of 90%).",
+      "pt-BR": "Reduz o custo da habilidade Impulso de Propulsão do meca em 20% (até um máximo de 90%)."
+    },
+    "icon": "BoostLungeCostIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeCost1",
+    "name": {
+      "en": "Boost Lunge Cost Lv. 2",
+      "pt-BR": "Custo do Impulso de Propulsão Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the cost of the mech's Boost Lunge ability by 25% (to a maximum of 90%).",
+      "pt-BR": "Reduz o custo da habilidade Impulso de Propulsão do meca em 25% (até um máximo de 90%)."
+    },
+    "icon": "BoostLungeCostIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeCost2",
+    "name": {
+      "en": "Boost Lunge Cost Lv. 3",
+      "pt-BR": "Custo do Impulso de Propulsão Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the cost of the mech's Boost Lunge ability by 30% (to a maximum of 90%).",
+      "pt-BR": "Reduz o custo da habilidade Impulso de Propulsão do meca em 30% (até um máximo de 90%)."
+    },
+    "icon": "BoostLungeCostIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeVerticalBias0",
+    "name": {
+      "en": "Boost Lunge Vertical Bias Lv. 1",
+      "pt-BR": "Inclinação Vertical do Impulso de Propulsão Nv. 1"
+    },
+    "description": {
+      "en": "Increases the vertical angle of the mech's Boost Lunge ability by 20% (to a maximum of 100%).",
+      "pt-BR": "Aumenta o ângulo vertical da habilidade Impulso de Propulsão do meca em 20% (até um máximo de 100%)."
+    },
+    "icon": "BoostLungeVerticalBiasIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeVerticalBias1",
+    "name": {
+      "en": "Boost Lunge Vertical Bias Lv. 2",
+      "pt-BR": "Inclinação Vertical do Impulso de Propulsão Nv. 2"
+    },
+    "description": {
+      "en": "Increases the vertical angle of the mech's Boost Lunge ability by 25% (to a maximum of 100%).",
+      "pt-BR": "Aumenta o ângulo vertical da habilidade Impulso de Propulsão do meca em 25% (até um máximo de 100%)."
+    },
+    "icon": "BoostLungeVerticalBiasIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostLungeVerticalBias2",
+    "name": {
+      "en": "Boost Lunge Vertical Bias Lv. 3",
+      "pt-BR": "Inclinação Vertical do Impulso de Propulsão Nv. 3"
+    },
+    "description": {
+      "en": "Increases the vertical angle of the mech's Boost Lunge ability by 30% (to a maximum of 100%).",
+      "pt-BR": "Aumenta o ângulo vertical da habilidade Impulso de Propulsão do meca em 30% (até um máximo de 100%)."
+    },
+    "icon": "BoostLungeVerticalBiasIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostRecharge0",
+    "name": {
+      "en": "Boost Lunge Recharge Lv. 1",
+      "pt-BR": "Recarga do Impulso de Propulsão Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the time to recharge boosters after a Boost Lunge by 20%.",
+      "pt-BR": "Reduz o tempo de recarga dos propulsores após um Impulso de Propulsão em 20%."
+    },
+    "icon": "BoostRechargeIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostRecharge1",
+    "name": {
+      "en": "Boost Lunge Recharge Lv. 2",
+      "pt-BR": "Recarga do Impulso de Propulsão Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the time to recharge boosters after a Boost Lunge by 25%.",
+      "pt-BR": "Reduz o tempo de recarga dos propulsores após um Impulso de Propulsão em 25%."
+    },
+    "icon": "BoostRechargeIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "BoostRecharge2",
+    "name": {
+      "en": "Boost Lunge Recharge Lv. 3",
+      "pt-BR": "Recarga do Impulso de Propulsão Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the time to recharge boosters after a Boost Lunge by 30%.",
+      "pt-BR": "Reduz o tempo de recarga dos propulsores após um Impulso de Propulsão em 30%."
+    },
+    "icon": "BoostRechargeIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "CarefulSweep0",
+    "name": {
+      "en": "Spike Saw Careful Sweep",
+      "pt-BR": "Corte Cuidadoso da Serra Dentada"
+    },
+    "description": {
+      "en": "Makes the Spike Saw Sweeping Strike no longer affect growing crops or seeds.",
+      "pt-BR": "Faz com que a Serra Lateral da Serra Dentada não afete mais as plantações ou sementes em crescimento."
+    },
+    "icon": "CarefulSweepIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 4
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "CriticalDefense0",
+    "name": {
+      "en": "Critical Defense",
+      "pt-BR": "Defesa Crítica"
+    },
+    "description": {
+      "en": "While the Mech Part is below 50% durability, it takes 50% less damage.",
+      "pt-BR": "Enquanto a Peça do Meca estiver abaixo de 50% de durabilidade, ela sofrerá 50% menos dano."
+    },
+    "icon": "CriticalDefenseIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "CriticalStrikeDamage0",
+    "name": {
+      "en": "Critical Strike Damage Lv. 1",
+      "pt-BR": "Dano de Ataque Crítico Nv. 1"
+    },
+    "description": {
+      "en": "Increases the Spike Saw's critical strike damage by 25%.",
+      "pt-BR": "Aumenta o dano de ataque crítico da Serra Dentada em 25%."
+    },
+    "icon": null,
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Defense0",
+    "name": {
+      "en": "Armor Up Lv. 1",
+      "pt-BR": "Reforço de Armadura Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the damage the mech part takes by 25% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido pela peça do meca em 25% (até um máximo de 90%)."
+    },
+    "icon": "DefenseIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Defense1",
+    "name": {
+      "en": "Armor Up Lv. 2",
+      "pt-BR": "Reforço de Armadura Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the damage the mech part takes by 30% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido pela peça do meca em 30% (até um máximo de 90%)."
+    },
+    "icon": "DefenseIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Defense2",
+    "name": {
+      "en": "Armor Up Lv. 3",
+      "pt-BR": "Reforço de Armadura Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the damage the mech part takes by 35% (to a maximum of 90%).",
+      "pt-BR": "Reduz o dano sofrido pela peça do meca em 35% (até um máximo de 90%)."
+    },
+    "icon": "DefenseIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "FlightThrustRecharge0",
+    "name": {
+      "en": "Skyblazer Thruster Recharge Rate",
+      "pt-BR": "Taxa de Recarga do Propulsor em Asas de Voo"
+    },
+    "description": {
+      "en": "Increases thruster recharge rate while in Skyblazer mode by 25%.",
+      "pt-BR": "Aumenta a taxa de recarga dos propulsores enquanto estiver no modo Asas de Voo em 25%."
+    },
+    "icon": "FlightThrustRechargeIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 1
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 1
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "skyblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "FlightThrustStrength0",
+    "name": {
+      "en": "Skyblazer Thruster Strength",
+      "pt-BR": "Potência do Propulsor em Asas de Voo"
+    },
+    "description": {
+      "en": "Increases thruster strength while in Skyblazer mode by 30%.",
+      "pt-BR": "Aumenta a potência dos propulsores enquanto estiver no modo Asas de Voo em 30%."
+    },
+    "icon": "FlightThrustStrengthIcon",
+    "powerCost": 8,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 1
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 1
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "skyblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "FuelEfficiency0",
+    "name": {
+      "en": "Fuel Efficiency Lv. 1",
+      "pt-BR": "Eficiência de Combustível Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the mech's fuel consumption by 5% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de combustível do meca em 5% (até um máximo de 90%)."
+    },
+    "icon": "FuelEfficiencyIcon",
+    "powerCost": 0,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "FuelEfficiency1",
+    "name": {
+      "en": "Fuel Efficiency Lv. 2",
+      "pt-BR": "Eficiência de Combustível Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the mech's fuel consumption by 7.5% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de combustível do meca em 7,5% (até um máximo de 90%)."
+    },
+    "icon": "FuelEfficiencyIcon",
+    "powerCost": 0,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "FuelEfficiency2",
+    "name": {
+      "en": "Fuel Efficiency Lv. 3",
+      "pt-BR": "Eficiência de Combustível Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the mech's fuel consumption by 10% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de combustível do meca em 10% (até um máximo de 90%)."
+    },
+    "icon": "FuelEfficiencyIcon",
+    "powerCost": 0,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HardenedSeeds0",
+    "name": {
+      "en": "Hardened Seeds Lv. 1",
+      "pt-BR": "Sementes Endurecidas Nv. 1"
+    },
+    "description": {
+      "en": "Allows the Seed Shooter to deal damage on impact and increases its damage by 10.",
+      "pt-BR": "Permite que o Lançador de Sementes cause dano ao atingir e aumenta o dano em 10."
+    },
+    "icon": "HardenedSeedsIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 5
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HardenedSeeds1",
+    "name": {
+      "en": "Hardened Seeds Lv. 2",
+      "pt-BR": "Sementes Endurecidas Nv. 2"
+    },
+    "description": {
+      "en": "Allows the Seed Shooter to deal damage on impact and increases its damage by 20.",
+      "pt-BR": "Permite que o Lançador de Sementes cause dano ao atingir e aumenta o dano em 20."
+    },
+    "icon": "HardenedSeedsIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HardenedSeeds2",
+    "name": {
+      "en": "Hardened Seeds Lv. 3",
+      "pt-BR": "Sementes Endurecidas Nv. 3"
+    },
+    "description": {
+      "en": "Allows the Seed Shooter to deal damage on impact and increases its damage by 30.",
+      "pt-BR": "Permite que o Lançador de Sementes cause dano ao atingir e aumenta o dano em 30."
+    },
+    "icon": "HardenedSeedsIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 10
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HaulingCapacity0",
+    "name": {
+      "en": "Hauling Capacity Lv. 1",
+      "pt-BR": "Capacidade de Transporte Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's capacity to carry Large Objects by 2 units (to a maximum of 40).",
+      "pt-BR": "Aumenta a capacidade do meca de carregar objetos grandes em 2 unidades (até um máximo de 40)."
+    },
+    "icon": "HaulingCapacityIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HaulingCapacity1",
+    "name": {
+      "en": "Hauling Capacity Lv. 2",
+      "pt-BR": "Capacidade de Transporte Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's capacity to carry Large Objects by 3 units (to a maximum of 40).",
+      "pt-BR": "Aumenta a capacidade do meca de carregar objetos grandes em 3 unidades (até um máximo de 40)."
+    },
+    "icon": "HaulingCapacityIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HaulingCapacity2",
+    "name": {
+      "en": "Hauling Capacity Lv. 3",
+      "pt-BR": "Capacidade de Transporte Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's capacity to carry Large Objects by 4 units (to a maximum of 40).",
+      "pt-BR": "Aumenta a capacidade do meca de carregar objetos grandes em 4 unidades (até um máximo de 40)."
+    },
+    "icon": "HaulingCapacityIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseRadius0",
+    "name": {
+      "en": "Irrigation Hose Radius Lv. 1",
+      "pt-BR": "Área do Jato de Irrigação Nv. 1"
+    },
+    "description": {
+      "en": "Increases the impact radius of the Irrigation Hose's spray by 40%.",
+      "pt-BR": "Aumenta a área de impacto do borrifo do Jato de Irrigação em 40%."
+    },
+    "icon": "HoseRadiusIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseRadius1",
+    "name": {
+      "en": "Irrigation Hose Radius Lv. 2",
+      "pt-BR": "Área do Jato de Irrigação Nv. 2"
+    },
+    "description": {
+      "en": "Increases the impact radius of the Irrigation Hose's spray by 50%.",
+      "pt-BR": "Aumenta a área de impacto do borrifo do Jato de Irrigação em 50%."
+    },
+    "icon": "HoseRadiusIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseRadius2",
+    "name": {
+      "en": "Irrigation Hose Radius Lv. 3",
+      "pt-BR": "Área do Jato de Irrigação Nv. 3"
+    },
+    "description": {
+      "en": "Increases the impact radius of the Irrigation Hose's spray by 60%.",
+      "pt-BR": "Aumenta a área de impacto do borrifo do Jato de Irrigação em 60%."
+    },
+    "icon": "HoseRadiusIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseSpreadWidth0",
+    "name": {
+      "en": "Irrigation Hose Hydro Splash Width Lv. 1",
+      "pt-BR": "Amplitude da Hidrobolha do Jato de Irrigação Nv. 1"
+    },
+    "description": {
+      "en": "Increases the maximum targeting width of the Irrigation Hose Splash by 20%.",
+      "pt-BR": "Aumenta a amplitude máxima do alvo da Bolha do Jato de Irrigação em 20%."
+    },
+    "icon": "HoseSpreadWidthIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseSpreadWidth1",
+    "name": {
+      "en": "Irrigation Hose Hydro Splash Width Lv. 2",
+      "pt-BR": "Amplitude da Hidrobolha do Jato de Irrigação Nv. 2"
+    },
+    "description": {
+      "en": "Increases the maximum targeting width of the Irrigation Hose Splash by 25%.",
+      "pt-BR": "Aumenta a amplitude máxima do alvo da Bolha do Jato de Irrigação em 25%."
+    },
+    "icon": "HoseSpreadWidthIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "HoseSpreadWidth2",
+    "name": {
+      "en": "Irrigation Hose Hydro Splash Width Lv. 3",
+      "pt-BR": "Amplitude da Hidrobolha do Jato de Irrigação Nv. 3"
+    },
+    "description": {
+      "en": "Increases the maximum targeting width of the Irrigation Hose Splash by 30%.",
+      "pt-BR": "Aumenta a amplitude máxima do alvo da Bolha do Jato de Irrigação em 30%."
+    },
+    "icon": "HoseSpreadWidthIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Hover0",
+    "name": {
+      "en": "Hover Thrusters",
+      "pt-BR": "Propulsores de Levitação"
+    },
+    "description": {
+      "en": "Allows the mech's thrusters to maintain a fixed elevation for an extended period of time.",
+      "pt-BR": "Permite que os propulsores do meca mantenham uma elevação fixa por um período prolongado."
+    },
+    "icon": "HoverIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeFrame",
+        "amount": 5
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 5
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "engine"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "InventoryCapacity0",
+    "name": {
+      "en": "Inventory Capacity Lv. 1",
+      "pt-BR": "Capacidade do Inventário Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's inventory weight limit by 500 units.",
+      "pt-BR": "Aumenta o limite de peso do Inventário do meca em 500 unidades."
+    },
+    "icon": "InventoryCapacityIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "InventoryCapacity1",
+    "name": {
+      "en": "Inventory Capacity Lv. 2",
+      "pt-BR": "Capacidade do Inventário Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's inventory weight limit by 750 units.",
+      "pt-BR": "Aumenta o limite de peso do Inventário do meca em 750 unidades."
+    },
+    "icon": "InventoryCapacityIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "InventoryCapacity2",
+    "name": {
+      "en": "Inventory Capacity Lv. 3",
+      "pt-BR": "Capacidade do Inventário Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's inventory weight limit by 1000 units.",
+      "pt-BR": "Aumenta o limite de peso do Inventário do meca em 1.000 unidades."
+    },
+    "icon": "InventoryCapacityIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "KneeReinforcement0",
+    "name": {
+      "en": "Knee Reinforcement Lv. 1",
+      "pt-BR": "Reforço de Joelho Nv. 1"
+    },
+    "description": {
+      "en": "Increases the distance the mech can fall before taking damage.",
+      "pt-BR": "Aumenta a distância que o meca pode cair antes de sofrer dano."
+    },
+    "icon": null,
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "LockOnTargets0",
+    "name": {
+      "en": "Lock-on Targets Lv. 1",
+      "pt-BR": "Mira em Alvos Nv. 1"
+    },
+    "description": {
+      "en": "Increases the maximum Seed Shooter Lock-on targets by 50.",
+      "pt-BR": "Aumenta o máximo de alvos da Mira do Lançador de Sementes em 50."
+    },
+    "icon": "LockOnTargetsIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "LockOnTargets1",
+    "name": {
+      "en": "Lock-on Targets Lv. 2",
+      "pt-BR": "Mira em Alvos Nv. 2"
+    },
+    "description": {
+      "en": "Increases the maximum Seed Shooter Lock-on targets by 150.",
+      "pt-BR": "Aumenta o máximo de alvos da Mira do Lançador de Sementes em 150."
+    },
+    "icon": "LockOnTargetsIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "LockOnTargets2",
+    "name": {
+      "en": "Lock-on Targets Lv. 3",
+      "pt-BR": "Mira em Alvos Nv. 3"
+    },
+    "description": {
+      "en": "Increases the maximum Seed Shooter Lock-on targets by 300.",
+      "pt-BR": "Aumenta o máximo de alvos da Mira do Lançador de Sementes em 300."
+    },
+    "icon": "LockOnTargetsIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "OverloadInventoryCapacity0",
+    "name": {
+      "en": "Overload Carry Capacity",
+      "pt-BR": "Capacidade de Transporte Impulsionado"
+    },
+    "description": {
+      "en": "Increases the mech's inventory weight limit by 2000 units but increases all fuel consumption by 10%.",
+      "pt-BR": "Aumenta o limite de peso do Inventário do meca em 2.000 unidades, mas aumenta o consumo total de combustível em 10%."
+    },
+    "icon": "OverloadInventoryCapacityIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "OverloadThrusterBoost0",
+    "name": {
+      "en": "Overload Thruster Boost",
+      "pt-BR": "Impulso do Propulsor Impulsionado"
+    },
+    "description": {
+      "en": "Increases the mech's jump boost duration by 3s but increases all fuel consumption by 5%.",
+      "pt-BR": "Aumenta a duração do impulso de salto do meca em 3 s, mas aumenta o consumo total de combustível em 5%."
+    },
+    "icon": "OverloadThrusterBoostIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "OverloadToolRange0",
+    "name": {
+      "en": "Overload Tool Range",
+      "pt-BR": "Alcance da Ferramenta Impulsionado"
+    },
+    "description": {
+      "en": "Increases the range of the tool by 100% but reduces the range of all other tools by 50%.",
+      "pt-BR": "Aumenta o alcance da ferramenta em 100%, mas reduz o alcance de todas as outras ferramentas em 50%."
+    },
+    "icon": "OverloadToolRangeIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "OverloadToolSpeed0",
+    "name": {
+      "en": "Overload Tool Speed",
+      "pt-BR": "Velocidade da Ferramenta Impulsionada"
+    },
+    "description": {
+      "en": "Increases the speed of the tool by 50% but reduces the speed of all other tools by 25%.",
+      "pt-BR": "Aumenta a velocidade da ferramenta em 50%, mas reduz a velocidade de todas as outras ferramentas em 25%."
+    },
+    "icon": "OverloadToolSpeedIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooterMinigun0",
+    "name": {
+      "en": "Seed Shooter Minigun Override",
+      "pt-BR": "Substituição da Miniarma do Lançador de Sementes"
+    },
+    "description": {
+      "en": "Enables the Minigun ability for the Seed Shooter, rapidly and continuously shooting at available mounds. Replaces the Lock-on ability.",
+      "pt-BR": "Ativa a habilidade Miniarma para o Lançador de Sementes, disparando de maneira rápida e contínua em montes disponíveis. Substitui a habilidade de Mira."
+    },
+    "icon": "SeedShooterMinigunIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 4
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooterMinigunRadius0",
+    "name": {
+      "en": "Seed Shooter Minigun Target Radius Lv. 1",
+      "pt-BR": "Área Alvo da Miniarma do Lançador de Sementes Nv. 1"
+    },
+    "description": {
+      "en": "Increases the target radius of the Minigun ability by 50 units (to a maximum of 600). Requires Seed Shooter Minigun Override.",
+      "pt-BR": "Aumenta a área alvo da habilidade Miniarma em 50 unidades (até um máximo de 600). Exige Substituição da Miniarma do Lançador de Sementes."
+    },
+    "icon": "SeedShooterMinigunRadiusIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooterMinigunRadius1",
+    "name": {
+      "en": "Seed Shooter Minigun Target Radius Lv. 2",
+      "pt-BR": "Área Alvo da Miniarma do Lançador de Sementes Nv. 2"
+    },
+    "description": {
+      "en": "Increases the target radius of the Minigun ability by 100 units (to a maximum of 600). Requires Seed Shooter Minigun Override.",
+      "pt-BR": "Aumenta a área alvo da habilidade Miniarma em 100 unidades (até um máximo de 600). Exige Substituição da Miniarma do Lançador de Sementes."
+    },
+    "icon": "SeedShooterMinigunRadiusIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooterMinigunRadius2",
+    "name": {
+      "en": "Seed Shooter Minigun Target Radius Lv. 3",
+      "pt-BR": "Área Alvo da Miniarma do Lançador de Sementes Nv. 3"
+    },
+    "description": {
+      "en": "Increases the target radius of the Minigun ability by 200 units (to a maximum of 600). Requires Seed Shooter Minigun Override.",
+      "pt-BR": "Aumenta a área alvo da habilidade Miniarma em 200 unidades (até um máximo de 600). Exige Substituição da Miniarma do Lançador de Sementes."
+    },
+    "icon": "SeedShooterMinigunRadiusIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "seed-shooter"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawStrikeDamage0",
+    "name": {
+      "en": "Spike Saw Punch Damage Lv. 1",
+      "pt-BR": "Dano da Serra Dentada Nv. 1"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Punch by 50.",
+      "pt-BR": "Aumenta o dano da Serra Dentada em 50."
+    },
+    "icon": "SpikeSawStrikeDamageIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawStrikeDamage1",
+    "name": {
+      "en": "Spike Saw Punch Damage Lv. 2",
+      "pt-BR": "Dano da Serra Dentada Nv. 2"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Punch by 100.",
+      "pt-BR": "Aumenta o dano da Serra Dentada em 100."
+    },
+    "icon": "SpikeSawStrikeDamageIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 10
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawStrikeDamage2",
+    "name": {
+      "en": "Spike Saw Punch Damage Lv. 3",
+      "pt-BR": "Dano da Serra Dentada Nv. 3"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Punch by 150.",
+      "pt-BR": "Aumenta o dano da Serra Dentada em 150."
+    },
+    "icon": "SpikeSawStrikeDamageIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawSwingDamage0",
+    "name": {
+      "en": "Spike Saw Sweeping Strike Damage Lv. 1",
+      "pt-BR": "Dano da Serra Lateral da Serra Dentada Nv. 1"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Sweeping Strike by 75.",
+      "pt-BR": "Aumenta o dano da Serra Lateral da Serra Dentada em 75."
+    },
+    "icon": "SpikeSawSwingDamageIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawSwingDamage1",
+    "name": {
+      "en": "Spike Saw Sweeping Strike Damage Lv. 2",
+      "pt-BR": "Dano da Serra Lateral da Serra Dentada Nv. 2"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Sweeping Strike by 150.",
+      "pt-BR": "Aumenta o dano da Serra Lateral da Serra Dentada em 150."
+    },
+    "icon": "SpikeSawSwingDamageIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SpikeSawSwingDamage2",
+    "name": {
+      "en": "Spike Saw Sweeping Strike Damage Lv. 3",
+      "pt-BR": "Dano da Serra Lateral da Serra Dentada Nv. 3"
+    },
+    "description": {
+      "en": "Increases the damage of the Spike Saw Sweeping Strike by 225.",
+      "pt-BR": "Aumenta o dano da Serra Lateral da Serra Dentada em 225."
+    },
+    "icon": "SpikeSawSwingDamageIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Sprint0",
+    "name": {
+      "en": "Sprint Speed Lv. 1",
+      "pt-BR": "Velocidade de Corrida Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech’s speed while sprinting by 15% (to a maximum of 300%).",
+      "pt-BR": "Aumenta a velocidade de corrida do meca em 15% (até um máximo de 300%)."
+    },
+    "icon": "SprintIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Sprint1",
+    "name": {
+      "en": "Sprint Speed Lv. 2",
+      "pt-BR": "Velocidade de Corrida Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech’s speed while sprinting by 20% (to a maximum of 300%).",
+      "pt-BR": "Aumenta a velocidade de corrida do meca em 20% (até um máximo de 300%)."
+    },
+    "icon": "SprintIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "Sprint2",
+    "name": {
+      "en": "Sprint Speed Lv. 3",
+      "pt-BR": "Velocidade de Corrida Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech’s speed while sprinting by 25% (to a maximum of 300%).",
+      "pt-BR": "Aumenta a velocidade de corrida do meca em 25% (até um máximo de 300%)."
+    },
+    "icon": "SprintIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SproutVolley0",
+    "name": {
+      "en": "Sprout Cannon Volley Radius Lv.1",
+      "pt-BR": "Área da Rajada do Canhão de Brotos Nv. 1"
+    },
+    "description": {
+      "en": "Increases the maximum targeting radius of the Sprout Cannon Volley by 20%.",
+      "pt-BR": "Aumenta a área máxima do alvo da Rajada do Canhão de Brotos em 20%."
+    },
+    "icon": "SproutVolleyIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SproutVolley1",
+    "name": {
+      "en": "Sprout Cannon Volley Radius Lv.2",
+      "pt-BR": "Área da Rajada do Canhão de Brotos Nv. 2"
+    },
+    "description": {
+      "en": "Increases the maximum targeting radius of the Sprout Cannon Volley by 25%.",
+      "pt-BR": "Aumenta a área máxima do alvo da Rajada do Canhão de Brotos em 25%."
+    },
+    "icon": "SproutVolleyIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "SproutVolley2",
+    "name": {
+      "en": "Sprout Cannon Volley Radius Lv.3",
+      "pt-BR": "Área da Rajada do Canhão de Brotos Nv. 3"
+    },
+    "description": {
+      "en": "Increases the maximum targeting radius of the Sprout Cannon Volley by 30%.",
+      "pt-BR": "Aumenta a área máxima do alvo da Rajada do Canhão de Brotos em 30%."
+    },
+    "icon": "SproutVolleyIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrowStrength0",
+    "name": {
+      "en": "Throwing Strength Lv. 1",
+      "pt-BR": "Força de Arremesso Nv. 1"
+    },
+    "description": {
+      "en": "Increase the mech's throwing strength for Large Objects by 30%.",
+      "pt-BR": "Aumenta em 30% a força de arremesso de objetos grandes do meca."
+    },
+    "icon": "ThrowStrengthIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrowStrength1",
+    "name": {
+      "en": "Throwing Strength Lv. 2",
+      "pt-BR": "Força de Arremesso Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's throwing strength for Large Objects by 40%.",
+      "pt-BR": "Aumenta em 40% a força de arremesso de objetos grandes do meca."
+    },
+    "icon": "ThrowStrengthIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrowStrength2",
+    "name": {
+      "en": "Throwing Strength Lv. 3",
+      "pt-BR": "Força de Arremesso Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's throwing strength for Large Objects by 50%.",
+      "pt-BR": "Aumenta em 50% a força de arremesso de objetos grandes do meca."
+    },
+    "icon": "ThrowStrengthIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "arms"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterBoost0",
+    "name": {
+      "en": "Thruster Boost Duration Lv. 1",
+      "pt-BR": "Duração do Impulso do Propulsor Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's jump boost duration by 1s.",
+      "pt-BR": "Aumenta a duração do impulso de salto do meca em 1 s."
+    },
+    "icon": "ThrusterBoostIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterBoost1",
+    "name": {
+      "en": "Thruster Boost Duration Lv. 2",
+      "pt-BR": "Duração do Impulso do Propulsor Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's jump boost duration by 1.5s.",
+      "pt-BR": "Aumenta a duração do impulso de salto do meca em 1,5 s."
+    },
+    "icon": "ThrusterBoostIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterBoost2",
+    "name": {
+      "en": "Thruster Boost Duration Lv. 3",
+      "pt-BR": "Duração do Impulso do Propulsor Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's jump boost duration by 2s.",
+      "pt-BR": "Aumenta a duração do impulso de salto do meca em 2 s."
+    },
+    "icon": "ThrusterBoostIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterStrength0",
+    "name": {
+      "en": "Thruster Strength Lv. 1",
+      "pt-BR": "Força do Propulsor Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's jump thruster strength by 15%.",
+      "pt-BR": "Aumenta a força do propulsor de salto do meca em 15%."
+    },
+    "icon": "ThrusterStrengthIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterStrength1",
+    "name": {
+      "en": "Thruster Strength Lv. 2",
+      "pt-BR": "Força do Propulsor Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's jump thruster strength by 20%.",
+      "pt-BR": "Aumenta a força do propulsor de salto do meca em 20%."
+    },
+    "icon": "ThrusterStrengthIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ThrusterStrength2",
+    "name": {
+      "en": "Thruster Strength Lv. 3",
+      "pt-BR": "Força do Propulsor Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's jump thruster strength by 25%.",
+      "pt-BR": "Aumenta a força do propulsor de salto do meca em 25%."
+    },
+    "icon": "ThrusterStrengthIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolRange0",
+    "name": {
+      "en": "Tool Range Lv. 1",
+      "pt-BR": "Alcance da Ferramenta Nv. 1"
+    },
+    "description": {
+      "en": "Increases the range of the tool by 30%.",
+      "pt-BR": "Aumenta o alcance da ferramenta em 30%."
+    },
+    "icon": "ToolRangeIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolRange1",
+    "name": {
+      "en": "Tool Range Lv. 2",
+      "pt-BR": "Alcance da Ferramenta Nv. 2"
+    },
+    "description": {
+      "en": "Increases the range of the tool by 40%.",
+      "pt-BR": "Aumenta o alcance da ferramenta em 40%."
+    },
+    "icon": "ToolRangeIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolRange2",
+    "name": {
+      "en": "Tool Range Lv. 3",
+      "pt-BR": "Alcance da Ferramenta Nv. 3"
+    },
+    "description": {
+      "en": "Increases the range of the tool by 50%.",
+      "pt-BR": "Aumenta o alcance da ferramenta em 50%."
+    },
+    "icon": "ToolRangeIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolSpeed0",
+    "name": {
+      "en": "Tool Speed Lv. 1",
+      "pt-BR": "Velocidade da Ferramenta Nv. 1"
+    },
+    "description": {
+      "en": "Increases the speed of the tool by 10%.",
+      "pt-BR": "Aumenta a velocidade da ferramenta em 10%."
+    },
+    "icon": "ToolSpeedIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolSpeed1",
+    "name": {
+      "en": "Tool Speed Lv. 2",
+      "pt-BR": "Velocidade da Ferramenta Nv. 2"
+    },
+    "description": {
+      "en": "Increases the speed of the tool by 15%.",
+      "pt-BR": "Aumenta a velocidade da ferramenta em 15%."
+    },
+    "icon": "ToolSpeedIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "ToolSpeed2",
+    "name": {
+      "en": "Tool Speed Lv. 3",
+      "pt-BR": "Velocidade da Ferramenta Nv. 3"
+    },
+    "description": {
+      "en": "Increases the speed of the tool by 20%.",
+      "pt-BR": "Aumenta a velocidade da ferramenta em 20%."
+    },
+    "icon": "ToolSpeedIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostDuration0",
+    "name": {
+      "en": "Trailblazer Boost Duration Lv. 1",
+      "pt-BR": "Duração do Impulso do Pioneiro Nv. 1"
+    },
+    "description": {
+      "en": "Increases the max boost duration in the Trailblazer Transform Mode by 0.5s.",
+      "pt-BR": "Aumenta a duração máx. do impulso no Modo de Transformação Pioneiro em 0,5 s."
+    },
+    "icon": "TrailblazerBoostDurationIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostDuration1",
+    "name": {
+      "en": "Trailblazer Boost Duration Lv. 2",
+      "pt-BR": "Duração do Impulso do Pioneiro Nv. 2"
+    },
+    "description": {
+      "en": "Increases the max boost duration in the Trailblazer Transform Mode by 0.75s.",
+      "pt-BR": "Aumenta a duração máx. do impulso no Modo de Transformação Pioneiro em 0,75 s."
+    },
+    "icon": "TrailblazerBoostDurationIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostDuration2",
+    "name": {
+      "en": "Trailblazer Boost Duration Lv. 3",
+      "pt-BR": "Duração do Impulso do Pioneiro Nv. 3"
+    },
+    "description": {
+      "en": "Increases the max boost duration in the Trailblazer Transform Mode by 1s.",
+      "pt-BR": "Aumenta a duração máx. do impulso no Modo de Transformação Pioneiro em 1 s."
+    },
+    "icon": "TrailblazerBoostDurationIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostRecharge0",
+    "name": {
+      "en": "Trailblazer Boost Recharge Rate Lv. 1",
+      "pt-BR": "Taxa de Recarga do Impulso do Modo Pioneiro Nv. 1"
+    },
+    "description": {
+      "en": "Increases the boost recharge rate in the Trailblazer Transform Mode by 20%.",
+      "pt-BR": "Aumenta a taxa de recarga do impulso no Modo de Transformação Pioneiro em 20%."
+    },
+    "icon": "TrailblazerBoostRechargeIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostRecharge1",
+    "name": {
+      "en": "Trailblazer Boost Recharge Rate Lv. 2",
+      "pt-BR": "Taxa de Recarga do Impulso do Modo Pioneiro Nv. 2"
+    },
+    "description": {
+      "en": "Increases the boost recharge rate in the Trailblazer Transform Mode by 30%.",
+      "pt-BR": "Aumenta a taxa de recarga do impulso no Modo de Transformação Pioneiro em 30%."
+    },
+    "icon": "TrailblazerBoostRechargeIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TrailblazerBoostRecharge2",
+    "name": {
+      "en": "Trailblazer Boost Recharge Rate Lv. 3",
+      "pt-BR": "Taxa de Recarga do Impulso do Modo Pioneiro Nv. 3"
+    },
+    "description": {
+      "en": "Increases the boost recharge rate in the Trailblazer Transform Mode by 40%.",
+      "pt-BR": "Aumenta a taxa de recarga do impulso no Modo de Transformação Pioneiro em 40%."
+    },
+    "icon": "TrailblazerBoostRechargeIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "trailblazer"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformActiveSpeed0",
+    "name": {
+      "en": "Transform Mode Active Speed Lv. 1",
+      "pt-BR": "Velocidade de Atividade do Modo de Transformação Nv. 1"
+    },
+    "description": {
+      "en": "Increases the active speed of the Tractor Type Transform Mode by 20%.",
+      "pt-BR": "Aumenta a velocidade de atividade do Modo de Transformação Tipo Trator em 20%."
+    },
+    "icon": "TransformActiveSpeedIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformActiveSpeed1",
+    "name": {
+      "en": "Transform Mode Active Speed Lv. 2",
+      "pt-BR": "Velocidade de Atividade do Modo de Transformação Nv. 2"
+    },
+    "description": {
+      "en": "Increases the active speed of the Tractor Type Transform Mode by 25%.",
+      "pt-BR": "Aumenta a velocidade de atividade do Modo de Transformação Tipo Trator em 25%."
+    },
+    "icon": "TransformActiveSpeedIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformActiveSpeed2",
+    "name": {
+      "en": "Transform Mode Active Speed Lv. 3",
+      "pt-BR": "Velocidade de Atividade do Modo de Transformação Nv. 3"
+    },
+    "description": {
+      "en": "Increases the active speed of the Tractor Type Transform Mode by 30%.",
+      "pt-BR": "Aumenta a velocidade de atividade do Modo de Transformação Tipo Trator em 30%."
+    },
+    "icon": "TransformActiveSpeedIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformMoveSpeed0",
+    "name": {
+      "en": "Tractor Movement Speed Lv. 1",
+      "pt-BR": "Velocidade de Movimento do Trator Nv. 1"
+    },
+    "description": {
+      "en": "Increases the movement speed of the Tractor Type Transform Mode by 15%.",
+      "pt-BR": "Aumenta a velocidade de movimento do Modo de Transformação em 15%."
+    },
+    "icon": "TransformMoveSpeedIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformMoveSpeed1",
+    "name": {
+      "en": "Tractor Movement Speed Lv. 2",
+      "pt-BR": "Velocidade de Movimento do Trator Nv. 2"
+    },
+    "description": {
+      "en": "Increases the movement speed of the Tractor Type Transform Mode by 20%.",
+      "pt-BR": "Aumenta a velocidade de movimento do Modo de Transformação em 20%."
+    },
+    "icon": "TransformMoveSpeedIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformMoveSpeed2",
+    "name": {
+      "en": "Tractor Movement Speed Lv. 3",
+      "pt-BR": "Velocidade de Movimento do Trator Nv. 3"
+    },
+    "description": {
+      "en": "Increases the movement speed of the Tractor Type Transform Mode by 25%.",
+      "pt-BR": "Aumenta a velocidade de movimento do Modo de Transformação em 25%."
+    },
+    "icon": "TransformMoveSpeedIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformWidth0",
+    "name": {
+      "en": "Transform Mode Width Lv. 1",
+      "pt-BR": "Largura do Modo de Transformação Nv. 1"
+    },
+    "description": {
+      "en": "Increases the width of the Tractor Type Transform Mode by 2 units (to a maximum of 25).",
+      "pt-BR": "Aumenta a largura do Modo de Transformação Tipo Trator em 2 unidades (até um máximo de 25)."
+    },
+    "icon": "TransformWidthIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformWidth1",
+    "name": {
+      "en": "Transform Mode Width Lv. 2",
+      "pt-BR": "Largura do Modo de Transformação Nv. 2"
+    },
+    "description": {
+      "en": "Increases the width of the Tractor Type Transform Mode by 4 units (to a maximum of 25).",
+      "pt-BR": "Aumenta a largura do Modo de Transformação Tipo Trator em 4 unidades (até um máximo de 25)."
+    },
+    "icon": "TransformWidthIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "TransformWidth2",
+    "name": {
+      "en": "Transform Mode Width Lv. 3",
+      "pt-BR": "Largura do Modo de Transformação Nv. 3"
+    },
+    "description": {
+      "en": "Increases the width of the Tractor Type Transform Mode by 6 units (to a maximum of 25).",
+      "pt-BR": "Aumenta a largura do Modo de Transformação Tipo Trator em 6 unidades (até um máximo de 25)."
+    },
+    "icon": "TransformWidthIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "plow",
+      "harvester",
+      "fertilizer-spreader"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "UnstableHoseRange0",
+    "name": {
+      "en": "Unstable Water Pressure",
+      "pt-BR": "Pressão de Água Instável"
+    },
+    "description": {
+      "en": "Increases the range of the Irrigation Hose by 100% but increases its water consumption by 25%.",
+      "pt-BR": "Aumenta o alcance do Jato de Irrigação em 100%, mas aumenta seu consumo de água em 25%."
+    },
+    "icon": "UnstableHoseRangeIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "UnstableToolRange0",
+    "name": {
+      "en": "Unstable Tool Range",
+      "pt-BR": "Alcance da Ferramenta Instável"
+    },
+    "description": {
+      "en": "Increases the range of the tool by 50% but reduces its speed by 15%.",
+      "pt-BR": "Aumenta o alcance da ferramenta em 50%, mas reduz sua velocidade em 15%."
+    },
+    "icon": "UnstableToolRangeIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "UnstableToolSpeed0",
+    "name": {
+      "en": "Unstable Tool Speed",
+      "pt-BR": "Velocidade da Ferramenta Instável"
+    },
+    "description": {
+      "en": "Increases the speed of the tool by 30% but reduces its range by 25%.",
+      "pt-BR": "Aumenta a velocidade da ferramenta em 30%, mas reduz seu alcance em 25%."
+    },
+    "icon": "UnstableToolSpeedIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "spike-saw",
+      "irrigation-hose",
+      "resource-vacuum",
+      "seed-shooter",
+      "sprout-cannon"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumAngle0",
+    "name": {
+      "en": "Resource Vacuum Width Lv. 1",
+      "pt-BR": "Largura do Coletor a Vácuo Nv. 1"
+    },
+    "description": {
+      "en": "Widens the angle of the Resource Vacuum's cone by 20%.",
+      "pt-BR": "Estende o ângulo do cone do Coletor a Vácuo em 20%."
+    },
+    "icon": "VacuumAngleIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumAngle1",
+    "name": {
+      "en": "Resource Vacuum Width Lv. 2",
+      "pt-BR": "Largura do Coletor a Vácuo Nv. 2"
+    },
+    "description": {
+      "en": "Widens the angle of the Resource Vacuum's cone by 25%.",
+      "pt-BR": "Estende o ângulo do cone do Coletor a Vácuo em 25%."
+    },
+    "icon": "VacuumAngleIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumAngle2",
+    "name": {
+      "en": "Resource Vacuum Width Lv. 3",
+      "pt-BR": "Largura do Coletor a Vácuo Nv. 3"
+    },
+    "description": {
+      "en": "Widens the angle of the Resource Vacuum's cone by 30%.",
+      "pt-BR": "Estende o ângulo do cone do Coletor a Vácuo em 30%."
+    },
+    "icon": "VacuumAngleIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumStrength0",
+    "name": {
+      "en": "Resource Vacuum Strength Lv. 1",
+      "pt-BR": "Potência do Coletor a Vácuo Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the time it takes for the Resource Vacuum to pluck crops from the ground by 25% (to a maximum of 90%).",
+      "pt-BR": "Reduz o tempo necessário para o Coletor a Vácuo colher as plantações do chão em 25% (até um máximo de 90%)."
+    },
+    "icon": "VacuumStrengthIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumStrength1",
+    "name": {
+      "en": "Resource Vacuum Strength Lv. 2",
+      "pt-BR": "Potência do Coletor a Vácuo Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the time it takes for the Resource Vacuum to pluck crops from the ground by 37.5% (to a maximum of 90%).",
+      "pt-BR": "Reduz o tempo necessário para o Coletor a Vácuo colher as plantações do chão em 37,5% (até um máximo de 90%)."
+    },
+    "icon": "VacuumStrengthIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "VacuumStrength2",
+    "name": {
+      "en": "Resource Vacuum Strength Lv. 3",
+      "pt-BR": "Potência do Coletor a Vácuo Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the time it takes for the Resource Vacuum to pluck crops from the ground by 50% (to a maximum of 90%).",
+      "pt-BR": "Reduz o tempo necessário para o Coletor a Vácuo colher as plantações do chão em 50% (até um máximo de 90%)."
+    },
+    "icon": "VacuumStrengthIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "resource-vacuum"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterAbsorption0",
+    "name": {
+      "en": "Water Absorption Lv. 1",
+      "pt-BR": "Absorção de Água Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank refill rate when standing in water by 15%.",
+      "pt-BR": "Aumenta a taxa de reabastecimento do Tanque de Água do meca ao parar em água em 15%."
+    },
+    "icon": "WaterAbsorptionIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterAbsorption1",
+    "name": {
+      "en": "Water Absorption Lv. 2",
+      "pt-BR": "Absorção de Água Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank refill rate when standing in water by 20%.",
+      "pt-BR": "Aumenta a taxa de reabastecimento do Tanque de Água do meca ao parar em água em 20%."
+    },
+    "icon": "WaterAbsorptionIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterAbsorption2",
+    "name": {
+      "en": "Water Absorption Lv. 3",
+      "pt-BR": "Absorção de Água Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank refill rate when standing in water by 25%.",
+      "pt-BR": "Aumenta a taxa de reabastecimento do Tanque de Água do meca ao parar em água em 25%."
+    },
+    "icon": "WaterAbsorptionIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterEfficiency0",
+    "name": {
+      "en": "Water Efficiency Lv. 1",
+      "pt-BR": "Eficiência de Água Nv. 1"
+    },
+    "description": {
+      "en": "Reduces the water consumption of the Irrigation Hose by 10% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de água do Jato de Irrigação em 10% (até um máximo de 90%)."
+    },
+    "icon": "WaterEfficiencyIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterEfficiency1",
+    "name": {
+      "en": "Water Efficiency Lv. 2",
+      "pt-BR": "Eficiência de Água Nv. 2"
+    },
+    "description": {
+      "en": "Reduces the water consumption of the Irrigation Hose by 15% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de água do Jato de Irrigação em 15% (até um máximo de 90%)."
+    },
+    "icon": "WaterEfficiencyIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterEfficiency2",
+    "name": {
+      "en": "Water Efficiency Lv. 3",
+      "pt-BR": "Eficiência de Água Nv. 3"
+    },
+    "description": {
+      "en": "Reduces the water consumption of the Irrigation Hose by 20% (to a maximum of 90%).",
+      "pt-BR": "Reduz o consumo de água do Jato de Irrigação em 20% (até um máximo de 90%)."
+    },
+    "icon": "WaterEfficiencyIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterSurf0",
+    "name": {
+      "en": "Water Surfing Lv. 1",
+      "pt-BR": "Surfe na Água Nv. 1"
+    },
+    "description": {
+      "en": "Enables the mech to surf on water for 10s.",
+      "pt-BR": "Permite que o meca surfe na água por 10 s."
+    },
+    "icon": "WaterSurfIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterSurf1",
+    "name": {
+      "en": "Water Surfing Lv. 2",
+      "pt-BR": "Surfe na Água Nv. 2"
+    },
+    "description": {
+      "en": "Enables the mech to surf on water for 15s.",
+      "pt-BR": "Permite que o meca surfe na água por 15 s."
+    },
+    "icon": "WaterSurfIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 15
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterSurf2",
+    "name": {
+      "en": "Water Surfing Lv. 3",
+      "pt-BR": "Surfe na Água Nv. 3"
+    },
+    "description": {
+      "en": "Enables the mech to surf on water for 20s.",
+      "pt-BR": "Permite que o meca surfe na água por 20 s."
+    },
+    "icon": "WaterSurfIcon",
+    "powerCost": 10,
+    "costs": [],
+    "fits": [
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterTank0",
+    "name": {
+      "en": "Water Tank Capacity Lv. 1",
+      "pt-BR": "Capacidade do Tanque de Água Nv. 1"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank capacity by 100.",
+      "pt-BR": "Aumenta a capacidade do Tanque de Água do meca em 100."
+    },
+    "icon": "WaterTankIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterTank1",
+    "name": {
+      "en": "Water Tank Capacity Lv. 2",
+      "pt-BR": "Capacidade do Tanque de Água Nv. 2"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank capacity by 200.",
+      "pt-BR": "Aumenta a capacidade do Tanque de Água do meca em 200."
+    },
+    "icon": "WaterTankIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterTank2",
+    "name": {
+      "en": "Water Tank Capacity Lv. 3",
+      "pt-BR": "Capacidade do Tanque de Água Nv. 3"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank capacity by 300.",
+      "pt-BR": "Aumenta a capacidade do Tanque de Água do meca em 300."
+    },
+    "icon": "WaterTankIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "irrigation-hose"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WaterTankAddOn0",
+    "name": {
+      "en": "Water Tank Add-on",
+      "pt-BR": "Complemento do Tanque de Água"
+    },
+    "description": {
+      "en": "Increases the mech's Water Tank capacity by 50.",
+      "pt-BR": "Aumenta a capacidade do Tanque de Água do meca em 50."
+    },
+    "icon": "WaterTankAddOnIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "engine",
+      "arms",
+      "legs"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointDamage0",
+    "name": {
+      "en": "Weak Point Damage Lv. 1",
+      "pt-BR": "Dano em Ponto Fraco Nv. 1"
+    },
+    "description": {
+      "en": "Increases the damage dealt when striking a Weak Point by 15%.",
+      "pt-BR": "Aumenta o dano causado ao atingir um Ponto Fraco em 15%."
+    },
+    "icon": "WeakPointDamageIcon",
+    "powerCost": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointDamage1",
+    "name": {
+      "en": "Weak Point Damage Lv. 2",
+      "pt-BR": "Dano em Ponto Fraco Nv. 2"
+    },
+    "description": {
+      "en": "Increases the damage dealt when striking a Weak Point by 20%.",
+      "pt-BR": "Aumenta o dano causado ao atingir um Ponto Fraco em 20%."
+    },
+    "icon": "WeakPointDamageIcon",
+    "powerCost": 5,
+    "costs": [
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 10
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 3
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointDamage2",
+    "name": {
+      "en": "Weak Point Damage Lv. 3",
+      "pt-BR": "Dano em Ponto Fraco Nv. 3"
+    },
+    "description": {
+      "en": "Increases the damage dealt when striking a Weak Point by 25%.",
+      "pt-BR": "Aumenta o dano causado ao atingir um Ponto Fraco em 25%."
+    },
+    "icon": "WeakPointDamageIcon",
+    "powerCost": 10,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 3
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointFuelRefund0",
+    "name": {
+      "en": "Weak Point Fuel Refund",
+      "pt-BR": "Recuperação de Combustível por Ponto Fraco"
+    },
+    "description": {
+      "en": "Striking a Weak Point refunds the fuel cost of the strike.",
+      "pt-BR": "Acertar um Ponto Fraco recupera o custo em combustível do ataque."
+    },
+    "icon": "WeakPointFuelRefundIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 5
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointMoveSpeed0",
+    "name": {
+      "en": "Weak Point Move Speed Combo Lv. 1",
+      "pt-BR": "Combo de Velocidade e Ponto Fraco Nv. 1"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases movement speed by 2% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta a velocidade de movimento em 2% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointMoveSpeedIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointMoveSpeed1",
+    "name": {
+      "en": "Weak Point Move Speed Combo Lv. 2",
+      "pt-BR": "Combo de Velocidade e Ponto Fraco Nv. 2"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases movement speed by 3% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta a velocidade de movimento em 3% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointMoveSpeedIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointMoveSpeed2",
+    "name": {
+      "en": "Weak Point Move Speed Combo Lv. 3",
+      "pt-BR": "Combo de Velocidade e Ponto Fraco Nv. 3"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases movement speed by 4% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta a velocidade de movimento em 4% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointMoveSpeedIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSizeDuration0",
+    "name": {
+      "en": "Weak Point Target Lv. 1",
+      "pt-BR": "Alvo no Ponto Fraco Nv. 1"
+    },
+    "description": {
+      "en": "Increases the size and duration of the Weak Point target by 25%.",
+      "pt-BR": "Aumenta o tamanho e a duração do alvo no Ponto Fraco em 25%."
+    },
+    "icon": "WeakPointSizeDurationIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSizeDuration1",
+    "name": {
+      "en": "Weak Point Target Lv. 2",
+      "pt-BR": "Alvo no Ponto Fraco Nv. 2"
+    },
+    "description": {
+      "en": "Increases the size and duration of the Weak Point target by 30%.",
+      "pt-BR": "Aumenta o tamanho e a duração do alvo no Ponto Fraco em 30%."
+    },
+    "icon": "WeakPointSizeDurationIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSizeDuration2",
+    "name": {
+      "en": "Weak Point Target Lv. 3",
+      "pt-BR": "Alvo no Ponto Fraco Nv. 3"
+    },
+    "description": {
+      "en": "Increases the size and duration of the Weak Point target by 35%.",
+      "pt-BR": "Aumenta o tamanho e a duração do alvo no Ponto Fraco em 35%."
+    },
+    "icon": "WeakPointSizeDurationIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": false,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSwingDamage0",
+    "name": {
+      "en": "Weak Point Damage Combo Lv. 1",
+      "pt-BR": "Combo de Dano e Ponto Fraco Nv. 1"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases the range and damage of the next Sweeping Strike by 10% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta o alcance e o dano da próxima Serra Lateral em 10% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointSwingDamageIcon",
+    "powerCost": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 1
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 2
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSwingDamage1",
+    "name": {
+      "en": "Weak Point Damage Combo Lv. 2",
+      "pt-BR": "Combo de Dano e Ponto Fraco Nv. 2"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases the range and damage of the next Sweeping Strike by 15% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta o alcance e o dano da próxima Serra Lateral em 15% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointSwingDamageIcon",
+    "powerCost": 3,
+    "costs": [
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  },
+  {
+    "id": "WeakPointSwingDamage2",
+    "name": {
+      "en": "Weak Point Damage Combo Lv. 3",
+      "pt-BR": "Combo de Dano e Ponto Fraco Nv. 3"
+    },
+    "description": {
+      "en": "Striking a Weak Point adds a stacking bonus that increases the range and damage of the next Sweeping Strike by 20% for 15 seconds (to a maximum of 5 stacks).",
+      "pt-BR": "Acertar um Ponto Fraco gera um acúmulo de bônus que aumenta o alcance e o dano da próxima Serra Lateral em 20% por 15 s (até um máximo de 5 acúmulos)."
+    },
+    "icon": "WeakPointSwingDamageIcon",
+    "powerCost": 7,
+    "costs": [
+      {
+        "itemId": "SteelElectronics",
+        "amount": 1
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 1
+      }
+    ],
+    "fits": [
+      "spike-saw"
+    ],
+    "unique": true,
+    "featureFlag": null
+  }
+]

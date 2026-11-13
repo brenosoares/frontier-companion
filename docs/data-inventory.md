@@ -29,7 +29,7 @@ Origem: dump de Unreal Engine (projeto interno `FarMech` = Lightyear Frontier), 
 | Receitas (agregadas)            | `DT_CompositeRecipes` + ~35 `DT_*Recipe(s)` por máquina (Furnace, Grinder, OilPresser, SeedMaker…) | 362 no composto                       |
 | Desbloqueio de receitas         | `DT_RecipeUnlocks`                                                                                 | —                                     |
 | Módulos do mecha                | `DT_Modules`                                                                                       | 284                                   |
-| Upgrades / Core upgrades        | `DT_Upgrades`, `DT_CoreUpgrades`                                                                   | 56 / —                                |
+| Mecha (partes, chips)           | `DT_Modules`, `DT_CoreUpgrades`, `DT_StatDisplay` (`DT_Upgrades` é legado, ver ADR 0014)           | 284 / 144 / 37                        |
 | Plantas e sementes              | `DT_SmallPlants`, `DT_LargePlants`, `DT_PlantToSeed`, `DT_SeedToPlant`, `DT_RarePlantData`         | 13 / —                                |
 | Nodes (árvores, rochas) e drops | `DT_Nodes`                                                                                         | 75                                    |
 | Criaturas / Rancho              | `DT_Critters`, `DT_RanchAnimals`, `DT_CritterFood`                                                 | —                                     |
@@ -42,7 +42,7 @@ Origem: dump de Unreal Engine (projeto interno `FarMech` = Lightyear Frontier), 
 
 ## Ignorar no MVP (ruído de UI / engine)
 
-`RichTextStyles/*`, `TextDecorators/*`, `DT_ButtonDecorator`, `DT_ButtonImages`, `GamepadImageTable`, `FeatureFlags`, `WeatherLightingOverridePresets`, `DT_StatDisplay`, `Name.json`, `String.json`, `BP_RichTextBlock`, `DT_Upgrades_OLD`, os `F*.json` (definições de struct, úteis só para entender campos).
+`RichTextStyles/*`, `TextDecorators/*`, `DT_ButtonDecorator`, `DT_ButtonImages`, `GamepadImageTable`, `FeatureFlags`, `WeatherLightingOverridePresets`, `Name.json`, `String.json`, `BP_RichTextBlock`, `DT_Upgrades_OLD`, os `F*.json` (definições de struct, úteis só para entender campos).
 `ST_VOText` (490 KB, falas de áudio) e `DT_AdditionalSpeechLineData` (244 KB): conteúdo narrativo/direitos autorais — fora do escopo.
 
 ## Riscos / pontos de atenção encontrados
