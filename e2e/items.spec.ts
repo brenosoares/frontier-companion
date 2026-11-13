@@ -247,3 +247,29 @@ test.describe("origins from the game's blueprints", () => {
     await expect(page).toHaveURL(/\/pt-BR\/animals\/Crob$/);
   });
 });
+
+test.describe("constructs in an item's 'used in'", () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test("lists the constructs that cost the item, linking to their pages", async ({ page }) => {
+    await page.goto("/pt-BR/items/RedCrystal");
+
+    const usedIn = page.locator("section").filter({
+      has: page.getByRole("heading", { level: 2, name: "Usado em" }),
+    });
+    await expect(usedIn.getByRole("heading", { level: 3, name: "Construções" })).toBeVisible();
+    const drone = usedIn.locator('a[href$="/constructs/DroneStation"]');
+    await expect(drone).toBeVisible();
+    await expect(
+      usedIn.locator("li").filter({ has: page.locator('a[href$="/constructs/DroneStation"]') }),
+    ).toContainText("·");
+
+    await drone.click();
+    await expect(page).toHaveURL(/\/pt-BR\/constructs\/DroneStation$/);
+  });
+
+  test("is localized", async ({ page }) => {
+    await page.goto("/en/items/RedCrystal");
+    await expect(page.getByRole("heading", { level: 3, name: "Constructs" })).toBeVisible();
+  });
+});
