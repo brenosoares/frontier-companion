@@ -245,7 +245,9 @@ test.describe("mech in an item's 'used in'", () => {
   test("an item no recipe or mech part uses still says so", async ({ page }) => {
     await page.goto("/pt-BR/items/Clam");
     await expect(
-      page.getByText("Este item não é ingrediente de nenhuma receita nem usado no mecha."),
+      page.getByText(
+        "Este item não é ingrediente de nenhuma receita nem usado em construções ou no mecha.",
+      ),
     ).toBeVisible();
     await expect(page.getByRole("heading", { level: 3, name: "Partes do mecha" })).toHaveCount(0);
   });

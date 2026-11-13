@@ -4,9 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Button } from "@/shared/ui/button";
+import { constructGroup } from "@/features/constructs/domain/construct";
 import { partGroup } from "@/features/mech/domain/mech";
 import { formatNumber } from "@/shared/lib/format";
-import { GameIcon } from "@/shared/ui/game-icon";
+import { GameIcon, type GameIconKind } from "@/shared/ui/game-icon";
 import { ItemHeader } from "@/features/items/components/item-header";
 import { ItemSourceList } from "@/features/items/components/item-source-list";
 import { RecipeList } from "@/features/recipes/components/recipe-list";
@@ -15,6 +16,7 @@ import { toRecipeView } from "@/features/recipes/domain/recipe-view";
 import { LOCALES, localizedPath } from "@/shared/i18n/config";
 import { getMessages } from "@/shared/i18n/get-messages";
 import {
+  constructRepository,
   itemRepository,
   itemSourceRepository,
   mechRepository,
@@ -54,20 +56,22 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 export default async function ItemPage({ params }: PageProps<"/[locale]/items/[id]">) {
   const { locale: rawLocale, id } = await params;
   const locale = assertLocale(rawLocale);
-  const { items: text, recipes: recipeLabels, mech: mechText } = getMessages(locale);
+  const { items: text, recipes: recipeLabels, mech: mechText, recipesHub } = getMessages(locale);
 
   const item = await itemRepository.getById(id);
   if (!item) notFound();
 
-  const [items, stations, producing, consuming, sources, mechParts, mechChips] = await Promise.all([
-    itemRepository.getAll(),
-    stationRepository.getAll(),
-    recipeRepository.findByOutput(id),
-    recipeRepository.findByInput(id),
-    itemSourceRepository.findByItem(id),
-    mechRepository.getParts(),
-    mechRepository.getChips(),
-  ]);
+  const [items, stations, producing, consuming, sources, mechParts, mechChips, constructs] =
+    await Promise.all([
+      itemRepository.getAll(),
+      stationRepository.getAll(),
+      recipeRepository.findByOutput(id),
+      recipeRepository.findByInput(id),
+      itemSourceRepository.findByItem(id),
+      mechRepository.getParts(),
+      mechRepository.getChips(),
+      constructRepository.getAll(),
+    ]);
 
   const itemNames = new Map(items.map((entry) => [entry.id, entry.name[locale]]));
   const itemIcons = new Map(items.map((entry) => [entry.id, entry.icon]));
@@ -92,6 +96,21 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
 
   const costOf = (costs: readonly { itemId: string; amount: number }[]) =>
     costs.find((cost) => cost.itemId === id)?.amount;
+  const constructUses = constructs.flatMap((construct) => {
+    const amount = costOf(construct.costs);
+    return amount === undefined
+      ? []
+      : [
+          {
+            key: construct.id,
+            amount,
+            name: construct.name[locale],
+            icon: construct.icon,
+            href: localizedPath(locale, `/constructs/${construct.id}`),
+            context: `${recipesHub.groups[constructGroup(construct.category)]} · ${recipesHub.categories[construct.category]}`,
+          },
+        ];
+  });
   const mechUses = {
     parts: mechParts.flatMap((part) => {
       const amount = costOf(part.costs);
@@ -124,7 +143,7 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
           ];
     }),
   };
-  const renderMechUses = (title: string, uses: typeof mechUses.parts) => (
+  const renderUses = (title: string, uses: typeof constructUses, kind: GameIconKind) => (
     <div className="flex flex-col gap-3">
       <h3 className="text-base font-semibold">{title}</h3>
       <ul className="grid gap-3 sm:grid-cols-2">
@@ -134,7 +153,7 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
             className="flex flex-col gap-1 rounded-xl border border-border bg-surface p-3"
           >
             <span className="inline-flex items-center gap-2">
-              <GameIcon kind="mech" icon={use.icon} size={28} className="size-9" />
+              <GameIcon kind={kind} icon={use.icon} size={28} className="size-9" />
               <span className="min-w-0 break-words">
                 <span className="font-semibold">{formatNumber(use.amount, locale)}×</span>{" "}
                 <Link
@@ -151,7 +170,8 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
       </ul>
     </div>
   );
-  const usedInMech = mechUses.parts.length > 0 || mechUses.chips.length > 0;
+  const hasOtherUses =
+    constructUses.length > 0 || mechUses.parts.length > 0 || mechUses.chips.length > 0;
 
   const isCraftable = producing.length > 0;
   const hasSources = sources.length > 0;
@@ -194,9 +214,13 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
 
       <Section title={text.detail.usedIn}>
         {consuming.length > 0 && renderRecipes(consuming)}
-        {mechUses.parts.length > 0 && renderMechUses(text.detail.usedInMechParts, mechUses.parts)}
-        {mechUses.chips.length > 0 && renderMechUses(text.detail.usedInMechChips, mechUses.chips)}
-        {consuming.length === 0 && !usedInMech && (
+        {constructUses.length > 0 &&
+          renderUses(text.detail.usedInConstructs, constructUses, "construct")}
+        {mechUses.parts.length > 0 &&
+          renderUses(text.detail.usedInMechParts, mechUses.parts, "mech")}
+        {mechUses.chips.length > 0 &&
+          renderUses(text.detail.usedInMechChips, mechUses.chips, "mech")}
+        {consuming.length === 0 && !hasOtherUses && (
           <p className="text-muted">{text.detail.noUsage}</p>
         )}
       </Section>
