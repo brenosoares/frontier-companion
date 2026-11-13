@@ -91,6 +91,7 @@ export const ptBR = {
       calculate: "Calcular materiais",
       noOrigin:
         "Não identificamos nos dados do jogo de onde este item vem. Ele pode ser obtido por outros meios, como mercadores ou entregas.",
+      reagent: { title: "Reagente de fertilizante", effect: "Efeito", potency: "Potência" },
       usedIn: "Usado em",
       noUsage:
         "Este item não é ingrediente de nenhuma receita nem usado em construções ou no mecha.",
@@ -329,6 +330,46 @@ export const ptBR = {
       title: "Usado em",
       shared: "Itens que várias plantas dão. Veja onde cada um é usado na página do item:",
       none: "Nenhuma receita usa o que esta planta dá.",
+    },
+    fertilizing: {
+      link: "Fertilizantes e qualidade da colheita",
+      linkHint: "Adubos, reagentes e a chance de cada qualidade na colheita.",
+      title: "Fertilizantes e qualidade",
+      intro:
+        "O que ajuda as plantas a crescer melhor: os adubos, os itens com efeito de reagente e as chances de qualidade da colheita.",
+      back: "Voltar para plantas",
+      fertilizers: {
+        title: "Adubos",
+        intro:
+          "Itens que o jogo marca como fertilizante, e os pós usados para fazê-los. Abra um item para ver como fazer.",
+        powders: "Pós",
+      },
+      reagents: {
+        title: "Reagentes",
+        intro:
+          "Itens com efeito de reagente de fertilizante. A potência é o número do jogo, que não informa a unidade.",
+        effect: "Efeito",
+        potency: "Potência",
+        effects: {
+          Seed: "Sementes",
+          WaterRetention: "Retenção de líquidos",
+          Quality: "Qualidade",
+          Growth: "Velocidade de crescimento",
+          FruitGrowthSpeed: "Velocidade de crescimento de frutas",
+          FruitMaxAmount: "Máx. de frutas",
+          DyeRed: "Tinta vermelha",
+          DyeYellow: "Tinta amarela",
+          DyeBlue: "Tinta azul",
+        },
+      },
+      quality: {
+        title: "Qualidade da colheita",
+        intro:
+          "Para cada nível de qualidade, a chance de cada resultado na colheita. O nível 0 é a base: a colheita sai sempre média.",
+        level: "Nível",
+        note: "Os dados do jogo não dizem como se chega a cada nível.",
+        qualities: { poor: "Ruim", average: "Média", fine: "Boa", exquisite: "Excelente" },
+      },
     },
     chance: "{chance} de chance",
   },

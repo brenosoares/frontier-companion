@@ -1,4 +1,4 @@
-import type { Plant } from "@/features/plants/domain/plant";
+import type { Plant, PlantEffectEntry, QualityRate } from "@/features/plants/domain/plant";
 import type { MechChip, MechPart, MechStat } from "@/features/mech/domain/mech";
 import type { Animal, Incubator } from "@/features/animals/domain/animal";
 import type { Construct } from "@/features/constructs/domain/construct";
@@ -19,6 +19,8 @@ export interface Dataset {
   mechParts: readonly MechPart[];
   mechChips: readonly MechChip[];
   plants: readonly Plant[];
+  plantEffects: readonly PlantEffectEntry[];
+  qualityRates: readonly QualityRate[];
 }
 
 function findDuplicates(ids: readonly string[]): string[] {
@@ -42,6 +44,8 @@ export function checkIntegrity({
   mechParts,
   mechChips,
   plants,
+  plantEffects,
+  qualityRates,
   animals,
 }: Dataset): string[] {
   const issues: string[] = [];
@@ -100,6 +104,14 @@ export function checkIntegrity({
         issues.push(`Animal "${animal.id}" has unknown ${role} item "${itemId}"`);
       }
     }
+  }
+  for (const effect of plantEffects) {
+    if (!itemIds.has(effect.id)) {
+      issues.push(`Plant effect "${effect.id}" is not an item`);
+    }
+  }
+  for (const id of findDuplicates(qualityRates.map((rate) => rate.id))) {
+    issues.push(`Duplicate quality level "${id}"`);
   }
   for (const id of findDuplicates(plants.map((plant) => plant.id))) {
     issues.push(`Duplicate plant id "${id}"`);

@@ -96,6 +96,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
       constructs: [construct("Box", "Ore")],
     });
     expect(issues).toEqual([]);
@@ -113,6 +115,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
       constructs: [construct("Box", "Nothing")],
     });
     expect(issues).toEqual([
@@ -136,6 +140,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
       constructs: [construct("Box", "Ore"), construct("Box", "Ore")],
     });
     expect(issues).toContain('Duplicate item id "Ore"');
@@ -157,6 +163,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
       constructs: [],
     });
     expect(issues).toEqual(['Station "Furnace3" belongs to unknown family "Furnace"']);
@@ -175,6 +183,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
       constructs: [],
     });
     expect(issues).toEqual(['Item source "node:Seeds:Ore" grows from unknown seed "Seeds"']);
@@ -193,6 +203,8 @@ describe("checkIntegrity", () => {
       mechParts: [],
       mechChips: [],
       plants: [],
+      plantEffects: [],
+      qualityRates: [],
     });
 
     expect(issues).toContain('Duplicate animal id "Tookan"');

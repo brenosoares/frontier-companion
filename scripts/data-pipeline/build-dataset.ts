@@ -1,4 +1,5 @@
 import { RELEASED_FEATURE_FLAGS, STATIONS } from "./config";
+import { extractPlantEffects, extractQualityRates } from "./extractors/plant-care";
 import { extractPlants } from "./extractors/plants";
 import { extractMechChips, extractMechParts, extractMechStats } from "./extractors/mech";
 import { extractAnimals } from "./extractors/animals";
@@ -99,6 +100,8 @@ export async function buildDataset(
     chipRows,
     statDisplayRows,
     seedRows,
+    reagentRows,
+    qualityRows,
   ] = await Promise.all([
     readRows(source, "DT_Items"),
     readRows(source, "DT_CompositeRecipes"),
@@ -116,6 +119,8 @@ export async function buildDataset(
     readRows(source, "DT_CoreUpgrades"),
     readRows(source, "DT_StatDisplay"),
     readRows(source, "DT_PlantToSeed"),
+    readRows(source, "DT_FertilizerReagents"),
+    readRows(source, "DT_QualityRates"),
   ]);
 
   const [critterParent, incubatorDefaults, hazardDefaults, lootGoblinDefaults, largeItemFiles] =
@@ -174,6 +179,7 @@ export async function buildDataset(
     eggToAnimal,
   });
   const itemIds = new Set(items.map((item) => item.id));
+  const builtEffects = extractPlantEffects(reagentRows, itemIds);
   const { kept: itemSources, warnings: sourceWarnings } = filterUsableSources(
     reconcileItemIdCase(
       sortSources([
@@ -208,6 +214,8 @@ export async function buildDataset(
     mechParts: builtMechParts.parts,
     mechChips: builtMechChips.chips,
     plants: builtPlants.plants,
+    plantEffects: builtEffects.effects,
+    qualityRates: extractQualityRates(qualityRows),
   };
 
   return {
@@ -218,6 +226,7 @@ export async function buildDataset(
       ...builtMechParts.warnings,
       ...builtMechChips.warnings,
       ...builtPlants.warnings,
+      ...builtEffects.warnings,
       ...sourceWarnings,
     ],
     integrityIssues: checkIntegrity(dataset),

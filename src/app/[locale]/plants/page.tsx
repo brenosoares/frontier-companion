@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PlantCard } from "@/features/plants/components/plant-card";
 import { PLANT_KINDS } from "@/features/plants/domain/plant";
 import { localizedPath } from "@/shared/i18n/config";
@@ -32,6 +33,14 @@ export default async function PlantsPage({ params }: PageProps<"/[locale]/plants
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{text.title}</h1>
         <p className="max-w-2xl text-lg text-muted">{text.intro}</p>
       </header>
+
+      <Link
+        href={localizedPath(locale, "/plants/fertilizing")}
+        className="flex flex-col gap-1 self-start rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+      >
+        <span className="font-medium">{text.fertilizing.link}</span>
+        <span className="text-sm text-muted">{text.fertilizing.linkHint}</span>
+      </Link>
 
       {PLANT_KINDS.map((kind) => (
         <section key={kind} className="flex flex-col gap-3">

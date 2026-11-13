@@ -6,7 +6,7 @@ import { DatasetManifestSchema } from "@/shared/domain/dataset-manifest";
 import { PART_CATEGORIES } from "@/features/mech/domain/mech";
 import { IncubatorSchema } from "@/features/animals/domain/animal";
 import { JsonPlantRepository } from "@/features/plants/data/json-plant-repository";
-import { CROP_TYPES } from "@/features/plants/domain/plant";
+import { CROP_TYPES, QUALITIES } from "@/features/plants/domain/plant";
 import { JsonMechRepository } from "@/features/mech/data/json-mech-repository";
 import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
@@ -46,6 +46,13 @@ async function readAllSources() {
  * Contract test for the COMMITTED curated dataset (`data/processed`). It runs in CI, where the raw
  * dump is unavailable, so a bad hand-edit or stale file fails the build.
  */
+const plantRepo = () =>
+  new JsonPlantRepository({
+    plants: load("plants.json"),
+    effects: load("plant-effects.json"),
+    qualityRates: load("quality-rates.json"),
+  });
+
 const mechRepository = () =>
   new JsonMechRepository({
     stats: load("mech-stats.json"),
@@ -66,7 +73,10 @@ describe("committed dataset (data/processed)", () => {
     const mechStats = await mech.getStats();
     const mechParts = await mech.getParts();
     const mechChips = await mech.getChips();
-    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
+    const plantRepository = plantRepo();
+    const plants = await plantRepository.getAll();
+    const plantEffects = await plantRepository.getEffects();
+    const qualityRates = await plantRepository.getQualityRates();
 
     expect(items.length).toBeGreaterThan(0);
     expect(recipes.length).toBeGreaterThan(0);
@@ -84,6 +94,8 @@ describe("committed dataset (data/processed)", () => {
         mechParts,
         mechChips,
         plants,
+        plantEffects,
+        qualityRates,
       }),
     ).toEqual([]);
     expect(
@@ -113,6 +125,8 @@ describe("committed dataset (data/processed)", () => {
     const mechParts = (await read("mech-parts.json")) as unknown[];
     const mechChips = (await read("mech-chips.json")) as unknown[];
     const plants = (await read("plants.json")) as unknown[];
+    const plantEffects = (await read("plant-effects.json")) as unknown[];
+    const qualityRates = (await read("quality-rates.json")) as unknown[];
 
     expect(manifest.gameVersion).toBe(GAME_VERSION);
     expect(manifest.counts).toEqual({
@@ -125,6 +139,8 @@ describe("committed dataset (data/processed)", () => {
       mechParts: mechParts.length,
       mechChips: mechChips.length,
       plants: plants.length,
+      plantEffects: plantEffects.length,
+      qualityRates: qualityRates.length,
     });
   });
 
@@ -253,7 +269,7 @@ describe("committed dataset (data/processed)", () => {
   });
 
   it("has a UI label, in every locale, for every crop type and plant group", async () => {
-    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
+    const plants = await plantRepo().getAll();
     for (const locale of LOCALES) {
       const { types, groups } = getMessages(locale).plants;
       const typeLabels: Record<string, string> = types;
@@ -264,7 +280,7 @@ describe("committed dataset (data/processed)", () => {
   });
 
   it("publishes a PNG for every plant icon", async () => {
-    const plants = await new JsonPlantRepository(load("plants.json")).getAll();
+    const plants = await plantRepo().getAll();
     const icons = plants.flatMap((plant) => (plant.icon ? [plant.icon] : []));
 
     expect(icons.length).toBeGreaterThan(0);
@@ -275,5 +291,27 @@ describe("committed dataset (data/processed)", () => {
       );
     }
     expect(missing).toEqual([]);
+  });
+
+  it("has a UI label, in every locale, for every plant effect and harvest quality", async () => {
+    const effects = await plantRepo().getEffects();
+    for (const locale of LOCALES) {
+      const { reagents, quality } = getMessages(locale).plants.fertilizing;
+      const effectLabels: Record<string, string> = reagents.effects;
+      const qualityLabels: Record<string, string> = quality.qualities;
+      expect(effects.filter((entry) => !(entry.effect in effectLabels)).map((e) => e.id)).toEqual(
+        [],
+      );
+      expect(QUALITIES.filter((q) => !(q in qualityLabels))).toEqual([]);
+    }
+  });
+
+  it("has a baseline quality level whose harvest is always average", async () => {
+    const rates = await plantRepo().getQualityRates();
+    const baseline = rates.find((rate) => rate.level === 0);
+    expect(baseline?.rates).toEqual({ poor: 0, average: 100, fine: 0, exquisite: 0 });
+    expect(rates.map((rate) => rate.level)).toEqual(
+      [...rates.map((r) => r.level)].sort((a, b) => a - b),
+    );
   });
 });

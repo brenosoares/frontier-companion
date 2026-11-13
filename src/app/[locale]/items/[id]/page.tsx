@@ -7,6 +7,7 @@ import { Button } from "@/shared/ui/button";
 import { constructGroup } from "@/features/constructs/domain/construct";
 import { partGroup } from "@/features/mech/domain/mech";
 import { formatNumber } from "@/shared/lib/format";
+import { FactList } from "@/shared/ui/fact-list";
 import { GameIcon, type GameIconKind } from "@/shared/ui/game-icon";
 import { ItemHeader } from "@/features/items/components/item-header";
 import { ItemSourceList } from "@/features/items/components/item-source-list";
@@ -46,6 +47,9 @@ export async function generateMetadata({
   };
 }
 
+const LINK_CLASS =
+  "rounded underline decoration-border-strong underline-offset-4 hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring";
+
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="flex flex-col gap-3">
@@ -58,23 +62,40 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 export default async function ItemPage({ params }: PageProps<"/[locale]/items/[id]">) {
   const { locale: rawLocale, id } = await params;
   const locale = assertLocale(rawLocale);
-  const { items: text, recipes: recipeLabels, mech: mechText, recipesHub } = getMessages(locale);
+  const {
+    items: text,
+    recipes: recipeLabels,
+    mech: mechText,
+    recipesHub,
+    plants: plantText,
+  } = getMessages(locale);
 
   const item = await itemRepository.getById(id);
   if (!item) notFound();
 
-  const [items, stations, producing, consuming, sources, mechParts, mechChips, constructs, plants] =
-    await Promise.all([
-      itemRepository.getAll(),
-      stationRepository.getAll(),
-      recipeRepository.findByOutput(id),
-      recipeRepository.findByInput(id),
-      itemSourceRepository.findByItem(id),
-      mechRepository.getParts(),
-      mechRepository.getChips(),
-      constructRepository.getAll(),
-      plantRepository.getAll(),
-    ]);
+  const [
+    items,
+    stations,
+    producing,
+    consuming,
+    sources,
+    mechParts,
+    mechChips,
+    constructs,
+    plants,
+    effect,
+  ] = await Promise.all([
+    itemRepository.getAll(),
+    stationRepository.getAll(),
+    recipeRepository.findByOutput(id),
+    recipeRepository.findByInput(id),
+    itemSourceRepository.findByItem(id),
+    mechRepository.getParts(),
+    mechRepository.getChips(),
+    constructRepository.getAll(),
+    plantRepository.getAll(),
+    plantRepository.getEffectOf(id),
+  ]);
 
   const names = recipeNames(items, stations, locale);
   const toViews = (recipes: readonly Recipe[]) =>
@@ -210,6 +231,32 @@ export default async function ItemPage({ params }: PageProps<"/[locale]/items/[i
       {!isCraftable && !hasSources && (
         <Section title={text.detail.whereToFind}>
           <p className="text-muted">{text.detail.noOrigin}</p>
+        </Section>
+      )}
+
+      {effect && (
+        <Section title={text.detail.reagent.title}>
+          <FactList
+            facts={[
+              {
+                label: text.detail.reagent.effect,
+                value: plantText.fertilizing.reagents.effects[effect.effect],
+              },
+              ...(effect.potency > 0
+                ? [
+                    {
+                      label: text.detail.reagent.potency,
+                      value: formatNumber(effect.potency, locale),
+                    },
+                  ]
+                : []),
+            ]}
+          />
+          <p className="text-sm">
+            <Link href={localizedPath(locale, "/plants/fertilizing")} className={LINK_CLASS}>
+              {plantText.fertilizing.link}
+            </Link>
+          </p>
         </Section>
       )}
 
