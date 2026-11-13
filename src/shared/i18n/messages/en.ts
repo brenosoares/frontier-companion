@@ -91,7 +91,9 @@ export const en: Messages = {
       noOrigin:
         "We could not find where this item comes from in the game data. It may be obtained in other ways, such as from merchants or deliveries.",
       usedIn: "Used in",
-      noUsage: "This item is not an ingredient in any recipe.",
+      noUsage: "This item is not an ingredient in any recipe or used in the mech.",
+      usedInMechParts: "Mech parts",
+      usedInMechChips: "Mech chips",
     },
     sources: {
       amount: "Amount",

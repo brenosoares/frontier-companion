@@ -91,7 +91,9 @@ export const ptBR = {
       noOrigin:
         "Não identificamos nos dados do jogo de onde este item vem. Ele pode ser obtido por outros meios, como mercadores ou entregas.",
       usedIn: "Usado em",
-      noUsage: "Este item não é ingrediente de nenhuma receita.",
+      noUsage: "Este item não é ingrediente de nenhuma receita nem usado no mecha.",
+      usedInMechParts: "Partes do mecha",
+      usedInMechChips: "Chips do mecha",
     },
     sources: {
       amount: "Quantidade",
