@@ -220,3 +220,40 @@ test.describe("mech on mobile", () => {
     });
   }
 });
+
+test.describe("mech in an item's 'used in'", () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test("lists the mech parts and chips that cost the item, with amount and where they fit", async ({
+    page,
+  }) => {
+    await page.goto("/pt-BR/items/RedCrystal");
+
+    const usedIn = page.locator("section").filter({
+      has: page.getByRole("heading", { level: 2, name: "Usado em" }),
+    });
+    await expect(usedIn.getByRole("heading", { level: 3, name: "Partes do mecha" })).toBeVisible();
+    await expect(usedIn.getByRole("heading", { level: 3, name: "Chips do mecha" })).toBeVisible();
+    const part = usedIn.getByRole("link", { name: "Serra Dentada Mk. 2" });
+    await expect(part).toHaveAttribute("href", "/pt-BR/mech/Jackhammer2");
+    await expect(usedIn.getByText("Ferramentas · Serra Dentada").first()).toBeVisible();
+
+    await part.click();
+    await expect(page).toHaveURL(/\/pt-BR\/mech\/Jackhammer2$/);
+  });
+
+  test("an item no recipe or mech part uses still says so", async ({ page }) => {
+    await page.goto("/pt-BR/items/Clam");
+    await expect(
+      page.getByText("Este item não é ingrediente de nenhuma receita nem usado no mecha."),
+    ).toBeVisible();
+    await expect(page.getByRole("heading", { level: 3, name: "Partes do mecha" })).toHaveCount(0);
+  });
+
+  test("is localized and has no accessibility violations", async ({ page }) => {
+    await page.goto("/en/items/RedCrystal");
+    await expect(page.getByRole("heading", { level: 3, name: "Mech parts" })).toBeVisible();
+    const results = await new AxeBuilder({ page }).analyze();
+    expect(results.violations).toEqual([]);
+  });
+});
