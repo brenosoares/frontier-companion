@@ -327,7 +327,11 @@ export const en: Messages = {
   },
   animals: {
     title: "Animals",
-    intro: "The ranch animals: what they give, what they eat and how to raise them.",
+    intro:
+      "The game's creatures: what they give, what they eat and, for the ones that live on the ranch, how to raise them.",
+    wildOnly: "Wild only",
+    wildOnlyNote:
+      "This creature only lives in the wild: the game data has nothing on raising it on the ranch.",
     back: "Back to animals",
     diets: { Nitrogenic: "Nitrogenic", Phosphoric: "Phosphoric", Potassic: "Potassic" },
     loot: {
@@ -340,6 +344,8 @@ export const en: Messages = {
       resource: "When feeding the wild critter",
       egg: "Egg when feeding it",
       eggChance: "Egg chance",
+      noEgg:
+        "This creature leaves no egg when fed, so it cannot be obtained through the incubator.",
       hint: "Feed the wild critter to get the resource (always) and, sometimes, its egg; then hatch the egg in the Egg Incubator.",
       lens: "Incubator lenses",
       lensSmaller: "Smaller egg",

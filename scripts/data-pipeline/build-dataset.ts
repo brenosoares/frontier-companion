@@ -134,7 +134,7 @@ export async function buildDataset(
   );
   const wildFeeding = new Map(
     await Promise.all(
-      Object.keys(animalRows).map(
+      Object.keys(critterRows).map(
         async (id) =>
           [
             id,

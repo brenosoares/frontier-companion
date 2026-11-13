@@ -2,6 +2,7 @@
 import { describe, expect, it } from "vitest";
 import { rawText } from "../__fixtures__/tables";
 import { extractAnimals } from "./animals";
+import type { WildFeeding } from "./blueprints";
 
 const ranch = (overrides: Record<string, unknown> = {}) => ({
   EngineName: "Tookan",
@@ -33,7 +34,7 @@ const food = {
 const options = {
   availableIcons: new Set(["TookanIcon"]),
   wildFeeding: new Map([
-    ["Tookan", { resourceItemId: "Feather", eggItemId: "TookanEgg", eggChance: 5 }],
+    ["Tookan", { resourceItemId: "Feather", egg: { itemId: "TookanEgg", chance: 5 } }],
   ]),
   eggToAnimal: new Map([["TookanEgg", "Tookan"]]),
 };
@@ -48,18 +49,19 @@ describe("extractAnimals", () => {
       icon: "TookanIcon",
       diet: "Potassic",
       fodderItemId: "CritterFood3",
-      loot: {
-        product: { itemId: "Feather", amount: 2 },
-        droppings: { itemId: "PotassicDropping", amount: 1 },
-        egg: { itemId: "TookanEgg" },
-      },
-      wildFeeding: { resourceItemId: "Feather", eggChance: 5 },
-      needs: { dailyThirst: 200, dailyHunger: 1, minSquareMeters: 75, minNearbyAnimals: 1 },
-      lifecycle: {
-        incubationDays: 2,
-        growthDays: 3,
-        daysSadBeforeRunAway: 3,
-        daysRunAwayBeforeDespawn: 7,
+      wildFeeding: { resourceItemId: "Feather", egg: { itemId: "TookanEgg", chance: 5 } },
+      ranch: {
+        loot: {
+          product: { itemId: "Feather", amount: 2 },
+          droppings: { itemId: "PotassicDropping", amount: 1 },
+        },
+        needs: { dailyThirst: 200, dailyHunger: 1, minSquareMeters: 75, minNearbyAnimals: 1 },
+        lifecycle: {
+          incubationDays: 2,
+          growthDays: 3,
+          daysSadBeforeRunAway: 3,
+          daysRunAwayBeforeDespawn: 7,
+        },
       },
     });
   });
@@ -69,7 +71,7 @@ describe("extractAnimals", () => {
     const [animal] = extractAnimals({ Tookan: odd }, { Tookan: critter() }, food, options);
 
     expect(animal?.diet).toBe("Potassic");
-    expect(animal?.loot.droppings.itemId).toBe("PhosphoricDropping");
+    expect(animal?.ranch?.loot.droppings.itemId).toBe("PhosphoricDropping");
   });
 
   it("uses a null icon when the file is not in the icon set", () => {
@@ -80,25 +82,41 @@ describe("extractAnimals", () => {
     expect(animal?.icon).toBeNull();
   });
 
-  it("sorts by id and ignores wild critters that have no ranch data", () => {
+  it("lists every critter, sorted by id, with ranch data only for the ones that have it", () => {
     const rows = { Mox: ranch({ EggItem: "MoxEgg" }), Crob: ranch({ EggItem: "CrobEgg" }) };
-    const critters = { Mox: critter(), Crob: critter(), Znork: critter() };
-    const feeding = (eggItemId: string) => ({ resourceItemId: "Feather", eggItemId, eggChance: 5 });
+    const critters = { Mox: critter(), Crob: critter(), Znork: critter("EDietType::Nitrogenic") };
+    const feeding = (itemId: string) => ({
+      resourceItemId: "Feather",
+      egg: { itemId, chance: 5 },
+    });
     const many = {
       ...options,
-      wildFeeding: new Map([
+      wildFeeding: new Map<string, WildFeeding>([
         ["Mox", feeding("MoxEgg")],
         ["Crob", feeding("CrobEgg")],
+        ["Znork", { resourceItemId: "RedCrystal", egg: null }],
       ]),
       eggToAnimal: new Map([
         ["MoxEgg", "Mox"],
         ["CrobEgg", "Crob"],
       ]),
     };
-    expect(extractAnimals(rows, critters, food, many).map((a) => a.id)).toEqual(["Crob", "Mox"]);
+    const animals = extractAnimals(rows, critters, food, many);
+
+    expect(animals.map((a) => [a.id, a.ranch !== null])).toEqual([
+      ["Crob", true],
+      ["Mox", true],
+      ["Znork", false],
+    ]);
+    expect(animals[2]).toMatchObject({
+      icon: null,
+      fodderItemId: "CritterFood1",
+      wildFeeding: { resourceItemId: "RedCrystal", egg: null },
+      ranch: null,
+    });
   });
 
-  it("fails loudly on a missing critter, a diet without fodder or two fodders for one diet", () => {
+  it("fails loudly on a ranch animal that is no critter, a diet without fodder or two fodders for one diet", () => {
     expect(() => extractAnimals({ Tookan: ranch() }, {}, food, options)).toThrow(
       /no critter entry/,
     );
@@ -130,7 +148,7 @@ describe("extractAnimals", () => {
 
   it("fails when the wild critter's egg differs from the ranch egg", () => {
     const wildFeeding = new Map([
-      ["Tookan", { resourceItemId: "Feather", eggItemId: "OtherEgg", eggChance: 5 }],
+      ["Tookan", { resourceItemId: "Feather", egg: { itemId: "OtherEgg", chance: 5 } }],
     ]);
     expect(() =>
       extractAnimals({ Tookan: ranch() }, { Tookan: critter() }, food, { ...options, wildFeeding }),
@@ -153,5 +171,14 @@ describe("extractAnimals", () => {
         wildFeeding: new Map(),
       }),
     ).toThrow(/no wild feeding data/);
+  });
+
+  it("fails when a ranch animal has no wild egg at all", () => {
+    const wildFeeding = new Map<string, WildFeeding>([
+      ["Tookan", { resourceItemId: "Feather", egg: null }],
+    ]);
+    expect(() =>
+      extractAnimals({ Tookan: ranch() }, { Tookan: critter() }, food, { ...options, wildFeeding }),
+    ).toThrow(/differs from wild egg "none"/);
   });
 });

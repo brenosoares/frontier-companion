@@ -43,18 +43,16 @@ const animal = (id: string, itemId = "Ore"): Animal => ({
   icon: null,
   diet: "Potassic",
   fodderItemId: itemId,
-  loot: {
-    product: { itemId, amount: 1 },
-    droppings: { itemId, amount: 1 },
-    egg: { itemId },
-  },
-  wildFeeding: { resourceItemId: itemId, eggChance: 5 },
-  needs: { dailyThirst: 100, dailyHunger: 1, minSquareMeters: 50, minNearbyAnimals: 1 },
-  lifecycle: {
-    incubationDays: 1,
-    growthDays: 1,
-    daysSadBeforeRunAway: 3,
-    daysRunAwayBeforeDespawn: 7,
+  wildFeeding: { resourceItemId: itemId, egg: { itemId, chance: 5 } },
+  ranch: {
+    loot: { product: { itemId, amount: 1 }, droppings: { itemId, amount: 1 } },
+    needs: { dailyThirst: 100, dailyHunger: 1, minSquareMeters: 50, minNearbyAnimals: 1 },
+    lifecycle: {
+      incubationDays: 1,
+      growthDays: 1,
+      daysSadBeforeRunAway: 3,
+      daysRunAwayBeforeDespawn: 7,
+    },
   },
 });
 

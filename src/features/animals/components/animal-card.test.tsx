@@ -7,8 +7,8 @@ const data = {
   name: "Plumaleve",
   icon: "TookanIcon",
   diet: "Potássico",
-  product: { name: "Pena", icon: "FeatherIcon" },
-  productLabel: "Produto",
+  wildOnlyLabel: null,
+  highlight: { label: "Produto", name: "Pena", icon: "FeatherIcon" },
 };
 
 describe("AnimalCard", () => {
@@ -33,5 +33,15 @@ describe("AnimalCard", () => {
   it("falls back to a generic glyph when the animal has no icon", () => {
     const { container } = render(<AnimalCard {...data} icon={null} />);
     expect(container.querySelectorAll("img")).toHaveLength(1);
+  });
+
+  it("marks a creature that cannot be raised as wild only", () => {
+    render(<AnimalCard {...data} wildOnlyLabel="Só selvagem" />);
+    expect(screen.getByText("Só selvagem")).toBeInTheDocument();
+  });
+
+  it("shows no wild-only mark for ranch animals", () => {
+    render(<AnimalCard {...data} />);
+    expect(screen.queryByText("Só selvagem")).not.toBeInTheDocument();
   });
 });

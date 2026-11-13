@@ -87,10 +87,14 @@ export function checkIntegrity({
     const referenced = [
       ["fodder", animal.fodderItemId],
       ["wild resource", animal.wildFeeding.resourceItemId],
-      ["product", animal.loot.product.itemId],
-      ["droppings", animal.loot.droppings.itemId],
-      ["egg", animal.loot.egg.itemId],
-    ] as const;
+      ...(animal.wildFeeding.egg ? [["egg", animal.wildFeeding.egg.itemId] as const] : []),
+      ...(animal.ranch
+        ? [
+            ["product", animal.ranch.loot.product.itemId] as const,
+            ["droppings", animal.ranch.loot.droppings.itemId] as const,
+          ]
+        : []),
+    ];
     for (const [role, itemId] of referenced) {
       if (!itemIds.has(itemId)) {
         issues.push(`Animal "${animal.id}" has unknown ${role} item "${itemId}"`);

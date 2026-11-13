@@ -161,20 +161,21 @@ export function extractLootGoblinSources(defaults: Record<string, unknown>): Ite
   return [...items].map((itemId) => source("loot-goblin", "LootGoblin", null, itemId));
 }
 
+const percent = (fraction: number) => Math.round(fraction * 10_000) / 100;
+
 // ---------------------------------------------------------- feeding wild critters
 
 const CritterSchema = z.object({
   FeedResourceItem: z.string(),
-  FeedEggItem: z.string(),
-  FeedEggChance: z.number(),
+  FeedEggItem: z.string().optional(),
+  FeedEggChance: z.number().optional(),
 });
 const CritterParentSchema = z.object({ FeedDropChance: z.number() });
 
 export interface WildFeeding {
   resourceItemId: string;
-  eggItemId: string;
-  /** Percent. */
-  eggChance: number;
+  /** The egg a fed critter may leave and its chance in percent; null when it has none. */
+  egg: { itemId: string; chance: number } | null;
 }
 
 /** What a wild critter gives when fed; the parent class says how likely the resource is. */
@@ -185,15 +186,20 @@ export function extractWildFeeding(
 ): WildFeeding & { resourceChance: number } {
   const critter = parse(CritterSchema, critterDefaults, `Critter "${critterId}"`);
   const parent = parse(CritterParentSchema, parentDefaults, "Critter parent");
+  if ((critter.FeedEggItem === undefined) !== (critter.FeedEggChance === undefined)) {
+    throw new Error(`Critter "${critterId}": egg item and egg chance must come together`);
+  }
   return {
     resourceItemId: critter.FeedResourceItem,
-    eggItemId: critter.FeedEggItem,
-    eggChance: Math.round(critter.FeedEggChance * 10_000) / 100,
-    resourceChance: Math.round(parent.FeedDropChance * 10_000) / 100,
+    egg:
+      critter.FeedEggItem !== undefined && critter.FeedEggChance !== undefined
+        ? { itemId: critter.FeedEggItem, chance: percent(critter.FeedEggChance) }
+        : null,
+    resourceChance: percent(parent.FeedDropChance),
   };
 }
 
-/** The resource (always, per the parent class) and the egg (5%) a fed wild critter leaves. */
+/** The resource (always, per the parent class) and the egg (when it has one) a fed critter leaves. */
 export function critterFeedSources(
   critterId: string,
   critterName: LocalizedText,
@@ -203,9 +209,13 @@ export function critterFeedSources(
     source("critter-feed", critterId, critterName, feeding.resourceItemId, {
       chance: feeding.resourceChance,
     }),
-    source("critter-feed", critterId, critterName, feeding.eggItemId, {
-      chance: feeding.eggChance,
-    }),
+    ...(feeding.egg
+      ? [
+          source("critter-feed", critterId, critterName, feeding.egg.itemId, {
+            chance: feeding.egg.chance,
+          }),
+        ]
+      : []),
   ];
 }
 
@@ -219,8 +229,6 @@ const IncubatorBlueprintSchema = z.object({
   RareEggIncubationTime: z.number(),
   EggToAnimal: z.array(z.object({ Key: z.string(), Value: z.string() })),
 });
-
-const percent = (fraction: number) => Math.round(fraction * 10_000) / 100;
 
 /**
  * The Egg Incubator's lens chances and the egg -> animal table. The table is returned so the
