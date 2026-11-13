@@ -1,0 +1,801 @@
+[
+  {
+    "id": "BlackColorflower",
+    "name": {
+      "en": "Black Colorflower",
+      "pt-BR": "Coloriflor Preta"
+    },
+    "icon": "BlackColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "BlackColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "BlackColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "BlackColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "Blooms",
+    "name": {
+      "en": "Lumbloom",
+      "pt-BR": "Lumiflor"
+    },
+    "icon": "BloomsIcon",
+    "kind": "crop",
+    "cropType": "Phosphoric",
+    "daysToMature": 4,
+    "daysToDry": 1,
+    "seedItemId": "BloomsSeeds",
+    "drops": [
+      {
+        "itemId": "Blooms",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "BlueColorflower",
+    "name": {
+      "en": "Blue Colorflower",
+      "pt-BR": "Coloriflor Azul"
+    },
+    "icon": "BlueColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "BlueColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "BlueColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "BlueColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "Caroot",
+    "name": {
+      "en": "Caroot",
+      "pt-BR": "Cenoura-forte"
+    },
+    "icon": "CarootIcon",
+    "kind": "crop",
+    "cropType": "Potassic",
+    "daysToMature": 3,
+    "daysToDry": 1,
+    "seedItemId": "CarootSeeds",
+    "drops": [
+      {
+        "itemId": "Caroot",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "CherryTree",
+    "name": {
+      "en": "Mutated Blossom Tree",
+      "pt-BR": "Cerejeira Mutante"
+    },
+    "icon": "CherryTreeIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 5,
+    "daysToDry": 1,
+    "seedItemId": "CherryTreeSeed",
+    "drops": [
+      {
+        "itemId": "HardWood",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 4,
+        "maxAmount": 6,
+        "chance": 100
+      },
+      {
+        "itemId": "WoodLog",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": 1
+  },
+  {
+    "id": "Chromaize",
+    "name": {
+      "en": "Chromaize",
+      "pt-BR": "Cromilho"
+    },
+    "icon": "ChromaizeIcon",
+    "kind": "crop",
+    "cropType": "Nitrogenic",
+    "daysToMature": 3,
+    "daysToDry": 1,
+    "seedItemId": "ChromaizeSeeds",
+    "drops": [
+      {
+        "itemId": "Chromaize",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "CoilPlant",
+    "name": {
+      "en": "Coilvine",
+      "pt-BR": "Espideira"
+    },
+    "icon": "CoilPlantIcon",
+    "kind": "crop",
+    "cropType": "Phosphoric",
+    "daysToMature": 5,
+    "daysToDry": 1,
+    "seedItemId": "CoilPlantSeeds",
+    "drops": [
+      {
+        "itemId": "CoilPlant",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "CottonCrop",
+    "name": {
+      "en": "Cloudbud",
+      "pt-BR": "Botão-nuvem"
+    },
+    "icon": "CottonCropIcon",
+    "kind": "crop",
+    "cropType": "Nitrogenic",
+    "daysToMature": 5,
+    "daysToDry": 1,
+    "seedItemId": "CottonCropSeeds",
+    "drops": [
+      {
+        "itemId": "CottonCrop",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "ElectricPlant",
+    "name": {
+      "en": "Zappertwig",
+      "pt-BR": "Eletrofigueira"
+    },
+    "icon": "ElectricPlantIcon",
+    "kind": "crop",
+    "cropType": "Nitrogenic",
+    "daysToMature": 4,
+    "daysToDry": 1,
+    "seedItemId": "ElectricPlantSeeds",
+    "drops": [
+      {
+        "itemId": "ElectricPlant",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "FuelRock",
+    "name": {
+      "en": "Refillite",
+      "pt-BR": "Refilita"
+    },
+    "icon": "FuelRockIcon",
+    "kind": "crop",
+    "cropType": "Nitrogenic",
+    "daysToMature": 1,
+    "daysToDry": 1,
+    "seedItemId": null,
+    "drops": [
+      {
+        "itemId": "FuelRock",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "FuelWild",
+    "name": {
+      "en": "Honeybottle",
+      "pt-BR": "Copo-de-mel"
+    },
+    "icon": "FuelWildIcon",
+    "kind": "crop",
+    "cropType": "Potassic",
+    "daysToMature": 4,
+    "daysToDry": 1,
+    "seedItemId": "FuelWildSeeds",
+    "drops": [
+      {
+        "itemId": "FuelWild",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "GloTree",
+    "name": {
+      "en": "Glo Tree",
+      "pt-BR": "Árvore-luz"
+    },
+    "icon": "GloTreeIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 5,
+    "daysToDry": 8,
+    "seedItemId": "GloSeed",
+    "drops": [
+      {
+        "itemId": "GloWood",
+        "minAmount": 2,
+        "maxAmount": 4,
+        "chance": 100
+      },
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 4,
+        "maxAmount": 5,
+        "chance": 100
+      },
+      {
+        "itemId": "GloSeed",
+        "minAmount": 1,
+        "maxAmount": 2,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 90,
+      "drops": [
+        {
+          "itemId": "GloFruit",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 1
+  },
+  {
+    "id": "GreenColorflower",
+    "name": {
+      "en": "Green Colorflower",
+      "pt-BR": "Coloriflor Verde"
+    },
+    "icon": "GreenColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "GreenColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "GreenColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "GreenColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "MeadowTreeLarge_Pink",
+    "name": {
+      "en": "Mutated Large Pink Tree",
+      "pt-BR": "Árvore Rosa Mutante Grande"
+    },
+    "icon": "MeadowTreeLarge_PinkIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 6,
+    "daysToDry": 1,
+    "seedItemId": "MeadowTreeLarge_PinkSeed",
+    "drops": [
+      {
+        "itemId": "HardWood",
+        "minAmount": 2,
+        "maxAmount": 4,
+        "chance": 100
+      },
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 5,
+        "maxAmount": 7,
+        "chance": 100
+      },
+      {
+        "itemId": "WoodLog",
+        "minAmount": 2,
+        "maxAmount": 2,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": 2
+  },
+  {
+    "id": "OrangeColorflower",
+    "name": {
+      "en": "Orange Colorflower",
+      "pt-BR": "Coloriflor Laranja"
+    },
+    "icon": "OrangeColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "OrangeColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "OrangeColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "OrangeColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "Papristalk",
+    "name": {
+      "en": "Papristalk",
+      "pt-BR": "Lampimentão"
+    },
+    "icon": "PapristalkIcon",
+    "kind": "crop",
+    "cropType": "Potassic",
+    "daysToMature": 5,
+    "daysToDry": 1,
+    "seedItemId": "PapristalkSeeds",
+    "drops": [
+      {
+        "itemId": "Papristalk",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "Polyberry",
+    "name": {
+      "en": "Polyberry",
+      "pt-BR": "Plastimora"
+    },
+    "icon": "PolyberryIcon",
+    "kind": "crop",
+    "cropType": "Potassic",
+    "daysToMature": 2,
+    "daysToDry": 1,
+    "seedItemId": "PolyberrySeeds",
+    "drops": [
+      {
+        "itemId": "Polyberry",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "PurpleColorflower",
+    "name": {
+      "en": "Purple Colorflower",
+      "pt-BR": "Coloriflor Roxa"
+    },
+    "icon": "PurpleColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "PurpleColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "PurpleColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "PurpleColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "Quartznip",
+    "name": {
+      "en": "Quartznip",
+      "pt-BR": "Pastiquartzo"
+    },
+    "icon": "QuartznipIcon",
+    "kind": "crop",
+    "cropType": "Phosphoric",
+    "daysToMature": 3,
+    "daysToDry": 1,
+    "seedItemId": "QuartznipSeeds",
+    "drops": [
+      {
+        "itemId": "Quartznip",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "Rabbage",
+    "name": {
+      "en": "Rabbage",
+      "pt-BR": "Rubipolho"
+    },
+    "icon": "RabbageIcon",
+    "kind": "crop",
+    "cropType": "Phosphoric",
+    "daysToMature": 2,
+    "daysToDry": 1,
+    "seedItemId": "RabbageSeeds",
+    "drops": [
+      {
+        "itemId": "Rabbage",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "RedColorflower",
+    "name": {
+      "en": "Red Colorflower",
+      "pt-BR": "Coloriflor Vermelha"
+    },
+    "icon": "RedColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "RedColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "RedColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "RedColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "RockPlant",
+    "name": {
+      "en": "Gravelgourd",
+      "pt-BR": "Pedregolha"
+    },
+    "icon": "RockPlantIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 6,
+    "daysToDry": 8,
+    "seedItemId": "RockPlantSeed",
+    "drops": [
+      {
+        "itemId": "Stone",
+        "minAmount": 1,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "RockPlantSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      },
+      {
+        "itemId": "LargeRock",
+        "minAmount": 2,
+        "maxAmount": 2,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": 2
+  },
+  {
+    "id": "WaterPlant",
+    "name": {
+      "en": "Pondpitcher",
+      "pt-BR": "Hidroplanta"
+    },
+    "icon": "WaterPlantIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 6,
+    "daysToDry": 8,
+    "seedItemId": "WaterPlantSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 3,
+        "maxAmount": 5,
+        "chance": 100
+      },
+      {
+        "itemId": "WaterPlantSeed",
+        "minAmount": 1,
+        "maxAmount": 2,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": 1
+  },
+  {
+    "id": "Wheat",
+    "name": {
+      "en": "Wheat",
+      "pt-BR": "Trigo"
+    },
+    "icon": "WheatIcon",
+    "kind": "crop",
+    "cropType": "Nitrogenic",
+    "daysToMature": 1,
+    "daysToDry": 1,
+    "seedItemId": "WheatSeeds",
+    "drops": [
+      {
+        "itemId": "Wheat",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": null,
+    "breakingLevel": null
+  },
+  {
+    "id": "WhiteColorflower",
+    "name": {
+      "en": "White Colorflower",
+      "pt-BR": "Coloriflor Branca"
+    },
+    "icon": "WhiteColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "WhiteColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "WhiteColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "WhiteColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  },
+  {
+    "id": "YellowColorflower",
+    "name": {
+      "en": "Yellow Colorflower",
+      "pt-BR": "Coloriflor Amarela"
+    },
+    "icon": "YellowColorflowerIcon",
+    "kind": "large",
+    "cropType": null,
+    "daysToMature": 3,
+    "daysToDry": 8,
+    "seedItemId": "YellowColorflowerSeed",
+    "drops": [
+      {
+        "itemId": "PlantFiber",
+        "minAmount": 2,
+        "maxAmount": 3,
+        "chance": 100
+      },
+      {
+        "itemId": "YellowColorflowerSeed",
+        "minAmount": 1,
+        "maxAmount": 1,
+        "chance": 100
+      }
+    ],
+    "fruit": {
+      "daysToGrow": 2,
+      "maxLifetime": 5,
+      "drops": [
+        {
+          "itemId": "YellowColorflower",
+          "minAmount": 1,
+          "maxAmount": 1,
+          "chance": 100
+        }
+      ]
+    },
+    "breakingLevel": 0
+  }
+]

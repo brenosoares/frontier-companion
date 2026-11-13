@@ -1,4 +1,5 @@
 import { RELEASED_FEATURE_FLAGS, STATIONS } from "./config";
+import { extractPlants } from "./extractors/plants";
 import { extractMechChips, extractMechParts, extractMechStats } from "./extractors/mech";
 import { extractAnimals } from "./extractors/animals";
 import {
@@ -97,6 +98,7 @@ export async function buildDataset(
     moduleRows,
     chipRows,
     statDisplayRows,
+    seedRows,
   ] = await Promise.all([
     readRows(source, "DT_Items"),
     readRows(source, "DT_CompositeRecipes"),
@@ -113,6 +115,7 @@ export async function buildDataset(
     readRows(source, "DT_Modules"),
     readRows(source, "DT_CoreUpgrades"),
     readRows(source, "DT_StatDisplay"),
+    readRows(source, "DT_PlantToSeed"),
   ]);
 
   const [critterParent, incubatorDefaults, hazardDefaults, lootGoblinDefaults, largeItemFiles] =
@@ -158,6 +161,9 @@ export async function buildDataset(
       blueprintPrices: extractBlueprintPrices(merchantEntryRows),
     }),
   );
+  const builtPlants = extractPlants(smallPlantRows, largePlantRows, seedRows, {
+    availableIcons: iconNames,
+  });
   const mechOptions = { availableIcons: iconNames, releasedFlags };
   const mechStats = extractMechStats(statDisplayRows);
   const builtMechParts = extractMechParts(moduleRows, mechStats, mechOptions);
@@ -201,6 +207,7 @@ export async function buildDataset(
     mechStats,
     mechParts: builtMechParts.parts,
     mechChips: builtMechChips.chips,
+    plants: builtPlants.plants,
   };
 
   return {
@@ -210,6 +217,7 @@ export async function buildDataset(
       ...builtConstructs.warnings,
       ...builtMechParts.warnings,
       ...builtMechChips.warnings,
+      ...builtPlants.warnings,
       ...sourceWarnings,
     ],
     integrityIssues: checkIntegrity(dataset),

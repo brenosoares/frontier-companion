@@ -21,6 +21,7 @@ export const ptBR = {
     calculator: "Calculadora",
     constructs: "Construções",
     mech: "Mecha",
+    plants: "Plantas",
     animals: "Animais",
   },
   search: {
@@ -290,6 +291,46 @@ export const ptBR = {
         "Este chip tem uma flag de funcionalidade nos dados do jogo e pode não estar disponível na versão atual.",
       kind: "Chip",
     },
+  },
+  plants: {
+    title: "Plantas",
+    intro:
+      "As plantas que você cultiva: de quanto tempo precisam, o que dão na colheita e a semente de cada uma.",
+    back: "Voltar para plantas",
+    groups: { crop: "Lavouras", large: "Árvores e flores" },
+    groupIntros: {
+      crop: "Plantas pequenas, por tipo de nutriente.",
+      large: "Plantas grandes que você cuida e que dão frutos ou madeira.",
+    },
+    types: { Nitrogenic: "Nitrogênica", Phosphoric: "Fosfórica", Potassic: "Potássica" },
+    mature: "Amadurece em {days}",
+    days: { one: "{count} dia", other: "{count} dias" },
+    seedLabel: "Semente",
+    cultivation: {
+      title: "Cultivo",
+      type: "Tipo",
+      mature: "Para amadurecer",
+      dry: "Até secar",
+      breaking: "Nível de quebra",
+      dryHint: "Uma lavoura precisa de água a cada intervalo desses para não secar.",
+    },
+    harvest: {
+      title: "Colheita",
+      hint: "O que cai ao colher a planta. A chance é a de cair ao menos uma unidade.",
+      none: "Os dados do jogo não listam o que esta planta dá ao ser colhida.",
+    },
+    fruit: {
+      title: "Frutos",
+      daysToGrow: "Tempo para crescer um fruto",
+      lifetime: "Frutos durante a vida",
+    },
+    seed: { title: "Semente", none: "Os dados do jogo não indicam uma semente para esta planta." },
+    usedIn: {
+      title: "Usado em",
+      shared: "Itens que várias plantas dão. Veja onde cada um é usado na página do item:",
+      none: "Nenhuma receita usa o que esta planta dá.",
+    },
+    chance: "{chance} de chance",
   },
   animals: {
     title: "Animais",

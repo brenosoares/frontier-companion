@@ -1,3 +1,4 @@
+import type { Plant } from "@/features/plants/domain/plant";
 import type { MechChip, MechPart, MechStat } from "@/features/mech/domain/mech";
 import type { Animal, Incubator } from "@/features/animals/domain/animal";
 import type { Construct } from "@/features/constructs/domain/construct";
@@ -17,6 +18,7 @@ export interface Dataset {
   mechStats: readonly MechStat[];
   mechParts: readonly MechPart[];
   mechChips: readonly MechChip[];
+  plants: readonly Plant[];
 }
 
 function findDuplicates(ids: readonly string[]): string[] {
@@ -39,6 +41,7 @@ export function checkIntegrity({
   mechStats,
   mechParts,
   mechChips,
+  plants,
   animals,
 }: Dataset): string[] {
   const issues: string[] = [];
@@ -91,6 +94,21 @@ export function checkIntegrity({
     for (const [role, itemId] of referenced) {
       if (!itemIds.has(itemId)) {
         issues.push(`Animal "${animal.id}" has unknown ${role} item "${itemId}"`);
+      }
+    }
+  }
+  for (const id of findDuplicates(plants.map((plant) => plant.id))) {
+    issues.push(`Duplicate plant id "${id}"`);
+  }
+  for (const plant of plants) {
+    const referenced = [
+      ...(plant.seedItemId ? [["seed", plant.seedItemId] as const] : []),
+      ...plant.drops.map(({ itemId }) => ["drop", itemId] as const),
+      ...(plant.fruit?.drops ?? []).map(({ itemId }) => ["fruit", itemId] as const),
+    ];
+    for (const [role, itemId] of referenced) {
+      if (!itemIds.has(itemId)) {
+        issues.push(`Plant "${plant.id}" has unknown ${role} item "${itemId}"`);
       }
     }
   }

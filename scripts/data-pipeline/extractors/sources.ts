@@ -11,7 +11,7 @@ import { normalizeKeys } from "../unreal/normalize";
 
 /** `{ Key: "3", Value: 70 }` = a quantity of 3 with weight 70. Weights need not sum to 100. */
 const RawCountsSchema = z.array(z.object({ Key: z.string(), Value: z.number() }));
-const RawDropsSchema = z.array(z.object({ ItemName: z.string(), Counts: RawCountsSchema }));
+export const RawDropsSchema = z.array(z.object({ ItemName: z.string(), Counts: RawCountsSchema }));
 
 const RawNodeSchema = z.object({ DisplayName: RawTextSchema, Drops: RawDropsSchema });
 const RawPlantSchema = z.object({
@@ -79,8 +79,20 @@ function buildSource(ref: SourceRef, itemId: string, details: SourceDetails = {}
   });
 }
 
-/** Turns a weighted quantity table into "chance of at least one" and the quantity range. */
-function dropsToSources(ref: SourceRef, drops: z.infer<typeof RawDropsSchema>): ItemSource[] {
+/** One drop table entry, summarised: the odds of at least one, and the quantity range. */
+export interface DropSummary {
+  itemId: string;
+  minAmount: number;
+  maxAmount: number;
+  /** Percent, (0, 100]. */
+  chance: number;
+}
+
+/**
+ * Turns weighted quantity tables (`{ Key: "3", Value: 70 }` = a quantity of 3 with weight 70) into
+ * "chance of at least one" and the quantity range. Entries that can never drop are left out.
+ */
+export function summarizeDrops(drops: z.infer<typeof RawDropsSchema>): DropSummary[] {
   return drops.flatMap(({ ItemName, Counts }) => {
     const total = Counts.reduce((sum, { Value }) => sum + Value, 0);
     const positive = Counts.map(({ Key, Value }) => ({
@@ -91,15 +103,19 @@ function dropsToSources(ref: SourceRef, drops: z.infer<typeof RawDropsSchema>): 
 
     const hit = positive.reduce((sum, { weight }) => sum + weight, 0);
     const amounts = positive.map(({ amount }) => amount);
-    const chance = Math.round((hit / total) * 10_000) / 100;
     return [
-      buildSource(ref, ItemName, {
+      {
+        itemId: ItemName,
         minAmount: Math.min(...amounts),
         maxAmount: Math.max(...amounts),
-        chance,
-      }),
+        chance: Math.round((hit / total) * 10_000) / 100,
+      },
     ];
   });
+}
+
+function dropsToSources(ref: SourceRef, drops: z.infer<typeof RawDropsSchema>): ItemSource[] {
+  return summarizeDrops(drops).map(({ itemId, ...details }) => buildSource(ref, itemId, details));
 }
 
 /** Items dropped when a node (tree, rock, ore…) is broken. */

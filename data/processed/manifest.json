@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "gameVersion": "1.0.2571",
-  "dataVersion": "70f0c7a5fd52",
+  "dataVersion": "320768486870",
   "counts": {
     "items": 285,
     "recipes": 362,
@@ -10,6 +10,7 @@
     "constructs": 548,
     "animals": 6,
     "mechParts": 78,
-    "mechChips": 144
+    "mechChips": 144,
+    "plants": 26
   }
 }
