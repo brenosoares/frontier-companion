@@ -8,19 +8,26 @@ const animal = (id: string): Animal => ({
   icon: null,
   diet: "Nitrogenic",
   fodderItemId: "CritterFood1",
-  loot: {
-    product: { itemId: "Feather", amount: 1 },
-    droppings: { itemId: "NitrogenicDropping", amount: 1 },
-    egg: { itemId: "Egg" },
+  wildFeeding: { resourceItemId: "Feather", egg: { itemId: "Egg", chance: 5 } },
+  ranch: {
+    loot: {
+      product: { itemId: "Feather", amount: 1 },
+      droppings: { itemId: "NitrogenicDropping", amount: 1 },
+    },
+    needs: { dailyThirst: 200, dailyHunger: 1, minSquareMeters: 75, minNearbyAnimals: 1 },
+    lifecycle: {
+      incubationDays: 1,
+      growthDays: 2,
+      daysSadBeforeRunAway: 3,
+      daysRunAwayBeforeDespawn: 7,
+    },
   },
-  wildFeeding: { resourceItemId: "Feather", eggChance: 5 },
-  needs: { dailyThirst: 200, dailyHunger: 1, minSquareMeters: 75, minNearbyAnimals: 1 },
-  lifecycle: {
-    incubationDays: 1,
-    growthDays: 2,
-    daysSadBeforeRunAway: 3,
-    daysRunAwayBeforeDespawn: 7,
-  },
+});
+
+const wildOnly = (id: string): Animal => ({
+  ...animal(id),
+  wildFeeding: { resourceItemId: "RedCrystal", egg: null },
+  ranch: null,
 });
 
 describe("JsonAnimalRepository", () => {
@@ -38,9 +45,20 @@ describe("JsonAnimalRepository", () => {
       /Invalid animals data/,
     );
 
-    const badSpace = [{ ...animal("A"), needs: { ...animal("A").needs, minSquareMeters: 0 } }];
+    const ranch = animal("A").ranch!;
+    const badSpace = [
+      { ...animal("A"), ranch: { ...ranch, needs: { ...ranch.needs, minSquareMeters: 0 } } },
+    ];
     await expect(new JsonAnimalRepository(async () => badSpace).getAll()).rejects.toThrow(
       /Invalid animals data/,
     );
+  });
+
+  it("accepts creatures that cannot be raised or that leave no egg", async () => {
+    const repository = new JsonAnimalRepository(async () => [wildOnly("Znork")]);
+    const [znork] = await repository.getAll();
+
+    expect(znork?.ranch).toBeNull();
+    expect(znork?.wildFeeding.egg).toBeNull();
   });
 });

@@ -104,8 +104,7 @@ describe("wild feeding", () => {
   it("reads the resource, the egg and the chances as percentages", () => {
     expect(feeding).toEqual({
       resourceItemId: "Feather",
-      eggItemId: "TookanEgg",
-      eggChance: 5,
+      egg: { itemId: "TookanEgg", chance: 5 },
       resourceChance: 100,
     });
   });
@@ -116,6 +115,28 @@ describe("wild feeding", () => {
       ["critter-feed", "Feather", 100],
       ["critter-feed", "TookanEgg", 5],
     ]);
+  });
+
+  it("reads a critter with no egg as null and yields only the resource source", () => {
+    const wildOnly = extractWildFeeding(
+      { FeedResourceItem: "RedCrystal" },
+      { FeedDropChance: 1 },
+      "Znork",
+    );
+    expect(wildOnly.egg).toBeNull();
+    expect(
+      critterFeedSources("Znork", { en: "Znork", "pt-BR": "Znork" }, wildOnly).map((s) => s.itemId),
+    ).toEqual(["RedCrystal"]);
+  });
+
+  it("fails when only one of the egg item and the egg chance is given", () => {
+    expect(() =>
+      extractWildFeeding(
+        { FeedResourceItem: "Feather", FeedEggItem: "Egg" },
+        { FeedDropChance: 1 },
+        "X",
+      ),
+    ).toThrow(/come together/);
   });
 
   it("fails on an unexpected shape", () => {

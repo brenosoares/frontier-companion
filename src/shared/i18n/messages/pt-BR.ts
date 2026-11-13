@@ -334,7 +334,11 @@ export const ptBR = {
   },
   animals: {
     title: "Animais",
-    intro: "Os animais do rancho: o que dão, o que comem e como criá-los.",
+    intro:
+      "As criaturas do jogo: o que dão, o que comem e, para as que vivem no rancho, como criá-las.",
+    wildOnly: "Só selvagem",
+    wildOnlyNote:
+      "Esta criatura só existe na natureza: os dados do jogo não trazem como criá-la no rancho.",
     back: "Voltar para animais",
     /** Our own labels for the game's diet types (they match the seed categories). */
     diets: { Nitrogenic: "Nitrogênico", Phosphoric: "Fosfórico", Potassic: "Potássico" },
@@ -348,6 +352,8 @@ export const ptBR = {
       resource: "Ao alimentar o bicho selvagem",
       egg: "Ovo ao alimentá-lo",
       eggChance: "Chance do ovo",
+      noEgg:
+        "Esta criatura não deixa ovo ao ser alimentada, então não dá para obter outra pela incubadora.",
       hint: "Alimente o bicho selvagem para ganhar o recurso (sempre) e, às vezes, o ovo; depois choque o ovo na Incubadora de Ovos.",
       lens: "Lentes da incubadora",
       lensSmaller: "Ovo menor",

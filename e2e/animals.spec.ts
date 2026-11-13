@@ -116,8 +116,66 @@ test.describe("animal detail", () => {
   });
 });
 
+test.describe("wild-only creatures share the animals list", () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test("lists ranch animals and wild-only creatures together, marking the wild-only ones", async ({
+    page,
+  }) => {
+    await page.goto("/pt-BR/animals");
+
+    await expect(
+      page.getByRole("main").locator("section").first().getByRole("listitem"),
+    ).toHaveCount(8);
+    const znork = page.getByRole("link", { name: /Peixe-mergulhador/ });
+    await expect(znork).toContainText("Só selvagem");
+    await expect(znork).toContainText("Nitrogênico");
+    await expect(znork).toContainText("Cristal Vermelho");
+    await expect(page.getByRole("link", { name: /Mantilha Matutina/ })).toContainText(
+      "Só selvagem",
+    );
+    await expect(page.getByRole("link", { name: /Tartaguejo/ })).not.toContainText("Só selvagem");
+  });
+
+  test("a wild-only creature shows what feeding gives and has no ranch sections", async ({
+    page,
+  }) => {
+    await page.goto("/pt-BR/animals/Znork");
+
+    await expect(page.getByRole("heading", { level: 1, name: "Peixe-mergulhador" })).toBeVisible();
+    await expect(page.getByText("Só selvagem").first()).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: "Como conseguir" })).toBeVisible();
+    await expect(page.locator('a[href$="/items/RedCrystal"]').first()).toBeVisible();
+    await expect(page.getByText("Esta criatura não deixa ovo ao ser alimentada")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: "Alimentação" })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: "O que dá" })).toHaveCount(0);
+    await expect(page.getByRole("heading", { level: 2, name: "Criação" })).toHaveCount(0);
+    await expect(page.getByText("Fome por dia")).toHaveCount(0);
+    await expect(page.getByText("Chance do ovo")).toHaveCount(0);
+    await expect(page.getByText("Esta criatura só existe na natureza")).toBeVisible();
+  });
+
+  test("an item's origin from a wild-only creature links to it", async ({ page }) => {
+    await page.goto("/pt-BR/items/RedCrystal");
+    await page.locator('a[href$="/animals/Znork"]').first().click();
+    await expect(page).toHaveURL(/\/pt-BR\/animals\/Znork$/);
+  });
+
+  test("is localized", async ({ page }) => {
+    await page.goto("/en/animals");
+    await expect(page.getByRole("link", { name: /Wild only|Znork/ }).first()).toBeVisible();
+    await expect(page.getByText("Wild only").first()).toBeVisible();
+  });
+});
+
 test.describe("accessibility (axe)", () => {
-  const pages = ["/pt-BR/animals", "/en/animals", "/pt-BR/animals/Crob", "/en/animals/Mox"];
+  const pages = [
+    "/pt-BR/animals",
+    "/en/animals",
+    "/pt-BR/animals/Crob",
+    "/en/animals/Mox",
+    "/pt-BR/animals/Znork",
+  ];
 
   for (const scheme of ["dark", "light"] as const) {
     for (const path of pages) {

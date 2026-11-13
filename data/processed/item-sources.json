@@ -609,6 +609,20 @@
     "price": null
   },
   {
+    "id": "critter-feed:Jellyfinch:Feather",
+    "itemId": "Feather",
+    "kind": "critter-feed",
+    "sourceId": "Jellyfinch",
+    "sourceName": {
+      "en": "Morning Drape",
+      "pt-BR": "Mantilha Matutina"
+    },
+    "minAmount": null,
+    "maxAmount": null,
+    "chance": 100,
+    "price": null
+  },
+  {
     "id": "critter-feed:Mox:Fur",
     "itemId": "Fur",
     "kind": "critter-feed",
@@ -718,6 +732,20 @@
     "minAmount": null,
     "maxAmount": null,
     "chance": 5,
+    "price": null
+  },
+  {
+    "id": "critter-feed:Znork:RedCrystal",
+    "itemId": "RedCrystal",
+    "kind": "critter-feed",
+    "sourceId": "Znork",
+    "sourceName": {
+      "en": "Znork",
+      "pt-BR": "Peixe-mergulhador"
+    },
+    "minAmount": null,
+    "maxAmount": null,
+    "chance": 100,
     "price": null
   },
   {

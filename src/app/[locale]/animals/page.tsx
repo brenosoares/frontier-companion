@@ -30,7 +30,10 @@ export default async function AnimalsPage({ params }: PageProps<"/[locale]/anima
   const cards = [...animals]
     .sort((a, b) => collator.compare(a.name[locale], b.name[locale]))
     .map((animal) => {
-      const product = itemById.get(animal.loot.product.itemId);
+      const shown = animal.ranch
+        ? { label: text.loot.product, itemId: animal.ranch.loot.product.itemId }
+        : { label: text.acquire.resource, itemId: animal.wildFeeding.resourceItemId };
+      const item = itemById.get(shown.itemId);
       return {
         key: animal.id,
         data: {
@@ -38,11 +41,12 @@ export default async function AnimalsPage({ params }: PageProps<"/[locale]/anima
           name: animal.name[locale],
           icon: animal.icon,
           diet: text.diets[animal.diet],
-          product: {
-            name: product?.name[locale] ?? animal.loot.product.itemId,
-            icon: product?.icon ?? null,
+          wildOnlyLabel: animal.ranch ? null : text.wildOnly,
+          highlight: {
+            label: shown.label,
+            name: item?.name[locale] ?? shown.itemId,
+            icon: item?.icon ?? null,
           },
-          productLabel: text.loot.product,
         },
       };
     });

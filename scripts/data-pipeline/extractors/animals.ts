@@ -55,8 +55,9 @@ export interface AnimalOptions {
 }
 
 /**
- * Animals that can be raised on the ranch (`DT_RanchAnimals`), named and given a diet by
- * `DT_Critters`. Wild critters without ranch data (Jellyfinch, Znork) have nothing to show.
+ * Every critter of `DT_Critters` (name, diet), joined with what feeding it gives and, for the ones
+ * that can be raised, its `DT_RanchAnimals` row. A ranch animal that is not a critter is an error:
+ * the two tables describe the same creatures.
  */
 export function extractAnimals(
   ranchRows: Record<string, unknown>,
@@ -65,14 +66,13 @@ export function extractAnimals(
   { availableIcons, wildFeeding, eggToAnimal }: AnimalOptions,
 ): Animal[] {
   const fodders = fodderByDiet(foodRows);
+  for (const id of Object.keys(ranchRows)) {
+    if (!(id in critterRows)) throw new Error(`Ranch animal "${id}" has no critter entry`);
+  }
 
-  return Object.entries(ranchRows)
-    .map(([id, row]) => {
-      const ranch = parseRow(RawRanchAnimalSchema, row, `Ranch animal "${id}"`);
-      const critterRow = critterRows[id];
-      if (critterRow === undefined) throw new Error(`Ranch animal "${id}" has no critter entry`);
+  return Object.entries(critterRows)
+    .map(([id, critterRow]) => {
       const critter = parseRow(RawCritterSchema, critterRow, `Critter "${id}"`);
-
       const name = toLocalizedText(critter.DisplayName);
       if (!name) throw new Error(`Critter "${id}" has no display name`);
       const diet = parseEnumValue(critter.Diet);
@@ -81,38 +81,49 @@ export function extractAnimals(
 
       const wild = wildFeeding.get(id);
       if (!wild) throw new Error(`Animal "${id}" has no wild feeding data`);
-      if (wild.eggItemId !== ranch.EggItem) {
-        throw new Error(
-          `Animal "${id}": ranch egg "${ranch.EggItem}" differs from wild egg "${wild.eggItemId}"`,
-        );
-      }
-      if (eggToAnimal.get(ranch.EggItem) !== id) {
-        throw new Error(`Animal "${id}": the incubator does not hatch "${ranch.EggItem}" into it`);
+
+      const ranchRow = ranchRows[id];
+      const ranch =
+        ranchRow === undefined
+          ? null
+          : parseRow(RawRanchAnimalSchema, ranchRow, `Ranch animal "${id}"`);
+      if (ranch) {
+        if (wild.egg?.itemId !== ranch.EggItem) {
+          throw new Error(
+            `Animal "${id}": ranch egg "${ranch.EggItem}" differs from wild egg "${wild.egg?.itemId ?? "none"}"`,
+          );
+        }
+        if (eggToAnimal.get(ranch.EggItem) !== id) {
+          throw new Error(
+            `Animal "${id}": the incubator does not hatch "${ranch.EggItem}" into it`,
+          );
+        }
       }
 
       return AnimalSchema.parse({
         id,
         name,
-        icon: resolveIcon(ranch.Icon.AssetPathName, availableIcons),
+        icon: ranch ? resolveIcon(ranch.Icon.AssetPathName, availableIcons) : null,
         diet,
         fodderItemId,
-        loot: {
-          product: { itemId: ranch.ItemDrop.ItemName, amount: ranch.ItemDrop.Count },
-          droppings: { itemId: ranch.Dropping.ItemName, amount: ranch.Dropping.Count },
-          egg: { itemId: ranch.EggItem },
-        },
-        wildFeeding: { resourceItemId: wild.resourceItemId, eggChance: wild.eggChance },
-        needs: {
-          dailyThirst: ranch.DailyThirst,
-          dailyHunger: ranch.DailyHunger,
-          minSquareMeters: ranch.MinSquareMeters,
-          minNearbyAnimals: ranch.MinNearbyAnimals,
-        },
-        lifecycle: {
-          incubationDays: ranch.IncubationDays,
-          growthDays: ranch.GrowthDays,
-          daysSadBeforeRunAway: ranch.DaysSadBeforeRunAway,
-          daysRunAwayBeforeDespawn: ranch.DaysRunAwayBeforeDespawn,
+        wildFeeding: { resourceItemId: wild.resourceItemId, egg: wild.egg },
+        ranch: ranch && {
+          loot: {
+            product: { itemId: ranch.ItemDrop.ItemName, amount: ranch.ItemDrop.Count },
+            droppings: { itemId: ranch.Dropping.ItemName, amount: ranch.Dropping.Count },
+          },
+          needs: {
+            dailyThirst: ranch.DailyThirst,
+            dailyHunger: ranch.DailyHunger,
+            minSquareMeters: ranch.MinSquareMeters,
+            minNearbyAnimals: ranch.MinNearbyAnimals,
+          },
+          lifecycle: {
+            incubationDays: ranch.IncubationDays,
+            growthDays: ranch.GrowthDays,
+            daysSadBeforeRunAway: ranch.DaysSadBeforeRunAway,
+            daysRunAwayBeforeDespawn: ranch.DaysRunAwayBeforeDespawn,
+          },
         },
       });
     })

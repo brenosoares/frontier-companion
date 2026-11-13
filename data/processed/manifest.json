@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "gameVersion": "1.0.2571",
-  "dataVersion": "320768486870",
+  "dataVersion": "8df942ade5d8",
   "counts": {
     "items": 285,
     "recipes": 362,
     "stations": 29,
-    "itemSources": 366,
+    "itemSources": 368,
     "constructs": 548,
-    "animals": 6,
+    "animals": 8,
     "mechParts": 78,
     "mechChips": 144,
     "plants": 26
