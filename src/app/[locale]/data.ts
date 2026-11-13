@@ -6,6 +6,9 @@
  * `cacheComponents`. They are still validated by Zod when first read.
  */
 import animalsJson from "@data/processed/animals.json";
+import mechChipsJson from "@data/processed/mech-chips.json";
+import mechPartsJson from "@data/processed/mech-parts.json";
+import mechStatsJson from "@data/processed/mech-stats.json";
 import incubatorJson from "@data/processed/incubator.json";
 import constructsJson from "@data/processed/constructs.json";
 import itemSourcesJson from "@data/processed/item-sources.json";
@@ -13,6 +16,8 @@ import itemsJson from "@data/processed/items.json";
 import recipesJson from "@data/processed/recipes.json";
 import stationsJson from "@data/processed/stations.json";
 import { IncubatorSchema } from "@/features/animals/domain/animal";
+import { JsonMechRepository } from "@/features/mech/data/json-mech-repository";
+import type { MechRepository } from "@/features/mech/domain/mech-repository";
 import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
 import type { AnimalRepository } from "@/features/animals/domain/animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
@@ -41,3 +46,9 @@ export const constructRepository: ConstructRepository = new JsonConstructReposit
 export const incubator = IncubatorSchema.parse(incubatorJson);
 
 export const animalRepository: AnimalRepository = new JsonAnimalRepository(async () => animalsJson);
+
+export const mechRepository: MechRepository = new JsonMechRepository({
+  stats: async () => mechStatsJson,
+  parts: async () => mechPartsJson,
+  chips: async () => mechChipsJson,
+});

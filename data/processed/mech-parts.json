@@ -1,0 +1,3506 @@
+[
+  {
+    "id": "StandardEngine",
+    "name": {
+      "en": "Farmech Engine",
+      "pt-BR": "Motor do Mecagrícola"
+    },
+    "description": {
+      "en": "A standard engine.",
+      "pt-BR": "Um motor padrão."
+    },
+    "icon": "StandardEngineIcon",
+    "category": "engine",
+    "tier": 1,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 100
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 50
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "NakedEngine",
+    "name": {
+      "en": "Underframe Engine",
+      "pt-BR": "Motor Estrutural"
+    },
+    "description": {
+      "en": "An uncovered engine.",
+      "pt-BR": "Um motor descoberto."
+    },
+    "icon": "NakedEngineIcon",
+    "category": "engine",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 15
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 3
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 150
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 100
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HotRodEngine",
+    "name": {
+      "en": "Hot Rod Engine",
+      "pt-BR": "Motor Hot Rod"
+    },
+    "description": {
+      "en": "A souped up engine.",
+      "pt-BR": "Um motor possante."
+    },
+    "icon": "HotrodEngineIcon",
+    "category": "engine",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeFrame",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "TinOre",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 225
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 150
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HermesEngine",
+    "name": {
+      "en": "Vintage Engine",
+      "pt-BR": "Motor Vintage"
+    },
+    "description": {
+      "en": "A luxurious engine.",
+      "pt-BR": "Um motor luxuoso."
+    },
+    "icon": "HermesEngineIcon",
+    "category": "engine",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 3
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumRod",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 350
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 225
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FM04Engine",
+    "name": {
+      "en": "FM-04 Engine",
+      "pt-BR": "Motor FM-04"
+    },
+    "description": {
+      "en": "An old school engine.",
+      "pt-BR": "Um motor retrô."
+    },
+    "icon": "FM04EngineIcon",
+    "category": "engine",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 6
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 6
+      },
+      {
+        "itemId": "AluminiumRod",
+        "amount": 20
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 500
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 300
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "PowerArmorEngine",
+    "name": {
+      "en": "Power Armor Engine",
+      "pt-BR": "Motor de Armadura Potente"
+    },
+    "description": {
+      "en": "A valiant engine.",
+      "pt-BR": "Um motor valoroso."
+    },
+    "icon": "PowerArmorEngineIcon",
+    "category": "engine",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 9
+      },
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 9
+      },
+      {
+        "itemId": "SilverBar",
+        "amount": 15
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 650
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 400
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HaulerEngine",
+    "name": {
+      "en": "Lightyear Hauler Engine",
+      "pt-BR": "Motor de Transportador Anos-luz"
+    },
+    "description": {
+      "en": "An industrial engine.",
+      "pt-BR": "Um motor industrial."
+    },
+    "icon": "HaulerEngineIcon",
+    "category": "engine",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalFrame",
+        "amount": 9
+      },
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 9
+      },
+      {
+        "itemId": "GoldBar",
+        "amount": 15
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "Inventory.Add",
+        "value": 1000
+      },
+      {
+        "stat": "WaterTank.Capacity",
+        "value": 600
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "StandardWindshield",
+    "name": {
+      "en": "Farmech Windshield",
+      "pt-BR": "Para-brisa do Mecagrícola"
+    },
+    "description": {
+      "en": "A standard issue windshield.",
+      "pt-BR": "Um para-brisa padrão."
+    },
+    "icon": "StandardWindshieldIcon",
+    "category": "windshield",
+    "tier": 1,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "NakedWindshield",
+    "name": {
+      "en": "Underframe Windshield",
+      "pt-BR": "Para-brisa Estrutural"
+    },
+    "description": {
+      "en": "An uncovered windshield.",
+      "pt-BR": "Um para-brisa descoberto."
+    },
+    "icon": "NakedWindshieldIcon",
+    "category": "windshield",
+    "tier": 2,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HotRodWindshield",
+    "name": {
+      "en": "Hot Rod Windshield",
+      "pt-BR": "Para-brisa Hot Rod"
+    },
+    "description": {
+      "en": "A souped up windshield.",
+      "pt-BR": "Um para-brisa possante."
+    },
+    "icon": "HotrodWindshieldIcon",
+    "category": "windshield",
+    "tier": 3,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HermesWindshield",
+    "name": {
+      "en": "Vintage Windshield",
+      "pt-BR": "Para-brisa Vintage"
+    },
+    "description": {
+      "en": "A luxurious windshield.",
+      "pt-BR": "Um para-brisa luxuoso."
+    },
+    "icon": "HermesWindshieldIcon",
+    "category": "windshield",
+    "tier": 4,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FM04Windshield",
+    "name": {
+      "en": "FM-04 Windshield",
+      "pt-BR": "Para-brisa FM-04"
+    },
+    "description": {
+      "en": "An old school windshield.",
+      "pt-BR": "Um para-brisa retrô."
+    },
+    "icon": "FM04WindshieldIcon",
+    "category": "windshield",
+    "tier": 5,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "PowerArmorWindshield",
+    "name": {
+      "en": "Power Armor Windshield",
+      "pt-BR": "Para-brisa de Armadura Potente"
+    },
+    "description": {
+      "en": "A valiant windshield.",
+      "pt-BR": "Um para-brisa valoroso."
+    },
+    "icon": "PowerArmorWindshieldIcon",
+    "category": "windshield",
+    "tier": 6,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HaulerWindshield",
+    "name": {
+      "en": "Lightyear Hauler Windshield",
+      "pt-BR": "Para-brisa de Transportador Anos-luz"
+    },
+    "description": {
+      "en": "An industrial windshield.",
+      "pt-BR": "Um para-brisa industrial."
+    },
+    "icon": "HaulerWindshieldIcon",
+    "category": "windshield",
+    "tier": 7,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "StandardArmSet",
+    "name": {
+      "en": "Farmech Arm Set",
+      "pt-BR": "Conjunto de Braços do Mecagrícola"
+    },
+    "description": {
+      "en": "A standard issue set of arms.",
+      "pt-BR": "Um conjunto de braços padrão."
+    },
+    "icon": "StandardRightArmIcon",
+    "category": "arms",
+    "tier": 1,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "NakedArmSet",
+    "name": {
+      "en": "Underframe Arm Set",
+      "pt-BR": "Conjunto de Braços Estruturais"
+    },
+    "description": {
+      "en": "An uncovered set of arms.",
+      "pt-BR": "Um conjunto de braços descoberto."
+    },
+    "icon": "NakedRightArmIcon",
+    "category": "arms",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 6
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HotRodArmSet",
+    "name": {
+      "en": "Hot Rod Arm Set",
+      "pt-BR": "Conjunto de Braços Hot Rod"
+    },
+    "description": {
+      "en": "A souped up set of arms.",
+      "pt-BR": "Um conjunto de braços possante."
+    },
+    "icon": "HotrodRightArmIcon",
+    "category": "arms",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "RabbageOil",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 8
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HermesArmSet",
+    "name": {
+      "en": "Vintage Arm Set",
+      "pt-BR": "Conjunto de Braços Vintage"
+    },
+    "description": {
+      "en": "A luxurious set of arms.",
+      "pt-BR": "Um conjunto de braços luxuoso."
+    },
+    "icon": "HermesRightArmIcon",
+    "category": "arms",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 2
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 25
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 10
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FM04ArmSet",
+    "name": {
+      "en": "FM-04 Arm Set",
+      "pt-BR": "Conjunto de Braços FM-04"
+    },
+    "description": {
+      "en": "An old school set of arms.",
+      "pt-BR": "Um conjunto de braços retrô."
+    },
+    "icon": "FM04RightArmIcon",
+    "category": "arms",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 4
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 50
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 14
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "PowerArmorArmSet",
+    "name": {
+      "en": "Power Armor Arm Set",
+      "pt-BR": "Conjunto de Braços de Armadura Potente"
+    },
+    "description": {
+      "en": "A valiant set of arms.",
+      "pt-BR": "Um conjunto de braços valoroso."
+    },
+    "icon": "PowerArmorRightArmIcon",
+    "category": "arms",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 6
+      },
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 6
+      },
+      {
+        "itemId": "BloomsOil",
+        "amount": 100
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 18
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HaulerArmSet",
+    "name": {
+      "en": "Lightyear Arm Set",
+      "pt-BR": "Conjunto de Braços Anos-luz"
+    },
+    "description": {
+      "en": "An industrial set of arms.",
+      "pt-BR": "Um conjunto de braços industrial."
+    },
+    "icon": "HaulerRightArmIcon",
+    "category": "arms",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalFrame",
+        "amount": 6
+      },
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 6
+      },
+      {
+        "itemId": "QuartznipOil",
+        "amount": 200
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "Hauling.Capacity",
+        "value": 24
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "StandardLegSet",
+    "name": {
+      "en": "Farmech Leg Set",
+      "pt-BR": "Conjunto de Pernas do Mecagrícola"
+    },
+    "description": {
+      "en": "A standard issue set of legs.",
+      "pt-BR": "Um conjunto de pernas padrão."
+    },
+    "icon": "StandardRightLegIcon",
+    "category": "legs",
+    "tier": 1,
+    "costs": [],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "NakedLegSet",
+    "name": {
+      "en": "Underframe Leg Set",
+      "pt-BR": "Conjunto de Pernas Estruturais"
+    },
+    "description": {
+      "en": "An uncovered set of legs.",
+      "pt-BR": "Um conjunto de pernas descoberto."
+    },
+    "icon": "NakedRightLegIcon",
+    "category": "legs",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.03
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 0.2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HotRodLegSet",
+    "name": {
+      "en": "Hot Rod Leg Set",
+      "pt-BR": "Conjunto de Pernas Hot Rod"
+    },
+    "description": {
+      "en": "A souped up set of legs.",
+      "pt-BR": "Um conjunto de pernas possante."
+    },
+    "icon": "HotrodRightLegIcon",
+    "category": "legs",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CarootJuice",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.06
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 0.4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HermesLegSet",
+    "name": {
+      "en": "Vintage Leg Set",
+      "pt-BR": "Conjunto de Pernas Vintage"
+    },
+    "description": {
+      "en": "A luxurious set of legs.",
+      "pt-BR": "Um conjunto de pernas luxuoso."
+    },
+    "icon": "HermesRightLegIcon",
+    "category": "legs",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 2
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 2
+      },
+      {
+        "itemId": "CottonCropOil",
+        "amount": 25
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.09
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 0.6
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FM04LegSet",
+    "name": {
+      "en": "FM-04 Leg Set",
+      "pt-BR": "Conjunto de Pernas FM-04"
+    },
+    "description": {
+      "en": "An old school set of legs.",
+      "pt-BR": "Um conjunto de pernas retrô."
+    },
+    "icon": "FM04RightLegIcon",
+    "category": "legs",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 4
+      },
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 4
+      },
+      {
+        "itemId": "CottonCropOil",
+        "amount": 50
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.12
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 0.8
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "PowerArmorLegSet",
+    "name": {
+      "en": "Power Armor Leg Set",
+      "pt-BR": "Conjunto de Pernas de Armadura Potente"
+    },
+    "description": {
+      "en": "A valiant set of legs.",
+      "pt-BR": "Um conjunto de pernas valoroso."
+    },
+    "icon": "PowerArmorRightLegIcon",
+    "category": "legs",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 6
+      },
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 6
+      },
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 100
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.15
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "HaulerLegSet",
+    "name": {
+      "en": "Lightyear Hauler Leg Set",
+      "pt-BR": "Conjunto de Pernas de Transportador Anos-luz"
+    },
+    "description": {
+      "en": "An industrial set of legs.",
+      "pt-BR": "Um conjunto de pernas industrial."
+    },
+    "icon": "HaulerRightLegIcon",
+    "category": "legs",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalFrame",
+        "amount": 6
+      },
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 6
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 200
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "Sprint.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "Mech.Stability",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer0",
+    "name": {
+      "en": "Spike Saw Mk. 0",
+      "pt-BR": "Serra Dentada Mk. 0"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 3
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 0
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 100
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer1",
+    "name": {
+      "en": "Spike Saw Mk. 1",
+      "pt-BR": "Serra Dentada Mk. 1"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 5
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 1
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 100
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 150
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer2",
+    "name": {
+      "en": "Spike Saw Mk. 2",
+      "pt-BR": "Serra Dentada Mk. 2"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeBar",
+        "amount": 10
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 125
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 200
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer3",
+    "name": {
+      "en": "Spike Saw Mk. 3",
+      "pt-BR": "Serra Dentada Mk. 3"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 6
+      },
+      {
+        "itemId": "BronzeBar",
+        "amount": 25
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 150
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 250
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer4",
+    "name": {
+      "en": "Spike Saw Mk. 4",
+      "pt-BR": "Serra Dentada Mk. 4"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "IronBar",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 200
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 300
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer5",
+    "name": {
+      "en": "Spike Saw Mk. 5",
+      "pt-BR": "Serra Dentada Mk. 5"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "SteelBar",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 250
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 400
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer6",
+    "name": {
+      "en": "Spike Saw Mk. 6",
+      "pt-BR": "Serra Dentada Mk. 6"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary])para separá-los em recursos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 10
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 300
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 500
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Jackhammer7",
+    "name": {
+      "en": "Spike Saw Mk. 7",
+      "pt-BR": "Serra Dentada Mk. 7"
+    },
+    "description": {
+      "en": "A tool that strikes individual objects ([UseToolPrimary]) or hits multiple with a sweep ([UseToolSecondary]) to break them into resources. \n\nImproved with alien technology to be able to break down Ancient Scraps.",
+      "pt-BR": "Uma ferramenta que atinge objetos individuais ([UseToolPrimary]) ou atinge múltiplos em um giro ([UseToolSecondary]) para separá-los em recursos.\n\nAprimorada com tecnologia alienígena para separar Fragmentos Antigos."
+    },
+    "icon": "JackhammerIcon",
+    "category": "spike-saw",
+    "tier": 8,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 5
+      },
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 25
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 3
+      },
+      {
+        "itemId": "NoxiousSpore",
+        "amount": 50
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "SpikeSaw.Strike.Damage",
+        "value": 500
+      },
+      {
+        "stat": "SpikeSaw.Swing.Damage",
+        "value": 800
+      },
+      {
+        "stat": "SpikeSaw.Swing.Unlock",
+        "value": 1
+      },
+      {
+        "stat": "Spikesaw.Strike.BreakingLevel",
+        "value": 1001
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose0",
+    "name": {
+      "en": "Irrigation Hose Mk. 1",
+      "pt-BR": "Jato de Irrigação Mk. 1"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 3
+      },
+      {
+        "itemId": "PlantOil",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 60
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose1",
+    "name": {
+      "en": "Irrigation Hose Mk. 2",
+      "pt-BR": "Jato de Irrigação Mk. 2"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 10
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 75
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 6
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 500
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose2",
+    "name": {
+      "en": "Irrigation Hose Mk. 3",
+      "pt-BR": "Jato de Irrigação Mk. 3"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 6
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 15
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 90
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 8
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 750
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose3",
+    "name": {
+      "en": "Irrigation Hose Mk. 4",
+      "pt-BR": "Jato de Irrigação Mk. 4"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 30
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 110
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 12
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 1000
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose4",
+    "name": {
+      "en": "Irrigation Hose Mk. 5",
+      "pt-BR": "Jato de Irrigação Mk. 5"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 60
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 130
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 16
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 1250
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose5",
+    "name": {
+      "en": "Irrigation Hose Mk. 6",
+      "pt-BR": "Jato de Irrigação Mk. 6"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 125
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 150
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 20
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 1500
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Hose6",
+    "name": {
+      "en": "Irrigation Hose Mk. 7",
+      "pt-BR": "Jato de Irrigação Mk. 7"
+    },
+    "description": {
+      "en": "Irrigation tool that sprays water in an arc ([UseToolPrimary]) or charges up to cover a wide area in bursts ([UseToolSecondary]).",
+      "pt-BR": "Ferramenta de irrigação que espalha água em um arco ([UseToolPrimary]) ou carrega para cobrir uma área grande em rajadas ([UseToolSecondary])."
+    },
+    "icon": "HoseIcon",
+    "category": "irrigation-hose",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 3
+      },
+      {
+        "itemId": "Polymer",
+        "amount": 250
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 3
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "IrrigationHose.ImpactRadius",
+        "value": 200
+      },
+      {
+        "stat": "IrrigationHose.LitersPerSecond",
+        "value": 25
+      },
+      {
+        "stat": "IrrigationHose.SpreadBoxWidth",
+        "value": 3000
+      },
+      {
+        "stat": "IrrigationHose.HydroBlast.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum0",
+    "name": {
+      "en": "Resource Vacuum Mk. 1",
+      "pt-BR": "Coletor a Vácuo Mk. 1"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 3
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 3
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum1",
+    "name": {
+      "en": "Resource Vacuum Mk. 2",
+      "pt-BR": "Coletor a Vácuo Mk. 2"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RabbageOil",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0.1
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum2",
+    "name": {
+      "en": "Resource Vacuum Mk. 3",
+      "pt-BR": "Coletor a Vácuo Mk. 3"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 6
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 4
+      },
+      {
+        "itemId": "RabbageOil",
+        "amount": 20
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0.2
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum3",
+    "name": {
+      "en": "Resource Vacuum Mk. 4",
+      "pt-BR": "Coletor a Vácuo Mk. 4"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "ChromaizeOil",
+        "amount": 30
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0.35
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum4",
+    "name": {
+      "en": "Resource Vacuum Mk. 5",
+      "pt-BR": "Coletor a Vácuo Mk. 5"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CottonCropOil",
+        "amount": 50
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0.5
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum5",
+    "name": {
+      "en": "Resource Vacuum Mk. 6",
+      "pt-BR": "Coletor a Vácuo Mk. 6"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 100
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 0.65
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Vacuum6",
+    "name": {
+      "en": "Resource Vacuum Mk. 7",
+      "pt-BR": "Coletor a Vácuo Mk. 7"
+    },
+    "description": {
+      "en": "Funnel-like vacuum that grabs items and water from a distance ([UseToolPrimary]) or narrows its funnel to pluck crops from the ground ([UseToolSecondary]).",
+      "pt-BR": "Cria um vácuo em formato de funil que agarra itens e água à distância ([UseToolPrimary]) ou estreita o funil para colher as plantações do chão ([UseToolSecondary])."
+    },
+    "icon": "VacuumIcon",
+    "category": "resource-vacuum",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 3
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 200
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "Tool.Range",
+        "value": 1.25
+      },
+      {
+        "stat": "ResourceVacuum.HarvestVortex",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter0",
+    "name": {
+      "en": "Seed Shooter Mk. 1",
+      "pt-BR": "Lançador de Sementes Mk. 1"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter1",
+    "name": {
+      "en": "Seed Shooter Mk. 2",
+      "pt-BR": "Lançador de Sementes Mk. 2"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CarootJuice",
+        "amount": 10
+      },
+      {
+        "itemId": "ClearLens",
+        "amount": 1
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 25
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter2",
+    "name": {
+      "en": "Seed Shooter Mk. 3",
+      "pt-BR": "Lançador de Sementes Mk. 3"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 6
+      },
+      {
+        "itemId": "CarootJuice",
+        "amount": 20
+      },
+      {
+        "itemId": "RedLens",
+        "amount": 2
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 50
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter3",
+    "name": {
+      "en": "Seed Shooter Mk. 4",
+      "pt-BR": "Lançador de Sementes Mk. 4"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "FuelPlantOil",
+        "amount": 30
+      },
+      {
+        "itemId": "YellowLens",
+        "amount": 2
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 100
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      },
+      {
+        "stat": "SeedShooter.MoundSeedCapacity",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter4",
+    "name": {
+      "en": "Seed Shooter Mk. 5",
+      "pt-BR": "Lançador de Sementes Mk. 5"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "ElectricPlantOil",
+        "amount": 50
+      },
+      {
+        "itemId": "YellowLens",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 250
+      },
+      {
+        "stat": "SeedShooter.Minigun.Radius",
+        "value": 0.15
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      },
+      {
+        "stat": "SeedShooter.Minigun.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "SeedShooter.MoundSeedCapacity",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter5",
+    "name": {
+      "en": "Seed Shooter Mk. 6",
+      "pt-BR": "Lançador de Sementes Mk. 6"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CoilPlantOil",
+        "amount": 100
+      },
+      {
+        "itemId": "BlueLens",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 500
+      },
+      {
+        "stat": "SeedShooter.Minigun.Radius",
+        "value": 0.3
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      },
+      {
+        "stat": "SeedShooter.Minigun.Speed",
+        "value": 0.5
+      },
+      {
+        "stat": "SeedShooter.MoundSeedCapacity",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedShooter6",
+    "name": {
+      "en": "Seed Shooter Mk. 7",
+      "pt-BR": "Lançador de Sementes Mk. 7"
+    },
+    "description": {
+      "en": "Light firearm that shoots small seeds into mounds repeatedly ([UseToolPrimary]) or locks on to multiple mounds to distribute several seeds at once ([UseToolSecondary]).",
+      "pt-BR": "Arma leve que dispara sementes pequenas nos montes repetidamente ([UseToolPrimary]) ou mira em múltiplos montes para distribuir várias sementes de uma vez ([UseToolSecondary])."
+    },
+    "icon": "SeedShooterIcon",
+    "category": "seed-shooter",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 3
+      },
+      {
+        "itemId": "PapristalkOil",
+        "amount": 200
+      },
+      {
+        "itemId": "CrystalMatrix",
+        "amount": 3
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "SeedShooter.LockOn.Add",
+        "value": 1500
+      },
+      {
+        "stat": "SeedShooter.Minigun.Radius",
+        "value": 0.5
+      },
+      {
+        "stat": "SeedShooter.LockOn.Unlock",
+        "value": 1
+      },
+      {
+        "stat": "SeedShooter.Minigun.Speed",
+        "value": 1
+      },
+      {
+        "stat": "SeedShooter.MoundSeedCapacity",
+        "value": 3
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon0",
+    "name": {
+      "en": "Sprout Cannon Mk. 1",
+      "pt-BR": "Canhão de Brotos Mk. 1"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 3
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 1
+      },
+      {
+        "itemId": "PolyberryOil",
+        "amount": 2
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1000
+      },
+      {
+        "stat": "Slots",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon1",
+    "name": {
+      "en": "Sprout Cannon Mk. 2",
+      "pt-BR": "Canhão de Brotos Mk. 2"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BronzeBar",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 1500
+      },
+      {
+        "stat": "Slots",
+        "value": 2
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon2",
+    "name": {
+      "en": "Sprout Cannon Mk. 3",
+      "pt-BR": "Canhão de Brotos Mk. 3"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 6
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 4
+      },
+      {
+        "itemId": "BronzeBar",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "SproutCannon.AltFire.Radius",
+        "value": 0.05
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon3",
+    "name": {
+      "en": "Sprout Cannon Mk. 4",
+      "pt-BR": "Canhão de Brotos Mk. 4"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 4,
+    "costs": [
+      {
+        "itemId": "IronMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "IronElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "IronBar",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2500
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "SproutCannon.AltFire.Radius",
+        "value": 0.1
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon4",
+    "name": {
+      "en": "Sprout Cannon Mk. 5",
+      "pt-BR": "Canhão de Brotos Mk. 5"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 5,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "SteelBar",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "SproutCannon.AltFire.Radius",
+        "value": 0.15
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon5",
+    "name": {
+      "en": "Sprout Cannon Mk. 6",
+      "pt-BR": "Canhão de Brotos Mk. 6"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 6,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "CubeMetalRefined",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 6
+      },
+      {
+        "stat": "SproutCannon.AltFire.Radius",
+        "value": 0.25
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "SeedCannon6",
+    "name": {
+      "en": "Sprout Cannon Mk. 7",
+      "pt-BR": "Canhão de Brotos Mk. 7"
+    },
+    "description": {
+      "en": "Long range cannon that plants invidual sprouts ([UseToolPrimary]) or charges up to plant multiple in an area ([UseToolSecondary]).",
+      "pt-BR": "Canhão de longo alcance que planta brotos individuais ([UseToolPrimary]) ou c arrega para plantar múltiplos em uma área ([UseToolSecondary])."
+    },
+    "icon": "SeedCannonIcon",
+    "category": "sprout-cannon",
+    "tier": 7,
+    "costs": [
+      {
+        "itemId": "ReinforcedTallTech",
+        "amount": 3
+      },
+      {
+        "itemId": "WiredTallTech",
+        "amount": 2
+      },
+      {
+        "itemId": "TallTechPure",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 5000
+      },
+      {
+        "stat": "Slots",
+        "value": 8
+      },
+      {
+        "stat": "SproutCannon.AltFire.Radius",
+        "value": 0.5
+      },
+      {
+        "stat": "SproutCannon.AltFire.Unlock",
+        "value": 1
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Plow0",
+    "name": {
+      "en": "Field Plow Mk. 1",
+      "pt-BR": "Alteração do Campo Mk. 1"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that creates mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que cria montes."
+    },
+    "icon": "PlowIcon",
+    "category": "plow",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Plow1",
+    "name": {
+      "en": "Field Plow Mk. 2",
+      "pt-BR": "Alteração do Campo Mk. 2"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that creates mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que cria montes."
+    },
+    "icon": "PlowIcon",
+    "category": "plow",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Plow2",
+    "name": {
+      "en": "Field Plow Mk. 3",
+      "pt-BR": "Alteração do Campo Mk. 3"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that creates mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que cria montes."
+    },
+    "icon": "PlowIcon",
+    "category": "plow",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Harvester0",
+    "name": {
+      "en": "Field Harvester Mk. 1",
+      "pt-BR": "Colheitadeira de Campo Mk. 1"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that harvests crops.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que colhe plantações."
+    },
+    "icon": "HarvesterIcon",
+    "category": "harvester",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "NickelOre",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Harvester1",
+    "name": {
+      "en": "Field Harvester Mk. 2",
+      "pt-BR": "Colheitadeira de Campo Mk. 2"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that harvests crops.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que colhe plantações."
+    },
+    "icon": "HarvesterIcon",
+    "category": "harvester",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "IronFrame",
+        "amount": 3
+      },
+      {
+        "itemId": "AluminiumWire",
+        "amount": 10
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Harvester2",
+    "name": {
+      "en": "Field Harvester Mk. 3",
+      "pt-BR": "Colheitadeira de Campo Mk. 3"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that harvests crops.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que colhe plantações."
+    },
+    "icon": "HarvesterIcon",
+    "category": "harvester",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "SteelFrame",
+        "amount": 3
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 15
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FertilizerSpreader0",
+    "name": {
+      "en": "Fertilizer Spreader Mk. 1",
+      "pt-BR": "Fertilizadora Mk. 1"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that spreads mulch or fertilizer on mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que espalha cobertura morta ou fertilizante nos montes."
+    },
+    "icon": "FertilizerSpreaderIcon",
+    "category": "fertilizer-spreader",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 3
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 1
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FertilizerSpreader1",
+    "name": {
+      "en": "Fertilizer Spreader Mk. 2",
+      "pt-BR": "Fertilizadora Mk. 2"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that spreads mulch or fertilizer on mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que espalha cobertura morta ou fertilizante nos montes."
+    },
+    "icon": "FertilizerSpreaderIcon",
+    "category": "fertilizer-spreader",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "SilverWire",
+        "amount": 5
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 1
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.1
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 2
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "FertilizerSpreader2",
+    "name": {
+      "en": "Fertilizer Spreader Mk. 3",
+      "pt-BR": "Fertilizadora Mk. 3"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that spreads mulch or fertilizer on mounds.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que espalha cobertura morta ou fertilizante nos montes."
+    },
+    "icon": "FertilizerSpreaderIcon",
+    "category": "fertilizer-spreader",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 3
+      },
+      {
+        "itemId": "GoldWire",
+        "amount": 5
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 1
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.ActiveSpeed",
+        "value": 0.25
+      },
+      {
+        "stat": "TransformMode.Width",
+        "value": 4
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Car0",
+    "name": {
+      "en": "Trailblazer Mk. 1",
+      "pt-BR": "Pioneiro Mk. 1"
+    },
+    "description": {
+      "en": "Car Type Transform Mode [Transform] with all-wheel drive for long-range traversal. Excels at towing trailers.",
+      "pt-BR": "Modo de Transformação Tipo Carro [Transform] com tração em todas as rodas para travessias longas. Ótimo para puxar Trailers."
+    },
+    "icon": "CarIcon",
+    "category": "trailblazer",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "BronzeParts",
+        "amount": 5
+      },
+      {
+        "itemId": "BronzeElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "RedCrystal",
+        "amount": 10
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0
+      },
+      {
+        "stat": "Trailblazer.Boost.Recharge",
+        "value": 0
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Car1",
+    "name": {
+      "en": "Trailblazer Mk. 2",
+      "pt-BR": "Pioneiro Mk. 2"
+    },
+    "description": {
+      "en": "Car Type Transform Mode [Transform] with all-wheel drive for long-range traversal. Excels at towing trailers.",
+      "pt-BR": "Modo de Transformação Tipo Carro [Transform] com tração em todas as rodas para travessias longas. Ótimo para puxar Trailers."
+    },
+    "icon": "CarIcon",
+    "category": "trailblazer",
+    "tier": 2,
+    "costs": [
+      {
+        "itemId": "SteelMechanicalParts",
+        "amount": 5
+      },
+      {
+        "itemId": "SteelElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "YellowCrystal",
+        "amount": 15
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 3000
+      },
+      {
+        "stat": "Slots",
+        "value": 4
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.1
+      },
+      {
+        "stat": "Trailblazer.Boost.Recharge",
+        "value": 0.15
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Car2",
+    "name": {
+      "en": "Trailblazer Mk. 3",
+      "pt-BR": "Pioneiro Mk. 3"
+    },
+    "description": {
+      "en": "Car Type Transform Mode [Transform] with all-wheel drive for long-range traversal. Excels at towing trailers.",
+      "pt-BR": "Modo de Transformação Tipo Carro [Transform] com tração em todas as rodas para travessias longas. Ótimo para puxar Trailers."
+    },
+    "icon": "CarIcon",
+    "category": "trailblazer",
+    "tier": 3,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 5
+      },
+      {
+        "itemId": "CubeMetalElectronics",
+        "amount": 2
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 20
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      },
+      {
+        "stat": "TransformMode.Speed",
+        "value": 0.25
+      },
+      {
+        "stat": "Trailblazer.Boost.Recharge",
+        "value": 0.3
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Pathmaker0",
+    "name": {
+      "en": "Landscaper",
+      "pt-BR": "Paisagista"
+    },
+    "description": {
+      "en": "Tractor Type Transform Mode [Transform] that cuts grass and paves paths.",
+      "pt-BR": "Modo de Transformação Tipo Trator [Transform] que corta grama e pavimenta rotas."
+    },
+    "icon": "PathmakerIcon",
+    "category": "landscaper",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CopperOre",
+        "amount": 10
+      },
+      {
+        "itemId": "CopperWire",
+        "amount": 5
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 2000
+      },
+      {
+        "stat": "Slots",
+        "value": 3
+      }
+    ],
+    "featureFlag": null
+  },
+  {
+    "id": "Flight0",
+    "name": {
+      "en": "Skyblazer",
+      "pt-BR": "Asas de Voo"
+    },
+    "description": {
+      "en": "Flight Type Transform Mode [Transform] that glides through the air.",
+      "pt-BR": "Modo de Transformação Tipo Voo [Transform] que paira nos céus."
+    },
+    "icon": "FlightIcon",
+    "category": "skyblazer",
+    "tier": 1,
+    "costs": [
+      {
+        "itemId": "CubeMetalParts",
+        "amount": 10
+      },
+      {
+        "itemId": "CubeMetalFrame",
+        "amount": 5
+      },
+      {
+        "itemId": "BlueCrystal",
+        "amount": 25
+      }
+    ],
+    "stats": [
+      {
+        "stat": "Health.Max",
+        "value": 4000
+      },
+      {
+        "stat": "Slots",
+        "value": 5
+      }
+    ],
+    "featureFlag": null
+  }
+]

@@ -19,6 +19,9 @@ export const PUBLIC_ITEM_ICONS_DIR = path.join(repoRoot, "public/icons/items");
 /** Same, for constructs (`/icons/constructs/<name>.png`). */
 export const PUBLIC_CONSTRUCT_ICONS_DIR = path.join(repoRoot, "public/icons/constructs");
 /** Same, for animals (`/icons/animals/<name>.png`). */
+/** Same, for mech parts and chips (`/icons/mech/<name>.png`). */
+export const PUBLIC_MECH_ICONS_DIR = path.join(repoRoot, "public/icons/mech");
+
 export const PUBLIC_ANIMAL_ICONS_DIR = path.join(repoRoot, "public/icons/animals");
 
 /**

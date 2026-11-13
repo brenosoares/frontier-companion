@@ -8,6 +8,7 @@ import {
   OUTPUT_DIR,
   PIXEL_ICONS_DIR,
   PUBLIC_ANIMAL_ICONS_DIR,
+  PUBLIC_MECH_ICONS_DIR,
   PUBLIC_CONSTRUCT_ICONS_DIR,
   PUBLIC_ITEM_ICONS_DIR,
 } from "./config";
@@ -82,6 +83,11 @@ async function main(): Promise<void> {
     PIXEL_ICONS_DIR,
     PUBLIC_ANIMAL_ICONS_DIR,
   );
+  const mechIcons = await copyIcons(
+    [...dataset.mechParts, ...dataset.mechChips].map((entry) => entry.icon),
+    PIXEL_ICONS_DIR,
+    PUBLIC_MECH_ICONS_DIR,
+  );
   const itemsWithoutIcon = dataset.items.filter((item) => item.icon === null).map((i) => i.id);
   const constructsWithoutIcon = dataset.constructs
     .filter((construct) => construct.icon === null)
@@ -92,10 +98,10 @@ async function main(): Promise<void> {
   console.warn(`✔ Emitted to ${OUTPUT_DIR}`);
   console.warn(`  game ${manifest.gameVersion} · data ${manifest.dataVersion}`);
   console.warn(
-    `  ${counts.items} items · ${counts.recipes} recipes · ${counts.stations} stations · ${counts.itemSources} item sources · ${counts.constructs} constructs · ${counts.animals} animals`,
+    `  ${counts.items} items · ${counts.recipes} recipes · ${counts.stations} stations · ${counts.itemSources} item sources · ${counts.constructs} constructs · ${counts.animals} animals · ${counts.mechParts} mech parts · ${counts.mechChips} chips`,
   );
   console.warn(
-    `  ${itemIcons} item icons · ${constructIcons} construct icons · ${animalIcons} animal icons published`,
+    `  ${itemIcons} item icons · ${constructIcons} construct icons · ${animalIcons} animal icons · ${mechIcons} mech icons published`,
   );
   reportMissing("items", itemsWithoutIcon);
   reportMissing("constructs", constructsWithoutIcon);

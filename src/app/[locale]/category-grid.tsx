@@ -3,10 +3,18 @@ import type { Locale } from "@/shared/domain/localized-text";
 import { localizedPath } from "@/shared/i18n/config";
 import { getMessages } from "@/shared/i18n/get-messages";
 import { formatNumber, formatTemplate } from "@/shared/lib/format";
-import type { CategorySummary } from "./recipes/recipe-catalog";
+
+interface CategoryTile {
+  id: string;
+  label: string;
+  /** Everything in the category, including content that may not be live. */
+  total: number;
+  /** What is shown by default. */
+  available: number;
+}
 
 interface CategoryGridProps {
-  categories: readonly CategorySummary[];
+  categories: readonly CategoryTile[];
   locale: Locale;
   /** Where a category lives, e.g. `/recipes/craft-Furnace`. */
   hrefFor: (categoryId: string) => string;

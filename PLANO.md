@@ -153,6 +153,7 @@ Cada feature segue o mesmo molde: **domain → repository → UI → testes → 
 8. [ ] Demais entidades sob demanda: construções, módulos, plantas, criaturas, missões…
 9. [x] **Origem dos itens restantes** (49 → 22): fruto de planta, mercadores, plantas mutantes e pacotes de ajuda ([ADR 0010](docs/adr/0010-more-item-origins.md)). Faltam trocas com vizinhos e os itens sem nenhum dado no jogo.
 10. [x] **Animais** — lista, detalhe (o que dá, alimentação, criação) e estruturas do rancho ([ADR 0011](docs/adr/0011-animals.md)). Como conseguir o animal (alimentar o bicho selvagem → ovo → incubadora) e chances das lentes vêm dos Blueprints ([ADR 0012](docs/adr/0012-blueprint-extraction.md)). Faltam loot de criaturas selvagens por região e acessórios.
+11. [x] **Mecha** — partes do corpo, ferramentas, modos de transformação e chips de upgrade por parte, com custos ([ADR 0014](docs/adr/0014-mech.md)).
 
 > Ordem sugerida das próximas: receitas/crafting (reaproveita tudo o que já existe) → plantas e criaturas → construções.
 

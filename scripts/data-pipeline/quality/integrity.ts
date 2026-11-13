@@ -1,3 +1,4 @@
+import type { MechChip, MechPart, MechStat } from "@/features/mech/domain/mech";
 import type { Animal, Incubator } from "@/features/animals/domain/animal";
 import type { Construct } from "@/features/constructs/domain/construct";
 import type { Item } from "@/features/items/domain/item";
@@ -13,6 +14,9 @@ export interface Dataset {
   constructs: readonly Construct[];
   animals: readonly Animal[];
   incubator: Incubator;
+  mechStats: readonly MechStat[];
+  mechParts: readonly MechPart[];
+  mechChips: readonly MechChip[];
 }
 
 function findDuplicates(ids: readonly string[]): string[] {
@@ -32,6 +36,9 @@ export function checkIntegrity({
   stations,
   itemSources,
   constructs,
+  mechStats,
+  mechParts,
+  mechChips,
   animals,
 }: Dataset): string[] {
   const issues: string[] = [];
@@ -85,6 +92,28 @@ export function checkIntegrity({
       if (!itemIds.has(itemId)) {
         issues.push(`Animal "${animal.id}" has unknown ${role} item "${itemId}"`);
       }
+    }
+  }
+  const statIds = new Set(mechStats.map((stat) => stat.id));
+  for (const id of findDuplicates(mechParts.map((part) => part.id))) {
+    issues.push(`Duplicate mech part id "${id}"`);
+  }
+  for (const part of mechParts) {
+    for (const { itemId } of part.costs) {
+      if (!itemIds.has(itemId))
+        issues.push(`Mech part "${part.id}" costs unknown item "${itemId}"`);
+    }
+    for (const { stat } of part.stats) {
+      if (!statIds.has(stat)) issues.push(`Mech part "${part.id}" has unknown stat "${stat}"`);
+    }
+  }
+  for (const id of findDuplicates(mechChips.map((chip) => chip.id))) {
+    issues.push(`Duplicate mech chip id "${id}"`);
+  }
+  for (const chip of mechChips) {
+    for (const { itemId } of chip.costs) {
+      if (!itemIds.has(itemId))
+        issues.push(`Mech chip "${chip.id}" costs unknown item "${itemId}"`);
     }
   }
   for (const station of stations) {

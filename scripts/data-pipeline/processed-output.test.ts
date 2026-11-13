@@ -3,7 +3,9 @@ import { access, readFile } from "node:fs/promises";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { DatasetManifestSchema } from "@/shared/domain/dataset-manifest";
+import { PART_CATEGORIES } from "@/features/mech/domain/mech";
 import { IncubatorSchema } from "@/features/animals/domain/animal";
+import { JsonMechRepository } from "@/features/mech/data/json-mech-repository";
 import { JsonAnimalRepository } from "@/features/animals/data/json-animal-repository";
 import { JsonConstructRepository } from "@/features/constructs/data/json-construct-repository";
 import { JsonItemSourceRepository } from "@/features/items/data/json-item-source-repository";
@@ -18,6 +20,7 @@ import {
   GAME_VERSION,
   OUTPUT_DIR,
   PUBLIC_ANIMAL_ICONS_DIR,
+  PUBLIC_MECH_ICONS_DIR,
   PUBLIC_CONSTRUCT_ICONS_DIR,
   PUBLIC_ITEM_ICONS_DIR,
 } from "./config";
@@ -40,6 +43,13 @@ async function readAllSources() {
  * Contract test for the COMMITTED curated dataset (`data/processed`). It runs in CI, where the raw
  * dump is unavailable, so a bad hand-edit or stale file fails the build.
  */
+const mechRepository = () =>
+  new JsonMechRepository({
+    stats: load("mech-stats.json"),
+    parts: load("mech-parts.json"),
+    chips: load("mech-chips.json"),
+  });
+
 describe("committed dataset (data/processed)", () => {
   it("loads through the repositories and is referentially consistent", async () => {
     const items = await new JsonItemRepository(load("items.json")).getAll();
@@ -49,12 +59,27 @@ describe("committed dataset (data/processed)", () => {
     const constructs = await new JsonConstructRepository(load("constructs.json")).getAll();
     const animals = await new JsonAnimalRepository(load("animals.json")).getAll();
     const incubator = IncubatorSchema.parse(await read("incubator.json"));
+    const mech = mechRepository();
+    const mechStats = await mech.getStats();
+    const mechParts = await mech.getParts();
+    const mechChips = await mech.getChips();
 
     expect(items.length).toBeGreaterThan(0);
     expect(recipes.length).toBeGreaterThan(0);
     expect(stations.length).toBeGreaterThan(0);
     expect(
-      checkIntegrity({ items, recipes, stations, itemSources, constructs, animals, incubator }),
+      checkIntegrity({
+        items,
+        recipes,
+        stations,
+        itemSources,
+        constructs,
+        animals,
+        incubator,
+        mechStats,
+        mechParts,
+        mechChips,
+      }),
     ).toEqual([]);
     expect(
       findSensitiveStrings({
@@ -65,6 +90,9 @@ describe("committed dataset (data/processed)", () => {
         constructs,
         animals,
         incubator,
+        mechStats,
+        mechParts,
+        mechChips,
       }),
     ).toEqual([]);
   });
@@ -77,6 +105,8 @@ describe("committed dataset (data/processed)", () => {
     const itemSources = (await read("item-sources.json")) as unknown[];
     const constructs = (await read("constructs.json")) as unknown[];
     const animals = (await read("animals.json")) as unknown[];
+    const mechParts = (await read("mech-parts.json")) as unknown[];
+    const mechChips = (await read("mech-chips.json")) as unknown[];
 
     expect(manifest.gameVersion).toBe(GAME_VERSION);
     expect(manifest.counts).toEqual({
@@ -86,6 +116,8 @@ describe("committed dataset (data/processed)", () => {
       itemSources: itemSources.length,
       constructs: constructs.length,
       animals: animals.length,
+      mechParts: mechParts.length,
+      mechChips: mechChips.length,
     });
   });
 
@@ -178,6 +210,38 @@ describe("committed dataset (data/processed)", () => {
       const diets: Record<string, string> = getMessages(locale).animals.diets;
       const missing = animals.filter((animal) => !(animal.diet in diets)).map((a) => a.id);
       expect({ locale, missing }).toEqual({ locale, missing: [] });
+    }
+  });
+
+  it("has a UI label, in every locale, for every mech part category", async () => {
+    const parts = await mechRepository().getParts();
+    const categories = new Set([...parts.map((part) => part.category), ...PART_CATEGORIES]);
+
+    for (const locale of LOCALES) {
+      const labels: Record<string, string> = getMessages(locale).mech.categories;
+      expect([...categories].filter((category) => !(category in labels))).toEqual([]);
+    }
+  });
+
+  it("only lists parts and chips whose icons are published", async () => {
+    const mech = mechRepository();
+    const entries = [...(await mech.getParts()), ...(await mech.getChips())];
+    const icons = entries.flatMap((entry) => (entry.icon ? [entry.icon] : []));
+
+    expect(icons.length).toBeGreaterThan(0);
+    const missing: string[] = [];
+    for (const icon of icons) {
+      await access(path.join(PUBLIC_MECH_ICONS_DIR, `${icon}.png`)).catch(() => missing.push(icon));
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it("covers every tier of every category, in order, with the mech parts the game ships", async () => {
+    const parts = await mechRepository().getParts();
+    for (const category of PART_CATEGORIES) {
+      const tiers = parts.filter((part) => part.category === category).map((part) => part.tier);
+      expect(tiers.length).toBeGreaterThan(0);
+      expect(tiers).toEqual(tiers.map((_, index) => index + 1));
     }
   });
 });

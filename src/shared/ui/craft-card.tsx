@@ -15,8 +15,13 @@ export interface CraftCardEntry {
   costs: { name: string; amount: number; icon: string | null }[];
   /** Units one craft yields; shown only when above 1. */
   yields?: number;
-  /** Where it is made: station names, or "Build mode". */
+  /** Where it is made: station names, or "Build mode". For `detailsFirst` cards: its attributes. */
   madeIn: string[];
+  /**
+   * Shows `madeIn` as pills, two per row, above the cost (mech parts and chips: what it does comes
+   * before what it costs). The default puts the cost first and the pills at the bottom.
+   */
+  detailsFirst?: boolean;
   /** Gated by a feature flag that may not be live. */
   unavailable: boolean;
   /** Accent-insensitive text matched by the filter (names in every language). */
@@ -60,6 +65,19 @@ export function CraftCard({ entry, locale, labels }: CraftCardProps) {
         </div>
       </div>
 
+      {entry.detailsFirst && entry.madeIn.length > 0 && (
+        <div className="text-sm">
+          <p className="text-muted">{labels.madeIn}</p>
+          <ul className="mt-2 grid grid-cols-2 gap-1.5">
+            {entry.madeIn.map((detail) => (
+              <li key={detail} className="flex">
+                <Badge className="w-full rounded-lg break-words whitespace-normal">{detail}</Badge>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {entry.costs.length > 0 && (
         <div className="text-sm">
           <p className="text-muted">{labels.cost}</p>
@@ -76,7 +94,7 @@ export function CraftCard({ entry, locale, labels }: CraftCardProps) {
         </div>
       )}
 
-      {entry.madeIn.length > 0 && (
+      {!entry.detailsFirst && entry.madeIn.length > 0 && (
         <div className="mt-auto flex flex-wrap items-center gap-1.5 text-sm text-muted">
           <span>{labels.madeIn}:</span>
           {entry.madeIn.map((place) => (
