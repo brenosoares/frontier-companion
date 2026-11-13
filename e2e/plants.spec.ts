@@ -133,8 +133,103 @@ test.describe("plant 'used in'", () => {
   });
 });
 
+test.describe("fertilizers and harvest quality", () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test("the plants page links to it", async ({ page }) => {
+    await page.goto("/pt-BR/plants");
+    await page.getByRole("link", { name: /Fertilizantes e qualidade da colheita/ }).click();
+    await expect(page).toHaveURL(/\/pt-BR\/plants\/fertilizing$/);
+    await expect(
+      page.getByRole("heading", { level: 1, name: "Fertilizantes e qualidade" }),
+    ).toBeVisible();
+  });
+
+  test("lists the mulches and powders with how to make them", async ({ page }) => {
+    await page.goto("/pt-BR/plants/fertilizing");
+
+    const mulches = page.locator("section").filter({
+      has: page.getByRole("heading", { level: 2, name: "Adubos" }),
+    });
+    await expect(mulches.locator('a[href$="/items/NitrogenicFertilizer"]').first()).toBeVisible();
+    await expect(mulches.locator('a[href$="/items/FertilizerX4"]').first()).toBeVisible();
+    await expect(mulches.getByRole("heading", { level: 3, name: "Pós" })).toBeVisible();
+    await expect(mulches.getByText("Feito em:").first()).toBeVisible();
+  });
+
+  test("lists the reagents with their effect and potency", async ({ page }) => {
+    await page.goto("/pt-BR/plants/fertilizing");
+
+    const reagents = page.locator("section").filter({
+      has: page.getByRole("heading", { level: 2, name: "Reagentes" }),
+    });
+    await expect(reagents.getByRole("listitem")).toHaveCount(9);
+    const rabbage = reagents.getByRole("listitem").filter({
+      has: page.locator('a[href$="/items/Rabbage"]'),
+    });
+    await expect(rabbage).toContainText("Velocidade de crescimento");
+    await expect(rabbage).toContainText("Potência: 800");
+    await expect(page.getByText("#N/A")).toHaveCount(0);
+  });
+
+  test("shows the quality odds per level as an accessible table", async ({ page }) => {
+    await page.goto("/pt-BR/plants/fertilizing");
+
+    const table = page.getByRole("table", { name: "Qualidade da colheita" });
+    await expect(table.getByRole("columnheader")).toHaveText([
+      "Nível",
+      "Ruim",
+      "Média",
+      "Boa",
+      "Excelente",
+    ]);
+    await expect(table.getByRole("row")).toHaveCount(8);
+    const baseline = table
+      .getByRole("row")
+      .filter({ has: page.getByRole("rowheader", { name: "0", exact: true }) });
+    await expect(baseline).toContainText("100%");
+    const top = table.getByRole("row").filter({ has: page.getByRole("rowheader", { name: "+3" }) });
+    await expect(top).toContainText("35%");
+    await expect(top).toContainText("65%");
+  });
+
+  test("an item that is a reagent says what it does", async ({ page }) => {
+    await page.goto("/pt-BR/items/Rabbage");
+
+    await expect(
+      page.getByRole("heading", { level: 2, name: "Reagente de fertilizante" }),
+    ).toBeVisible();
+    await expect(page.getByText("Velocidade de crescimento")).toBeVisible();
+    await page.getByRole("link", { name: "Fertilizantes e qualidade da colheita" }).click();
+    await expect(page).toHaveURL(/\/plants\/fertilizing$/);
+  });
+
+  test("an item that is not a reagent has no such section", async ({ page }) => {
+    await page.goto("/pt-BR/items/Clam");
+    await expect(
+      page.getByRole("heading", { level: 2, name: "Reagente de fertilizante" }),
+    ).toHaveCount(0);
+  });
+
+  test("is localized", async ({ page }) => {
+    await page.goto("/en/plants/fertilizing");
+    await expect(
+      page.getByRole("heading", { level: 1, name: "Fertilizers and quality" }),
+    ).toBeVisible();
+    await expect(page.getByRole("table", { name: "Harvest quality" })).toBeVisible();
+    await expect(page.getByRole("columnheader", { name: "Exquisite" })).toBeVisible();
+  });
+});
+
 test.describe("plants accessibility (axe)", () => {
-  const pages = ["/pt-BR/plants", "/en/plants", "/pt-BR/plants/Caroot", "/en/plants/GloTree"];
+  const pages = [
+    "/pt-BR/plants",
+    "/en/plants",
+    "/pt-BR/plants/Caroot",
+    "/en/plants/GloTree",
+    "/pt-BR/plants/fertilizing",
+    "/en/plants/fertilizing",
+  ];
 
   for (const scheme of ["dark", "light"] as const) {
     for (const path of pages) {
@@ -153,7 +248,7 @@ test.describe("plants accessibility (axe)", () => {
 test.describe("plants on mobile", () => {
   test.use({ viewport: { width: 375, height: 700 } });
 
-  for (const path of ["/pt-BR/plants", "/pt-BR/plants/GloTree"]) {
+  for (const path of ["/pt-BR/plants", "/pt-BR/plants/GloTree", "/pt-BR/plants/fertilizing"]) {
     test(`${path} has no horizontal scroll`, async ({ page }) => {
       await page.goto(path);
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

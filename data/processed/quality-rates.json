@@ -1,0 +1,72 @@
+[
+  {
+    "id": "-3",
+    "level": -3,
+    "rates": {
+      "poor": 90,
+      "average": 10,
+      "fine": 0,
+      "exquisite": 0
+    }
+  },
+  {
+    "id": "-2",
+    "level": -2,
+    "rates": {
+      "poor": 50,
+      "average": 50,
+      "fine": 0,
+      "exquisite": 0
+    }
+  },
+  {
+    "id": "-1",
+    "level": -1,
+    "rates": {
+      "poor": 20,
+      "average": 80,
+      "fine": 0,
+      "exquisite": 0
+    }
+  },
+  {
+    "id": "0",
+    "level": 0,
+    "rates": {
+      "poor": 0,
+      "average": 100,
+      "fine": 0,
+      "exquisite": 0
+    }
+  },
+  {
+    "id": "1",
+    "level": 1,
+    "rates": {
+      "poor": 0,
+      "average": 70,
+      "fine": 25,
+      "exquisite": 5
+    }
+  },
+  {
+    "id": "2",
+    "level": 2,
+    "rates": {
+      "poor": 0,
+      "average": 35,
+      "fine": 50,
+      "exquisite": 15
+    }
+  },
+  {
+    "id": "3",
+    "level": 3,
+    "rates": {
+      "poor": 0,
+      "average": 0,
+      "fine": 65,
+      "exquisite": 35
+    }
+  }
+]

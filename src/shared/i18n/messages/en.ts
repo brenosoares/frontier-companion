@@ -91,6 +91,7 @@ export const en: Messages = {
       calculate: "Calculate materials",
       noOrigin:
         "We could not find where this item comes from in the game data. It may be obtained in other ways, such as from merchants or deliveries.",
+      reagent: { title: "Fertilizer reagent", effect: "Effect", potency: "Potency" },
       usedIn: "Used in",
       noUsage: "This item is not an ingredient in any recipe or used in constructs or the mech.",
       usedInConstructs: "Constructs",
@@ -322,6 +323,46 @@ export const en: Messages = {
       title: "Used in",
       shared: "Items that several plants give. See where each is used on the item page:",
       none: "No recipe uses what this plant gives.",
+    },
+    fertilizing: {
+      link: "Fertilizers and harvest quality",
+      linkHint: "Mulches, reagents and the odds of each harvest quality.",
+      title: "Fertilizers and quality",
+      intro:
+        "What helps plants grow better: mulches, items that act as reagents and the odds of harvest quality.",
+      back: "Back to plants",
+      fertilizers: {
+        title: "Mulches",
+        intro:
+          "Items the game marks as fertilizer, and the powders used to make them. Open an item to see how to make it.",
+        powders: "Powders",
+      },
+      reagents: {
+        title: "Reagents",
+        intro:
+          "Items that act as fertilizer reagents. Potency is the game's number, which gives no unit.",
+        effect: "Effect",
+        potency: "Potency",
+        effects: {
+          Seed: "Seeds",
+          WaterRetention: "Liquid Retention",
+          Quality: "Quality",
+          Growth: "Growth Speed",
+          FruitGrowthSpeed: "Fruit Growth Speed",
+          FruitMaxAmount: "Max Fruits",
+          DyeRed: "Red dye",
+          DyeYellow: "Yellow dye",
+          DyeBlue: "Blue dye",
+        },
+      },
+      quality: {
+        title: "Harvest quality",
+        intro:
+          "For each quality level, the odds of each harvest result. Level 0 is the baseline: the harvest is always average.",
+        level: "Level",
+        note: "The game data does not say how each level is reached.",
+        qualities: { poor: "Poor", average: "Average", fine: "Fine", exquisite: "Exquisite" },
+      },
     },
     chance: "{chance} chance",
   },

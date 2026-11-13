@@ -1,0 +1,47 @@
+[
+  {
+    "id": "BlueCrystalDust",
+    "effect": "DyeBlue",
+    "potency": 600
+  },
+  {
+    "id": "Caroot",
+    "effect": "WaterRetention",
+    "potency": 50
+  },
+  {
+    "id": "Chromaize",
+    "effect": "FruitGrowthSpeed",
+    "potency": 350
+  },
+  {
+    "id": "GloFruit",
+    "effect": "FruitMaxAmount",
+    "potency": 600
+  },
+  {
+    "id": "Polyberry",
+    "effect": "Quality",
+    "potency": 10
+  },
+  {
+    "id": "Rabbage",
+    "effect": "Growth",
+    "potency": 800
+  },
+  {
+    "id": "RedCrystalDust",
+    "effect": "DyeRed",
+    "potency": 500
+  },
+  {
+    "id": "Wheat",
+    "effect": "Seed",
+    "potency": 0
+  },
+  {
+    "id": "YellowCrystalDust",
+    "effect": "DyeYellow",
+    "potency": 600
+  }
+]

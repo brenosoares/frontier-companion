@@ -51,3 +51,52 @@ export const PlantSchema = z.object({
 
 export type PlantDrop = z.infer<typeof PlantDropSchema>;
 export type Plant = z.infer<typeof PlantSchema>;
+
+/** What an item does as a fertilizer reagent (`DT_FertilizerReagents`). */
+export const PLANT_EFFECTS = [
+  "Seed",
+  "WaterRetention",
+  "Quality",
+  "Growth",
+  "FruitGrowthSpeed",
+  "FruitMaxAmount",
+  "DyeRed",
+  "DyeYellow",
+  "DyeBlue",
+] as const;
+export type PlantEffect = (typeof PLANT_EFFECTS)[number];
+
+export const PlantEffectSchema = z.object({
+  /** The item that carries the effect. */
+  id: Id,
+  effect: z.enum(PLANT_EFFECTS),
+  /** The game's strength for the effect; its unit is not stated, so it is shown as a plain number. */
+  potency: z.number().nonnegative(),
+});
+
+/** Harvest qualities, worst to best. */
+export const QUALITIES = ["poor", "average", "fine", "exquisite"] as const;
+export type Quality = (typeof QUALITIES)[number];
+
+const Percent = z.number().min(0).max(100);
+
+/** The odds of each harvest quality at one quality level (`DT_QualityRates`). They add up to 100. */
+export const QualityRateSchema = z
+  .object({
+    /** Quality level, from -3 to 3; 0 is the baseline (always average). */
+    id: z.string().regex(/^-?\d+$/),
+    level: z.number().int(),
+    rates: z.object({
+      poor: Percent,
+      average: Percent,
+      fine: Percent,
+      exquisite: Percent,
+    }),
+  })
+  .refine(
+    ({ rates }) => Math.abs(Object.values(rates).reduce((sum, rate) => sum + rate, 0) - 100) < 0.01,
+    "rates must add up to 100",
+  );
+
+export type PlantEffectEntry = z.infer<typeof PlantEffectSchema>;
+export type QualityRate = z.infer<typeof QualityRateSchema>;

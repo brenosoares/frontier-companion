@@ -6,7 +6,9 @@
  * `cacheComponents`. They are still validated by Zod when first read.
  */
 import animalsJson from "@data/processed/animals.json";
+import plantEffectsJson from "@data/processed/plant-effects.json";
 import plantsJson from "@data/processed/plants.json";
+import qualityRatesJson from "@data/processed/quality-rates.json";
 import mechChipsJson from "@data/processed/mech-chips.json";
 import mechPartsJson from "@data/processed/mech-parts.json";
 import mechStatsJson from "@data/processed/mech-stats.json";
@@ -56,4 +58,8 @@ export const mechRepository: MechRepository = new JsonMechRepository({
   chips: async () => mechChipsJson,
 });
 
-export const plantRepository: PlantRepository = new JsonPlantRepository(async () => plantsJson);
+export const plantRepository: PlantRepository = new JsonPlantRepository({
+  plants: async () => plantsJson,
+  effects: async () => plantEffectsJson,
+  qualityRates: async () => qualityRatesJson,
+});
